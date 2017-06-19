@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web.Compilation;
 
-namespace MvcGrid.Web
+namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
     /// 

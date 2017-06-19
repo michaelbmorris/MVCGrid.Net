@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Configuration;
 
-namespace MvcGrid.Utility
+namespace MichaelBrandonMorris.MvcGrid.Utility
 {
     internal class ConfigUtility
     {

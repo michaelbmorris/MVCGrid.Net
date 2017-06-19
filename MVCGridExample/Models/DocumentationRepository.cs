@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using FileHelpers;
 
-namespace MvcGrid.Web.Models
+namespace MVCGrid.Web.Models
 {
     public class DocumentationRepository
     {

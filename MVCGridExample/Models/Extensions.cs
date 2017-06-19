@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Web.Models
+namespace MVCGrid.Web.Models
 {
     public static class Extensions
     {

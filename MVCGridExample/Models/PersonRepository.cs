@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MvcGrid.Web.Data;
+using MVCGrid.Web.Data;
 
-namespace MvcGrid.Web.Models
+namespace MVCGrid.Web.Models
 {
     public interface IPersonRepository
     {

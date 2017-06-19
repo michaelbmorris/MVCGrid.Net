@@ -6,10 +6,10 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Engine;
-using MvcGrid.Utility;
+using MichaelBrandonMorris.MvcGrid.Engine;
+using MichaelBrandonMorris.MvcGrid.Utility;
 
-namespace MvcGrid.Web
+namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
     /// </summary>

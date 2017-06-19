@@ -7,11 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MvcGrid.Web.Data
+using System;
+
+namespace MVCGrid.Web.Data
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class Person
     {
         public int Id { get; set; }

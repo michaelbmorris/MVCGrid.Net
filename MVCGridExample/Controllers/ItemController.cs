@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace MvcGrid.Web.Controllers
+namespace MVCGrid.Web.Controllers
 {
     public class ItemController : Controller
     {

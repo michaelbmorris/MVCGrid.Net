@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Interfaces
+namespace MichaelBrandonMorris.MvcGrid.Interfaces
 {
     /// <summary>
     /// </summary>

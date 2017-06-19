@@ -1,4 +1,4 @@
-﻿namespace MvcGrid.Web.Models
+﻿namespace MVCGrid.Web.Models
 {
     public class MvcGridToolbarModel
     {

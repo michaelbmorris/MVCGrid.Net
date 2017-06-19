@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Web;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Interfaces
+namespace MichaelBrandonMorris.MvcGrid.Interfaces
 {
     /// <summary>
     /// 

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace MvcGrid.Web
+namespace MVCGrid.Web
 {
     public class FilterConfig
     {

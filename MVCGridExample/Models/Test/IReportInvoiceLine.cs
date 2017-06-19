@@ -1,4 +1,4 @@
-﻿namespace MvcGrid.Web.Models.Test
+﻿namespace MVCGrid.Web.Models.Test
 {
     public class ReportInvoiceLine : IReportInvoiceLine
     {

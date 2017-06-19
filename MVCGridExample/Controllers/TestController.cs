@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Models;
-using MvcGrid.Web.Models;
-using MvcGrid.Web.Models.Test;
-using MVCGridExample.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Web;
+using MVCGrid.Web.Models;
+using MVCGrid.Web.Models.Test;
 
-namespace MvcGrid.Web.Controllers
+namespace MVCGrid.Web.Controllers
 {
     public class TestController : Controller
     {

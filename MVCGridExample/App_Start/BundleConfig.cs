@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace MvcGrid.Web
+namespace MVCGrid.Web
 {
     public class BundleConfig
     {

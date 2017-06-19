@@ -2,9 +2,9 @@
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using MvcGrid.Web;
+using MichaelBrandonMorris.MvcGrid.Web;
 
-namespace MVCGridExample
+namespace MVCGrid.Web
 {
     public class MvcApplication : HttpApplication
     {

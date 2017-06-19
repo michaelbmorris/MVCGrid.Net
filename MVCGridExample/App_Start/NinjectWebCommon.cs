@@ -3,7 +3,7 @@ using System.Web;
 using MvcGrid.Web.App_Start;
 using Ninject.Web.Common;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-using MvcGrid.Web.Models;
+using MVCGrid.Web.Models;
 using Ninject;
 
 [assembly:

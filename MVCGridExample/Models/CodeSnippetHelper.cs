@@ -2,7 +2,7 @@
 using System.Text;
 using System.Web;
 
-namespace MvcGrid.Web.Models
+namespace MVCGrid.Web.Models
 {
     public class CodeSnippetHelper
     {

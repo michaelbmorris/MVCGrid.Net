@@ -1,9 +1,9 @@
 ﻿using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Engine;
-using MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Engine;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
 
-namespace MvcGrid.Web
+namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
     /// 

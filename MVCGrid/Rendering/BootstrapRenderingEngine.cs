@@ -1,11 +1,10 @@
 ﻿using System.IO;
-using System.Linq;
 using System.Text;
 using System.Web;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Rendering
+namespace MichaelBrandonMorris.MvcGrid.Rendering
 {
     /// <summary>
     /// 

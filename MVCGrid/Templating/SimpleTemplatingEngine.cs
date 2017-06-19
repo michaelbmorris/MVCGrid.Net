@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Templating
+namespace MichaelBrandonMorris.MvcGrid.Templating
 {
     /// <summary>
     /// 

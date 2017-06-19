@@ -1,9 +1,9 @@
 ﻿using System.Web;
 using System.Web.Routing;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Utility
+namespace MichaelBrandonMorris.MvcGrid.Utility
 {
     /// <summary>
     /// 

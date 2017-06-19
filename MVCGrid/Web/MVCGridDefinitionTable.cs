@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Web
+namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
     /// 

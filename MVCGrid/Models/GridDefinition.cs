@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web;
-using MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
 
-namespace MvcGrid.Models
+namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
     /// </summary>

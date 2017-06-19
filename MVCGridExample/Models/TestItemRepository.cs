@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVCGridExample.Models
+namespace MVCGrid.Web.Models
 {
     public class TestItemRepository
     {

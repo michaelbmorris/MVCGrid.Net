@@ -1,8 +1,8 @@
-﻿using MvcGrid.Interfaces;
-using MvcGrid.Models;
+﻿using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
 using RazorEngine.Templating;
 
-namespace MvcGrid.RazorTemplates
+namespace MVCGrid.RazorTemplates
 {
     public class RazorTemplatingEngine : IMvcGridTemplatingEngine
     {

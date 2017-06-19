@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Models;
-using MvcGrid.Web.Data;
-using MvcGrid.Web.Models;
-using MVCGridExample.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Web;
+using MVCGrid.Web.Data;
+using MVCGrid.Web.Models;
 
-namespace MvcGrid.Web
+namespace MVCGrid.Web
 {
     public class MvcGridConfig
     {

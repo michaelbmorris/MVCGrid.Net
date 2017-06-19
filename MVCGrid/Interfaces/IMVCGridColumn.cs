@@ -1,4 +1,4 @@
-﻿namespace MvcGrid.Interfaces
+﻿namespace MichaelBrandonMorris.MvcGrid.Interfaces
 {
     /// <summary>
     /// </summary>

@@ -1,9 +1,10 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using MvcGrid.Models;
-using MvcGrid.Web.Data;
+using MichaelBrandonMorris.MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Web;
+using MVCGrid.Web.Data;
 
-namespace MvcGrid.Web.Controllers
+namespace MVCGrid.Web.Controllers
 {
     public class DemoController : Controller
     {

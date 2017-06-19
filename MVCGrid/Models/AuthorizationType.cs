@@ -1,4 +1,4 @@
-﻿namespace MvcGrid.Models
+﻿namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
     /// 

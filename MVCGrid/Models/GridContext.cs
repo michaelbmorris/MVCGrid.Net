@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
 
-namespace MvcGrid.Models
+namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
     /// </summary>

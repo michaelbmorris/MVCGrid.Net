@@ -1,4 +1,4 @@
-﻿namespace MVCGridExample.Models
+﻿namespace MVCGrid.Web.Models
 {
     public class TestItem
     {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Web;
-using MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Models;
 
-namespace MvcGrid.Utility
+namespace MichaelBrandonMorris.MvcGrid.Utility
 {
     /// <summary>
     /// </summary>

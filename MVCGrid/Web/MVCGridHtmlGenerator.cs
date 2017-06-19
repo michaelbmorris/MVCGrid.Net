@@ -3,11 +3,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Web;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
-using MvcGrid.Utility;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Utility;
 
-namespace MvcGrid.Web
+namespace MichaelBrandonMorris.MvcGrid.Web
 {
     //Feature Requests
     //Show/hide fields

@@ -6,12 +6,12 @@ using System.IO;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using MvcGrid.Interfaces;
-using MvcGrid.Models;
-using MvcGrid.Utility;
-using MvcGrid.Web;
+using MichaelBrandonMorris.MvcGrid.Interfaces;
+using MichaelBrandonMorris.MvcGrid.Models;
+using MichaelBrandonMorris.MvcGrid.Utility;
+using MichaelBrandonMorris.MvcGrid.Web;
 
-namespace MvcGrid.Engine
+namespace MichaelBrandonMorris.MvcGrid.Engine
 {
     /// <summary>
     /// 

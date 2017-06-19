@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace MvcGrid.Models
+namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
     /// 

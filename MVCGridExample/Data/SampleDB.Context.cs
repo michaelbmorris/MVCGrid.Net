@@ -7,12 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MvcGrid.Web.Data
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+
+namespace MVCGrid.Web.Data
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
-    
     public partial class SampleDatabaseEntities : DbContext
     {
         public SampleDatabaseEntities()
