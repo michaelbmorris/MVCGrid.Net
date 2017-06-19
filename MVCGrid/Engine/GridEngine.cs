@@ -30,39 +30,42 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
         {
             IMvcGridRenderingEngine renderingEngine = null;
 
-            if (!string.IsNullOrWhiteSpace(
+            if (string.IsNullOrWhiteSpace(
                 gridContext.QueryOptions.RenderingEngineName))
             {
-                foreach (ProviderSettings configuredEngine in gridContext
-                    .GridDefinition.RenderingEngines)
+                return GetRenderingEngineInternal(gridContext.GridDefinition);
+            }
+
+            foreach (ProviderSettings configuredEngine in gridContext
+                .GridDefinition.RenderingEngines)
+            {
+                if (string.Compare(
+                        gridContext.QueryOptions.RenderingEngineName,
+                        configuredEngine.Name,
+                        StringComparison.OrdinalIgnoreCase)
+                    != 0)
                 {
-                    if (string.Compare(
-                            gridContext.QueryOptions.RenderingEngineName,
-                            configuredEngine.Name,
-                            StringComparison.OrdinalIgnoreCase)
-                        != 0)
-                    {
-                        continue;
-                    }
-
-                    var engineName =
-                        gridContext.QueryOptions.RenderingEngineName;
-
-                    var typeString =
-                        gridContext.GridDefinition
-                            .RenderingEngines[engineName]
-                            .Type;
-                    var engineType = Type.GetType(typeString, true);
-
-                    renderingEngine =
-                        (IMvcGridRenderingEngine) Activator.CreateInstance(
-                            engineType,
-                            true);
+                    continue;
                 }
+
+                var engineName =
+                    gridContext.QueryOptions.RenderingEngineName;
+
+                var typeString =
+                    gridContext.GridDefinition
+                        .RenderingEngines[engineName]
+                        .Type;
+
+                var engineType = Type.GetType(typeString, true);
+
+                renderingEngine =
+                    (IMvcGridRenderingEngine) Activator.CreateInstance(
+                        engineType,
+                        true);
             }
 
             return renderingEngine
-                   ?? (GetRenderingEngineInternal(gridContext.GridDefinition));
+                   ?? GetRenderingEngineInternal(gridContext.GridDefinition);
         }
 
         /// <summary>
@@ -331,7 +334,11 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                     .GetProperties(pageParameters))
                 {
                     var obj2 = descriptor.GetValue(pageParameters);
-                    pageParamsDict.Add(descriptor.Name, obj2.ToString());
+
+                    if (obj2 != null)
+                    {
+                        pageParamsDict.Add(descriptor.Name, obj2.ToString());
+                    }
                 }
             }
             if (grid.PageParameterNames.Count > 0)
@@ -420,7 +427,7 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             }
         }
 
-        private void PrepColumns(GridContext gridContext, RenderingModel model)
+        private static void PrepColumns(GridContext gridContext, RenderingModel model)
         {
             foreach (var col in gridContext.GetVisibleColumns())
             {
@@ -429,40 +436,42 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                 renderingColumn.Name = col.ColumnName;
                 renderingColumn.HeaderText = col.HeaderText;
 
-                if (gridContext.GridDefinition.Sorting
-                    && col.EnableSorting)
+                if (!gridContext.GridDefinition.Sorting
+                    || !col.EnableSorting)
                 {
-                    var linkDirection = SortDirection.Asc;
-                    var iconDirection = SortDirection.Unspecified;
-
-                    if (gridContext.QueryOptions.SortColumnName
-                        == col.ColumnName
-                        && gridContext.QueryOptions.SortDirection
-                        == SortDirection.Asc)
-                    {
-                        iconDirection = SortDirection.Asc;
-                        linkDirection = SortDirection.Dsc;
-                    }
-                    else if (gridContext.QueryOptions.SortColumnName
-                             == col.ColumnName
-                             && gridContext.QueryOptions.SortDirection
-                             == SortDirection.Dsc)
-                    {
-                        iconDirection = SortDirection.Dsc;
-                        linkDirection = SortDirection.Asc;
-                    }
-                    else
-                    {
-                        iconDirection = SortDirection.Unspecified;
-                        linkDirection = SortDirection.Asc;
-                    }
-
-                    renderingColumn.Onclick = HtmlUtility.MakeSortLink(
-                        gridContext.GridName,
-                        col.ColumnName,
-                        linkDirection);
-                    renderingColumn.SortIconDirection = iconDirection;
+                    continue;
                 }
+
+                SortDirection linkDirection;
+                SortDirection iconDirection;
+
+                if (gridContext.QueryOptions.SortColumnName
+                    == col.ColumnName
+                    && gridContext.QueryOptions.SortDirection
+                    == SortDirection.Asc)
+                {
+                    iconDirection = SortDirection.Asc;
+                    linkDirection = SortDirection.Dsc;
+                }
+                else if (gridContext.QueryOptions.SortColumnName
+                         == col.ColumnName
+                         && gridContext.QueryOptions.SortDirection
+                         == SortDirection.Dsc)
+                {
+                    iconDirection = SortDirection.Dsc;
+                    linkDirection = SortDirection.Asc;
+                }
+                else
+                {
+                    iconDirection = SortDirection.Unspecified;
+                    linkDirection = SortDirection.Asc;
+                }
+
+                renderingColumn.Onclick = HtmlUtility.MakeSortLink(
+                    gridContext.GridName,
+                    col.ColumnName,
+                    linkDirection);
+                renderingColumn.SortIconDirection = iconDirection;
             }
         }
 
@@ -471,11 +480,11 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             List<Row> rows,
             GridContext gridContext)
         {
-            var model = new RenderingModel();
-
-            model.HandlerPath = HtmlUtility.GetHandlerPath();
-            model.TableHtmlId =
-                HtmlUtility.GetTableHtmlId(gridContext.GridName);
+            var model = new RenderingModel
+            {
+                HandlerPath = HtmlUtility.GetHandlerPath(),
+                TableHtmlId = HtmlUtility.GetTableHtmlId(gridContext.GridName)
+            };
 
             PrepColumns(gridContext, model);
             model.Rows = rows;
@@ -499,31 +508,37 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             {
                 model.PagingModel = new PagingModel();
 
-                var currentPageIndex = gridContext.QueryOptions.PageIndex.Value;
-
-                model.PagingModel.TotalRecords = totalRecords.Value;
-
-                model.PagingModel.FirstRecord =
-                    currentPageIndex
-                    * gridContext.QueryOptions.ItemsPerPage.Value
-                    + 1;
-                if (model.PagingModel.FirstRecord
-                    > model.PagingModel.TotalRecords)
+                if (gridContext.QueryOptions.PageIndex != null)
                 {
+                    var currentPageIndex = gridContext.QueryOptions.PageIndex.Value;
+
+                    if (totalRecords != null)
+                    {
+                        model.PagingModel.TotalRecords = totalRecords.Value;
+                    }
+
                     model.PagingModel.FirstRecord =
-                        model.PagingModel.TotalRecords;
-                }
-                model.PagingModel.LastRecord =
-                    model.PagingModel.FirstRecord
-                    + gridContext.QueryOptions.ItemsPerPage.Value
-                    - 1;
-                if (model.PagingModel.LastRecord
-                    > model.PagingModel.TotalRecords)
-                {
+                        currentPageIndex
+                        * gridContext.QueryOptions.ItemsPerPage.Value
+                        + 1;
+                    if (model.PagingModel.FirstRecord
+                        > model.PagingModel.TotalRecords)
+                    {
+                        model.PagingModel.FirstRecord =
+                            model.PagingModel.TotalRecords;
+                    }
                     model.PagingModel.LastRecord =
-                        model.PagingModel.TotalRecords;
+                        model.PagingModel.FirstRecord
+                        + gridContext.QueryOptions.ItemsPerPage.Value
+                        - 1;
+                    if (model.PagingModel.LastRecord
+                        > model.PagingModel.TotalRecords)
+                    {
+                        model.PagingModel.LastRecord =
+                            model.PagingModel.TotalRecords;
+                    }
+                    model.PagingModel.CurrentPage = currentPageIndex + 1;
                 }
-                model.PagingModel.CurrentPage = currentPageIndex + 1;
 
                 var numberOfPagesD = (model.PagingModel.TotalRecords + 0.0)
                                      / (gridContext.QueryOptions.ItemsPerPage

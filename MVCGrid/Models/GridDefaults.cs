@@ -49,10 +49,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
             {
                 new ProviderSettings(
                     "BootstrapRenderingEngine",
-                    "MVCGrid.Rendering.BootstrapRenderingEngine, MVCGrid"),
+                    "MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine, MichaelBrandonMorris.MvcGrid"),
                 new ProviderSettings(
                     "Export",
-                    "MVCGrid.Rendering.CsvRenderingEngine, MVCGrid")
+                    "MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine, MichaelBrandonMorris.MvcGrid")
             };
 
             DefaultRenderingEngineName = "BootstrapRenderingEngine";
