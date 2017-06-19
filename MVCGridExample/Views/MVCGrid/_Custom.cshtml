@@ -1,19 +1,21 @@
-﻿@using MVCGrid.Models
+﻿@using MvcGrid.Models
 @helper SortImage(Column col)
 {
-
     if (col.SortIconDirection.HasValue)
     {
         switch (col.SortIconDirection)
         {
-            case MVCGrid.Models.SortDirection.Asc:
-                <img src='@(Model.HandlerPath)/sortup.png' class='pull-right' />
+            case SortDirection.Asc:
+                <img src="@( Model.HandlerPath)/sortup.png"
+                     class="pull-right"/>
                 break;
-            case MVCGrid.Models.SortDirection.Dsc:
-            <img src='@(Model.HandlerPath)/sortdown.png' class='pull-right' />
+            case SortDirection.Dsc:
+                <img src="@( Model.HandlerPath)/sortdown.png"
+                     class="pull-right"/>
                 break;
-            case MVCGrid.Models.SortDirection.Unspecified:
-            <img src='@(Model.HandlerPath)/sort.png' class='pull-right' />
+            case SortDirection.Unspecified:
+                <img src="@( Model.HandlerPath)/sort.png"
+                     class="pull-right"/>
                 break;
         }
     }
@@ -21,48 +23,63 @@
 
 @helper PageLink(int pageNum, string link, int currentPage)
 {
-
     if (pageNum == currentPage)
     {
-        <li class='active'><a href='#' onclick='@Html.Raw(link)'>@pageNum</a></li>
+        <li class="active">
+            <a href="#"
+               onclick="@Html.Raw(link)">
+                @pageNum</a>
+        </li>
     }
     else
     {
-        <li><a href='#' onclick='@Html.Raw(link)'>@pageNum</a></li>
+        <li>
+            <a href="#"
+               onclick="@Html.Raw(link)">
+                @pageNum</a>
+        </li>
     }
 }
 @helper PageNextLink(int pageToEnd, PagingModel pagingModel)
 {
-    string attr = "";
+    var attr = "";
     if (pageToEnd == pagingModel.CurrentPage)
     {
         attr = " class='disabled'";
     }
-    string onclick = "";
+    var onclick = "";
     if (pageToEnd > pagingModel.CurrentPage)
     {
         onclick = pagingModel.PageLinks[pagingModel.CurrentPage + 1] + "; ";
     }
 
-    <li@(Html.Raw(attr))>
-        <a href='#' aria-label='Next' onclick='@(Html.Raw(onclick))return false;'><span aria-hidden='true'>Next &raquo;</span></a>
-        </li>
+    <li@( Html.Raw(attr))>
+        <a href="#"
+           aria-label="Next"
+           onclick="@( Html.Raw(onclick))return;false;">
+            <span aria-hidden="true">Next &raquo;</span>
+        </a>
+    </li>
 }
 @helper PagePreviousLink(int pageToStart, PagingModel pagingModel)
 {
-    string attr = "";
+    var attr = "";
     if (pageToStart == pagingModel.CurrentPage)
     {
         attr = " class='disabled'";
     }
-    string onclick = "";
+    var onclick = "";
     if (pageToStart < pagingModel.CurrentPage)
     {
         onclick = pagingModel.PageLinks[pagingModel.CurrentPage - 1] + "; ";
     }
 
-    <li@(Html.Raw(attr))>
-        <a href='#' aria-label='Previous' onclick='@(Html.Raw(onclick))return false;'><span aria-hidden='true'>&laquo; Previous</span></a>
+    <li@( Html.Raw(attr))>
+        <a href="#"
+           aria-label="Previous"
+           onclick="@( Html.Raw(onclick))return;false;">
+            <span aria-hidden="true">&laquo; Previous</span>
+        </a>
     </li>
 }
 
@@ -70,7 +87,7 @@
     // Pass a user name to this method.
     string HeaderAttributes(Column col)
     {
-        string str = "";
+        var str = "";
         if (col.Onclick != null)
         {
             str = " style='cursor: pointer;'";
@@ -85,33 +102,36 @@
         {
             return String.Format(" class='{0}'", classString);
         }
+
         return "";
     }
 
 }
-<table id="@Model.TableHtmlId" class="customStyleTable">
+<table id="@Model.TableHtmlId"
+       class="customStyleTable">
     <thead>
         <tr>
             @foreach (var col in Model.Columns)
             {
                 <th@(Html.Raw(HeaderAttributes(col)))>
-                    @col.HeaderText @(SortImage(col))</th>
+                    @col.HeaderText @(SortImage(col))
+                </th>
             }
-    </tr>
-</thead>
-<tbody>
-    @foreach (var row in Model.Rows)
-    {
-        <tr@(Html.Raw(AppendCssAttribute(row.CalculatedCssClass)))>
-            @foreach (var col in Model.Columns)
-            {
-                var cell = row.Cells[col.Name];
-                <td@(Html.Raw(AppendCssAttribute(cell.CalculatedCssClass)))>
-                    @Html.Raw(cell.HtmlText)</td>
-            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model.Rows)
+        {
+            <tr@(Html.Raw(AppendCssAttribute(row.CalculatedCssClass)))>
+                @foreach (var col in Model.Columns)
+                {
+                    var cell = row.Cells[col.Name];
+                    <td@(Html.Raw(AppendCssAttribute(cell.CalculatedCssClass)))>
+                        @Html.Raw(cell.HtmlText)</td>
+                }
             </tr>
-    }
-</tbody>
+        }
+    </tbody>
 </table>
 
 @if (Model.PagingModel != null)
@@ -126,9 +146,10 @@
             Showing @pagingModel.FirstRecord to @pagingModel.LastRecord of @pagingModel.TotalRecords entries
         </div>
         <div class='col-xs-6'>
-            <ul class='pagination pull-right' style='margin-top: 0;'>
+            <ul class='pagination pull-right'
+                style='margin-top: 0;'>
                 @PagePreviousLink(pageToStart, pagingModel)
-                @for (int i = pageToStart; i <= pageToEnd; i++)
+                @for (var i = pageToStart; i <= pageToEnd; i++)
                 {
                     <text>@PageLink(i, pagingModel.PageLinks[i], pagingModel.CurrentPage)</text>
                 }

@@ -1,39 +1,50 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Web;
+using MvcGrid.Interfaces;
+using MvcGrid.Models;
 
-namespace MVCGrid.Rendering
+namespace MvcGrid.Rendering
 {
-    public class CsvRenderingEngine : IMVCGridRenderingEngine
+    /// <summary>
+    /// 
+    /// </summary>
+    public class CsvRenderingEngine : IMvcGridRenderingEngine
     {
-        public bool AllowsPaging
-        {
-            get { return false; }
-        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool AllowsPaging => false;
 
-        public virtual string GetFilename()
-        {
-            return "export.csv";
-        }
-
-        public virtual void PrepareResponse(System.Web.HttpResponse httpResponse)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="httpResponse"></param>
+        public virtual void PrepareResponse(HttpResponse httpResponse)
         {
             httpResponse.Clear();
             httpResponse.ContentType = "text/csv";
-            httpResponse.AddHeader("content-disposition", "attachment; filename=\"" + GetFilename() + "\"");
+            httpResponse.AddHeader(
+                "content-disposition",
+                "attachment; filename=\"" + GetFilename() + "\"");
             httpResponse.BufferOutput = false;
         }
 
-        public void Render(Models.RenderingModel model, Models.GridContext gridContext, TextWriter outputStream)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="gridContext"></param>
+        /// <param name="outputStream"></param>
+        public void Render(
+            RenderingModel model,
+            GridContext gridContext,
+            TextWriter outputStream)
         {
             var sw = outputStream;
 
-            StringBuilder sbHeaderRow = new StringBuilder();
+            var sbHeaderRow = new StringBuilder();
             foreach (var col in model.Columns)
             {
                 if (sbHeaderRow.Length != 0)
@@ -42,12 +53,13 @@ namespace MVCGrid.Rendering
                 }
                 sbHeaderRow.Append(CsvEncode(col.Name));
             }
+
             sbHeaderRow.AppendLine();
             sw.Write(sbHeaderRow.ToString());
 
             foreach (var item in model.Rows)
             {
-                StringBuilder sbRow = new StringBuilder();
+                var sbRow = new StringBuilder();
                 foreach (var col in model.Columns)
                 {
                     var cell = item.Cells[col.Name];
@@ -57,32 +69,48 @@ namespace MVCGrid.Rendering
                         sbRow.Append(",");
                     }
 
-                    string val = cell.PlainText;
+                    var val = cell.PlainText;
 
                     sbRow.Append(CsvEncode(val));
                 }
+
                 sbRow.AppendLine();
                 sw.Write(sbRow.ToString());
             }
-
         }
 
-        private string CsvEncode(string s)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="outputStream"></param>
+        public void RenderContainer(
+            ContainerRenderingModel model,
+            TextWriter outputStream)
         {
-            if (String.IsNullOrWhiteSpace(s))
+            throw new NotImplementedException(
+                "Csv Rendering Engine has no container");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public virtual string GetFilename()
+        {
+            return "export.csv";
+        }
+
+        private static string CsvEncode(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
             {
                 return "\"\"";
             }
 
-            string esc = s.Replace("\"", "\"\"");
+            var esc = s.Replace("\"", "\"\"");
 
-            return String.Format("\"{0}\"", esc);
-        }
-
-
-        public void RenderContainer(Models.ContainerRenderingModel model, TextWriter outputStream)
-        {
-            throw new NotImplementedException("Csv Rendering Engine has no container");
+            return $"\"{esc}\"";
         }
     }
 }

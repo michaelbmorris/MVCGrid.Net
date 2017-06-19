@@ -1,5 +1,4 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Custom Export";
 }
 
@@ -8,8 +7,9 @@
 <p>You can add additional rendering engines if you want to be able to export in different formats.</p>
 <p>Here are the steps:</p>
 <ol>
-    <li>Use <code>AddRenderingEngine</code> on the GridConfig or GridDefaults like so:<br /><pre class="brush: csharp">.AddRenderingEngine("tabs", typeof(TabDelimitedRenderingEngine))</pre></li>
-    <li>Create the export url using the javascript api:<br />
+    <li>Use <code>AddRenderingEngine</code> on the GridConfig or GridDefaults like so:<br/><pre class="brush: csharp">.AddRenderingEngine("tabs", typeof(TabDelimitedRenderingEngine))</pre></li>
+    <li>
+        Create the export url using the javascript api:<br/>
         <pre class="brush: js">
 $('#tabExportButton').click(function () {
     location.href = MVCGrid.getEngineExportUrl('CustomExport', 'tabs');
@@ -18,16 +18,20 @@ $('#tabExportButton').click(function () {
     </li>
 </ol>
 
-
-
 <div class="container">
     <div class="row">
-        <button class="btn btn-default" id="csvExportButton">
-            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> CSV Export
+        <button class="btn btn-default"
+                id="csvExportButton">
+            <span aria-hidden="true"
+                  class="glyphicon glyphicon-download-alt">
+            </span> CSV Export
         </button>
 
-        <button class="btn btn-default" id="tabExportButton">
-            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Tab Export
+        <button class="btn btn-default"
+                id="tabExportButton">
+            <span aria-hidden="true"
+                  class="glyphicon glyphicon-download-alt">
+            </span> Tab Export
         </button>
     </div>
 </div>
@@ -60,9 +64,10 @@ $(function () {
     </div>
 </div>
 
-
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("CustomExport")</pre>
     </div>
@@ -75,16 +80,17 @@ $(function () {
         function showLoading() {
             $.blockUI();
         }
+
         function hideLoading() {
             $.unblockUI();
         }
 
-        $(function () {
-            $('#csvExportButton').click(function () {
+        $(function() {
+            $('#csvExportButton').click(function() {
                 location.href = MVCGrid.getExportUrl('CustomExport');
             });
 
-            $('#tabExportButton').click(function () {
+            $('#tabExportButton').click(function() {
                 location.href = MVCGrid.getEngineExportUrl('CustomExport', 'tabs');
             });
         });

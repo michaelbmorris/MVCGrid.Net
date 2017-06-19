@@ -1,13 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T1"></typeparam>
     public class QueryResult<T1>
     {
-        public int? TotalRecords { get; set; }
-        public IEnumerable<T1> Items { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public IEnumerable<T1> Items
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? TotalRecords
+        {
+            get;
+            set;
+        }
     }
 }

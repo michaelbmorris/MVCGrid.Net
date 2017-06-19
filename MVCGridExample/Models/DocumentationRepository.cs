@@ -1,28 +1,38 @@
-﻿using FileHelpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using FileHelpers;
 
-namespace MVCGrid.Web.Models
+namespace MvcGrid.Web.Models
 {
     public class DocumentationRepository
     {
-        private readonly static Lazy<List<MethodDocItem>> _documentation =
-           new Lazy<List<MethodDocItem>>(() =>
-           {
-               FileHelperEngine engine = new FileHelperEngine(typeof(MethodDocItem));
+        private static readonly Lazy<List<MethodDocItem>> Documentation =
+            new Lazy<List<MethodDocItem>>(
+                () =>
+                {
+                    var engine = new FileHelperEngine(typeof(MethodDocItem));
 
-               string filename = HttpContext.Current.Server.MapPath("~/App_Data/documentation.csv");
+                    var filename =
+                        HttpContext.Current.Server.MapPath(
+                            "~/App_Data/documentation.csv");
 
-               MethodDocItem[] res = engine.ReadFile(filename) as MethodDocItem[];
+                    var res = engine.ReadFile(filename) as MethodDocItem[];
 
-               return new List<MethodDocItem>(res);
-           });
+                    if (res == null)
+                    {
+                        throw new Exception();
+                    }
+
+                    return new List<MethodDocItem>(res);
+                });
 
         public List<MethodDocItem> GetData(string className)
         {
-            return _documentation.Value.Where(p => p.Class == className).OrderBy(p => p.Order).ToList();
+            return Documentation.Value.Where(p => p.Class == className)
+                .OrderBy(p => p.Order)
+                .ToList();
         }
     }
 
@@ -30,16 +40,16 @@ namespace MVCGrid.Web.Models
     public class MethodDocItem
     {
         public string Class;
-        public int Order;
 
         [FieldQuoted('"', QuoteMode.OptionalForRead, MultilineMode.NotAllow)]
-        public string Return;
+        public string Description;
 
         [FieldQuoted('"', QuoteMode.OptionalForRead, MultilineMode.NotAllow)]
         public string Name;
 
-        [FieldQuoted('"', QuoteMode.OptionalForRead, MultilineMode.NotAllow)]
-        public string Description;
-    }
+        public int Order;
 
+        [FieldQuoted('"', QuoteMode.OptionalForRead, MultilineMode.NotAllow)]
+        public string Return;
+    }
 }

@@ -1,5 +1,4 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Export to CSV";
 }
 
@@ -7,8 +6,11 @@
 
 <div class="container">
     <div class="row">
-        <button class="btn btn-default" id="exportButton">
-            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Export
+        <button class="btn btn-default"
+                id="exportButton">
+            <span aria-hidden="true"
+                  class="glyphicon glyphicon-download-alt">
+            </span> Export
         </button>
     </div>
 </div>
@@ -33,7 +35,9 @@
 </div>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("ExportGrid")</pre>
     </div>
@@ -53,12 +57,13 @@
         function showLoading() {
             $.blockUI();
         }
+
         function hideLoading() {
             $.unblockUI();
         }
 
-        $(function () {
-            $('#exportButton').click(function () {
+        $(function() {
+            $('#exportButton').click(function() {
                 location.href = MVCGrid.getExportUrl('ExportGrid');
             });
         });

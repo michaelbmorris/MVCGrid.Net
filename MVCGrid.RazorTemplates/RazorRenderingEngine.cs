@@ -1,30 +1,26 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RazorEngine;
+﻿using System.IO;
+using System.Web;
+using MvcGrid.Interfaces;
+using MvcGrid.Models;
 using RazorEngine.Templating;
-using System.IO;
 
-namespace MVCGrid.RazorTemplates
+namespace MvcGrid.RazorTemplates
 {
-    public class RazorRenderingEngine : IMVCGridRenderingEngine
+    public class RazorRenderingEngine : IMvcGridRenderingEngine
     {
-        public bool AllowsPaging
-        {
-            get { return true; }
-        }
+        public bool AllowsPaging => true;
 
-        public void PrepareResponse(System.Web.HttpResponse response)
+        public void PrepareResponse(HttpResponse response)
         {
         }
 
-        public void Render(Models.RenderingModel model, Models.GridContext gridContext, System.IO.TextWriter outputStream)
+        public void Render(
+            RenderingModel model,
+            GridContext gridContext,
+            TextWriter outputStream)
         {
             //model.
-            string template = @"
+            var template = @"
 @using MVCGrid.Models
 @helper SortImage(Column col){
     
@@ -150,19 +146,24 @@ namespace MVCGrid.RazorTemplates
         </div>
     </div>
 }
-";//
+"; //
 
-            string templateKey = "Output";
+            var templateKey = "Output";
 
-            var result = RazorEngine.Engine.Razor.RunCompile(template, templateKey, typeof(Models.RenderingModel), model);
+            var result = RazorEngine.Engine.Razor.RunCompile(
+                template,
+                templateKey,
+                typeof(RenderingModel),
+                model);
 
 
             outputStream.Write(result);
-
         }
 
 
-        public void RenderContainer(Models.ContainerRenderingModel model, TextWriter outputStream)
+        public void RenderContainer(
+            ContainerRenderingModel model,
+            TextWriter outputStream)
         {
             outputStream.Write(model.InnerHtmlBlock);
         }

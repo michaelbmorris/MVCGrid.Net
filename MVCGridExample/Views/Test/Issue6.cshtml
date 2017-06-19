@@ -1,7 +1,8 @@
-﻿@using MVCGrid.Web
-
-<br />
-<button id="btnDelete" class="btn btn-danger disabled">Delete</button>
+﻿<br/>
+<button class="btn btn-danger disabled"
+        id="btnDelete">
+    Delete
+</button>
 
 <div class="row">
     <div class="col-md-8">
@@ -14,7 +15,13 @@
             </select> entries
         </label>
     </div>
-    <div class="col-md-4"><label class="pull-right">Search: <input type="search" id="txtGlobalSearch" placeholder=""></label></div>
+    <div class="col-md-4">
+        <label class="pull-right">
+            Search: <input id="txtGlobalSearch"
+                           placeholder=""
+                           type="search">
+        </label>
+    </div>
 </div>
 @Html.MVCGrid("Issue6Grid")
 
@@ -24,13 +31,13 @@
     <script type="text/javascript">
 
 
-        $(function () {
+        $(function() {
 
-            $('#selPageSize').change(function () {
+            $('#selPageSize').change(function() {
                 MVCGrid.setPageSize('Issue6Grid', $('#selPageSize').val());
             });
 
-            $('#txtGlobalSearch').keyup(function () {
+            $('#txtGlobalSearch').keyup(function() {
                 MVCGrid.setAdditionalQueryOptions('Issue6Grid', { globalsearch: $('#txtGlobalSearch').val() });
             });
 
@@ -39,30 +46,33 @@
 
         });
 
-        $(function () {
+        $(function() {
             //Multi Select
-            $('body').on("click", ".select", function () {
-                $('#btnDelete').addClass('disabled');
-                $('.select:checked').each(function () {
-                    $('#btnDelete').removeClass('disabled');
-                });
-            });
-
-            $('body').on("click", "#chkselectall", function (e) {
-                if ($(this).is(':checked')) {
-                    //alert('test');
-                    $('.select').each(function () {
-                        $(this).prop('checked', true);
+            $('body').on("click",
+                ".select",
+                function() {
+                    $('#btnDelete').addClass('disabled');
+                    $('.select:checked').each(function() {
                         $('#btnDelete').removeClass('disabled');
                     });
-                }
-                else {
-                    $('.select').each(function () {
-                        $(this).prop('checked', false);
-                        $('#btnDelete').addClass('disabled');
-                    });
-                }
-            });
+                });
+
+            $('body').on("click",
+                "#chkselectall",
+                function(e) {
+                    if ($(this).is(':checked')) {
+                        //alert('test');
+                        $('.select').each(function() {
+                            $(this).prop('checked', true);
+                            $('#btnDelete').removeClass('disabled');
+                        });
+                    } else {
+                        $('.select').each(function() {
+                            $(this).prop('checked', false);
+                            $('#btnDelete').addClass('disabled');
+                        });
+                    }
+                });
         });
     </script>
 }

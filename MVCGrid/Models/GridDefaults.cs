@@ -1,14 +1,19 @@
-﻿using MVCGrid.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
+using MvcGrid.Interfaces;
+using MvcGrid.Templating;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
-    public class GridDefaults : IMVCGridDefinition
+    /// <summary>
+    /// 
+    /// </summary>
+    public class GridDefaults : IMvcGridDefinition
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public GridDefaults()
         {
             PreloadData = true;
@@ -27,94 +32,312 @@ namespace MVCGrid.Models
             ClientSideLoadingCompleteFunctionName = null;
             Filtering = false;
             //RenderingEngine = typeof(MVCGrid.Rendering.BootstrapRenderingEngine);
-            TemplatingEngine = typeof(MVCGrid.Templating.SimpleTemplatingEngine);
+            TemplatingEngine = typeof(SimpleTemplatingEngine);
             AdditionalSettings = new Dictionary<string, object>();
-            RenderingMode = Models.RenderingMode.RenderingEngine;
+            RenderingMode = RenderingMode.RenderingEngine;
             ViewPath = "~/Views/MVCGrid/_Grid.cshtml";
             ContainerViewPath = null;
-            ErrorMessageHtml= @"<div class=""alert alert-warning"" role=""alert"">There was a problem loading the grid.</div>";
+            ErrorMessageHtml =
+                @"<div class=""alert alert-warning"" role=""alert"">There was a problem loading the grid.</div>";
             AdditionalQueryOptionNames = new HashSet<string>();
             PageParameterNames = new HashSet<string>();
             AllowChangingPageSize = false;
             MaxItemsPerPage = null;
-            AuthorizationType = Models.AuthorizationType.AllowAnonymous;
+            AuthorizationType = AuthorizationType.AllowAnonymous;
 
-            RenderingEngines = new ProviderSettingsCollection();
-            RenderingEngines.Add(new ProviderSettings("BootstrapRenderingEngine", "MVCGrid.Rendering.BootstrapRenderingEngine, MVCGrid"));
-            RenderingEngines.Add(new ProviderSettings("Export", "MVCGrid.Rendering.CsvRenderingEngine, MVCGrid"));
+            RenderingEngines = new ProviderSettingsCollection
+            {
+                new ProviderSettings(
+                    "BootstrapRenderingEngine",
+                    "MVCGrid.Rendering.BootstrapRenderingEngine, MVCGrid"),
+                new ProviderSettings(
+                    "Export",
+                    "MVCGrid.Rendering.CsvRenderingEngine, MVCGrid")
+            };
+
             DefaultRenderingEngineName = "BootstrapRenderingEngine";
         }
 
-        public bool PreloadData { get; set; }
-        public bool QueryOnPageLoad { get; set; }
-        public bool Paging { get; set; }
-        public int ItemsPerPage { get; set; }
-        public bool Sorting { get; set; }
-        public string DefaultSortColumn { get; set; }
-        public SortDirection DefaultSortDirection { get; set; }
-
-        public string NoResultsMessage { get; set; }
-        public string NextButtonCaption { get; set; }
-        public string PreviousButtonCaption { get; set; }
-        public string SummaryMessage { get; set; }
-        public string ProcessingMessage { get; set; }
-
-        public string ClientSideLoadingMessageFunctionName { get; set; }
-        public string ClientSideLoadingCompleteFunctionName { get; set; }
-        public bool Filtering { get; set; }
-
-        [Obsolete("RenderingEngine is obsolete. Please user RenderingEngines and DefaultRenderingEngineName")]
-        public Type RenderingEngine {
-            get
-            {
-                if (RenderingEngines[DefaultRenderingEngineName] == null)
-                {
-                    return null;
-                }
-                string typeName = RenderingEngines[DefaultRenderingEngineName].Type;
-
-                Type t = Type.GetType(typeName, true);
-                return t;
-            }
-            set {
-                string fullyQualifiedName = value.AssemblyQualifiedName;
-                string name = value.Name;
-
-                RenderingEngines.Add(new ProviderSettings(name, fullyQualifiedName));
-                DefaultRenderingEngineName = name;
-            }
-        }
-
-        public Type TemplatingEngine { get; set; }
-        public Dictionary<string, object> AdditionalSettings { get; set; }
-        public RenderingMode RenderingMode { get; set; }
-        public string ViewPath { get; set; }
-        public string ContainerViewPath { get; set; }
-        public string QueryStringPrefix { get; set; }
-
-        public IEnumerable<IMVCGridColumn> GetColumns()
+        /// <summary>
+        /// 
+        /// </summary>
+        public HashSet<string> AdditionalQueryOptionNames
         {
-            throw new NotImplementedException();
+            get;
+            set;
         }
 
-        public string ErrorMessageHtml { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, object> AdditionalSettings
+        {
+            get;
+            set;
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool AllowChangingPageSize
+        {
+            get;
+            set;
+        }
 
-        public HashSet<string> AdditionalQueryOptionNames { get; set; }
-        public HashSet<string> PageParameterNames { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public AuthorizationType AuthorizationType
+        {
+            get;
+            set;
+        }
 
-        public bool AllowChangingPageSize { get; set; }
-        public int? MaxItemsPerPage { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ClientSideLoadingCompleteFunctionName
+        {
+            get;
+            set;
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ClientSideLoadingMessageFunctionName
+        {
+            get;
+            set;
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ContainerViewPath
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string DefaultRenderingEngineName
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string DefaultSortColumn
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SortDirection DefaultSortDirection
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ErrorMessageHtml
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Filtering
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="name"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
         public T GetAdditionalSetting<T>(string name, T defaultValue)
         {
             throw new NotImplementedException();
         }
 
-        public AuthorizationType AuthorizationType { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<IMvcGridColumn> GetColumns()
+        {
+            throw new NotImplementedException();
+        }
 
-        public ProviderSettingsCollection RenderingEngines { get; set; }
-        public string DefaultRenderingEngineName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int ItemsPerPage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? MaxItemsPerPage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string NextButtonCaption
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string NoResultsMessage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public HashSet<string> PageParameterNames
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Paging
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PreloadData
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PreviousButtonCaption
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ProcessingMessage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool QueryOnPageLoad
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string QueryStringPrefix
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ProviderSettingsCollection RenderingEngines
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public RenderingMode RenderingMode
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Sorting
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string SummaryMessage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Type TemplatingEngine
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ViewPath
+        {
+            get;
+            set;
+        }
     }
 }

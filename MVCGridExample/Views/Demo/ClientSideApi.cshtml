@@ -1,45 +1,44 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Client-side API";
 }
 
 @section Scripts{
     <script type="text/javascript">
-        $(function () {
-            $('#sortButton').click(function () {
+        $(function() {
+            $('#sortButton').click(function() {
                 MVCGrid.setSort('Filtering', 'FirstName', 'asc');
             });
 
-            $('#pageButton').click(function () {
+            $('#pageButton').click(function() {
                 MVCGrid.setPage('Filtering', 3);
             });
 
-            $('#filterButton').click(function () {
+            $('#filterButton').click(function() {
                 MVCGrid.setFilters('Filtering', { LastName: 'Smith' });
             });
 
-            $('#pageSizeButton').click(function () {
+            $('#pageSizeButton').click(function() {
                 MVCGrid.setPageSize('Filtering', 50);
             });
 
 
-            $('#sortButtonGet').click(function () {
+            $('#sortButtonGet').click(function() {
                 alert(MVCGrid.getSortColumn('Filtering'));
             });
 
-            $('#pageButtonGet').click(function () {
+            $('#pageButtonGet').click(function() {
                 alert(MVCGrid.getPage('Filtering'));
             });
 
-            $('#filterButtonGet').click(function () {
+            $('#filterButtonGet').click(function() {
                 alert(MVCGrid.getFilters('Filtering').LastName);
             });
 
-            $('#pageSizeButtonGet').click(function () {
+            $('#pageSizeButtonGet').click(function() {
                 alert(MVCGrid.getPageSize('Filtering'));
             });
 
-            $('#reloadGridButton').click(function () {
+            $('#reloadGridButton').click(function() {
                 MVCGrid.reloadGrid('Filtering');
             });
         });
@@ -51,25 +50,51 @@
 
 <div class="container">
     <div class="row">
-        <button class="btn btn-default" id="sortButton">Sort by FirstName</button>
-        <button class="btn btn-default" id="pageButton">Goto Page 3</button>
-        <button class="btn btn-default" id="filterButton">Filter for Smith</button>
-        <button class="btn btn-default" id="pageSizeButton">Page Size to 50</button>
-        <button class="btn btn-default" id="reloadGridButton">Reload Grid</button>
+        <button class="btn btn-default"
+                id="sortButton">
+            Sort by FirstName
+        </button>
+        <button class="btn btn-default"
+                id="pageButton">
+            Goto Page 3
+        </button>
+        <button class="btn btn-default"
+                id="filterButton">
+            Filter for Smith
+        </button>
+        <button class="btn btn-default"
+                id="pageSizeButton">
+            Page Size to 50
+        </button>
+        <button class="btn btn-default"
+                id="reloadGridButton">
+            Reload Grid
+        </button>
     </div>
 
     <p>&nbsp;</p>
 
     <div class="row">
-        <button class="btn btn-default" id="sortButtonGet">Get Sort Column</button>
-        <button class="btn btn-default" id="pageButtonGet">Get Page Number</button>
-        <button class="btn btn-default" id="filterButtonGet">Get Filter</button>
-        <button class="btn btn-default" id="pageSizeButtonGet">Get Page Size</button>
+        <button class="btn btn-default"
+                id="sortButtonGet">
+            Get Sort Column
+        </button>
+        <button class="btn btn-default"
+                id="pageButtonGet">
+            Get Page Number
+        </button>
+        <button class="btn btn-default"
+                id="filterButtonGet">
+            Get Filter
+        </button>
+        <button class="btn btn-default"
+                id="pageSizeButtonGet">
+            Get Page Size
+        </button>
     </div>
 </div>
 
 <p>&nbsp;</p>
-
 
 @Html.MVCGrid("Filtering")
 
@@ -113,13 +138,13 @@
 </div>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("Filtering")</pre>
     </div>
 </div>
-
-
 
 <div class="panel panel-default">
     <div class="panel-heading">View</div>

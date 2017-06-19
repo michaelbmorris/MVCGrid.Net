@@ -1,13 +1,18 @@
-﻿using MVCGrid.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MvcGrid.Models;
 
-namespace MVCGrid.Interfaces
+namespace MvcGrid.Interfaces
 {
-    public interface IMVCGridTemplatingEngine
+    /// <summary>
+    /// 
+    /// </summary>
+    public interface IMvcGridTemplatingEngine
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="template"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         string Process(string template, TemplateModel model);
     }
 }

@@ -1,30 +1,32 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Column Visibility";
 }
 @section head{
     <style type="text/css">
-        .sortable ul{
-            list-style-type:none;
-            list-style:none;
-        }
-        .sortable li{
+        .sortable ul {
             list-style: none;
-            height: 40px;
+            list-style-type: none;
         }
-        .handle{
+
+        .sortable li {
+            height: 40px;
+            list-style: none;
+        }
+
+        .handle {
             cursor: move;
         }
+
         li.sortable-placeholder {
-			border: 1px dashed #CCC;
-			background: none;
-		}
+            background: none;
+            border: 1px dashed #CCC;
+        }
     </style>
 }
 @section scripts{
     <script src="~/Scripts/jquery.sortable.min.js"></script>
     <script type="text/javascript">
-        $(function () {
+        $(function() {
             var html = '';
 
             var colVis = MVCGrid.getColumnVisibility('ColumnVisibilityGrid');
@@ -36,31 +38,30 @@
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>*@
 
-            $.each(colVis, function (colName, col) {
-                html += '<li draggable="true">';
+            $.each(colVis,
+                function(colName, col) {
+                    html += '<li draggable="true">';
 
-                html += '<div class="input-group">';
-                html += '<span class="input-group-addon handle">::</span>';
-                
+                    html += '<div class="input-group">';
+                    html += '<span class="input-group-addon handle">::</span>';
 
-                
 
-                html += '<label class="form-control">';
-                html += '<input type="checkbox" name="cols" value="' + colName + '"';
-                if (col.visible) {
-                    html += ' checked';
-                }
-                if (!col.allow) {
-                    html += ' disabled';
-                }
-                html += '>';
+                    html += '<label class="form-control">';
+                    html += '<input type="checkbox" name="cols" value="' + colName + '"';
+                    if (col.visible) {
+                        html += ' checked';
+                    }
+                    if (!col.allow) {
+                        html += ' disabled';
+                    }
+                    html += '>';
 
-                html += col.headerText;
-                html += "</label>";
-                html += '</div>';
+                    html += col.headerText;
+                    html += "</label>";
+                    html += '</div>';
 
-                html += '</li>';
-            });
+                    html += '</li>';
+                });
             html += '</ul>';
 
             $('#colVisOptions').html(html);
@@ -69,9 +70,9 @@
                 handle: '.handle'
             });
 
-            $('#colVisUpdateButton').click(function () {
+            $('#colVisUpdateButton').click(function() {
                 var jsonData = {};
-                $("input:checkbox[name='cols']:checked").each(function () {
+                $("input:checkbox[name='cols']:checked").each(function() {
                     var columnName = $(this).val();
                     jsonData[columnName] = true;
                 });
@@ -85,30 +86,57 @@
 
 <h2>@ViewBag.Title</h2>
 
-<p>Create your own UI to show/hide or re-order columns based on the data from the client-side api function <code>MVCGrid.getColumnVisibility</code>, and then use the <code>MVCGrid.setColumnVisibility</code> to update the grid.</p>
-<p>In the column definition, set <code>Visible</code> to false and set <code>AllowChangeVisibility</code> to true to allow the column to be displayed.</p>
+<p>
+    Create your own UI to show/hide or re-order columns based on the data from the client-side api function <code>MVCGrid.getColumnVisibility</code>, and then use the <code>MVCGrid.setColumnVisibility</code> to update the grid.
+</p>
+<p>
+    In the column definition, set <code>Visible</code> to false and set <code>AllowChangeVisibility</code> to true to allow the column to be displayed.
+</p>
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<button class="btn btn-lg btn-primary"
+        data-target="#myModal"
+        data-toggle="modal"
+        type="button">
     Show/Hide Fields
 </button>
 
 @Html.MVCGrid("ColumnVisibilityGrid")
 
-
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div aria-hidden="true"
+     aria-labelledby="myModalLabel"
+     class="fade modal"
+     id="myModal"
+     role="dialog"
+     tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Choose Fields</h4>
+                <button aria-label="Close"
+                        class="close"
+                        data-dismiss="modal"
+                        type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title"
+                    id="myModalLabel">
+                    Choose Fields
+                </h4>
             </div>
             <div class="modal-body">
                 <div id="colVisOptions"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id="colVisUpdateButton" class="btn btn-primary">Update</button>
+                <button class="btn btn-default"
+                        data-dismiss="modal"
+                        type="button">
+                    Close
+                </button>
+                <button class="btn btn-primary"
+                        id="colVisUpdateButton"
+                        type="button">
+                    Update
+                </button>
             </div>
         </div>
     </div>

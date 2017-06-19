@@ -1,13 +1,15 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MvcGrid.Interfaces;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
-    public class ColumnDefaults : IMVCGridColumn
+    /// <summary>
+    /// 
+    /// </summary>
+    public class ColumnDefaults : IMvcGridColumn
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public ColumnDefaults()
         {
             ColumnName = null;
@@ -20,13 +22,76 @@ namespace MVCGrid.Models
             AllowChangeVisibility = false;
         }
 
-        public string ColumnName { get; set; }
-        public string HeaderText { get; set; }
-        public bool EnableSorting { get; set; }
-        public bool HtmlEncode { get; set; }
-        public bool EnableFiltering { get; set; }
-        public bool Visible { get; set; }
-        public object SortColumnData { get; set; }
-        public bool AllowChangeVisibility { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool AllowChangeVisibility
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ColumnName
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool EnableFiltering
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool EnableSorting
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string HeaderText
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool HtmlEncode
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object SortColumnData
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Visible
+        {
+            get;
+            set;
+        }
     }
 }

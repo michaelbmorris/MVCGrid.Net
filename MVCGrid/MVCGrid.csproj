@@ -52,13 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Engine\GridEngine.cs" />
-    <Compile Include="Interfaces\IMVCGridRenderingEngine.cs" />
-    <Compile Include="Interfaces\IMVCGridTemplatingEngine.cs" />
+    <Compile Include="Interfaces\IMvcGridRenderingEngine.cs" />
+    <Compile Include="Interfaces\IMvcGridTemplatingEngine.cs" />
     <Compile Include="Models\AuthorizationType.cs" />
     <Compile Include="Models\ColumnDefaults.cs" />
     <Compile Include="Models\ColumnVisibility.cs" />
     <Compile Include="Models\ContainerRenderingModel.cs" />
-    <Compile Include="Models\MVCGridBuilder.cs" />
+    <Compile Include="Models\MvcGridBuilder.cs" />
     <Compile Include="Models\GridColumnBuilder.cs" />
     <Compile Include="Models\GridContext.cs" />
     <Compile Include="Models\RenderingMode.cs" />
@@ -72,17 +72,16 @@
     <Compile Include="Utility\HtmlUtility.cs" />
     <Compile Include="Web\GridRegistration.cs" />
     <Compile Include="Web\HtmlExtensions.cs" />
-    <Compile Include="Interfaces\IMVCGridColumn.cs" />
-    <Compile Include="Interfaces\IMVCGridDefinition.cs" />
+    <Compile Include="Interfaces\IMvcGridColumn.cs" />
+    <Compile Include="Interfaces\IMvcGridDefinition.cs" />
     <Compile Include="Models\GridColumn.cs" />
     <Compile Include="Models\GridDefaults.cs" />
     <Compile Include="Models\QueryResult.cs" />
     <Compile Include="Models\GridDefinition.cs" />
     <Compile Include="Models\SortDirection.cs" />
-    <Compile Include="Web\MVCGridController.cs" />
-    <Compile Include="Web\MVCGridHandler.cs" />
-    <Compile Include="Web\MVCGridHtmlGenerator.cs" />
-    <Compile Include="Web\MVCGridDefinitionTable.cs" />
+    <Compile Include="Web\MvcGridHandler.cs" />
+    <Compile Include="Web\MvcGridHtmlGenerator.cs" />
+    <Compile Include="Web\MvcGridDefinitionTable.cs" />
     <Compile Include="Models\QueryOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\QueryStringParser.cs" />

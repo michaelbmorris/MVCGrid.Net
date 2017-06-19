@@ -1,17 +1,21 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
 @section head{
     <style type="text/css">
-        .dropdown-menu input {margin-top: -4px;}
-        .dropdown-menu label {margin: 0;}
+        .dropdown-menu input {
+            margin-top: -4px;
+        }
+
+        .dropdown-menu label {
+            margin: 0;
+        }
     </style>
 }
 @section scripts{
     <script type="text/javascript">
-        $(function () {
-            $('li').click(function (event) {
+        $(function() {
+            $('li').click(function(event) {
                 event.stopPropagation();
             });
         });
@@ -23,7 +27,7 @@
 
 <p>The primary goal of this project is to provide the core grid functionality, along with a very simple and easy-to-use client-side API to allow you to easily add the additional front-end interaction you need. You can add it to your project very easily and get it running with minimal effort, but it also has the extensibility to customize when needed.</p>
 
-<p>You configure your grids on app start, and provide a function callback to actually query your data.  The library will handle the ajax requests. It will parse and validate the requested options and then pass the QueryOptions to your function to retrieve the data. </p>
+<p>You configure your grids on app start, and provide a function callback to actually query your data. The library will handle the ajax requests. It will parse and validate the requested options and then pass the QueryOptions to your function to retrieve the data. </p>
 
 <h2>Features</h2>
 <ul>
@@ -35,19 +39,14 @@
     <li>Filtering and column visibility support with minimal client-side code</li>
 </ul>
 
-
 <h2>Example</h2>
 
 <div class="panel panel-default">
     <div class="panel-body">
-            
-        @Html.Partial("_MVCGridToolbar", new MVCGridToolbarModel()
+
+        @Html.Partial("_MVCGridToolbar", new MvcGridToolbarModel
         {
-            MVCGridName = "TestGrid",
-            PageSize = true,
-            ColumnVisibility = true,
-            Export = true,
-            GlobalSearch = true
+            MvcGridName = "TestGrid", PageSize = true, ColumnVisibility = true, Export = true, GlobalSearch = true
         })
 
         @Html.MVCGrid("TestGrid")
@@ -75,13 +74,13 @@
 <p class="lead">Below is the only code needed to query the data and display the grid:</p>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("TestGrid")</pre>
     </div>
 </div>
-
-
 
 @*<input type="button" value="Refresh" onclick="MVCGrid.reloadGrid('TestMapping');" />
 <input type="button" value="Export" onclick="location.href = MVCGrid.getExportUrl('TestMapping');" />*@

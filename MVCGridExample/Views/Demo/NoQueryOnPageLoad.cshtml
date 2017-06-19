@@ -1,13 +1,11 @@
-﻿@using MVCGrid.Web
-@using MVCGrid.Web.Models
-@{
+﻿@{
     ViewBag.Title = "Load Grid On Demand";
 }
 @section Scripts{
     <script type="text/javascript">
-        $(function () {
+        $(function() {
 
-            $('#reloadGridButton').click(function () {
+            $('#reloadGridButton').click(function() {
                 MVCGrid.reloadGrid('QPLGrid');
             });
         });
@@ -28,6 +26,9 @@
 MVCGrid.reloadGrid('QPLGrid');
 </pre>
 
-<button class="btn btn-default" id="reloadGridButton">Load Grid</button>
+<button class="btn btn-default"
+        id="reloadGridButton">
+    Load Grid
+</button>
 
 @Html.MVCGrid("QPLGrid")

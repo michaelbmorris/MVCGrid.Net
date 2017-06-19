@@ -1,26 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace MVCGrid.Web.Models
+﻿namespace MvcGrid.Web.Models
 {
-    public class MVCGridToolbarModel
+    public class MvcGridToolbarModel
     {
-        public MVCGridToolbarModel()
+        public MvcGridToolbarModel()
         {
-
         }
 
-        public MVCGridToolbarModel(string gridName)
+        public MvcGridToolbarModel(string gridName)
         {
-            MVCGridName = gridName;
+            MvcGridName = gridName;
         }
 
-        public string MVCGridName { get; set; }
-        public bool PageSize { get; set; }
-        public bool ColumnVisibility { get; set; }
-        public bool Export { get; set; }
-        public bool GlobalSearch { get; set; }
+        public bool ColumnVisibility
+        {
+            get;
+            set;
+        }
+
+        public bool Export
+        {
+            get;
+            set;
+        }
+
+        public bool GlobalSearch
+        {
+            get;
+            set;
+        }
+
+        public string MvcGridName
+        {
+            get;
+            set;
+        }
+
+        public bool PageSize
+        {
+            get;
+            set;
+        }
     }
 }

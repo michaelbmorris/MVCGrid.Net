@@ -1,32 +1,33 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
 using System.Web;
+using MvcGrid.Interfaces;
+using MvcGrid.Models;
 
-namespace MVCGrid.Web.Models
+namespace MvcGrid.Web.Models
 {
-    public class TabDelimitedRenderingEngine : IMVCGridRenderingEngine
+    public class TabDelimitedRenderingEngine : IMvcGridRenderingEngine
     {
-        public bool AllowsPaging
-        {
-            get { return false; }
-        }
+        public bool AllowsPaging => false;
 
         public void PrepareResponse(HttpResponse httpResponse)
         {
             httpResponse.Clear();
             httpResponse.ContentType = "text/tab-separated-values";
-            httpResponse.AddHeader("content-disposition", "attachment; filename=\"" + "export" + ".tsv\"");
+            httpResponse.AddHeader(
+                "content-disposition",
+                "attachment; filename=\"" + "export" + ".tsv\"");
             httpResponse.BufferOutput = false;
         }
 
-        public void Render(MVCGrid.Models.RenderingModel model, MVCGrid.Models.GridContext gridContext, System.IO.TextWriter outputStream)
+        public void Render(
+            RenderingModel model,
+            GridContext gridContext,
+            TextWriter outputStream)
         {
             var sw = outputStream;
 
-            StringBuilder sbHeaderRow = new StringBuilder();
+            var sbHeaderRow = new StringBuilder();
             foreach (var col in model.Columns)
             {
                 if (sbHeaderRow.Length != 0)
@@ -35,12 +36,13 @@ namespace MVCGrid.Web.Models
                 }
                 sbHeaderRow.Append(Encode(col.Name));
             }
+
             sbHeaderRow.AppendLine();
             sw.Write(sbHeaderRow.ToString());
 
             foreach (var item in model.Rows)
             {
-                StringBuilder sbRow = new StringBuilder();
+                var sbRow = new StringBuilder();
                 foreach (var col in model.Columns)
                 {
                     var cell = item.Cells[col.Name];
@@ -50,18 +52,25 @@ namespace MVCGrid.Web.Models
                         sbRow.Append("\t");
                     }
 
-                    string val = cell.PlainText;
+                    var val = cell.PlainText;
 
                     sbRow.Append(Encode(val));
                 }
+
                 sbRow.AppendLine();
                 sw.Write(sbRow.ToString());
             }
         }
 
+        public void RenderContainer(
+            ContainerRenderingModel model,
+            TextWriter outputStream)
+        {
+        }
+
         private string Encode(string s)
         {
-            if (String.IsNullOrWhiteSpace(s))
+            if (string.IsNullOrWhiteSpace(s))
             {
                 return "";
             }
@@ -72,10 +81,6 @@ namespace MVCGrid.Web.Models
             }
 
             return s;
-        }
-
-        public void RenderContainer(MVCGrid.Models.ContainerRenderingModel model, System.IO.TextWriter outputStream)
-        {
         }
     }
 }

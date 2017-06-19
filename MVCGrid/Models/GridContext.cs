@@ -1,64 +1,100 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web;
+using System.Web.Mvc;
+using MvcGrid.Interfaces;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
+    /// <summary>
+    /// </summary>
     public class GridContext
     {
+        /// <summary>
+        /// </summary>
         public GridContext()
         {
             Items = new Dictionary<string, object>();
         }
-        internal IMVCGridDefinition GridDefinition { get; set; }
-        public HttpContext CurrentHttpContext { get; set; }
-        public QueryOptions QueryOptions { get; set; }
-        public System.Web.Mvc.UrlHelper UrlHelper { get; set; }
-        public string GridName { get; set; }
 
-        public IEnumerable<IMVCGridColumn> GetVisibleColumns()
+        /// <summary>
+        /// </summary>
+        public HttpContext CurrentHttpContext
         {
-            List<IMVCGridColumn> visibleColumns = new List<IMVCGridColumn>();
+            get;
+            set;
+        }
 
-            var gridColumns = this.GridDefinition.GetColumns();
+        /// <summary>
+        /// </summary>
+        public string GridName
+        {
+            get;
+            set;
+        }
 
-            if (QueryOptions.ColumnVisibility == null || QueryOptions.ColumnVisibility.Count == 0)
+        /// <summary>
+        ///     Arbitrary settings for this context
+        /// </summary>
+        public Dictionary<string, object> Items
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// </summary>
+        public QueryOptions QueryOptions
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// </summary>
+        public UrlHelper UrlHelper
+        {
+            get;
+            set;
+        }
+
+        internal IMvcGridDefinition GridDefinition
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<IMvcGridColumn> GetVisibleColumns()
+        {
+            var visibleColumns = new List<IMvcGridColumn>();
+
+            var gridColumns = GridDefinition.GetColumns();
+
+            if (QueryOptions.ColumnVisibility == null
+                || QueryOptions.ColumnVisibility.Count == 0)
             {
-                foreach (var col in gridColumns)
-                {
-                    if (col.Visible)
-                    {
-                        visibleColumns.Add(col);
-                    }
-                }
+                visibleColumns.AddRange(gridColumns.Where(col => col.Visible));
             }
             else
             {
-                foreach (var colVis in QueryOptions.ColumnVisibility)
-                {
-                    var gridColumn = gridColumns.SingleOrDefault(p => p.ColumnName == colVis.ColumnName);
-
-                    if (colVis.Visible)
-                    {
-                        visibleColumns.Add(gridColumn);
-                    }
-                }
+                visibleColumns.AddRange(
+                    from colVis in QueryOptions.ColumnVisibility
+                    let gridColumn =
+                    gridColumns.SingleOrDefault(
+                        p => p.ColumnName == colVis.ColumnName)
+                    where colVis.Visible
+                    select gridColumn);
             }
 
             if (visibleColumns.Count == 0)
             {
-                visibleColumns.Add(this.GridDefinition.GetColumns().ElementAt(0));
+                visibleColumns.Add(GridDefinition.GetColumns().ElementAt(0));
             }
 
             return visibleColumns;
         }
-
-        /// <summary>
-        /// Arbitrary settings for this context
-        /// </summary>
-        public Dictionary<string, object> Items { get; set; }
     }
 }

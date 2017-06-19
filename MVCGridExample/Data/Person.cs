@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVCGrid.Web.Data
+namespace MvcGrid.Web.Data
 {
     using System;
     using System.Collections.Generic;

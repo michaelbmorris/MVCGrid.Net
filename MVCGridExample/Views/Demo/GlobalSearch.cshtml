@@ -1,5 +1,4 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Global Search";
 }
 @section head{
@@ -25,39 +24,30 @@
     Note, when using the <code>AdditionalQueryOptions</code>, you must specify the names you are going to use in the grid config. See the code sample below.
 </p>
 
-<p>Or use <a href="/documentation#ClientSideBindings">client-side bindings</a>, as is done below:</p>
+<p>
+    Or use <a href="/documentation#ClientSideBindings">client-side bindings</a>, as is done below:
+</p>
 
 <p>&nbsp;</p>
-
-
-
 
 <div class="panel panel-default">
     <div class="panel-body">
 
-        @Html.Partial("_MVCGridToolbar", new MVCGridToolbarModel()
+        @Html.Partial("_MVCGridToolbar", new MvcGridToolbarModel
         {
-            MVCGridName = "GlobalSearchGrid",
-            PageSize = true,
-            ColumnVisibility = false,
-            Export = false,
-            GlobalSearch = true
+            MvcGridName = "GlobalSearchGrid", PageSize = true, ColumnVisibility = false, Export = false, GlobalSearch = true
         })
 
         @Html.MVCGrid("GlobalSearchGrid")
     </div>
 </div>
 
+<h3>Code</h3>
 
-
-
-
-        <h3>Code</h3>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">View (Uses client-side bindings)</div>
-            <div class="panel-body">
-                <pre class="brush: js">
+<div class="panel panel-default">
+    <div class="panel-heading">View (Uses client-side bindings)</div>
+    <div class="panel-body">
+        <pre class="brush: js">
 &lt;div class=&quot;panel panel-default&quot;&gt;
     &lt;div class=&quot;panel-body&quot;&gt;
         @@Html.Partial(&quot;_MVCGridToolbar&quot;, new MVCGridToolbarModel()
@@ -72,12 +62,14 @@
     &lt;/div&gt;
 &lt;/div&gt;
         </pre>
-            </div>
-        </div>
+    </div>
+</div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
-            <div class="panel-body">
-                <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("GlobalSearchGrid")</pre>
-            </div>
-        </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
+    <div class="panel-body">
+        <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("GlobalSearchGrid")</pre>
+    </div>
+</div>

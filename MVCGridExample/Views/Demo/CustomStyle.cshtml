@@ -1,42 +1,56 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Custom Style";
 }
 
 @section head{
     <style type="text/css">
-        table.customStyleTable{
+        table.customStyleTable {
             width: 100%;
         }
+
         /*table.customStyleTable tr th{
             background-color: blue;
-        }*/        
-        table.customStyleTable tr:nth-child(odd) { background-color:#fff; }
-        table.customStyleTable tr:nth-child(even) { background-color:#9cf; }
-        table.customStyleTable thead th { background: #fc9; }
+        }*/
 
-        .pageItem{
-            display: inline; float: left; margin: 2px;
+        table.customStyleTable tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table.customStyleTable tr:nth-child(even) {
+            background-color: #9cf;
+        }
+
+        table.customStyleTable thead th {
+            background: #fc9;
+        }
+
+        .pageItem {
+            display: inline;
+            float: left;
+            margin: 2px;
         }
     </style>
 }
 
 <h2>@ViewBag.Title</h2>
 
-<p>To use a custom style for your table, you can implement the <code>IMVCGridRenderingEngine</code> to create your table. Everything you need to populate your table will be given to you in the <code>RenderingModel</code> object.
-    Once you have the implementation, set the property on your grid definition to use your new rendering engine: <code>gridDef.DefaultRenderingEngine = typeof(CustomHtmlRenderingEngine);</code>.  This same method could also be used to create custom export formats.
-    </p>
+<p>
+    To use a custom style for your table, you can implement the <code>IMVCGridRenderingEngine</code> to create your table. Everything you need to populate your table will be given to you in the <code>RenderingModel</code> object.
+    Once you have the implementation, set the property on your grid definition to use your new rendering engine: <code>gridDef.DefaultRenderingEngine = typeof(CustomHtmlRenderingEngine);</code>. This same method could also be used to create custom export formats.
+</p>
 
 @Html.MVCGrid("CustomStyle")
 
-<br /><br />
+<br/><br/>
 
 <h3>Code</h3>
 
 <div class="panel panel-default">
-    <div class="panel-heading"><strong>CustomHtmlRenderingEngine.cs</strong></div>
+    <div class="panel-heading">
+        <strong>CustomHtmlRenderingEngine.cs</strong>
+    </div>
     <div class="panel-body">
-<pre class="brush: csharp">
+        <pre class="brush: csharp">
     public class CustomHtmlRenderingEngine : IMVCGridRenderingEngine
 {
     public bool AllowsPaging

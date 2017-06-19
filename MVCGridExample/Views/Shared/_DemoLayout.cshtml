@@ -1,17 +1,17 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section head{
-@RenderSection("head", required: false)
+    @RenderSection("head", required: false)
 }
 
 <p>&nbsp;</p>
 
 <div class="row">
-    <div class="col-md-3" role="complementary">
+    <div class="col-md-3"
+         role="complementary">
         <ul>
-            <li>@Html.ActionLink("Basic Grid","index")</li>
+            <li>@Html.ActionLink("Basic Grid", "index")</li>
             <li>@Html.ActionLink("Sorting", "sorting")</li>
             <li>@Html.ActionLink("Paging", "paging")</li>
             <li>@Html.ActionLink("Using with Dependency Injection", "dependencyinjection")</li>
@@ -35,14 +35,14 @@
             <li>@Html.ActionLink("Load Grid On Demand", "NoQueryOnPageLoad")</li>
             <li>@Html.ActionLink("Toolbar", "toolbar")</li>
             <li>@Html.ActionLink("Localization", "localization")</li>
-            
 
         </ul>
     </div>
-    <div class="col-md-9" role="main">
+    <div class="col-md-9"
+         role="main">
         @RenderBody()
     </div>
 </div>
 @section Scripts{
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
 }

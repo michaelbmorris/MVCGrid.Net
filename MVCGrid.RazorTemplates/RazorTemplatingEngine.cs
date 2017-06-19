@@ -1,21 +1,23 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RazorEngine;
+﻿using MvcGrid.Interfaces;
+using MvcGrid.Models;
 using RazorEngine.Templating;
 
-namespace MVCGrid.RazorTemplates
+namespace MvcGrid.RazorTemplates
 {
-    public class RazorTemplatingEngine : IMVCGridTemplatingEngine
+    public class RazorTemplatingEngine : IMvcGridTemplatingEngine
     {
-        public string Process(string template, Models.TemplateModel model)
+        public string Process(string template, TemplateModel model)
         {
-            string templateKey = String.Format("{0}_{1}", model.GridContext.GridName, model.GridColumn.ColumnName);
+            var templateKey = string.Format(
+                "{0}_{1}",
+                model.GridContext.GridName,
+                model.GridColumn.ColumnName);
 
-            var result = RazorEngine.Engine.Razor.RunCompile(template, templateKey, typeof(Models.TemplateModel), model);
+            var result = RazorEngine.Engine.Razor.RunCompile(
+                template,
+                templateKey,
+                typeof(TemplateModel),
+                model);
 
             return result;
         }

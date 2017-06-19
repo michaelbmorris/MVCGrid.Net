@@ -1,41 +1,45 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Web.Mvc;
+using System.Web.Compilation;
 
-namespace MVCGrid.Web
+namespace MvcGrid.Web
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class GridRegistration
     {
-        public abstract void RegisterGrids();
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static void RegisterAllGrids()
         {
-            var gridRegistrationTypes = FilterTypesInAssemblies(IsGridRegistrationType);
+            var gridRegistrationTypes =
+                FilterTypesInAssemblies(IsGridRegistrationType);
 
-            foreach (Type gridRegistrationType in gridRegistrationTypes)
+            foreach (var gridRegistrationType in gridRegistrationTypes)
             {
-                GridRegistration registration = (GridRegistration)Activator.CreateInstance(gridRegistrationType);
+                var registration =
+                    (GridRegistration) Activator.CreateInstance(
+                        gridRegistrationType);
                 registration.RegisterGrids();
             }
         }
 
-        private static bool IsGridRegistrationType(Type type)
-        {
-            return
-                typeof(GridRegistration).IsAssignableFrom(type) &&
-                type.GetConstructor(Type.EmptyTypes) != null;
-        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void RegisterGrids();
 
-        private static IEnumerable<Type> FilterTypesInAssemblies(Predicate<Type> predicate)
+        private static IEnumerable<Type> FilterTypesInAssemblies(
+            Predicate<Type> predicate)
         {
             // Go through all assemblies referenced by the application and search for types matching a predicate
             IEnumerable<Type> typesSoFar = Type.EmptyTypes;
 
-            ICollection assemblies = System.Web.Compilation.BuildManager.GetReferencedAssemblies();
+            var assemblies = BuildManager.GetReferencedAssemblies();
             foreach (Assembly assembly in assemblies)
             {
                 Type[] typesInAsm;
@@ -49,12 +53,23 @@ namespace MVCGrid.Web
                 }
                 typesSoFar = typesSoFar.Concat(typesInAsm);
             }
-            return typesSoFar.Where(type => TypeIsPublicClass(type) && predicate(type));
+
+            return typesSoFar.Where(
+                type => TypeIsPublicClass(type) && predicate(type));
+        }
+
+        private static bool IsGridRegistrationType(Type type)
+        {
+            return typeof(GridRegistration).IsAssignableFrom(type)
+                   && type.GetConstructor(Type.EmptyTypes) != null;
         }
 
         private static bool TypeIsPublicClass(Type type)
         {
-            return (type != null && type.IsPublic && type.IsClass && !type.IsAbstract);
+            return type != null
+                   && type.IsPublic
+                   && type.IsClass
+                   && !type.IsAbstract;
         }
     }
 }

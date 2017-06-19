@@ -323,9 +323,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVCGrid\MVCGrid.csproj">
+    <ProjectReference Include="..\MVCGrid\MvcGrid.csproj">
       <Project>{7ee14ade-a4b9-4454-b16a-78b4a5b7d0be}</Project>
-      <Name>MVCGrid</Name>
+      <Name>MvcGrid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

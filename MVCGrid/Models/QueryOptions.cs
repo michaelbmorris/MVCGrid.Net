@@ -1,92 +1,127 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class QueryOptions
     {
-        private object _sortColumnData = null;
+        private object _sortColumnData;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public QueryOptions()
         {
-            Filters = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            AdditionalQueryOptions = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            PageParameters = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            Filters =
+                new Dictionary<string, string>(
+                    StringComparer.OrdinalIgnoreCase);
+            AdditionalQueryOptions =
+                new Dictionary<string, string>(
+                    StringComparer.OrdinalIgnoreCase);
+            PageParameters =
+                new Dictionary<string, string>(
+                    StringComparer.OrdinalIgnoreCase);
             ColumnVisibility = new List<ColumnVisibility>();
         }
 
-        public Dictionary<string, string> AdditionalQueryOptions { get; set; }
-        public Dictionary<string, string> PageParameters { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, string> AdditionalQueryOptions
+        {
+            get;
+            set;
+        }
 
-        public string RenderingEngineName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public List<ColumnVisibility> ColumnVisibility
+        {
+            get;
+            set;
+        }
 
-        public SortDirection SortDirection { get; set; }
-        public string SortColumnName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, string> Filters
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? ItemsPerPage
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? PageIndex
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, string> PageParameters
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string RenderingEngineName
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public object SortColumnData
         {
-            get
-            {
-                if (_sortColumnData == null)
-                {
-                    return SortColumnName;
-                }
-                return _sortColumnData;
-            }
-            set
-            {
-                _sortColumnData = value;
-            }
+            get => _sortColumnData ?? SortColumnName;
+            set => _sortColumnData = value;
         }
 
-        public T GetSortColumnData<T>()
+        /// <summary>
+        /// 
+        /// </summary>
+        public string SortColumnName
         {
-            return (T)SortColumnData;
+            get;
+            set;
         }
 
-        public int? PageIndex { get; set; }
-        public int? ItemsPerPage { get; set; }
-
-        public int? GetLimitOffset()
+        /// <summary>
+        /// 
+        /// </summary>
+        public SortDirection SortDirection
         {
-            if (!ItemsPerPage.HasValue) return null;
-
-            if (!PageIndex.HasValue)
-            {
-                PageIndex = 0;
-            }
-
-            return PageIndex * ItemsPerPage;
+            get;
+            set;
         }
 
-        public int? GetLimitRowcount()
-        {
-            return ItemsPerPage;
-        }
-
-        public Dictionary<string, string> Filters { get; set; }
-
-        public string GetFilterString(string columnName)
-        {
-            if (!Filters.ContainsKey(columnName))
-            {
-                return null;
-            }
-            if (String.IsNullOrWhiteSpace(Filters[columnName]))
-            {
-                return null;
-            }
-            string val = Filters[columnName].Trim();
-
-            if (String.IsNullOrWhiteSpace(val))
-            {
-                return null;
-            }
-
-            return Filters[columnName];
-        }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public string GetAdditionalQueryOptionString(string name)
         {
             if (!AdditionalQueryOptions.ContainsKey(name))
@@ -97,16 +132,66 @@ namespace MVCGrid.Models
             {
                 return null;
             }
-            string val = AdditionalQueryOptions[name].Trim();
 
-            if (String.IsNullOrWhiteSpace(val))
+            var val = AdditionalQueryOptions[name].Trim();
+
+            return string.IsNullOrWhiteSpace(val) ? null : val;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="columnName"></param>
+        /// <returns></returns>
+        public string GetFilterString(string columnName)
+        {
+            if (!Filters.ContainsKey(columnName))
+            {
+                return null;
+            }
+            if (string.IsNullOrWhiteSpace(Filters[columnName]))
             {
                 return null;
             }
 
-            return val;
+            var val = Filters[columnName].Trim();
+
+            return string.IsNullOrWhiteSpace(val) ? null : Filters[columnName];
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int? GetLimitOffset()
+        {
+            if (!ItemsPerPage.HasValue)
+            {
+                return null;
+            }
+
+            if (!PageIndex.HasValue)
+            {
+                PageIndex = 0;
+            }
+
+            return PageIndex * ItemsPerPage;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int? GetLimitRowcount()
+        {
+            return ItemsPerPage;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public string GetPageParameterString(string name)
         {
             if (!PageParameters.ContainsKey(name))
@@ -117,16 +202,20 @@ namespace MVCGrid.Models
             {
                 return null;
             }
-            string val = PageParameters[name].Trim();
 
-            if (String.IsNullOrWhiteSpace(val))
-            {
-                return null;
-            }
+            var val = PageParameters[name].Trim();
 
-            return val;
+            return string.IsNullOrWhiteSpace(val) ? null : val;
         }
 
-        public List<ColumnVisibility> ColumnVisibility { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public T GetSortColumnData<T>()
+        {
+            return (T) SortColumnData;
+        }
     }
 }

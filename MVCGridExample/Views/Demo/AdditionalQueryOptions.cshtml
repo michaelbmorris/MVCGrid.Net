@@ -1,19 +1,18 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Additional Query Options";
 }
 
 @section Scripts{
     <script type="text/javascript">
-        $(function () {
+        $(function() {
 
-            $('#searchButton').click(function () {
+            $('#searchButton').click(function() {
                 MVCGrid.setAdditionalQueryOptions('AQOGrid',
-                {
-                    param1: $('#parameter1Textbox').val(),
-                    param2: $('#parameter2Textbox').val(),
-                    param3: $('#parameter3Textbox').val()
-                });
+                    {
+                        param1: $('#parameter1Textbox').val(),
+                        param2: $('#parameter2Textbox').val(),
+                        param3: $('#parameter3Textbox').val()
+                    });
             });
         });
     </script>
@@ -28,37 +27,59 @@
     This will be sent to the server-side with the ajax call and can be accessed in the <code>RetrieveDataMethod</code>.
 </p>
 
-<p>The below example does not use the parameters but simply shows you how to pass the data that you can access in the <code>RetrieveDataMethod</code>.</p>
+<p>
+    The below example does not use the parameters but simply shows you how to pass the data that you can access in the <code>RetrieveDataMethod</code>.
+</p>
 
-<p>The below example sets the values on the client side using the client side api, but it can also be done using <a href="/documentation#ClientSideBindings">client-side bindings</a></p>
+<p>
+    The below example sets the values on the client side using the client side api, but it can also be done using <a href="/documentation#ClientSideBindings">client-side bindings</a>
+</p>
 
 <div class="well">
     <div class="form-horizontal">
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-4 control-label">Parameter1</label>
+            <label class="col-sm-4 control-label"
+                   for="inputEmail3">
+                Parameter1
+            </label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="parameter1Textbox">
+                <input class="form-control"
+                       id="parameter1Textbox"
+                       type="text">
             </div>
         </div>
 
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-4 control-label">Parameter2</label>
+            <label class="col-sm-4 control-label"
+                   for="inputEmail3">
+                Parameter2
+            </label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="parameter2Textbox">
+                <input class="form-control"
+                       id="parameter2Textbox"
+                       type="text">
             </div>
         </div>
 
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-4 control-label">Parameter3</label>
+            <label class="col-sm-4 control-label"
+                   for="inputEmail3">
+                Parameter3
+            </label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="parameter3Textbox">
+                <input class="form-control"
+                       id="parameter3Textbox"
+                       type="text">
             </div>
         </div>
 
-
         <div class="form-group">
-            <div class="col-sm-offset-4 col-sm-6">
-                <button type="button" id="searchButton" class="btn btn-default">Search</button>
+            <div class="col-sm-6 col-sm-offset-4">
+                <button class="btn btn-default"
+                        id="searchButton"
+                        type="button">
+                    Search
+                </button>
             </div>
         </div>
     </div>
@@ -96,7 +117,9 @@
 </div>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("AQOGrid")</pre>
     </div>

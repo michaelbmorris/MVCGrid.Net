@@ -1,31 +1,61 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using MvcGrid.Interfaces;
 
-namespace MVCGrid.Models
+namespace MvcGrid.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class TemplateModel
     {
-        public TemplateModel()
+        /// <summary>
+        /// 
+        /// </summary>
+        public UrlHelper Url => GridContext.UrlHelper;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public IMvcGridColumn GridColumn
         {
+            get;
+            set;
         }
 
-        public string Value { get; set; }
-
-        public IMVCGridColumn GridColumn { get; set; }
-        public dynamic Item { get; set; }
-        public GridContext GridContext { get; set; }
-        public Row Row { get; set; }
-
-        public UrlHelper Url
+        /// <summary>
+        /// 
+        /// </summary>
+        public GridContext GridContext
         {
-            get
-            {
-                return GridContext.UrlHelper;
-            }
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public dynamic Item
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Row Row
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Value
+        {
+            get;
+            set;
         }
     }
 }

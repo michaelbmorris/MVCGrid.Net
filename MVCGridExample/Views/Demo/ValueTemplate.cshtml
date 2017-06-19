@@ -1,5 +1,4 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Value Template";
 }
 
@@ -31,7 +30,9 @@ ValueTemplate = &quot;You can access any of the item&#39;s properties: &lt;stron
 @Html.MVCGrid("ValueTemplate")
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("ValueTemplate")</pre>
     </div>

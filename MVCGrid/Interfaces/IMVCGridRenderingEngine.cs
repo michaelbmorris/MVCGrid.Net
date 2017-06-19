@@ -1,19 +1,46 @@
-﻿using MVCGrid.Models;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Web;
+using MvcGrid.Models;
 
-namespace MVCGrid.Interfaces
+namespace MvcGrid.Interfaces
 {
-    public interface IMVCGridRenderingEngine
+    /// <summary>
+    /// 
+    /// </summary>
+    public interface IMvcGridRenderingEngine
     {
-        bool AllowsPaging { get; }
+        /// <summary>
+        /// 
+        /// </summary>
+        bool AllowsPaging
+        {
+            get;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="response"></param>
         void PrepareResponse(HttpResponse response);
-        void Render(RenderingModel model, GridContext gridContext, TextWriter outputStream);
-        void RenderContainer(ContainerRenderingModel model, TextWriter outputStream);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="gridContext"></param>
+        /// <param name="outputStream"></param>
+        void Render(
+            RenderingModel model,
+            GridContext gridContext,
+            TextWriter outputStream);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="outputStream"></param>
+        void RenderContainer(
+            ContainerRenderingModel model,
+            TextWriter outputStream);
     }
 }

@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MVCGrid.Models
+﻿namespace MvcGrid.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ContainerRenderingModel
     {
-        public string InnerHtmlBlock { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string InnerHtmlBlock
+        {
+            get;
+            set;
+        }
     }
 }

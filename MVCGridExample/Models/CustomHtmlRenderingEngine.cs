@@ -1,33 +1,31 @@
-﻿using MVCGrid.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
 using System.Web;
+using MvcGrid.Interfaces;
+using MvcGrid.Models;
 
-namespace MVCGrid.Web.Models
+namespace MvcGrid.Web.Models
 {
-    public class CustomHtmlRenderingEngine : IMVCGridRenderingEngine
+    public class CustomHtmlRenderingEngine : IMvcGridRenderingEngine
     {
-        public bool AllowsPaging
-        {
-            get { return true; }
-        }
+        public bool AllowsPaging => true;
 
         public void PrepareResponse(HttpResponse response)
         {
         }
 
-        public void Render(MVCGrid.Models.RenderingModel model, MVCGrid.Models.GridContext gridContext, System.IO.TextWriter outputStream)
+        public void Render(
+            RenderingModel model,
+            GridContext gridContext,
+            TextWriter outputStream)
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             sb.Append("<table class='customStyleTable'><thead><tr>");
             foreach (var col in model.Columns)
             {
                 sb.Append("<th");
-                if (!String.IsNullOrWhiteSpace(col.Onclick))
+                if (!string.IsNullOrWhiteSpace(col.Onclick))
                 {
                     sb.AppendFormat(" onclick='{0}'", col.Onclick);
                 }
@@ -39,25 +37,27 @@ namespace MVCGrid.Web.Models
                 {
                     switch (col.SortIconDirection.Value)
                     {
-                        case MVCGrid.Models.SortDirection.Asc:
+                        case SortDirection.Asc:
                             sb.Append(" (Ascending)");
                             break;
-                        case MVCGrid.Models.SortDirection.Dsc:
+                        case SortDirection.Dsc:
                             sb.Append(" (Descending)");
                             break;
-                        case MVCGrid.Models.SortDirection.Unspecified:
+                        case SortDirection.Unspecified:
                             sb.Append(" (Sort)");
                             break;
                     }
                 }
+
                 sb.Append("</th>");
             }
+
             sb.Append("</tr></thead><tbody>");
 
             foreach (var row in model.Rows)
             {
                 sb.Append("<tr");
-                if (!String.IsNullOrWhiteSpace(row.CalculatedCssClass))
+                if (!string.IsNullOrWhiteSpace(row.CalculatedCssClass))
                 {
                     sb.AppendFormat(" class='{0}'", row.CalculatedCssClass);
                 }
@@ -68,9 +68,11 @@ namespace MVCGrid.Web.Models
                     var cell = row.Cells[col.Name];
 
                     sb.Append("<td");
-                    if (!String.IsNullOrWhiteSpace(cell.CalculatedCssClass))
+                    if (!string.IsNullOrWhiteSpace(cell.CalculatedCssClass))
                     {
-                        sb.AppendFormat(" class='{0}'", cell.CalculatedCssClass);
+                        sb.AppendFormat(
+                            " class='{0}'",
+                            cell.CalculatedCssClass);
                     }
                     sb.Append(">");
 
@@ -80,6 +82,7 @@ namespace MVCGrid.Web.Models
 
                 sb.Append("</tr>");
             }
+
             sb.Append("</tbody></table>");
 
             if (model.PagingModel != null)
@@ -88,9 +91,13 @@ namespace MVCGrid.Web.Models
                 foreach (var pl in model.PagingModel.PageLinks)
                 {
                     sb.Append("<li class='pageItem'>");
-                    sb.AppendFormat("<a href='#' onclick='{0}'>{1}</a>", pl.Value, pl.Key);
+                    sb.AppendFormat(
+                        "<a href='#' onclick='{0}'>{1}</a>",
+                        pl.Value,
+                        pl.Key);
                     sb.Append("</li>");
                 }
+
                 sb.Append("</ul></div>");
             }
 
@@ -100,7 +107,9 @@ namespace MVCGrid.Web.Models
         }
 
 
-        public void RenderContainer(MVCGrid.Models.ContainerRenderingModel model, TextWriter outputStream)
+        public void RenderContainer(
+            ContainerRenderingModel model,
+            TextWriter outputStream)
         {
             outputStream.Write(model.InnerHtmlBlock);
         }

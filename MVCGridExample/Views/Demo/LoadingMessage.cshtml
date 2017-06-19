@@ -1,12 +1,10 @@
-﻿@using MVCGrid.Web
-@{
+﻿@{
     ViewBag.Title = "Custom Loading Message";
 }
 
 <h2>@ViewBag.Title</h2>
 
 @Html.MVCGrid("CustomLoading")
-
 
 <h3>Code</h3>
 
@@ -28,13 +26,13 @@
 </div>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Inside <strong>MVCGridConfig.cs</strong></div>
+    <div class="panel-heading">
+        Inside <strong>MVCGridConfig.cs</strong>
+    </div>
     <div class="panel-body">
         <pre class="brush: csharp">@CodeSnippetHelper.GetCodeSnippet("CustomLoading")</pre>
     </div>
 </div>
-
-
 
 <div class="panel panel-default">
     <div class="panel-heading">View</div>
@@ -50,6 +48,7 @@
         function showLoading() {
             $.blockUI();
         }
+
         function hideLoading() {
             $.unblockUI();
         }

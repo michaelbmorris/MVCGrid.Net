@@ -1,44 +1,58 @@
-﻿using MVCGrid.Engine;
-using MVCGrid.Interfaces;
-using MVCGrid.Models;
-using MVCGrid.Rendering;
-using MVCGrid.Utility;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
+﻿using System.Web;
 using System.Web.Mvc;
+using MvcGrid.Engine;
+using MvcGrid.Interfaces;
 
-namespace MVCGrid.Web
+namespace MvcGrid.Web
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class HtmlExtensions
     {
-        public static IHtmlString MVCGrid(this HtmlHelper helper, string name)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="helper"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static IHtmlString MvcGrid(this HtmlHelper helper, string name)
         {
-            var currentMapping = MVCGridDefinitionTable.GetDefinitionInterface(name);
+            var currentMapping =
+                MvcGridDefinitionTable.GetDefinitionInterface(name);
 
-            return MVCGrid(helper, name, currentMapping, null);
+            return MvcGrid(helper, name, currentMapping, null);
         }
 
-        public static IHtmlString MVCGrid(this HtmlHelper helper, string name, object pageParameters)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="helper"></param>
+        /// <param name="name"></param>
+        /// <param name="pageParameters"></param>
+        /// <returns></returns>
+        public static IHtmlString MvcGrid(
+            this HtmlHelper helper,
+            string name,
+            object pageParameters)
         {
-            var currentMapping = MVCGridDefinitionTable.GetDefinitionInterface(name);
+            var currentMapping =
+                MvcGridDefinitionTable.GetDefinitionInterface(name);
 
-            return MVCGrid(helper, name, currentMapping, pageParameters);
+            return MvcGrid(helper, name, currentMapping, pageParameters);
         }
 
-        internal static IHtmlString MVCGrid(this HtmlHelper helper, string name, IMVCGridDefinition grid, object pageParameters)
+        internal static IHtmlString MvcGrid(
+            this HtmlHelper helper,
+            string name,
+            IMvcGridDefinition grid,
+            object pageParameters)
         {
-            GridEngine ge = new GridEngine();
+            var ge = new GridEngine();
 
-            string html = ge.GetBasePageHtml(helper, name, grid, pageParameters);
+            var html = ge.GetBasePageHtml(helper, name, grid, pageParameters);
 
             return MvcHtmlString.Create(html);
         }
-
-        
     }
 }

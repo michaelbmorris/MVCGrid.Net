@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MVCGrid.Models
+﻿namespace MvcGrid.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum AuthorizationType
     {
+        /// <summary>
+        /// 
+        /// </summary>
         AllowAnonymous,
+        /// <summary>
+        /// 
+        /// </summary>
         Authorized
     }
 }
