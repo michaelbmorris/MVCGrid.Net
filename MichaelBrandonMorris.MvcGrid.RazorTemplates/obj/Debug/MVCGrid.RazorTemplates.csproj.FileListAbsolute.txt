@@ -1,0 +1,14 @@
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\obj\Debug\MVCGrid.RazorTemplates.csprojResolveAssemblyReference.cache
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MVCGrid.RazorTemplates.dll.config
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MVCGrid.RazorTemplates.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MVCGrid.RazorTemplates.pdb
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\RazorEngine.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\System.Web.Razor.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\System.Web.Mvc.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\RazorEngine.xml
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\System.Web.Razor.xml
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\obj\Debug\MVCGrid.RazorTemplates.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\obj\Debug\MVCGrid.RazorTemplates.pdb
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MichaelBrandonMorris.MvcGrid.dll
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MichaelBrandonMorris.MvcGrid.pdb
+C:\Users\morrisb\Source\Repos\MVCGrid.Net\MVCGrid.RazorTemplates\bin\Debug\MichaelBrandonMorris.MvcGrid.xml

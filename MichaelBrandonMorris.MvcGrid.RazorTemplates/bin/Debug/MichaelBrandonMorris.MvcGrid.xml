@@ -1,0 +1,1966 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MichaelBrandonMorris.MvcGrid</name>
+    </assembly>
+    <members>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Engine.GridEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+            
+            </summary>
+            <param name="gridContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+            
+            </summary>
+            <param name="gridContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+            
+            </summary>
+            <param name="gridContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml(System.Web.Mvc.HtmlHelper,System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="helper"></param>
+            <param name="gridName"></param>
+            <param name="grid"></param>
+            <param name="pageParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="renderingEngine"></param>
+            <param name="gridContext"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
+            <summary>
+            
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="gridContext"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
+            <summary>
+            
+            </summary>
+            <param name="template"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName">
+            <summary>
+                A unique name for this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering">
+            <summary>
+                Enables filtering on this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting">
+            <summary>
+                Enables sorting on this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText">
+            <summary>
+                Header text to display for the current column, if different from ColumnName.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode">
+            <summary>
+                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
+                returns HTML.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData">
+            <summary>
+                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible">
+            <summary>
+                Indicates whether column is visible.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility">
+            <summary>
+                Gets or sets a value indicating whether the column visibility can be changed.
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData">
+            <summary>
+                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix">
+            <summary>
+                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames">
+            <summary>
+                Names of additional parameters that can be passed from client to server side
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings">
+            <summary>
+                Arbitrary additional settings
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize">
+            <summary>
+                Allows changing of page size from client-side
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType">
+            <summary>
+                Indicated the authorization type. Anonymous access is the default.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName">
+            <summary>
+                Name of function to call before ajax call ends
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName">
+            <summary>
+                Name of function to call before ajax call begins
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName">
+            <summary>
+                The unique rendering engine name to use when none is specified in the request
+            </summary>
+            <value>
+                The default name of the rendering engine.
+            </value>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn">
+            <summary>
+                The default column to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection">
+            <summary>
+                The default order to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml">
+            <summary>
+                HTML to display in place of the grid when an error occurs
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering">
+            <summary>
+                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage">
+            <summary>
+                Number of items to display on each page
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage">
+            <summary>
+                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption">
+            <summary>
+                Text to display on the "next" button
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage">
+            <summary>
+                Text to display when there are no results
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames">
+            <summary>
+                Names of page parameters that will be passed from the view
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging">
+            <summary>
+                Enables paging on the grid
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption">
+            <summary>
+                Text to display on the "previous" button
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage">
+            <summary>
+                Text to display when query is processed
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad">
+            <summary>
+                Specified if the data should be loaded as soon as the page loads
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines">
+            <summary>
+                The list of configured rendering engines availble for this grid
+            </summary>
+            <value>
+                The rendering engines, each with a unique name
+            </value>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode">
+            <summary>
+                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
+                use a custom Razor view to display your grid, change this to Controller
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting">
+            <summary>
+                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage">
+            <summary>
+                Summary text to display in grid footer
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the razor view to use.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting``1(System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.AllowAnonymous">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.Authorized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="gridDefaults"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="columnDefaults"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults,MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="gridDefaults"></param>
+            <param name="columnDefaults"></param>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.GridDefinition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumn(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},System.Boolean,System.Boolean,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+            <param name="enableSort"></param>
+            <param name="htmlEncode"></param>
+            <param name="plainTextValueExpression"></param>
+            <param name="cellCssClassExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumn(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
+            <summary>
+            
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumns(System.Action{MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder{`0}})">
+            <summary>
+            
+            </summary>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddRenderingEngine(System.String,System.Type)">
+            <summary>
+                Adds a rendering engine to the list of configured rendering engines.
+            </summary>
+            <param name="name">A unique name.</param>
+            <param name="renderingEngineType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddRenderingEngine(System.String,System.String)">
+            <summary>
+                Adds a rendering engine to the list of configured rendering engines.
+            </summary>
+            <param name="name">A unique name.</param>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.RemoveRenderingEngine(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalQueryOptionName(System.String)">
+            <summary>
+                Add a name to additional query options which are additional parameters that can be passed from client to server
+                side
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalQueryOptionNames(System.String[])">
+            <summary>
+                Names of additional parameters that can be passed from client to server side
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalSetting(System.String,System.Object)">
+            <summary>
+                Add an arbitrary additional settings
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAllowChangingPageSize(System.Boolean)">
+            <summary>
+                Allows changing of page size from client-side
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAuthorizationType(MichaelBrandonMorris.MvcGrid.Models.AuthorizationType)">
+            <summary>
+                Indicated the authorization type. Anonymous access is the default.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithClientSideLoadingCompleteFunctionName(System.String)">
+            <summary>
+                Name of function to call before ajax call ends
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithClientSideLoadingMessageFunctionName(System.String)">
+            <summary>
+                Name of function to call before ajax call begins
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithContainerViewPath(System.String)">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultRenderingEngineName(System.String)">
+            <summary>
+                Sets the default rendering engine name (which should match a name from the RenderingEngines property) which
+                will be used when no rendering engine name is specified in the request
+            </summary>
+            <param name="renderingEngineName">Name of the rendering engine.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultSortColumn(System.String)">
+            <summary>
+                The default column to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultSortDirection(MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
+            <summary>
+                The default order to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithErrorMessageHtml(System.String)">
+            <summary>
+                HTML to display in place of the grid when an error occurs
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithFiltering(System.Boolean)">
+            <summary>
+                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithItemsPerPage(System.Int32)">
+            <summary>
+                Number of items to display on each page
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithMaxItemsPerPage(System.Int32)">
+            <summary>
+                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithNextButtonCaption(System.String)">
+            <summary>
+                Text to display on the "next" button.
+            </summary>
+            <param name="nextButtonCaption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithNoResultsMessage(System.String)">
+            <summary>
+                Text to display when there are no results.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithoutAdditionalSetting(System.String)">
+            <summary>
+                Remove an additional setting
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPageParameterNames(System.String[])">
+            <summary>
+                Names of page parameters that will be passed from the view
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean)">
+            <summary>
+                Enables paging on the grid
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean,System.Int32)">
+            <summary>
+                Enables paging on the grid
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+                Enables paging on the grid
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPreloadData(System.Boolean)">
+            <summary>
+                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPreviousButtonCaption(System.String)">
+            <summary>
+                Text to display on the "previous" button.
+            </summary>
+            <param name="previousButtonCaption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithProcessingMessage(System.String)">
+            <summary>
+                Text to display when query is processed
+            </summary>
+            <param name="processingMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithQueryOnPageLoad(System.Boolean)">
+            <summary>
+                Specifies if the data should be loaded as soon as the page loads
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithQueryStringPrefix(System.String)">
+            <summary>
+                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRenderingMode(MichaelBrandonMorris.MvcGrid.Models.RenderingMode)">
+            <summary>
+                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
+                use a custom Razor view to display your grid, change this to Controller
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRetrieveDataMethod(System.Func{MichaelBrandonMorris.MvcGrid.Models.GridContext,MichaelBrandonMorris.MvcGrid.Models.QueryResult{`0}})">
+            <summary>
+                This is the method that will actually query the data to populate the grid. Use entity framework, a module from you
+                IoC container, direct SQL queries, etc. to get the data. Inside the providee GridContext there is a QueryOptions
+                object which will be populated with the currently requested sorting, paging, and filtering options which you must
+                take into account. See the QueryOptions documentation below. You must return a QueryResult object which takes an
+                enumerable of your type and a count of the total number of records which must be provided if paging is enabled.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRowCssClassExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+                Use this to specify a custom css class based on data for the current row
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRowCssClassExpression(System.Func{`0,System.String})">
+            <summary>
+                Use this to specify a custom css class based on data for the current row
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean)">
+            <summary>
+                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean,System.String)">
+            <summary>
+                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean,System.String,MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
+            <summary>
+                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSummaryMessage(System.String)">
+            <summary>
+                Summary text to display in grid footer. Defaults to "Showing {0} to {1} of {2} entries"
+                {0} = first record number shown on page
+                {1} = last record number shown on page
+                {2} = total number of records on all pages
+            </summary>
+            <param name="summaryMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithTemplatingEngine(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="templatingEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithViewPath(System.String)">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the razor view to use.
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="columnDefaults"></param>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.ColumnBuilders">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(System.String,System.String,System.Func{`0,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
+            <summary>
+            
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String,System.String,System.Func{`0,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String,System.String,System.Func{`0,System.String},MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+            <param name="columnDefaults"></param>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.GridColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithAllowChangeVisibility(System.Boolean)">
+            <summary>
+                Gets or sets a value indicating whether the column visibility can be changed.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithCellCssClassExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+                Use this to return a custom css class based on data for the current cell
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithCellCssClassExpression(System.Func{`0,System.String})">
+            <summary>
+                Use this to return a custom css class based on data for the current cell
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithColumnName(System.String)">
+            <summary>
+                A unique name for this column
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithFiltering(System.Boolean)">
+            <summary>
+                Enables filtering on this column
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithHeaderText(System.String)">
+            <summary>
+                Header text to display for the current column, if different from ColumnName.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithHtmlEncoding(System.Boolean)">
+            <summary>
+                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
+                returns HTML.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithPlainTextValueExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+                This is how to specify the contents of the current cell when used in an export file, if different that
+                ValueExpression
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithPlainTextValueExpression(System.Func{`0,System.String})">
+            <summary>
+                This is how to specify the contents of the current cell when used in an export file, if different that
+                ValueExpression
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithSortColumnData(System.Object)">
+            <summary>
+                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithSorting(System.Boolean)">
+            <summary>
+                Enables sorting on this column
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueExpression(System.Func{`0,System.String})">
+            <summary>
+                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueTemplate(System.String)">
+            <summary>
+                Template for formatting cell value
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueTemplate(System.String,System.Boolean)">
+            <summary>
+                Template for formatting cell value
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithVisibility(System.Boolean)">
+            <summary>
+                Indicates whether column is visible.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithVisibility(System.Boolean,System.Boolean)">
+            <summary>
+                Indicates whether column is visible.
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridContext">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridContext.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.Items">
+            <summary>
+                Arbitrary settings for this context
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.RenderingMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.RenderingMode.RenderingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.RenderingMode.Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.PagingModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.PagingModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="pagesToDisplay"></param>
+            <param name="start"></param>
+            <param name="end"></param>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.RenderingModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel">
+            <summary>
+                Paging data. Will be null if paging should not be displayed
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.Cell">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.Row">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.Row.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Row.Cells">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.Column">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.Onclick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.TemplateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="headerText"></param>
+            <param name="valueExpression"></param>
+            <param name="columnDefaults"></param>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.CellCssClassExpression">
+            <summary>
+                Use this to return a custom css class based on data for the current cell
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.PlainTextValueExpression">
+            <summary>
+                This is how to specify the contents of the current cell when used in an export file, if different that
+                ValueExpression
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ValueExpression">
+            <summary>
+                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ValueTemplate">
+            <summary>
+                Template for formatting cell value
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.AllowChangeVisibility">
+            <summary>
+                Gets or sets a value indicating whether the column visibility can be changed.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ColumnName">
+            <summary>
+                A unique name for this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.EnableFiltering">
+            <summary>
+                Enables filtering on this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.EnableSorting">
+            <summary>
+                Enables sorting on this column
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.HeaderText">
+            <summary>
+                Header text to display for the current column, if different from ColumnName.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.HtmlEncode">
+            <summary>
+                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
+                returns HTML.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.SortColumnData">
+            <summary>
+                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.Visible">
+            <summary>
+                Indicates whether column is visible.
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefaults">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting``1(System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1.TotalRecords">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1">
+            <summary>
+            </summary>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults)">
+            <summary>
+            </summary>
+            <param name="gridDefaults"></param>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RetrieveData">
+            <summary>
+                This is the method that will actually query the data to populate the grid. Use entity framework, a module from you
+                IoC container, direct SQL queries, etc. to get the data. Inside the providee GridContext there is a QueryOptions
+                object which will be populated with the currently requested sorting, paging, and filtering options which you must
+                take into account. See the QueryOptions documentation below. You must return a QueryResult object which takes an
+                enumerable of your type and a count of the total number of records which must be provided if paging is enabled.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RowCssClassExpression">
+            <summary>
+                Use this to specify a custom css class based on data for the current row
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AdditionalQueryOptionNames">
+            <summary>
+                Names of additional parameters that can be passed from client to server side
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AdditionalSettings">
+            <summary>
+                Arbitrary additional settings
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AllowChangingPageSize">
+            <summary>
+                Allows changing of page size from client-side
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AuthorizationType">
+            <summary>
+                Indicated the authorization type. Anonymous access is the default.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ClientSideLoadingCompleteFunctionName">
+            <summary>
+                Name of function to call before ajax call ends
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ClientSideLoadingMessageFunctionName">
+            <summary>
+                Name of function to call before ajax call begins
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ContainerViewPath">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultRenderingEngineName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultSortColumn">
+            <summary>
+                The default column to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultSortDirection">
+            <summary>
+                The default order to sort by when no sort is specified
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ErrorMessageHtml">
+            <summary>
+                HTML to display in place of the grid when an error occurs
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Filtering">
+            <summary>
+                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.GetAdditionalSetting``1(System.String,``0)">
+            <summary>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.GetColumns">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ItemsPerPage">
+            <summary>
+                Number of items to display on each page
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.MaxItemsPerPage">
+            <summary>
+                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.NextButtonCaption">
+            <summary>
+                Text to display on the "next" button.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.NoResultsMessage">
+            <summary>
+                Text to display when there are no results.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PageParameterNames">
+            <summary>
+                Names of page parameters that will be passed from the view
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Paging">
+            <summary>
+                Enables paging on the grid
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PreloadData">
+            <summary>
+                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PreviousButtonCaption">
+            <summary>
+                Text to display on the "previous" button.
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ProcessingMessage">
+            <summary>
+                Text to display when query is processed
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.QueryOnPageLoad">
+            <summary>
+                Specified if the data should be loaded as soon as the page loads
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.QueryStringPrefix">
+            <summary>
+                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RenderingEngines">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RenderingMode">
+            <summary>
+                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
+                use a custom Razor view to display your grid, change this to Controller
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Sorting">
+            <summary>
+                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.SummaryMessage">
+            <summary>
+                Summary text to display in grid footer
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.TemplatingEngine">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ViewPath">
+            <summary>
+                When RenderingMode is set to Controller, this is the path to the razor view to use.
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AddColumn(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
+            <summary>
+            
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.SortDirection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Unspecified">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Asc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Dsc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Models.QueryOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
+            <summary>
+            
+            </summary>
+            <param name="httpResponse"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="gridContext"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
+            <summary>
+            
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="gridContext"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="outputStream"></param>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
+            <summary>
+            
+            </summary>
+            <param name="template"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId(System.String)">
+            <summary>
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId(System.String)">
+            <summary>
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId(System.String)">
+            <summary>
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng(System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            </summary>
+            <param name="classes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng(System.String)">
+            <summary>
+            </summary>
+            <param name="classString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng(System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            </summary>
+            <param name="classes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink(System.String,System.Int32)">
+            <summary>
+            </summary>
+            <param name="gridName"></param>
+            <param name="pageNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink(System.String,System.String,MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
+            <summary>
+            </summary>
+            <param name="gridName"></param>
+            <param name="columnName"></param>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.GridRegistration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="helper"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid(System.Web.Mvc.HtmlHelper,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="helper"></param>
+            <param name="name"></param>
+            <param name="pageParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add``1(System.String,MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="name"></param>
+            <param name="builder"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add``1(System.String,MichaelBrandonMorris.MvcGrid.Models.GridDefinition{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="name"></param>
+            <param name="mapping"></param>
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition``1(System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
