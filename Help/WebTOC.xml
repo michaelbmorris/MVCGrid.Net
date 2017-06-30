@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="4cc95313-3e4d-4420-978c-feb0d24cb9b4" Title="MichaelBrandonMorris.MvcGrid.Engine Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Engine.htm">
+    <HelpTOCNode Id="965fcbad-9fa1-4b64-9b03-28e02328e7db" Title="GridEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm">
+      <HelpTOCNode Title="GridEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+      <HelpTOCNode Id="64f85b51-1753-425c-afa8-955143ca535d" Title="GridEngine Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm">
+        <HelpTOCNode Title="LocalEncoding Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.LocalEncoding.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c55553a2-94fa-4594-83b4-25ced71d83a1" Title="GridEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm">
+        <HelpTOCNode Title="CheckAuthorization Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization.htm" />
+        <HelpTOCNode Title="GenerateModel Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel.htm" />
+        <HelpTOCNode Title="GetBasePageHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml.htm" />
+        <HelpTOCNode Title="GetRenderingEngine Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine.htm" />
+        <HelpTOCNode Title="GetRenderingEngineInternal Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngineInternal.htm" />
+        <HelpTOCNode Title="PrepColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepColumns.htm" />
+        <HelpTOCNode Title="PrepModel Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepModel.htm" />
+        <HelpTOCNode Title="RenderContainerHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerHtml.htm" />
+        <HelpTOCNode Title="RenderContainerUsingController Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingController.htm" />
+        <HelpTOCNode Title="RenderContainerUsingRenderingEngine Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingRenderingEngine.htm" />
+        <HelpTOCNode Title="RenderPreloadedGridHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderPreloadedGridHtml.htm" />
+        <HelpTOCNode Title="RenderUsingController Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingController.htm" />
+        <HelpTOCNode Title="RenderUsingRenderingEngine Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingRenderingEngine.htm" />
+        <HelpTOCNode Title="Run Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="3418d520-756b-468b-91f7-e88b63ac9773" Title="MichaelBrandonMorris.MvcGrid.Interfaces Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Interfaces.htm">
+    <HelpTOCNode Id="7a3ab46b-f365-485c-84b2-194a65cb773f" Title="IMvcGridColumn Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm">
+      <HelpTOCNode Title="IMvcGridColumn Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+      <HelpTOCNode Title="IMvcGridColumn Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+      <HelpTOCNode Id="516558e1-4340-4968-b85f-d136a23a372e" Title="IMvcGridColumn Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm">
+        <HelpTOCNode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility.htm" />
+        <HelpTOCNode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName.htm" />
+        <HelpTOCNode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering.htm" />
+        <HelpTOCNode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting.htm" />
+        <HelpTOCNode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText.htm" />
+        <HelpTOCNode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode.htm" />
+        <HelpTOCNode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData.htm" />
+        <HelpTOCNode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="49fb8d06-fdcd-47f4-a490-f3c51c566994" Title="IMvcGridDefinition Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm">
+      <HelpTOCNode Title="IMvcGridDefinition Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+      <HelpTOCNode Id="aff0fe6c-27f1-4f6d-9210-4b732cf3d072" Title="IMvcGridDefinition Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm">
+        <HelpTOCNode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" />
+        <HelpTOCNode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="610c2b47-8cc1-45c8-8d21-da3656dadecc" Title="IMvcGridDefinition Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm">
+        <HelpTOCNode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames.htm" />
+        <HelpTOCNode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings.htm" />
+        <HelpTOCNode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize.htm" />
+        <HelpTOCNode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType.htm" />
+        <HelpTOCNode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName.htm" />
+        <HelpTOCNode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName.htm" />
+        <HelpTOCNode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath.htm" />
+        <HelpTOCNode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName.htm" />
+        <HelpTOCNode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn.htm" />
+        <HelpTOCNode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection.htm" />
+        <HelpTOCNode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml.htm" />
+        <HelpTOCNode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering.htm" />
+        <HelpTOCNode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage.htm" />
+        <HelpTOCNode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage.htm" />
+        <HelpTOCNode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption.htm" />
+        <HelpTOCNode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage.htm" />
+        <HelpTOCNode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames.htm" />
+        <HelpTOCNode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging.htm" />
+        <HelpTOCNode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData.htm" />
+        <HelpTOCNode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption.htm" />
+        <HelpTOCNode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage.htm" />
+        <HelpTOCNode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad.htm" />
+        <HelpTOCNode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix.htm" />
+        <HelpTOCNode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines.htm" />
+        <HelpTOCNode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode.htm" />
+        <HelpTOCNode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting.htm" />
+        <HelpTOCNode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage.htm" />
+        <HelpTOCNode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine.htm" />
+        <HelpTOCNode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4147a930-716c-48be-94e0-afd5cfaefecd" Title="IMvcGridRenderingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm">
+      <HelpTOCNode Title="IMvcGridRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+      <HelpTOCNode Id="4331f52d-1999-4b1d-b8d8-c93d1e534374" Title="IMvcGridRenderingEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm">
+        <HelpTOCNode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse.htm" />
+        <HelpTOCNode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render.htm" />
+        <HelpTOCNode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2f6854ab-cac0-40a9-8522-a285cdf3153d" Title="IMvcGridRenderingEngine Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm">
+        <HelpTOCNode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a477cc8d-43e8-4a76-92f5-40fc9f91db2d" Title="IMvcGridTemplatingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm">
+      <HelpTOCNode Title="IMvcGridTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+      <HelpTOCNode Id="8d747365-b870-48f3-ae48-44d89c48b1d5" Title="IMvcGridTemplatingEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm">
+        <HelpTOCNode Title="Process Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="23cb8502-22d0-466d-b0b9-58d0a6e682c1" Title="MichaelBrandonMorris.MvcGrid.Models Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Models.htm">
+    <HelpTOCNode Title="AuthorizationType Enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" />
+    <HelpTOCNode Id="4c16f8f6-bb80-467f-b169-d53c34873b10" Title="Cell Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm">
+      <HelpTOCNode Title="Cell Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+      <HelpTOCNode Title="Cell Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+      <HelpTOCNode Id="dd4fe2b8-ba67-486e-93a0-d13d4b708533" Title="Cell Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm">
+        <HelpTOCNode Title="CalculatedCssClass Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass.htm" />
+        <HelpTOCNode Title="HtmlText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText.htm" />
+        <HelpTOCNode Title="PlainText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9b08be90-7637-4458-962f-dfb43fbc5147" Title="Column Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Column.htm">
+      <HelpTOCNode Title="Column Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+      <HelpTOCNode Title="Column Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+      <HelpTOCNode Id="53b31405-2a59-492d-aa88-c4c37b6376f1" Title="Column Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm">
+        <HelpTOCNode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Name.htm" />
+        <HelpTOCNode Title="Onclick Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Onclick.htm" />
+        <HelpTOCNode Title="SortIconDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9339b411-b622-4f27-8be3-b8f69be845c9" Title="ColumnDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm">
+      <HelpTOCNode Title="ColumnDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+      <HelpTOCNode Title="ColumnDefaults Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.-ctor.htm" />
+      <HelpTOCNode Title="ColumnDefaults Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+      <HelpTOCNode Id="709b506a-1233-4d8a-a2fe-f8c31c951651" Title="ColumnDefaults Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm">
+        <HelpTOCNode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility.htm" />
+        <HelpTOCNode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName.htm" />
+        <HelpTOCNode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering.htm" />
+        <HelpTOCNode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting.htm" />
+        <HelpTOCNode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText.htm" />
+        <HelpTOCNode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode.htm" />
+        <HelpTOCNode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData.htm" />
+        <HelpTOCNode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3cfd0c3c-6593-49ce-b602-97284157c9f7" Title="ColumnVisibility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm">
+      <HelpTOCNode Title="ColumnVisibility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+      <HelpTOCNode Title="ColumnVisibility Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+      <HelpTOCNode Id="c0cf42c5-2ecb-451f-8e32-b0914ee87ab2" Title="ColumnVisibility Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm">
+        <HelpTOCNode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName.htm" />
+        <HelpTOCNode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c59f20ee-805a-41fd-85e1-134d84c3017f" Title="ContainerRenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm">
+      <HelpTOCNode Title="ContainerRenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+      <HelpTOCNode Title="ContainerRenderingModel Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+      <HelpTOCNode Id="2b521aca-4451-43b8-b891-c12f9a7b8426" Title="ContainerRenderingModel Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm">
+        <HelpTOCNode Title="InnerHtmlBlock Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9fdebed0-9d5b-4b01-afe2-e9eb857d3f97" Title="GridColumn(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm">
+      <HelpTOCNode Title="GridColumn(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+      <HelpTOCNode Id="eeaa7c55-f858-4caf-9922-de058a2acdce" Title="GridColumn(T1) Constructor " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm">
+        <HelpTOCNode Title="GridColumn(T1) Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" />
+        <HelpTOCNode Title="GridColumn(T1) Constructor (String, String, Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor_1.htm" />
+        <HelpTOCNode Title="GridColumn(T1) Constructor (String, String, Func(T1, GridContext, String), ColumnDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bb3ff8bf-0c22-4697-97c4-859957f9df2f" Title="GridColumn(T1) Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm">
+        <HelpTOCNode Title="_headerText Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1._headerText.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="GridColumn(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+      <HelpTOCNode Id="afcf5ce3-d1de-43ba-a356-d5c332b65225" Title="GridColumn(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm">
+        <HelpTOCNode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.AllowChangeVisibility.htm" />
+        <HelpTOCNode Title="CellCssClassExpression Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.CellCssClassExpression.htm" />
+        <HelpTOCNode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ColumnName.htm" />
+        <HelpTOCNode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableFiltering.htm" />
+        <HelpTOCNode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableSorting.htm" />
+        <HelpTOCNode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HeaderText.htm" />
+        <HelpTOCNode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HtmlEncode.htm" />
+        <HelpTOCNode Title="PlainTextValueExpression Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.PlainTextValueExpression.htm" />
+        <HelpTOCNode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.SortColumnData.htm" />
+        <HelpTOCNode Title="ValueExpression Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueExpression.htm" />
+        <HelpTOCNode Title="ValueTemplate Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueTemplate.htm" />
+        <HelpTOCNode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.Visible.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8bc6f5fb-c4f9-4a09-be71-3da76f5f9758" Title="GridColumnBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm">
+      <HelpTOCNode Title="GridColumnBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+      <HelpTOCNode Id="59f95b9a-9b0e-4001-8c41-5916b9d05e31" Title="GridColumnBuilder(T1) Constructor " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm">
+        <HelpTOCNode Title="GridColumnBuilder(T1) Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" />
+        <HelpTOCNode Title="GridColumnBuilder(T1) Constructor (String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_1.htm" />
+        <HelpTOCNode Title="GridColumnBuilder(T1) Constructor (String, String, Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_2.htm" />
+        <HelpTOCNode Title="GridColumnBuilder(T1) Constructor (String, String, Func(T1, String), ColumnDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="eb7fc780-8c57-4b6a-abdf-227f4f52acfa" Title="GridColumnBuilder(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm">
+        <HelpTOCNode Title="WithAllowChangeVisibility Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithAllowChangeVisibility.htm" />
+        <HelpTOCNode Id="74e9e4c0-ff67-4283-b0dc-b067d4222de6" Title="WithCellCssClassExpression Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm">
+          <HelpTOCNode Title="WithCellCssClassExpression Method (Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" />
+          <HelpTOCNode Title="WithCellCssClassExpression Method (Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WithColumnName Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithColumnName.htm" />
+        <HelpTOCNode Title="WithFiltering Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithFiltering.htm" />
+        <HelpTOCNode Title="WithHeaderText Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHeaderText.htm" />
+        <HelpTOCNode Title="WithHtmlEncoding Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHtmlEncoding.htm" />
+        <HelpTOCNode Id="e03c0395-a89a-4119-8141-a0841c803218" Title="WithPlainTextValueExpression Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm">
+          <HelpTOCNode Title="WithPlainTextValueExpression Method (Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" />
+          <HelpTOCNode Title="WithPlainTextValueExpression Method (Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WithSortColumnData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSortColumnData.htm" />
+        <HelpTOCNode Title="WithSorting Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSorting.htm" />
+        <HelpTOCNode Id="01e46a74-6a85-47b2-85a7-bcb9c48a43bf" Title="WithValueExpression Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm">
+          <HelpTOCNode Title="WithValueExpression Method (Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" />
+          <HelpTOCNode Title="WithValueExpression Method (Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c3441e45-e3b9-4d0a-a8f8-d74e2279e0bc" Title="WithValueTemplate Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm">
+          <HelpTOCNode Title="WithValueTemplate Method (String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" />
+          <HelpTOCNode Title="WithValueTemplate Method (String, Boolean)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b85d0c3a-7b6d-48b0-abb9-58e4b3ee3158" Title="WithVisibility Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm">
+          <HelpTOCNode Title="WithVisibility Method (Boolean)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" />
+          <HelpTOCNode Title="WithVisibility Method (Boolean, Boolean)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ff791d3-3130-4ed7-a13d-1c324586afb8" Title="GridColumnBuilder(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm">
+        <HelpTOCNode Title="GridColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.GridColumn.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8465632c-42c3-4df3-bd87-138347a270dc" Title="GridColumnListBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm">
+      <HelpTOCNode Title="GridColumnListBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+      <HelpTOCNode Id="c056d420-7684-4658-b30b-36706d7e397e" Title="GridColumnListBuilder(T1) Constructor " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm">
+        <HelpTOCNode Title="GridColumnListBuilder(T1) Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" />
+        <HelpTOCNode Title="GridColumnListBuilder(T1) Constructor (ColumnDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9c7800d0-582c-4535-bda5-da7f1c5277e3" Title="GridColumnListBuilder(T1) Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm">
+        <HelpTOCNode Title="_columnDefaults Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1._columnDefaults.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1203745c-1b6f-4b44-9a50-d4a682ff5daf" Title="GridColumnListBuilder(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm">
+        <HelpTOCNode Id="b9fc175e-5632-4c07-bd48-81f07fe415d4" Title="Add Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" />
+          <HelpTOCNode Title="Add Method (String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_1.htm" />
+          <HelpTOCNode Title="Add Method (String, String, Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_2.htm" />
+          <HelpTOCNode Title="Add Method (GridColumn(T1))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_3.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="992ae71b-34b2-42b9-8d83-e47d15326147" Title="GridColumnListBuilder(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm">
+        <HelpTOCNode Title="ColumnBuilders Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.ColumnBuilders.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="eac318d7-5b3b-41e5-8db4-43a1290ac350" Title="GridContext Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm">
+      <HelpTOCNode Title="GridContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+      <HelpTOCNode Title="GridContext Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.-ctor.htm" />
+      <HelpTOCNode Id="5716d0b6-569f-44c5-a4a3-bd9db3c36c5a" Title="GridContext Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm">
+        <HelpTOCNode Title="GetVisibleColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e6f4ef35-1771-47da-9271-2316545487b5" Title="GridContext Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm">
+        <HelpTOCNode Title="CurrentHttpContext Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext.htm" />
+        <HelpTOCNode Title="GridDefinition Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridDefinition.htm" />
+        <HelpTOCNode Title="GridName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName.htm" />
+        <HelpTOCNode Title="Items Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.Items.htm" />
+        <HelpTOCNode Title="QueryOptions Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions.htm" />
+        <HelpTOCNode Title="UrlHelper Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1495dd25-744a-4bf8-ab11-0ba0ccb7e4f2" Title="GridDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm">
+      <HelpTOCNode Title="GridDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+      <HelpTOCNode Title="GridDefaults Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.-ctor.htm" />
+      <HelpTOCNode Id="6eb0b923-e2ec-4cdd-a8ad-2a4c9f764466" Title="GridDefaults Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm">
+        <HelpTOCNode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" />
+        <HelpTOCNode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b3abf884-c5c0-4e48-af9d-596efa85d6b5" Title="GridDefaults Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm">
+        <HelpTOCNode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames.htm" />
+        <HelpTOCNode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings.htm" />
+        <HelpTOCNode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize.htm" />
+        <HelpTOCNode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType.htm" />
+        <HelpTOCNode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName.htm" />
+        <HelpTOCNode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName.htm" />
+        <HelpTOCNode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath.htm" />
+        <HelpTOCNode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName.htm" />
+        <HelpTOCNode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn.htm" />
+        <HelpTOCNode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection.htm" />
+        <HelpTOCNode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml.htm" />
+        <HelpTOCNode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering.htm" />
+        <HelpTOCNode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage.htm" />
+        <HelpTOCNode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage.htm" />
+        <HelpTOCNode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption.htm" />
+        <HelpTOCNode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage.htm" />
+        <HelpTOCNode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames.htm" />
+        <HelpTOCNode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging.htm" />
+        <HelpTOCNode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData.htm" />
+        <HelpTOCNode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption.htm" />
+        <HelpTOCNode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage.htm" />
+        <HelpTOCNode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad.htm" />
+        <HelpTOCNode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix.htm" />
+        <HelpTOCNode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines.htm" />
+        <HelpTOCNode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode.htm" />
+        <HelpTOCNode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting.htm" />
+        <HelpTOCNode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage.htm" />
+        <HelpTOCNode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine.htm" />
+        <HelpTOCNode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ed5fc089-c8ab-490e-86cd-d1416302273f" Title="GridDefinition(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm">
+      <HelpTOCNode Title="GridDefinition(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+      <HelpTOCNode Id="ef1a9465-9b80-43eb-85ae-734bc9ddb914" Title="GridDefinition(T1) Constructor " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm">
+        <HelpTOCNode Title="GridDefinition(T1) Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" />
+        <HelpTOCNode Title="GridDefinition(T1) Constructor (GridDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="37f54630-2f55-46bc-9146-0ff8b711b9d9" Title="GridDefinition(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm">
+        <HelpTOCNode Title="AddColumn Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AddColumn.htm" />
+        <HelpTOCNode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" />
+        <HelpTOCNode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetColumns.htm" />
+        <HelpTOCNode Title="GetData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ac75b309-18fc-449d-b36f-fda07c348550" Title="GridDefinition(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm">
+        <HelpTOCNode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalQueryOptionNames.htm" />
+        <HelpTOCNode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalSettings.htm" />
+        <HelpTOCNode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AllowChangingPageSize.htm" />
+        <HelpTOCNode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AuthorizationType.htm" />
+        <HelpTOCNode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingCompleteFunctionName.htm" />
+        <HelpTOCNode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingMessageFunctionName.htm" />
+        <HelpTOCNode Title="Columns Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Columns.htm" />
+        <HelpTOCNode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ContainerViewPath.htm" />
+        <HelpTOCNode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultRenderingEngineName.htm" />
+        <HelpTOCNode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortColumn.htm" />
+        <HelpTOCNode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortDirection.htm" />
+        <HelpTOCNode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ErrorMessageHtml.htm" />
+        <HelpTOCNode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Filtering.htm" />
+        <HelpTOCNode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ItemsPerPage.htm" />
+        <HelpTOCNode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.MaxItemsPerPage.htm" />
+        <HelpTOCNode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NextButtonCaption.htm" />
+        <HelpTOCNode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NoResultsMessage.htm" />
+        <HelpTOCNode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PageParameterNames.htm" />
+        <HelpTOCNode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Paging.htm" />
+        <HelpTOCNode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreloadData.htm" />
+        <HelpTOCNode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreviousButtonCaption.htm" />
+        <HelpTOCNode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ProcessingMessage.htm" />
+        <HelpTOCNode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryOnPageLoad.htm" />
+        <HelpTOCNode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryStringPrefix.htm" />
+        <HelpTOCNode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingEngines.htm" />
+        <HelpTOCNode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingMode.htm" />
+        <HelpTOCNode Title="RetrieveData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RetrieveData.htm" />
+        <HelpTOCNode Title="RowCssClassExpression Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RowCssClassExpression.htm" />
+        <HelpTOCNode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Sorting.htm" />
+        <HelpTOCNode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.SummaryMessage.htm" />
+        <HelpTOCNode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.TemplatingEngine.htm" />
+        <HelpTOCNode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ViewPath.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5c81dff3-63fc-40f2-b17e-13ebf12c5877" Title="GridDefinitionBase Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm">
+      <HelpTOCNode Title="GridDefinitionBase Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+      <HelpTOCNode Id="0c6f661c-ef1b-4f37-89b0-6efd34289eb5" Title="GridDefinitionBase Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm">
+        <HelpTOCNode Title="GetData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.GetData.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d7026169-d835-4dd2-be7f-a80fb95d0d8c" Title="MvcGridBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm">
+      <HelpTOCNode Title="MvcGridBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+      <HelpTOCNode Id="3d8c4e07-e8f1-45bb-9e70-e757390917a7" Title="MvcGridBuilder(T1) Constructor " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm">
+        <HelpTOCNode Title="MvcGridBuilder(T1) Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" />
+        <HelpTOCNode Title="MvcGridBuilder(T1) Constructor (GridDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_1.htm" />
+        <HelpTOCNode Title="MvcGridBuilder(T1) Constructor (ColumnDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_2.htm" />
+        <HelpTOCNode Title="MvcGridBuilder(T1) Constructor (GridDefaults, ColumnDefaults)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="76fe009d-25e5-468f-951b-ccecdf105056" Title="MvcGridBuilder(T1) Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm">
+        <HelpTOCNode Title="_columnDefaults Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1._columnDefaults.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d042b073-8db1-4ae3-a8b9-b3875a22296d" Title="MvcGridBuilder(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm">
+        <HelpTOCNode Id="d33ae6e0-3177-4f04-bd48-08074d04cdfe" Title="AddColumn Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm">
+          <HelpTOCNode Title="AddColumn Method (String, String, Func(T1, GridContext, String), Boolean, Boolean, Func(T1, GridContext, String), Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" />
+          <HelpTOCNode Title="AddColumn Method (GridColumn(T1))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AddColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumns.htm" />
+        <HelpTOCNode Id="4dbff72d-3e01-4021-95f1-83ba6b990a87" Title="AddRenderingEngine Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm">
+          <HelpTOCNode Title="AddRenderingEngine Method (String, Type)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" />
+          <HelpTOCNode Title="AddRenderingEngine Method (String, String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="RemoveRenderingEngine Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.RemoveRenderingEngine.htm" />
+        <HelpTOCNode Title="WithAdditionalQueryOptionName Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionName.htm" />
+        <HelpTOCNode Title="WithAdditionalQueryOptionNames Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionNames.htm" />
+        <HelpTOCNode Title="WithAdditionalSetting Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalSetting.htm" />
+        <HelpTOCNode Title="WithAllowChangingPageSize Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAllowChangingPageSize.htm" />
+        <HelpTOCNode Title="WithAuthorizationType Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAuthorizationType.htm" />
+        <HelpTOCNode Title="WithClientSideLoadingCompleteFunctionName Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingCompleteFunctionName.htm" />
+        <HelpTOCNode Title="WithClientSideLoadingMessageFunctionName Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingMessageFunctionName.htm" />
+        <HelpTOCNode Title="WithContainerViewPath Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithContainerViewPath.htm" />
+        <HelpTOCNode Title="WithDefaultRenderingEngineName Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultRenderingEngineName.htm" />
+        <HelpTOCNode Title="WithDefaultSortColumn Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortColumn.htm" />
+        <HelpTOCNode Title="WithDefaultSortDirection Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortDirection.htm" />
+        <HelpTOCNode Title="WithErrorMessageHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithErrorMessageHtml.htm" />
+        <HelpTOCNode Title="WithFiltering Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithFiltering.htm" />
+        <HelpTOCNode Title="WithItemsPerPage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithItemsPerPage.htm" />
+        <HelpTOCNode Title="WithMaxItemsPerPage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithMaxItemsPerPage.htm" />
+        <HelpTOCNode Title="WithNextButtonCaption Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNextButtonCaption.htm" />
+        <HelpTOCNode Title="WithNoResultsMessage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNoResultsMessage.htm" />
+        <HelpTOCNode Title="WithoutAdditionalSetting Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithoutAdditionalSetting.htm" />
+        <HelpTOCNode Title="WithPageParameterNames Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPageParameterNames.htm" />
+        <HelpTOCNode Id="73a81a0f-5753-4a8a-bbd8-530a72bae320" Title="WithPaging Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm">
+          <HelpTOCNode Title="WithPaging Method (Boolean)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" />
+          <HelpTOCNode Title="WithPaging Method (Boolean, Int32)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging_1.htm" />
+          <HelpTOCNode Title="WithPaging Method (Boolean, Int32, Boolean, Int32)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WithPreloadData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreloadData.htm" />
+        <HelpTOCNode Title="WithPreviousButtonCaption Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreviousButtonCaption.htm" />
+        <HelpTOCNode Title="WithProcessingMessage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithProcessingMessage.htm" />
+        <HelpTOCNode Title="WithQueryOnPageLoad Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryOnPageLoad.htm" />
+        <HelpTOCNode Title="WithQueryStringPrefix Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryStringPrefix.htm" />
+        <HelpTOCNode Title="WithRenderingMode Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRenderingMode.htm" />
+        <HelpTOCNode Title="WithRetrieveDataMethod Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRetrieveDataMethod.htm" />
+        <HelpTOCNode Id="bb012c0a-b36c-4007-b825-0a89d5b78177" Title="WithRowCssClassExpression Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm">
+          <HelpTOCNode Title="WithRowCssClassExpression Method (Func(T1, GridContext, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" />
+          <HelpTOCNode Title="WithRowCssClassExpression Method (Func(T1, String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="6f2007da-026b-4351-832b-03d7dba93556" Title="WithSorting Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm">
+          <HelpTOCNode Title="WithSorting Method (Boolean)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" />
+          <HelpTOCNode Title="WithSorting Method (Boolean, String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting_1.htm" />
+          <HelpTOCNode Title="WithSorting Method (Boolean, String, SortDirection)" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WithSummaryMessage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSummaryMessage.htm" />
+        <HelpTOCNode Title="WithTemplatingEngine Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithTemplatingEngine.htm" />
+        <HelpTOCNode Title="WithViewPath Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithViewPath.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="111a75ac-558d-472a-8c20-5ce5d3d8d66f" Title="MvcGridBuilder(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm">
+        <HelpTOCNode Title="GridDefinition Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.GridDefinition.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b148def1-7404-417d-98cd-b8c4478b036f" Title="PagingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm">
+      <HelpTOCNode Title="PagingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+      <HelpTOCNode Title="PagingModel Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.-ctor.htm" />
+      <HelpTOCNode Id="a96a905d-2f88-4163-8b0b-9ca21663f62b" Title="PagingModel Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm">
+        <HelpTOCNode Title="CalculatePageStartAndEnd Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b7e36720-b230-4920-a62d-df49dddc1723" Title="PagingModel Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm">
+        <HelpTOCNode Title="CurrentPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage.htm" />
+        <HelpTOCNode Title="FirstRecord Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord.htm" />
+        <HelpTOCNode Title="LastRecord Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord.htm" />
+        <HelpTOCNode Title="NumberOfPages Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages.htm" />
+        <HelpTOCNode Title="PageLinks Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks.htm" />
+        <HelpTOCNode Title="TotalRecords Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cc24af2e-51ba-4795-98bf-34353f5c07a8" Title="QueryOptions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm">
+      <HelpTOCNode Title="QueryOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+      <HelpTOCNode Title="QueryOptions Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.-ctor.htm" />
+      <HelpTOCNode Id="589f4bc5-0edb-4744-b7d3-db6b43bd8f93" Title="QueryOptions Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm">
+        <HelpTOCNode Title="_sortColumnData Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.QueryOptions._sortColumnData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6627708e-8807-4f06-97fc-11742b4501e3" Title="QueryOptions Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm">
+        <HelpTOCNode Title="GetAdditionalQueryOptionString Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString.htm" />
+        <HelpTOCNode Title="GetFilterString Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString.htm" />
+        <HelpTOCNode Title="GetLimitOffset Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset.htm" />
+        <HelpTOCNode Title="GetLimitRowcount Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount.htm" />
+        <HelpTOCNode Title="GetPageParameterString Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString.htm" />
+        <HelpTOCNode Title="GetSortColumnData(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7f62c624-ec75-4b43-8bd5-971982e7d6a5" Title="QueryOptions Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm">
+        <HelpTOCNode Title="AdditionalQueryOptions Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions.htm" />
+        <HelpTOCNode Title="ColumnVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility.htm" />
+        <HelpTOCNode Title="Filters Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters.htm" />
+        <HelpTOCNode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage.htm" />
+        <HelpTOCNode Title="PageIndex Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex.htm" />
+        <HelpTOCNode Title="PageParameters Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters.htm" />
+        <HelpTOCNode Title="RenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName.htm" />
+        <HelpTOCNode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData.htm" />
+        <HelpTOCNode Title="SortColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName.htm" />
+        <HelpTOCNode Title="SortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8f169bd3-7204-43a9-a74d-151a0af481d6" Title="QueryResult(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm">
+      <HelpTOCNode Title="QueryResult(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+      <HelpTOCNode Title="QueryResult(T1) Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+      <HelpTOCNode Id="f26e15c5-f9aa-422f-bfba-96c5242a9d40" Title="QueryResult(T1) Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm">
+        <HelpTOCNode Title="Items Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.Items.htm" />
+        <HelpTOCNode Title="TotalRecords Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.TotalRecords.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="RenderingMode Enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" />
+    <HelpTOCNode Id="cccf9dac-0fff-4fe5-9db3-d4f38ffba1a1" Title="RenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm">
+      <HelpTOCNode Title="RenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+      <HelpTOCNode Title="RenderingModel Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.-ctor.htm" />
+      <HelpTOCNode Title="RenderingModel Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+      <HelpTOCNode Id="9051e806-ca32-4aef-99fb-a3b3f470eec9" Title="RenderingModel Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm">
+        <HelpTOCNode Title="ClientDataTransferHtmlBlock Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock.htm" />
+        <HelpTOCNode Title="Columns Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns.htm" />
+        <HelpTOCNode Title="HandlerPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath.htm" />
+        <HelpTOCNode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption.htm" />
+        <HelpTOCNode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage.htm" />
+        <HelpTOCNode Title="PagingModel Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel.htm" />
+        <HelpTOCNode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption.htm" />
+        <HelpTOCNode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage.htm" />
+        <HelpTOCNode Title="Rows Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows.htm" />
+        <HelpTOCNode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage.htm" />
+        <HelpTOCNode Title="TableHtmlId Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="06c8f284-6688-491c-8be4-7b559b3ac051" Title="Row Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Row.htm">
+      <HelpTOCNode Title="Row Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+      <HelpTOCNode Title="Row Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.Row.-ctor.htm" />
+      <HelpTOCNode Title="Row Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+      <HelpTOCNode Id="f1f78008-ead4-4db4-a4b0-e00852f4851e" Title="Row Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm">
+        <HelpTOCNode Title="CalculatedCssClass Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass.htm" />
+        <HelpTOCNode Title="Cells Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.Cells.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="SortDirection Enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+    <HelpTOCNode Id="aa38d1e4-9576-466d-8b59-0ad5abfc1027" Title="TemplateModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm">
+      <HelpTOCNode Title="TemplateModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+      <HelpTOCNode Title="TemplateModel Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+      <HelpTOCNode Id="694a9804-0df4-496c-9306-d1579619560a" Title="TemplateModel Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm">
+        <HelpTOCNode Title="GridColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn.htm" />
+        <HelpTOCNode Title="GridContext Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item.htm" />
+        <HelpTOCNode Title="Row Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row.htm" />
+        <HelpTOCNode Title="Url Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0a29bd7b-d843-4c43-839f-c95748941455" Title="MichaelBrandonMorris.MvcGrid.Rendering Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Rendering.htm">
+    <HelpTOCNode Id="403920b5-8cbd-4d81-b7c6-e60e8dbf9fb7" Title="BootstrapRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm">
+      <HelpTOCNode Title="BootstrapRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+      <HelpTOCNode Title="BootstrapRenderingEngine Constructor " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.-ctor.htm" />
+      <HelpTOCNode Id="8df250b0-fc85-42a1-8506-f8f3a6935957" Title="BootstrapRenderingEngine Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm">
+        <HelpTOCNode Title="SettingNameTableClass Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2aa313d1-6cc2-4e00-b0b2-51bc423ff9ad" Title="BootstrapRenderingEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm">
+        <HelpTOCNode Title="AppendCssAttribute Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AppendCssAttribute.htm" />
+        <HelpTOCNode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse.htm" />
+        <HelpTOCNode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render.htm" />
+        <HelpTOCNode Title="RenderBody Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderBody.htm" />
+        <HelpTOCNode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer.htm" />
+        <HelpTOCNode Title="RenderHeader Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderHeader.htm" />
+        <HelpTOCNode Title="RenderPaging Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderPaging.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="428b566f-1085-4f59-b278-97b00bb86af5" Title="BootstrapRenderingEngine Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm">
+        <HelpTOCNode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging.htm" />
+        <HelpTOCNode Title="DefaultTableCss Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.DefaultTableCss.htm" />
+        <HelpTOCNode Title="HtmlImageSort Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSort.htm" />
+        <HelpTOCNode Title="HtmlImageSortAsc Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortAsc.htm" />
+        <HelpTOCNode Title="HtmlImageSortDsc Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortDsc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d3dff827-3a9b-48dc-8a0d-dfb85a5bb2ea" Title="CsvRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm">
+      <HelpTOCNode Title="CsvRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+      <HelpTOCNode Id="71929581-b74e-429b-8112-393e5e4ad623" Title="CsvRenderingEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm">
+        <HelpTOCNode Title="CsvEncode Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.CsvEncode.htm" />
+        <HelpTOCNode Title="GetFilename Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename.htm" />
+        <HelpTOCNode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse.htm" />
+        <HelpTOCNode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render.htm" />
+        <HelpTOCNode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="330b7ce6-8129-408b-b297-42884e793907" Title="CsvRenderingEngine Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm">
+        <HelpTOCNode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ec89874d-185e-439d-bb55-506520e088b6" Title="MichaelBrandonMorris.MvcGrid.Templating Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Templating.htm">
+    <HelpTOCNode Id="2c692b66-c9bc-419a-b92b-6baa87aaf766" Title="SimpleTemplatingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm">
+      <HelpTOCNode Title="SimpleTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+      <HelpTOCNode Id="02949b53-ac3b-480f-971a-503f1d3d1a4f" Title="SimpleTemplatingEngine Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm">
+        <HelpTOCNode Title="EvaluateParameter Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.EvaluateParameter.htm" />
+        <HelpTOCNode Title="Format Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Format.htm" />
+        <HelpTOCNode Title="FormatError Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.FormatError.htm" />
+        <HelpTOCNode Title="Process Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process.htm" />
+        <HelpTOCNode Title="ReflectPropertyValue Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.ReflectPropertyValue.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="b90e13c1-4cb2-4902-bc76-433e2e6f1140" Title="MichaelBrandonMorris.MvcGrid.Utility Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Utility.htm">
+    <HelpTOCNode Id="3989f3ec-a04f-4a90-8e61-1f21e4d0a1fe" Title="ConfigUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm">
+      <HelpTOCNode Title="ConfigUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+      <HelpTOCNode Id="525ac530-4a3f-4b95-b761-7b553fa16560" Title="ConfigUtility Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm">
+        <HelpTOCNode Title="ShowErrorsAppSettingName Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.ShowErrorsAppSettingName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="624ae7d8-10d3-48d2-84ff-441b07c5fddf" Title="ConfigUtility Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm">
+        <HelpTOCNode Title="GetAppSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" />
+        <HelpTOCNode Title="GetShowErrorDetailsSetting Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetShowErrorDetailsSetting.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fee36ecd-ebed-46d6-a176-1b85654c5aa3" Title="GridContextUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm">
+      <HelpTOCNode Title="GridContextUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+      <HelpTOCNode Id="d5629f73-a43c-4eed-945b-832d7e254e69" Title="GridContextUtility Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm">
+        <HelpTOCNode Title="Create Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.Create.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="181fb8e8-57b8-4bab-af34-d3d75913df35" Title="HtmlUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm">
+      <HelpTOCNode Title="HtmlUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+      <HelpTOCNode Id="18f51a13-28ef-4e71-a893-452469f665d7" Title="HtmlUtility Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm">
+        <HelpTOCNode Title="ContainerCssClass Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ffcd9571-6a11-4da6-b4bd-59662a4d6fbb" Title="HtmlUtility Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm">
+        <HelpTOCNode Title="GetContainerHtmlId Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId.htm" />
+        <HelpTOCNode Title="GetHandlerPath Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath.htm" />
+        <HelpTOCNode Title="GetTableHolderHtmlId Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId.htm" />
+        <HelpTOCNode Title="GetTableHtmlId Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId.htm" />
+        <HelpTOCNode Id="a82ab0c2-dce0-4b9f-b069-fd6e88b94b09" Title="MakeCssClassAttributeStirng Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm">
+          <HelpTOCNode Title="MakeCssClassAttributeStirng Method (HashSet(String))" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm" />
+          <HelpTOCNode Title="MakeCssClassAttributeStirng Method (String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MakeCssClassStirng Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng.htm" />
+        <HelpTOCNode Title="MakeGotoPageLink Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink.htm" />
+        <HelpTOCNode Title="MakeSortLink Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d7180f1c-2008-4543-a13c-93aa42fc9e56" Title="MichaelBrandonMorris.MvcGrid.Web Namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Web.htm">
+    <HelpTOCNode Id="c64ac619-cb58-4e8b-b50b-d8ebbdc9830c" Title="GridRegistration Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm">
+      <HelpTOCNode Title="GridRegistration Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+      <HelpTOCNode Id="d7abb34e-4a0d-4610-a248-83bc10756762" Title="GridRegistration Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm">
+        <HelpTOCNode Title="FilterTypesInAssemblies Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.FilterTypesInAssemblies.htm" />
+        <HelpTOCNode Title="IsGridRegistrationType Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.IsGridRegistrationType.htm" />
+        <HelpTOCNode Title="RegisterAllGrids Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids.htm" />
+        <HelpTOCNode Title="RegisterGrids Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids.htm" />
+        <HelpTOCNode Title="TypeIsPublicClass Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.TypeIsPublicClass.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4430a01d-e382-493c-b5b4-e4fe6803541b" Title="HtmlExtensions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm">
+      <HelpTOCNode Title="HtmlExtensions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+      <HelpTOCNode Id="899df8e6-03b6-4d25-9aad-6fe25d9ada1a" Title="HtmlExtensions Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm">
+        <HelpTOCNode Id="8034ce5f-dc80-49d1-80ed-f4bb181571af" Title="MvcGrid Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm">
+          <HelpTOCNode Title="MvcGrid Method (HtmlHelper, String)" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm" />
+          <HelpTOCNode Title="MvcGrid Method (HtmlHelper, String, Object)" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid_1.htm" />
+          <HelpTOCNode Title="MvcGrid Method (HtmlHelper, String, IMvcGridDefinition, Object)" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid_2.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="58934f28-4a25-484e-94dd-b345348a3625" Title="MvcGridDefinitionTable Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm">
+      <HelpTOCNode Title="MvcGridDefinitionTable Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+      <HelpTOCNode Id="d12c7545-9365-4662-85c4-332e3de2812f" Title="MvcGridDefinitionTable Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm">
+        <HelpTOCNode Title="Table Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Table.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7237f0dc-370a-4877-89d5-26c893948c49" Title="MvcGridDefinitionTable Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm">
+        <HelpTOCNode Id="9612140d-e228-4834-ac16-04253cd73712" Title="Add Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add-.htm">
+          <HelpTOCNode Title="Add(T1) Method (String, MvcGridBuilder(T1))" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add--1.htm" />
+          <HelpTOCNode Title="Add(T1) Method (String, GridDefinition(T1))" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add--1_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetDefinition(T1) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" />
+        <HelpTOCNode Title="GetDefinitionInterface Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinitionInterface.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="12f15301-21c8-479b-8f09-f0b8c82a5ea7" Title="MvcGridHandler Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm">
+      <HelpTOCNode Title="MvcGridHandler Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+      <HelpTOCNode Id="ef72f1aa-9b70-4537-a284-24e9f45c7ba8" Title="MvcGridHandler Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm">
+        <HelpTOCNode Title="_cachedBinaryResources Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedBinaryResources.htm" />
+        <HelpTOCNode Title="_cachedTextResources Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedTextResources.htm" />
+        <HelpTOCNode Title="_init Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._init.htm" />
+        <HelpTOCNode Title="Lock Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Lock.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0d51aef-d24f-4255-9441-e3ebb5ff351e" Title="MvcGridHandler Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm">
+        <HelpTOCNode Title="GetBinaryResource Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetBinaryResource.htm" />
+        <HelpTOCNode Title="GetTextResource Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetTextResource.htm" />
+        <HelpTOCNode Title="HandelGifImage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelGifImage.htm" />
+        <HelpTOCNode Title="HandelPngImage Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelPngImage.htm" />
+        <HelpTOCNode Title="HandleScript Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleScript.htm" />
+        <HelpTOCNode Title="HandleTable Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleTable.htm" />
+        <HelpTOCNode Title="Init Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init.htm" />
+        <HelpTOCNode Title="ProcessRequest Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bf115e0e-0904-42c4-8e1e-4e91b7bf8c44" Title="MvcGridHandler Properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm">
+        <HelpTOCNode Title="IsReusable Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dc6f3b08-acef-4986-9c88-867fe7a998a5" Title="MvcGridHtmlGenerator Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm">
+      <HelpTOCNode Title="MvcGridHtmlGenerator Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+      <HelpTOCNode Id="3ba9ee61-83c2-4358-b607-da7b9c401c0b" Title="MvcGridHtmlGenerator Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm">
+        <HelpTOCNode Title="RenderLoadingDivSettingName Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.RenderLoadingDivSettingName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d5d298ff-3c1c-41db-a2ee-36da31a48ac6" Title="MvcGridHtmlGenerator Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm">
+        <HelpTOCNode Title="GenerateBasePageHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateBasePageHtml.htm" />
+        <HelpTOCNode Title="GenerateClientDataTransferHtml Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDataTransferHtml.htm" />
+        <HelpTOCNode Title="GenerateClientDefinitionJson Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDefinitionJson.htm" />
+        <HelpTOCNode Title="GenerateClientJsonAdditional Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonAdditional.htm" />
+        <HelpTOCNode Title="GenerateClientJsonFilter Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonFilter.htm" />
+        <HelpTOCNode Title="GenerateClientJsonVisibility Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonVisibility.htm" />
+        <HelpTOCNode Title="GenerateJsonPageParameters Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateJsonPageParameters.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6481f369-aa1c-4253-ab9f-2b0850181edd" Title="QueryStringParser Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm">
+      <HelpTOCNode Title="QueryStringParser Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+      <HelpTOCNode Id="753e8766-334d-44f6-80ff-4c14f0b250f2" Title="QueryStringParser Fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm">
+        <HelpTOCNode Title="QueryStringPrefixPageParameter Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringPrefixPageParameter.htm" />
+        <HelpTOCNode Title="QueryStringSuffixColumns Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixColumns.htm" />
+        <HelpTOCNode Title="QueryStringSuffixEngine Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixEngine.htm" />
+        <HelpTOCNode Title="QueryStringSuffixItemsPerPage Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixItemsPerPage.htm" />
+        <HelpTOCNode Title="QueryStringSuffixPage Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixPage.htm" />
+        <HelpTOCNode Title="QueryStringSuffixSort Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSort.htm" />
+        <HelpTOCNode Title="QueryStringSuffixSortDir Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSortDir.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a974039c-cf4f-4f53-a06f-81cec04cdee6" Title="QueryStringParser Methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm">
+        <HelpTOCNode Title="ParseOptions Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.ParseOptions.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8ed4d338-c6d2-4fa3-a0de-822eea971b57" Title="MVCGrid.RazorTemplates Namespace" Url="html/N-MVCGrid.RazorTemplates.htm">
+    <HelpTOCNode Id="efc4cf26-446c-4f02-b8bf-368c0e4d15b0" Title="RazorRenderingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm">
+      <HelpTOCNode Title="RazorRenderingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+      <HelpTOCNode Id="10da4f2c-ca3c-438d-b784-77cfef48a525" Title="RazorRenderingEngine Methods" Url="html/Methods.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm">
+        <HelpTOCNode Title="PrepareResponse Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.PrepareResponse.htm" />
+        <HelpTOCNode Title="Render Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.Render.htm" />
+        <HelpTOCNode Title="RenderContainer Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.RenderContainer.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8fe0b361-f4e1-40ea-ac26-98994c59bfe0" Title="RazorRenderingEngine Properties" Url="html/Properties.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm">
+        <HelpTOCNode Title="AllowsPaging Property " Url="html/P-MVCGrid.RazorTemplates.RazorRenderingEngine.AllowsPaging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3bd84009-3c90-4112-87ad-617e7e325e91" Title="RazorTemplatingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm">
+      <HelpTOCNode Title="RazorTemplatingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+      <HelpTOCNode Id="dafa79e8-6ff5-4fc5-806f-07d72f66c375" Title="RazorTemplatingEngine Methods" Url="html/Methods.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm">
+        <HelpTOCNode Title="Process Method " Url="html/M-MVCGrid.RazorTemplates.RazorTemplatingEngine.Process.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

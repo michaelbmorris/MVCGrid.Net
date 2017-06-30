@@ -12,21 +12,45 @@ using MichaelBrandonMorris.MvcGrid.Utility;
 namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
+    /// Class MvcGridHandler.
     /// </summary>
+    /// <seealso cref="System.Web.IHttpHandler" />
+    /// TODO Edit XML Comment Template for MvcGridHandler
     public class MvcGridHandler : IHttpHandler
     {
+        /// <summary>
+        /// The lock
+        /// </summary>
+        /// TODO Edit XML Comment Template for Lock
         private static readonly object Lock = new object();
+        /// <summary>
+        /// The cached binary resources
+        /// </summary>
+        /// TODO Edit XML Comment Template for _cachedBinaryResources
         private static Dictionary<string, byte[]> _cachedBinaryResources;
+        /// <summary>
+        /// The cached text resources
+        /// </summary>
+        /// TODO Edit XML Comment Template for _cachedTextResources
         private static Dictionary<string, string> _cachedTextResources;
+        /// <summary>
+        /// The initialize
+        /// </summary>
+        /// TODO Edit XML Comment Template for _init
         private static bool _init;
 
         /// <summary>
+        /// Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> instance.
         /// </summary>
+        /// <value><c>true</c> if this instance is reusable; otherwise, <c>false</c>.</value>
+        /// TODO Edit XML Comment Template for IsReusable
         public bool IsReusable => false;
 
         /// <summary>
+        /// Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler" /> interface.
         /// </summary>
-        /// <param name="context"></param>
+        /// <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+        /// TODO Edit XML Comment Template for ProcessRequest
         public void ProcessRequest(HttpContext context)
         {
             Init();
@@ -58,7 +82,9 @@ namespace MichaelBrandonMorris.MvcGrid.Web
         }
 
         /// <summary>
+        /// Initializes this instance.
         /// </summary>
+        /// TODO Edit XML Comment Template for Init
         public void Init()
         {
             if (_init)
@@ -76,18 +102,19 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 _cachedBinaryResources = new Dictionary<string, byte[]>();
                 _cachedTextResources = new Dictionary<string, string>();
 
-
                 var script = GetTextResource("MVCGrid.js");
+
                 var handlerPath = HttpContext.Current.Request
                     .CurrentExecutionFilePath;
+
                 script = script.Replace("%%HANDLERPATH%%", handlerPath);
 
                 var showErrorDetails =
                     ConfigUtility.GetShowErrorDetailsSetting();
+
                 script = script.Replace(
                     "%%ERRORDETAILS%%",
                     showErrorDetails.ToString().ToLower());
-
 
                 var controllerPath = HttpContext.Current.Request
                     .ApplicationPath;
@@ -106,18 +133,20 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 }
 
                 script = script.Replace("%%CONTROLLERPATH%%", controllerPath);
-
                 _cachedTextResources.Add("MVCGrid.js", script);
 
                 _cachedBinaryResources.Add(
                     "ajaxloader.gif",
                     GetBinaryResource("ajaxloader.gif"));
+
                 _cachedBinaryResources.Add(
                     "sort.png",
                     GetBinaryResource("sort.png"));
+
                 _cachedBinaryResources.Add(
                     "sortdown.png",
                     GetBinaryResource("sortdown.png"));
+
                 _cachedBinaryResources.Add(
                     "sortup.png",
                     GetBinaryResource("sortup.png"));
@@ -126,21 +155,19 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             }
         }
 
+        /// <summary>
+        /// Gets the binary resource.
+        /// </summary>
+        /// <param name="fileSuffix">The file suffix.</param>
+        /// <returns>System.Byte[].</returns>
+        /// TODO Edit XML Comment Template for GetBinaryResource
         private static byte[] GetBinaryResource(string fileSuffix)
         {
             var assembly = Assembly.GetExecutingAssembly();
 
             var s = assembly.GetManifestResourceNames();
 
-            string resourceName = null;
-            foreach (var name in s)
-            {
-                if (name.Contains(fileSuffix))
-                {
-                    resourceName = name;
-                    break;
-                }
-            }
+            var resourceName = s.FirstOrDefault(name => name.Contains(fileSuffix));
 
             using (var resFilestream =
                 assembly.GetManifestResourceStream(resourceName))
@@ -156,6 +183,12 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             }
         }
 
+        /// <summary>
+        /// Gets the text resource.
+        /// </summary>
+        /// <param name="fileSuffix">The file suffix.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetTextResource
         private static string GetTextResource(string fileSuffix)
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -189,6 +222,12 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             return script;
         }
 
+        /// <summary>
+        /// Handels the GIF image.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="imageName">Name of the image.</param>
+        /// TODO Edit XML Comment Template for HandelGifImage
         private static void HandelGifImage(
             HttpContext context,
             string imageName)
@@ -199,6 +238,12 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             context.Response.Flush();
         }
 
+        /// <summary>
+        /// Handels the PNG image.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="imageName">Name of the image.</param>
+        /// TODO Edit XML Comment Template for HandelPngImage
         private static void HandelPngImage(
             HttpContext context,
             string imageName)
@@ -209,6 +254,11 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             context.Response.Flush();
         }
 
+        /// <summary>
+        /// Handles the script.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// TODO Edit XML Comment Template for HandleScript
         private static void HandleScript(HttpContext context)
         {
             context.Response.ContentType = "application/javascript";
@@ -216,37 +266,30 @@ namespace MichaelBrandonMorris.MvcGrid.Web
         }
 
 
+        /// <summary>
+        /// Handles the table.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// TODO Edit XML Comment Template for HandleTable
         private static void HandleTable(HttpContext context)
         {
             var gridName = context.Request["Name"];
-
-            //StringBuilder sbDebug = new StringBuilder();
-            //foreach (string key in context.Request.QueryString.AllKeys)
-            //{
-            //    sbDebug.Append(key);
-            //    sbDebug.Append(" = ");
-            //    sbDebug.Append(context.Request.QueryString[key]);
-            //    sbDebug.Append("<br />");
-            //}
-
             var grid = MvcGridDefinitionTable.GetDefinitionInterface(gridName);
-
             var options = QueryStringParser.ParseOptions(grid, context.Request);
 
             var gridContext =
                 GridContextUtility.Create(context, gridName, grid, options);
 
             var engine = new GridEngine();
+
             if (!engine.CheckAuthorization(gridContext))
             {
-                //Forbidden
                 context.Response.StatusCode = 403;
                 context.Response.End();
                 return;
             }
 
             var renderingEngine = GridEngine.GetRenderingEngine(gridContext);
-
             renderingEngine.PrepareResponse(context.Response);
             engine.Run(renderingEngine, gridContext, context.Response.Output);
         }

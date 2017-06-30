@@ -7,13 +7,18 @@ using MichaelBrandonMorris.MvcGrid.Templating;
 namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
-    /// 
+    ///     Class GridDefaults.
     /// </summary>
+    /// <seealso
+    ///     cref="MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" />
+    /// TODO Edit XML Comment Template for GridDefaults
     public class GridDefaults : IMvcGridDefinition
     {
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridDefaults" /> class.
         /// </summary>
+        /// TODO Edit XML Comment Template for #ctor
         public GridDefaults()
         {
             PreloadData = true;
@@ -31,7 +36,6 @@ namespace MichaelBrandonMorris.MvcGrid.Models
             ClientSideLoadingMessageFunctionName = null;
             ClientSideLoadingCompleteFunctionName = null;
             Filtering = false;
-            //RenderingEngine = typeof(MVCGrid.Rendering.BootstrapRenderingEngine);
             TemplatingEngine = typeof(SimpleTemplatingEngine);
             AdditionalSettings = new Dictionary<string, object>();
             RenderingMode = RenderingMode.RenderingEngine;
@@ -59,8 +63,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the additional query option names.
         /// </summary>
+        /// <value>The additional query option names.</value>
+        /// TODO Edit XML Comment Template for AdditionalQueryOptionNames
         public HashSet<string> AdditionalQueryOptionNames
         {
             get;
@@ -68,8 +74,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the additional settings.
         /// </summary>
+        /// <value>The additional settings.</value>
+        /// TODO Edit XML Comment Template for AdditionalSettings
         public Dictionary<string, object> AdditionalSettings
         {
             get;
@@ -77,8 +85,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets a value indicating whether [allow changing
+        ///     page size].
         /// </summary>
+        /// <value>
+        ///     <c>true</c> if [allow changing page size];
+        ///     otherwise, <c>false</c>.
+        /// </value>
+        /// TODO Edit XML Comment Template for AllowChangingPageSize
         public bool AllowChangingPageSize
         {
             get;
@@ -86,8 +100,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the type of the authorization.
         /// </summary>
+        /// <value>The type of the authorization.</value>
+        /// TODO Edit XML Comment Template for AuthorizationType
         public AuthorizationType AuthorizationType
         {
             get;
@@ -95,8 +111,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the name of the client side loading
+        ///     complete function.
         /// </summary>
+        /// <value>
+        ///     The name of the client side loading complete
+        ///     function.
+        /// </value>
+        /// TODO Edit XML Comment Template for ClientSideLoadingCompleteFunctionName
         public string ClientSideLoadingCompleteFunctionName
         {
             get;
@@ -104,8 +126,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the name of the client side loading
+        ///     message function.
         /// </summary>
+        /// <value>
+        ///     The name of the client side loading message
+        ///     function.
+        /// </value>
+        /// TODO Edit XML Comment Template for ClientSideLoadingMessageFunctionName
         public string ClientSideLoadingMessageFunctionName
         {
             get;
@@ -113,8 +141,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the container view path.
         /// </summary>
+        /// <value>The container view path.</value>
+        /// TODO Edit XML Comment Template for ContainerViewPath
         public string ContainerViewPath
         {
             get;
@@ -122,8 +152,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the default name of the rendering engine.
         /// </summary>
+        /// <value>The default name of the rendering engine.</value>
+        /// TODO Edit XML Comment Template for DefaultRenderingEngineName
         public string DefaultRenderingEngineName
         {
             get;
@@ -131,8 +163,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the default sort column.
         /// </summary>
+        /// <value>The default sort column.</value>
+        /// TODO Edit XML Comment Template for DefaultSortColumn
         public string DefaultSortColumn
         {
             get;
@@ -140,8 +174,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the default sort direction.
         /// </summary>
+        /// <value>The default sort direction.</value>
+        /// TODO Edit XML Comment Template for DefaultSortDirection
         public SortDirection DefaultSortDirection
         {
             get;
@@ -149,8 +185,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the error message HTML.
         /// </summary>
+        /// <value>The error message HTML.</value>
+        /// TODO Edit XML Comment Template for ErrorMessageHtml
         public string ErrorMessageHtml
         {
             get;
@@ -158,8 +196,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets a value indicating whether this
+        ///     <see cref="IMvcGridDefinition" /> is filtering.
         /// </summary>
+        /// <value><c>true</c> if filtering; otherwise, <c>false</c>.</value>
+        /// TODO Edit XML Comment Template for Filtering
         public bool Filtering
         {
             get;
@@ -167,29 +208,35 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets the additional setting.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="name"></param>
-        /// <param name="defaultValue"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <param name="defaultValue">The default value.</param>
+        /// <returns>T.</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        /// TODO Edit XML Comment Template for GetAdditionalSetting`1
         public T GetAdditionalSetting<T>(string name, T defaultValue)
         {
             throw new NotImplementedException();
         }
 
         /// <summary>
-        /// 
+        ///     Gets the columns.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>IEnumerable&lt;IMvcGridColumn&gt;.</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        /// TODO Edit XML Comment Template for GetColumns
         public IEnumerable<IMvcGridColumn> GetColumns()
         {
             throw new NotImplementedException();
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the items per page.
         /// </summary>
+        /// <value>The items per page.</value>
+        /// TODO Edit XML Comment Template for ItemsPerPage
         public int ItemsPerPage
         {
             get;
@@ -197,8 +244,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the maximum items per page.
         /// </summary>
+        /// <value>The maximum items per page.</value>
+        /// TODO Edit XML Comment Template for MaxItemsPerPage
         public int? MaxItemsPerPage
         {
             get;
@@ -206,8 +255,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the next button caption.
         /// </summary>
+        /// <value>The next button caption.</value>
+        /// TODO Edit XML Comment Template for NextButtonCaption
         public string NextButtonCaption
         {
             get;
@@ -215,8 +266,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the no results message.
         /// </summary>
+        /// <value>The no results message.</value>
+        /// TODO Edit XML Comment Template for NoResultsMessage
         public string NoResultsMessage
         {
             get;
@@ -224,8 +277,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the page parameter names.
         /// </summary>
+        /// <value>The page parameter names.</value>
+        /// TODO Edit XML Comment Template for PageParameterNames
         public HashSet<string> PageParameterNames
         {
             get;
@@ -233,8 +288,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets a value indicating whether this
+        ///     <see cref="IMvcGridDefinition" /> is paging.
         /// </summary>
+        /// <value><c>true</c> if paging; otherwise, <c>false</c>.</value>
+        /// TODO Edit XML Comment Template for Paging
         public bool Paging
         {
             get;
@@ -242,8 +300,13 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets a value indicating whether [preload data].
         /// </summary>
+        /// <value>
+        ///     <c>true</c> if [preload data]; otherwise,
+        ///     <c>false</c>.
+        /// </value>
+        /// TODO Edit XML Comment Template for PreloadData
         public bool PreloadData
         {
             get;
@@ -251,8 +314,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the previous button caption.
         /// </summary>
+        /// <value>The previous button caption.</value>
+        /// TODO Edit XML Comment Template for PreviousButtonCaption
         public string PreviousButtonCaption
         {
             get;
@@ -260,8 +325,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the processing message.
         /// </summary>
+        /// <value>The processing message.</value>
+        /// TODO Edit XML Comment Template for ProcessingMessage
         public string ProcessingMessage
         {
             get;
@@ -269,8 +336,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets a value indicating whether [query on page
+        ///     load].
         /// </summary>
+        /// <value>
+        ///     <c>true</c> if [query on page load]; otherwise,
+        ///     <c>false</c>.
+        /// </value>
+        /// TODO Edit XML Comment Template for QueryOnPageLoad
         public bool QueryOnPageLoad
         {
             get;
@@ -278,8 +351,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets the query string prefix.
         /// </summary>
+        /// <value>The query string prefix.</value>
+        /// TODO Edit XML Comment Template for QueryStringPrefix
         public string QueryStringPrefix
         {
             get;
@@ -287,8 +362,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the rendering engines.
         /// </summary>
+        /// <value>The rendering engines.</value>
+        /// TODO Edit XML Comment Template for RenderingEngines
         public ProviderSettingsCollection RenderingEngines
         {
             get;
@@ -296,8 +373,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the rendering mode.
         /// </summary>
+        /// <value>The rendering mode.</value>
+        /// TODO Edit XML Comment Template for RenderingMode
         public RenderingMode RenderingMode
         {
             get;
@@ -305,8 +384,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets a value indicating whether this
+        ///     <see cref="IMvcGridDefinition" /> is sorting.
         /// </summary>
+        /// <value><c>true</c> if sorting; otherwise, <c>false</c>.</value>
+        /// TODO Edit XML Comment Template for Sorting
         public bool Sorting
         {
             get;
@@ -314,8 +396,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the summary message.
         /// </summary>
+        /// <value>The summary message.</value>
+        /// TODO Edit XML Comment Template for SummaryMessage
         public string SummaryMessage
         {
             get;
@@ -323,8 +407,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the templating engine.
         /// </summary>
+        /// <value>The templating engine.</value>
+        /// TODO Edit XML Comment Template for TemplatingEngine
         public Type TemplatingEngine
         {
             get;
@@ -332,8 +418,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the view path.
         /// </summary>
+        /// <value>The view path.</value>
+        /// TODO Edit XML Comment Template for ViewPath
         public string ViewPath
         {
             get;

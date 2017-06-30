@@ -4,44 +4,57 @@ using System.Configuration;
 namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
-    /// 
+    ///     Class MvcGridBuilder.
     /// </summary>
-    /// <typeparam name="T1"></typeparam>
+    /// <typeparam name="T1">The type of the t1.</typeparam>
+    /// TODO Edit XML Comment Template for MvcGridBuilder`1
     public class MvcGridBuilder<T1>
     {
+        /// <summary>
+        ///     The column defaults
+        /// </summary>
+        /// TODO Edit XML Comment Template for _columnDefaults
         private readonly ColumnDefaults _columnDefaults;
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="MvcGridBuilder{T1}" /> class.
         /// </summary>
+        /// TODO Edit XML Comment Template for #ctor
         public MvcGridBuilder()
         {
             GridDefinition = new GridDefinition<T1>();
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="MvcGridBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="gridDefaults"></param>
+        /// <param name="gridDefaults">The grid defaults.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public MvcGridBuilder(GridDefaults gridDefaults)
             : this(gridDefaults, null)
         {
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="MvcGridBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="columnDefaults"></param>
+        /// <param name="columnDefaults">The column defaults.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public MvcGridBuilder(ColumnDefaults columnDefaults)
             : this(null, columnDefaults)
         {
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="MvcGridBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="gridDefaults"></param>
-        /// <param name="columnDefaults"></param>
+        /// <param name="gridDefaults">The grid defaults.</param>
+        /// <param name="columnDefaults">The column defaults.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public MvcGridBuilder(
             GridDefaults gridDefaults,
             ColumnDefaults columnDefaults)
@@ -52,8 +65,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the grid definition.
         /// </summary>
+        /// <value>The grid definition.</value>
+        /// TODO Edit XML Comment Template for GridDefinition
         public GridDefinition<T1> GridDefinition
         {
             get;
@@ -61,16 +76,29 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Adds the column.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="headerText"></param>
-        /// <param name="valueExpression"></param>
-        /// <param name="enableSort"></param>
-        /// <param name="htmlEncode"></param>
-        /// <param name="plainTextValueExpression"></param>
-        /// <param name="cellCssClassExpression"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <param name="headerText">The header text.</param>
+        /// <param name="valueExpression">The value expression.</param>
+        /// <param name="enableSort">
+        ///     if set to <c>true</c> [enable
+        ///     sort].
+        /// </param>
+        /// <param name="htmlEncode">
+        ///     if set to <c>true</c> [HTML
+        ///     encode].
+        /// </param>
+        /// <param name="plainTextValueExpression">
+        ///     The plain text value
+        ///     expression.
+        /// </param>
+        /// <param name="cellCssClassExpression">
+        ///     The cell CSS class
+        ///     expression.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for AddColumn
         public MvcGridBuilder<T1> AddColumn(
             string name,
             string headerText,
@@ -96,10 +124,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Adds the column.
         /// </summary>
-        /// <param name="column"></param>
-        /// <returns></returns>
+        /// <param name="column">The column.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for AddColumn
         public MvcGridBuilder<T1> AddColumn(GridColumn<T1> column)
         {
             GridDefinition.AddColumn(column);
@@ -107,10 +136,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Adds the columns.
         /// </summary>
-        /// <param name="columns"></param>
-        /// <returns></returns>
+        /// <param name="columns">The columns.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for AddColumns
         public MvcGridBuilder<T1> AddColumns(
             Action<GridColumnListBuilder<T1>> columns)
         {
@@ -126,11 +156,15 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Adds a rendering engine to the list of configured rendering engines.
+        ///     Adds the rendering engine.
         /// </summary>
-        /// <param name="name">A unique name.</param>
-        /// <param name="renderingEngineType"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <param name="renderingEngineType">
+        ///     Type of the rendering
+        ///     engine.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for AddRenderingEngine
         public MvcGridBuilder<T1> AddRenderingEngine(
             string name,
             Type renderingEngineType)
@@ -142,11 +176,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Adds a rendering engine to the list of configured rendering engines.
+        ///     Adds the rendering engine.
         /// </summary>
-        /// <param name="name">A unique name.</param>
+        /// <param name="name">The name.</param>
         /// <param name="type">The type.</param>
-        /// <returns></returns>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for AddRenderingEngine
         public MvcGridBuilder<T1> AddRenderingEngine(string name, string type)
         {
             GridDefinition.RenderingEngines.Add(
@@ -155,10 +190,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Removes the rendering engine.
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for RemoveRenderingEngine
         public MvcGridBuilder<T1> RemoveRenderingEngine(string name)
         {
             GridDefinition.RenderingEngines.Remove(name);
@@ -166,9 +202,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Add a name to additional query options which are additional parameters that can be passed from client to server
-        ///     side
+        ///     Withes the name of the additional query option.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAdditionalQueryOptionName
         public MvcGridBuilder<T1> WithAdditionalQueryOptionName(string name)
         {
             GridDefinition.AdditionalQueryOptionNames.Add(name);
@@ -176,8 +214,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Names of additional parameters that can be passed from client to server side
+        ///     Withes the additional query option names.
         /// </summary>
+        /// <param name="names">The names.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAdditionalQueryOptionNames
         public MvcGridBuilder<T1> WithAdditionalQueryOptionNames(
             params string[] names)
         {
@@ -190,8 +231,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Add an arbitrary additional settings
+        ///     Withes the additional setting.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="value">The value.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAdditionalSetting
         public MvcGridBuilder<T1> WithAdditionalSetting(
             string name,
             object value)
@@ -201,8 +246,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Allows changing of page size from client-side
+        ///     Withes the size of the allow changing page.
         /// </summary>
+        /// <param name="allow">if set to <c>true</c> [allow].</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAllowChangingPageSize
         public MvcGridBuilder<T1> WithAllowChangingPageSize(bool allow)
         {
             GridDefinition.AllowChangingPageSize = allow;
@@ -210,8 +258,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Indicated the authorization type. Anonymous access is the default.
+        ///     Withes the type of the authorization.
         /// </summary>
+        /// <param name="authType">Type of the authentication.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAuthorizationType
         public MvcGridBuilder<T1> WithAuthorizationType(
             AuthorizationType authType)
         {
@@ -220,8 +271,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Name of function to call before ajax call ends
+        ///     Withes the name of the client side loading complete
+        ///     function.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithClientSideLoadingCompleteFunctionName
         public MvcGridBuilder<T1> WithClientSideLoadingCompleteFunctionName(
             string name)
         {
@@ -230,8 +285,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Name of function to call before ajax call begins
+        ///     Withes the name of the client side loading message
+        ///     function.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithClientSideLoadingMessageFunctionName
         public MvcGridBuilder<T1> WithClientSideLoadingMessageFunctionName(
             string name)
         {
@@ -240,8 +299,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     When RenderingMode is set to Controller, this is the path to the container razor view to use.
+        ///     Withes the container view path.
         /// </summary>
+        /// <param name="containerViewPath">The container view path.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithContainerViewPath
         public MvcGridBuilder<T1> WithContainerViewPath(
             string containerViewPath)
         {
@@ -250,11 +312,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Sets the default rendering engine name (which should match a name from the RenderingEngines property) which
-        ///     will be used when no rendering engine name is specified in the request
+        ///     Withes the default name of the rendering engine.
         /// </summary>
-        /// <param name="renderingEngineName">Name of the rendering engine.</param>
-        /// <returns></returns>
+        /// <param name="renderingEngineName">
+        ///     Name of the rendering
+        ///     engine.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithDefaultRenderingEngineName
         public MvcGridBuilder<T1> WithDefaultRenderingEngineName(
             string renderingEngineName)
         {
@@ -263,8 +328,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     The default column to sort by when no sort is specified
+        ///     Withes the default sort column.
         /// </summary>
+        /// <param name="defaultSortColumn">The default sort column.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithDefaultSortColumn
         public MvcGridBuilder<T1> WithDefaultSortColumn(
             string defaultSortColumn)
         {
@@ -273,8 +341,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     The default order to sort by when no sort is specified
+        ///     Withes the default sort direction.
         /// </summary>
+        /// <param name="sortDirection">The sort direction.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithDefaultSortDirection
         public MvcGridBuilder<T1> WithDefaultSortDirection(
             SortDirection sortDirection)
         {
@@ -283,8 +354,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     HTML to display in place of the grid when an error occurs
+        ///     Withes the error message HTML.
         /// </summary>
+        /// <param name="errorMessageHtml">The error message HTML.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithErrorMessageHtml
         public MvcGridBuilder<T1> WithErrorMessageHtml(string errorMessageHtml)
         {
             GridDefinition.ErrorMessageHtml = errorMessageHtml;
@@ -292,8 +366,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+        ///     Withes the filtering.
         /// </summary>
+        /// <param name="filtering">if set to <c>true</c> [filtering].</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithFiltering
         public MvcGridBuilder<T1> WithFiltering(bool filtering)
         {
             GridDefinition.Filtering = filtering;
@@ -302,8 +379,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     Number of items to display on each page
+        ///     Withes the items per page.
         /// </summary>
+        /// <param name="itemsPerPage">The items per page.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithItemsPerPage
         public MvcGridBuilder<T1> WithItemsPerPage(int itemsPerPage)
         {
             GridDefinition.ItemsPerPage = itemsPerPage;
@@ -311,8 +391,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+        ///     Withes the maximum items per page.
         /// </summary>
+        /// <param name="maxItems">The maximum items.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithMaxItemsPerPage
         public MvcGridBuilder<T1> WithMaxItemsPerPage(int maxItems)
         {
             GridDefinition.MaxItemsPerPage = maxItems;
@@ -321,10 +404,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     Text to display on the "next" button.
+        ///     Withes the next button caption.
         /// </summary>
-        /// <param name="nextButtonCaption"></param>
-        /// <returns></returns>
+        /// <param name="nextButtonCaption">The next button caption.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithNextButtonCaption
         public MvcGridBuilder<T1> WithNextButtonCaption(
             string nextButtonCaption)
         {
@@ -333,8 +417,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Text to display when there are no results.
+        ///     Withes the no results message.
         /// </summary>
+        /// <param name="noResultsMessage">The no results message.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithNoResultsMessage
         public MvcGridBuilder<T1> WithNoResultsMessage(string noResultsMessage)
         {
             GridDefinition.NoResultsMessage = noResultsMessage;
@@ -342,8 +429,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Remove an additional setting
+        ///     Withouts the additional setting.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithoutAdditionalSetting
         public MvcGridBuilder<T1> WithoutAdditionalSetting(string name)
         {
             if (GridDefinition.AdditionalSettings.ContainsKey(name))
@@ -354,8 +444,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Names of page parameters that will be passed from the view
+        ///     Withes the page parameter names.
         /// </summary>
+        /// <param name="names">The names.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPageParameterNames
         public MvcGridBuilder<T1> WithPageParameterNames(params string[] names)
         {
             foreach (var name in names)
@@ -367,8 +460,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables paging on the grid
+        ///     Withes the paging.
         /// </summary>
+        /// <param name="paging">if set to <c>true</c> [paging].</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPaging
         public MvcGridBuilder<T1> WithPaging(bool paging)
         {
             GridDefinition.Paging = paging;
@@ -376,8 +472,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables paging on the grid
+        ///     Withes the paging.
         /// </summary>
+        /// <param name="paging">if set to <c>true</c> [paging].</param>
+        /// <param name="itemsPerPage">The items per page.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPaging
         public MvcGridBuilder<T1> WithPaging(bool paging, int itemsPerPage)
         {
             GridDefinition.Paging = paging;
@@ -386,8 +486,17 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables paging on the grid
+        ///     Withes the paging.
         /// </summary>
+        /// <param name="paging">if set to <c>true</c> [paging].</param>
+        /// <param name="itemsPerPage">The items per page.</param>
+        /// <param name="allowChangePageSize">
+        ///     if set to <c>true</c>
+        ///     [allow change page size].
+        /// </param>
+        /// <param name="maxItemsPerPage">The maximum items per page.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPaging
         public MvcGridBuilder<T1> WithPaging(
             bool paging,
             int itemsPerPage,
@@ -402,8 +511,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+        ///     Withes the preload data.
         /// </summary>
+        /// <param name="preload">if set to <c>true</c> [preload].</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPreloadData
         public MvcGridBuilder<T1> WithPreloadData(bool preload)
         {
             GridDefinition.PreloadData = preload;
@@ -411,10 +523,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Text to display on the "previous" button.
+        ///     Withes the previous button caption.
         /// </summary>
-        /// <param name="previousButtonCaption"></param>
-        /// <returns></returns>
+        /// <param name="previousButtonCaption">
+        ///     The previous button
+        ///     caption.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPreviousButtonCaption
         public MvcGridBuilder<T1> WithPreviousButtonCaption(
             string previousButtonCaption)
         {
@@ -423,10 +539,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Text to display when query is processed
+        ///     Withes the processing message.
         /// </summary>
-        /// <param name="processingMessage"></param>
-        /// <returns></returns>
+        /// <param name="processingMessage">The processing message.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithProcessingMessage
         public MvcGridBuilder<T1> WithProcessingMessage(
             string processingMessage)
         {
@@ -435,8 +552,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Specifies if the data should be loaded as soon as the page loads
+        ///     Withes the query on page load.
         /// </summary>
+        /// <param name="queryOnPageLoad">
+        ///     if set to <c>true</c> [query
+        ///     on page load].
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithQueryOnPageLoad
         public MvcGridBuilder<T1> WithQueryOnPageLoad(bool queryOnPageLoad)
         {
             GridDefinition.QueryOnPageLoad = queryOnPageLoad;
@@ -444,8 +567,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+        ///     Withes the query string prefix.
         /// </summary>
+        /// <param name="prefix">The prefix.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithQueryStringPrefix
         public MvcGridBuilder<T1> WithQueryStringPrefix(string prefix)
         {
             GridDefinition.QueryStringPrefix = prefix;
@@ -453,9 +579,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
-        ///     use a custom Razor view to display your grid, change this to Controller
+        ///     Withes the rendering mode.
         /// </summary>
+        /// <param name="mode">The mode.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithRenderingMode
         public MvcGridBuilder<T1> WithRenderingMode(RenderingMode mode)
         {
             GridDefinition.RenderingMode = mode;
@@ -464,12 +592,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     This is the method that will actually query the data to populate the grid. Use entity framework, a module from you
-        ///     IoC container, direct SQL queries, etc. to get the data. Inside the providee GridContext there is a QueryOptions
-        ///     object which will be populated with the currently requested sorting, paging, and filtering options which you must
-        ///     take into account. See the QueryOptions documentation below. You must return a QueryResult object which takes an
-        ///     enumerable of your type and a count of the total number of records which must be provided if paging is enabled.
+        ///     Withes the retrieve data method.
         /// </summary>
+        /// <param name="retrieveData">The retrieve data.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithRetrieveDataMethod
         public MvcGridBuilder<T1> WithRetrieveDataMethod(
             Func<GridContext, QueryResult<T1>> retrieveData)
         {
@@ -478,8 +605,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Use this to specify a custom css class based on data for the current row
+        ///     Withes the row CSS class expression.
         /// </summary>
+        /// <param name="rowCssClassExpression">
+        ///     The row CSS class
+        ///     expression.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithRowCssClassExpression
         public MvcGridBuilder<T1> WithRowCssClassExpression(
             Func<T1, GridContext, string> rowCssClassExpression)
         {
@@ -488,8 +621,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Use this to specify a custom css class based on data for the current row
+        ///     Withes the row CSS class expression.
         /// </summary>
+        /// <param name="rowCssClassExpression">
+        ///     The row CSS class
+        ///     expression.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithRowCssClassExpression
         public MvcGridBuilder<T1> WithRowCssClassExpression(
             Func<T1, string> rowCssClassExpression)
         {
@@ -499,8 +638,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+        ///     Withes the sorting.
         /// </summary>
+        /// <param name="sorting">if set to <c>true</c> [sorting].</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSorting
         public MvcGridBuilder<T1> WithSorting(bool sorting)
         {
             GridDefinition.Sorting = sorting;
@@ -508,8 +650,12 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+        ///     Withes the sorting.
         /// </summary>
+        /// <param name="sorting">if set to <c>true</c> [sorting].</param>
+        /// <param name="defaultSortColumn">The default sort column.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSorting
         public MvcGridBuilder<T1> WithSorting(
             bool sorting,
             string defaultSortColumn)
@@ -520,8 +666,16 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+        ///     Withes the sorting.
         /// </summary>
+        /// <param name="sorting">if set to <c>true</c> [sorting].</param>
+        /// <param name="defaultSortColumn">The default sort column.</param>
+        /// <param name="defaultSortDirection">
+        ///     The default sort
+        ///     direction.
+        /// </param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSorting
         public MvcGridBuilder<T1> WithSorting(
             bool sorting,
             string defaultSortColumn,
@@ -534,13 +688,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Summary text to display in grid footer. Defaults to "Showing {0} to {1} of {2} entries"
-        ///     {0} = first record number shown on page
-        ///     {1} = last record number shown on page
-        ///     {2} = total number of records on all pages
+        ///     Withes the summary message.
         /// </summary>
-        /// <param name="summaryMessage"></param>
-        /// <returns></returns>
+        /// <param name="summaryMessage">The summary message.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSummaryMessage
         public MvcGridBuilder<T1> WithSummaryMessage(string summaryMessage)
         {
             GridDefinition.SummaryMessage = summaryMessage;
@@ -548,10 +700,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Withes the templating engine.
         /// </summary>
-        /// <param name="templatingEngine"></param>
-        /// <returns></returns>
+        /// <param name="templatingEngine">The templating engine.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithTemplatingEngine
         public MvcGridBuilder<T1> WithTemplatingEngine(Type templatingEngine)
         {
             GridDefinition.TemplatingEngine = templatingEngine;
@@ -559,8 +712,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     When RenderingMode is set to Controller, this is the path to the razor view to use.
+        ///     Withes the view path.
         /// </summary>
+        /// <param name="viewPath">The view path.</param>
+        /// <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithViewPath
         public MvcGridBuilder<T1> WithViewPath(string viewPath)
         {
             GridDefinition.ViewPath = viewPath;

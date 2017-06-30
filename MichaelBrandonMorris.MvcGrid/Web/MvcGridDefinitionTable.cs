@@ -7,30 +7,44 @@ using MichaelBrandonMorris.MvcGrid.Models;
 namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
-    /// 
+    ///     Class MvcGridDefinitionTable.
     /// </summary>
+    /// TODO Edit XML Comment Template for MvcGridDefinitionTable
     public class MvcGridDefinitionTable
     {
+        /// <summary>
+        ///     The table
+        /// </summary>
+        /// TODO Edit XML Comment Template for Table
         private static readonly Dictionary<string, object> Table =
             new Dictionary<string, object>();
 
         /// <summary>
-        /// 
+        ///     Adds the specified name.
         /// </summary>
-        /// <typeparam name="T1"></typeparam>
-        /// <param name="name"></param>
-        /// <param name="builder"></param>
+        /// <typeparam name="T1">The type of the t1.</typeparam>
+        /// <param name="name">The name.</param>
+        /// <param name="builder">The builder.</param>
+        /// TODO Edit XML Comment Template for Add`1
         public static void Add<T1>(string name, MvcGridBuilder<T1> builder)
         {
             Add(name, builder.GridDefinition);
         }
 
         /// <summary>
-        /// 
+        ///     Adds the specified name.
         /// </summary>
-        /// <typeparam name="T1"></typeparam>
-        /// <param name="name"></param>
-        /// <param name="mapping"></param>
+        /// <typeparam name="T1">The type of the t1.</typeparam>
+        /// <param name="name">The name.</param>
+        /// <param name="mapping">The mapping.</param>
+        /// <exception cref="ArgumentException">
+        ///     name
+        ///     or
+        ///     name
+        /// </exception>
+        /// <exception cref="Exception">
+        /// </exception>
+        /// TODO Edit XML Comment Template for Add`1
         public static void Add<T1>(string name, GridDefinition<T1> mapping)
         {
             if (Table.ContainsKey(name))
@@ -87,16 +101,25 @@ namespace MichaelBrandonMorris.MvcGrid.Web
         }
 
         /// <summary>
-        /// 
+        ///     Gets the definition.
         /// </summary>
-        /// <typeparam name="T1"></typeparam>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <typeparam name="T1">The type of the t1.</typeparam>
+        /// <param name="name">The name.</param>
+        /// <returns>GridDefinition&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for GetDefinition`1
         public static GridDefinition<T1> GetDefinition<T1>(string name)
         {
             return (GridDefinition<T1>) GetDefinitionInterface(name);
         }
 
+        /// <summary>
+        ///     Gets the definition interface.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>IMvcGridDefinition.</returns>
+        /// <exception cref="ArgumentNullException">name</exception>
+        /// <exception cref="Exception"></exception>
+        /// TODO Edit XML Comment Template for GetDefinitionInterface
         internal static IMvcGridDefinition GetDefinitionInterface(string name)
         {
             if (string.IsNullOrWhiteSpace(name))

@@ -1,0 +1,1524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="Add Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" />
+    <HelpKINode Title="Add Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add-.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddColumn method">
+    <HelpKINode Title="AddColumn Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AddColumn.htm" />
+    <HelpKINode Title="AddColumn Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumns.htm" />
+  <HelpKINode Title="AdditionalQueryOptionNames property">
+    <HelpKINode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames.htm" />
+    <HelpKINode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalQueryOptionNames.htm" />
+    <HelpKINode Title="AdditionalQueryOptionNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdditionalQueryOptions property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions.htm" />
+  <HelpKINode Title="AdditionalSettings property">
+    <HelpKINode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings.htm" />
+    <HelpKINode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalSettings.htm" />
+    <HelpKINode Title="AdditionalSettings Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddRenderingEngine method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" />
+  <HelpKINode Title="AllowAnonymous enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" />
+  <HelpKINode Title="AllowAnonymous field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.AllowAnonymous.htm" />
+  <HelpKINode Title="AllowChangeVisibility property">
+    <HelpKINode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility.htm" />
+    <HelpKINode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.AllowChangeVisibility.htm" />
+    <HelpKINode Title="AllowChangeVisibility Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AllowChangingPageSize property">
+    <HelpKINode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AllowChangingPageSize.htm" />
+    <HelpKINode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize.htm" />
+    <HelpKINode Title="AllowChangingPageSize Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AllowsPaging property">
+    <HelpKINode Title="AllowsPaging Property " Url="html/P-MVCGrid.RazorTemplates.RazorRenderingEngine.AllowsPaging.htm" />
+    <HelpKINode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging.htm" />
+    <HelpKINode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging.htm" />
+    <HelpKINode Title="AllowsPaging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppendCssAttribute method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AppendCssAttribute.htm" />
+  <HelpKINode Title="Asc enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+  <HelpKINode Title="Asc field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Asc.htm" />
+  <HelpKINode Title="AuthorizationType enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" />
+  <HelpKINode Title="AuthorizationType property">
+    <HelpKINode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType.htm" />
+    <HelpKINode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType.htm" />
+    <HelpKINode Title="AuthorizationType Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AuthorizationType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthorizationType.AllowAnonymous field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.AllowAnonymous.htm" />
+  <HelpKINode Title="AuthorizationType.Authorized field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.Authorized.htm" />
+  <HelpKINode Title="Authorized enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" />
+  <HelpKINode Title="Authorized field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.Authorized.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine class">
+    <HelpKINode Title="BootstrapRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="BootstrapRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="about BootstrapRenderingEngine class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BootstrapRenderingEngine.AllowsPaging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.AppendCssAttribute method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AppendCssAttribute.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.BootstrapRenderingEngine constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.-ctor.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.DefaultTableCss property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.DefaultTableCss.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.HtmlImageSort property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSort.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.HtmlImageSortAsc property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortAsc.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.HtmlImageSortDsc property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortDsc.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.PrepareResponse method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.Render method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.RenderBody method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderBody.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.RenderContainer method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.RenderHeader method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderHeader.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.RenderPaging method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderPaging.htm" />
+  <HelpKINode Title="BootstrapRenderingEngine.SettingNameTableClass field" Url="html/F-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass.htm" />
+  <HelpKINode Title="CalculatedCssClass property">
+    <HelpKINode Title="CalculatedCssClass Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass.htm" />
+    <HelpKINode Title="CalculatedCssClass Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CalculatePageStartAndEnd method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd.htm" />
+  <HelpKINode Title="Cell class">
+    <HelpKINode Title="Cell Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="Cell Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="about Cell class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Cell.CalculatedCssClass property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass.htm" />
+  <HelpKINode Title="Cell.HtmlText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText.htm" />
+  <HelpKINode Title="Cell.PlainText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText.htm" />
+  <HelpKINode Title="CellCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.CellCssClassExpression.htm" />
+  <HelpKINode Title="Cells property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.Cells.htm" />
+  <HelpKINode Title="CheckAuthorization method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization.htm" />
+  <HelpKINode Title="ClientDataTransferHtmlBlock property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock.htm" />
+  <HelpKINode Title="ClientSideLoadingCompleteFunctionName property">
+    <HelpKINode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName.htm" />
+    <HelpKINode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingCompleteFunctionName.htm" />
+    <HelpKINode Title="ClientSideLoadingCompleteFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ClientSideLoadingMessageFunctionName property">
+    <HelpKINode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingMessageFunctionName.htm" />
+    <HelpKINode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName.htm" />
+    <HelpKINode Title="ClientSideLoadingMessageFunctionName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Column class">
+    <HelpKINode Title="Column Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="Column Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="about Column class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Column.HeaderText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText.htm" />
+  <HelpKINode Title="Column.Name property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Name.htm" />
+  <HelpKINode Title="Column.Onclick property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Onclick.htm" />
+  <HelpKINode Title="Column.SortIconDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection.htm" />
+  <HelpKINode Title="ColumnBuilders property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.ColumnBuilders.htm" />
+  <HelpKINode Title="ColumnDefaults class">
+    <HelpKINode Title="ColumnDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="ColumnDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="about ColumnDefaults class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColumnDefaults.AllowChangeVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility.htm" />
+  <HelpKINode Title="ColumnDefaults.ColumnDefaults constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.-ctor.htm" />
+  <HelpKINode Title="ColumnDefaults.ColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName.htm" />
+  <HelpKINode Title="ColumnDefaults.EnableFiltering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering.htm" />
+  <HelpKINode Title="ColumnDefaults.EnableSorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting.htm" />
+  <HelpKINode Title="ColumnDefaults.HeaderText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText.htm" />
+  <HelpKINode Title="ColumnDefaults.HtmlEncode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode.htm" />
+  <HelpKINode Title="ColumnDefaults.SortColumnData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData.htm" />
+  <HelpKINode Title="ColumnDefaults.Visible property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible.htm" />
+  <HelpKINode Title="ColumnName property">
+    <HelpKINode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName.htm" />
+    <HelpKINode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ColumnName.htm" />
+    <HelpKINode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName.htm" />
+    <HelpKINode Title="ColumnName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Columns property">
+    <HelpKINode Title="Columns Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Columns.htm" />
+    <HelpKINode Title="Columns Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColumnVisibility class">
+    <HelpKINode Title="ColumnVisibility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="ColumnVisibility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="about ColumnVisibility class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColumnVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility.htm" />
+  <HelpKINode Title="ColumnVisibility.ColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName.htm" />
+  <HelpKINode Title="ColumnVisibility.Visible property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible.htm" />
+  <HelpKINode Title="ConfigUtility class">
+    <HelpKINode Title="ConfigUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="ConfigUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="about ConfigUtility class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConfigUtility.GetAppSetting(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" />
+  <HelpKINode Title="ConfigUtility.GetAppSetting&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" />
+  <HelpKINode Title="ConfigUtility.GetShowErrorDetailsSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetShowErrorDetailsSetting.htm" />
+  <HelpKINode Title="ConfigUtility.ShowErrorsAppSettingName field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.ShowErrorsAppSettingName.htm" />
+  <HelpKINode Title="ContainerCssClass field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass.htm" />
+  <HelpKINode Title="ContainerRenderingModel class">
+    <HelpKINode Title="ContainerRenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="ContainerRenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="about ContainerRenderingModel class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ContainerRenderingModel.InnerHtmlBlock property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock.htm" />
+  <HelpKINode Title="ContainerViewPath property">
+    <HelpKINode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ContainerViewPath.htm" />
+    <HelpKINode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath.htm" />
+    <HelpKINode Title="ContainerViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controller enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" />
+  <HelpKINode Title="Controller field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.Controller.htm" />
+  <HelpKINode Title="Create method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.Create.htm" />
+  <HelpKINode Title="CsvEncode method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.CsvEncode.htm" />
+  <HelpKINode Title="CsvRenderingEngine class">
+    <HelpKINode Title="CsvRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="CsvRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="about CsvRenderingEngine class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CsvRenderingEngine.AllowsPaging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging.htm" />
+  <HelpKINode Title="CsvRenderingEngine.CsvEncode method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.CsvEncode.htm" />
+  <HelpKINode Title="CsvRenderingEngine.GetFilename method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename.htm" />
+  <HelpKINode Title="CsvRenderingEngine.PrepareResponse method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse.htm" />
+  <HelpKINode Title="CsvRenderingEngine.Render method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render.htm" />
+  <HelpKINode Title="CsvRenderingEngine.RenderContainer method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer.htm" />
+  <HelpKINode Title="CurrentHttpContext property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext.htm" />
+  <HelpKINode Title="CurrentPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage.htm" />
+  <HelpKINode Title="DefaultRenderingEngineName property">
+    <HelpKINode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultRenderingEngineName.htm" />
+    <HelpKINode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName.htm" />
+    <HelpKINode Title="DefaultRenderingEngineName Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultSortColumn property">
+    <HelpKINode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortColumn.htm" />
+    <HelpKINode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn.htm" />
+    <HelpKINode Title="DefaultSortColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultSortDirection property">
+    <HelpKINode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection.htm" />
+    <HelpKINode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection.htm" />
+    <HelpKINode Title="DefaultSortDirection Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortDirection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultTableCss property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.DefaultTableCss.htm" />
+  <HelpKINode Title="Dsc enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+  <HelpKINode Title="Dsc field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Dsc.htm" />
+  <HelpKINode Title="EnableFiltering property">
+    <HelpKINode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering.htm" />
+    <HelpKINode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableFiltering.htm" />
+    <HelpKINode Title="EnableFiltering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnableSorting property">
+    <HelpKINode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting.htm" />
+    <HelpKINode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting.htm" />
+    <HelpKINode Title="EnableSorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableSorting.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErrorMessageHtml property">
+    <HelpKINode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml.htm" />
+    <HelpKINode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ErrorMessageHtml.htm" />
+    <HelpKINode Title="ErrorMessageHtml Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EvaluateParameter method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.EvaluateParameter.htm" />
+  <HelpKINode Title="Filtering property">
+    <HelpKINode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering.htm" />
+    <HelpKINode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering.htm" />
+    <HelpKINode Title="Filtering Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Filtering.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Filters property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters.htm" />
+  <HelpKINode Title="FilterTypesInAssemblies method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.FilterTypesInAssemblies.htm" />
+  <HelpKINode Title="FirstRecord property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord.htm" />
+  <HelpKINode Title="Format method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Format.htm" />
+  <HelpKINode Title="FormatError method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.FormatError.htm" />
+  <HelpKINode Title="GenerateBasePageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateBasePageHtml.htm" />
+  <HelpKINode Title="GenerateClientDataTransferHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDataTransferHtml.htm" />
+  <HelpKINode Title="GenerateClientDefinitionJson method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDefinitionJson.htm" />
+  <HelpKINode Title="GenerateClientJsonAdditional method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonAdditional.htm" />
+  <HelpKINode Title="GenerateClientJsonFilter method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonFilter.htm" />
+  <HelpKINode Title="GenerateClientJsonVisibility method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonVisibility.htm" />
+  <HelpKINode Title="GenerateJsonPageParameters method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateJsonPageParameters.htm" />
+  <HelpKINode Title="GenerateModel method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel.htm" />
+  <HelpKINode Title="GetAdditionalQueryOptionString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString.htm" />
+  <HelpKINode Title="GetAdditionalSetting(Of T) method">
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" />
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" />
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAdditionalSetting&lt;T&gt; method">
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" />
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" />
+    <HelpKINode Title="GetAdditionalSetting(T) Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAppSetting(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" />
+  <HelpKINode Title="GetAppSetting&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" />
+  <HelpKINode Title="GetBasePageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml.htm" />
+  <HelpKINode Title="GetBinaryResource method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetBinaryResource.htm" />
+  <HelpKINode Title="GetColumns method">
+    <HelpKINode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetColumns.htm" />
+    <HelpKINode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns.htm" />
+    <HelpKINode Title="GetColumns Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetContainerHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId.htm" />
+  <HelpKINode Title="GetData method">
+    <HelpKINode Title="GetData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetData.htm" />
+    <HelpKINode Title="GetData Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.GetData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDefinition(Of T1) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" />
+  <HelpKINode Title="GetDefinition&lt;T1&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" />
+  <HelpKINode Title="GetDefinitionInterface method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinitionInterface.htm" />
+  <HelpKINode Title="GetFilename method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename.htm" />
+  <HelpKINode Title="GetFilterString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString.htm" />
+  <HelpKINode Title="GetHandlerPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath.htm" />
+  <HelpKINode Title="GetLimitOffset method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset.htm" />
+  <HelpKINode Title="GetLimitRowcount method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount.htm" />
+  <HelpKINode Title="GetPageParameterString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString.htm" />
+  <HelpKINode Title="GetRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine.htm" />
+  <HelpKINode Title="GetRenderingEngineInternal method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngineInternal.htm" />
+  <HelpKINode Title="GetShowErrorDetailsSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetShowErrorDetailsSetting.htm" />
+  <HelpKINode Title="GetSortColumnData(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" />
+  <HelpKINode Title="GetSortColumnData&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" />
+  <HelpKINode Title="GetTableHolderHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId.htm" />
+  <HelpKINode Title="GetTableHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId.htm" />
+  <HelpKINode Title="GetTextResource method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetTextResource.htm" />
+  <HelpKINode Title="GetVisibleColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns.htm" />
+  <HelpKINode Title="GridColumn property">
+    <HelpKINode Title="GridColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.GridColumn.htm" />
+    <HelpKINode Title="GridColumn Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumn(Of T1) class">
+    <HelpKINode Title="GridColumn(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="GridColumn(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="about GridColumn(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumn(Of T1).AllowChangeVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.AllowChangeVisibility.htm" />
+  <HelpKINode Title="GridColumn(Of T1).CellCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.CellCssClassExpression.htm" />
+  <HelpKINode Title="GridColumn(Of T1).ColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ColumnName.htm" />
+  <HelpKINode Title="GridColumn(Of T1).EnableFiltering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableFiltering.htm" />
+  <HelpKINode Title="GridColumn(Of T1).EnableSorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableSorting.htm" />
+  <HelpKINode Title="GridColumn(Of T1).GridColumn constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" />
+  <HelpKINode Title="GridColumn(Of T1).HeaderText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HeaderText.htm" />
+  <HelpKINode Title="GridColumn(Of T1).HtmlEncode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HtmlEncode.htm" />
+  <HelpKINode Title="GridColumn(Of T1).PlainTextValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.PlainTextValueExpression.htm" />
+  <HelpKINode Title="GridColumn(Of T1).SortColumnData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.SortColumnData.htm" />
+  <HelpKINode Title="GridColumn(Of T1).ValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueExpression.htm" />
+  <HelpKINode Title="GridColumn(Of T1).ValueTemplate property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueTemplate.htm" />
+  <HelpKINode Title="GridColumn(Of T1).Visible property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.Visible.htm" />
+  <HelpKINode Title="GridColumn(Of T1)._headerText field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1._headerText.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt; class">
+    <HelpKINode Title="GridColumn(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="GridColumn(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="about GridColumn&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumn&lt;T1&gt;.AllowChangeVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.AllowChangeVisibility.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.CellCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.CellCssClassExpression.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.ColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ColumnName.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.EnableFiltering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableFiltering.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.EnableSorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableSorting.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.GridColumn constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.HeaderText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HeaderText.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.HtmlEncode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HtmlEncode.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.PlainTextValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.PlainTextValueExpression.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.SortColumnData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.SortColumnData.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.ValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueExpression.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.ValueTemplate property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueTemplate.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;.Visible property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.Visible.htm" />
+  <HelpKINode Title="GridColumn&lt;T1&gt;._headerText field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1._headerText.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1) class">
+    <HelpKINode Title="GridColumnBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="GridColumnBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="about GridColumnBuilder(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumnBuilder(Of T1).GridColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.GridColumn.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).GridColumnBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithAllowChangeVisibility method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithAllowChangeVisibility.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithCellCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithColumnName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithColumnName.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithFiltering method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithFiltering.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithHeaderText method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHeaderText.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithHtmlEncoding method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHtmlEncoding.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithPlainTextValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithSortColumnData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSortColumnData.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithSorting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSorting.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithValueTemplate method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" />
+  <HelpKINode Title="GridColumnBuilder(Of T1).WithVisibility method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt; class">
+    <HelpKINode Title="GridColumnBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="GridColumnBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="about GridColumnBuilder&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.GridColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.GridColumn.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.GridColumnBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithAllowChangeVisibility method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithAllowChangeVisibility.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithCellCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithColumnName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithColumnName.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithFiltering method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithFiltering.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithHeaderText method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHeaderText.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithHtmlEncoding method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHtmlEncoding.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithPlainTextValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithSortColumnData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSortColumnData.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithSorting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSorting.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithValueTemplate method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" />
+  <HelpKINode Title="GridColumnBuilder&lt;T1&gt;.WithVisibility method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" />
+  <HelpKINode Title="GridColumnListBuilder(Of T1) class">
+    <HelpKINode Title="GridColumnListBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="GridColumnListBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="about GridColumnListBuilder(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumnListBuilder(Of T1).Add method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" />
+  <HelpKINode Title="GridColumnListBuilder(Of T1).ColumnBuilders property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.ColumnBuilders.htm" />
+  <HelpKINode Title="GridColumnListBuilder(Of T1).GridColumnListBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" />
+  <HelpKINode Title="GridColumnListBuilder(Of T1)._columnDefaults field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1._columnDefaults.htm" />
+  <HelpKINode Title="GridColumnListBuilder&lt;T1&gt; class">
+    <HelpKINode Title="GridColumnListBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="GridColumnListBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="about GridColumnListBuilder&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridColumnListBuilder&lt;T1&gt;.Add method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" />
+  <HelpKINode Title="GridColumnListBuilder&lt;T1&gt;.ColumnBuilders property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.ColumnBuilders.htm" />
+  <HelpKINode Title="GridColumnListBuilder&lt;T1&gt;.GridColumnListBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" />
+  <HelpKINode Title="GridColumnListBuilder&lt;T1&gt;._columnDefaults field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1._columnDefaults.htm" />
+  <HelpKINode Title="GridContext class">
+    <HelpKINode Title="GridContext Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="GridContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="about GridContext class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridContext property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext.htm" />
+  <HelpKINode Title="GridContext.CurrentHttpContext property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext.htm" />
+  <HelpKINode Title="GridContext.GetVisibleColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns.htm" />
+  <HelpKINode Title="GridContext.GridContext constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.-ctor.htm" />
+  <HelpKINode Title="GridContext.GridDefinition property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridDefinition.htm" />
+  <HelpKINode Title="GridContext.GridName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName.htm" />
+  <HelpKINode Title="GridContext.Items property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.Items.htm" />
+  <HelpKINode Title="GridContext.QueryOptions property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions.htm" />
+  <HelpKINode Title="GridContext.UrlHelper property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper.htm" />
+  <HelpKINode Title="GridContextUtility class">
+    <HelpKINode Title="GridContextUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+    <HelpKINode Title="GridContextUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+    <HelpKINode Title="about GridContextUtility class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridContextUtility.Create method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.Create.htm" />
+  <HelpKINode Title="GridDefaults class">
+    <HelpKINode Title="GridDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="GridDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="about GridDefaults class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridDefaults.AdditionalQueryOptionNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="GridDefaults.AdditionalSettings property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings.htm" />
+  <HelpKINode Title="GridDefaults.AllowChangingPageSize property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize.htm" />
+  <HelpKINode Title="GridDefaults.AuthorizationType property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType.htm" />
+  <HelpKINode Title="GridDefaults.ClientSideLoadingCompleteFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="GridDefaults.ClientSideLoadingMessageFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="GridDefaults.ContainerViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath.htm" />
+  <HelpKINode Title="GridDefaults.DefaultRenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName.htm" />
+  <HelpKINode Title="GridDefaults.DefaultSortColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn.htm" />
+  <HelpKINode Title="GridDefaults.DefaultSortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection.htm" />
+  <HelpKINode Title="GridDefaults.ErrorMessageHtml property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml.htm" />
+  <HelpKINode Title="GridDefaults.Filtering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering.htm" />
+  <HelpKINode Title="GridDefaults.GetAdditionalSetting(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="GridDefaults.GetAdditionalSetting&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="GridDefaults.GetColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns.htm" />
+  <HelpKINode Title="GridDefaults.GridDefaults constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.-ctor.htm" />
+  <HelpKINode Title="GridDefaults.ItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage.htm" />
+  <HelpKINode Title="GridDefaults.MaxItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage.htm" />
+  <HelpKINode Title="GridDefaults.NextButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption.htm" />
+  <HelpKINode Title="GridDefaults.NoResultsMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage.htm" />
+  <HelpKINode Title="GridDefaults.PageParameterNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames.htm" />
+  <HelpKINode Title="GridDefaults.Paging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging.htm" />
+  <HelpKINode Title="GridDefaults.PreloadData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData.htm" />
+  <HelpKINode Title="GridDefaults.PreviousButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption.htm" />
+  <HelpKINode Title="GridDefaults.ProcessingMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage.htm" />
+  <HelpKINode Title="GridDefaults.QueryOnPageLoad property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad.htm" />
+  <HelpKINode Title="GridDefaults.QueryStringPrefix property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix.htm" />
+  <HelpKINode Title="GridDefaults.RenderingEngines property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines.htm" />
+  <HelpKINode Title="GridDefaults.RenderingMode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode.htm" />
+  <HelpKINode Title="GridDefaults.Sorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting.htm" />
+  <HelpKINode Title="GridDefaults.SummaryMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage.htm" />
+  <HelpKINode Title="GridDefaults.TemplatingEngine property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine.htm" />
+  <HelpKINode Title="GridDefaults.ViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath.htm" />
+  <HelpKINode Title="GridDefinition property">
+    <HelpKINode Title="GridDefinition Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridDefinition.htm" />
+    <HelpKINode Title="GridDefinition Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.GridDefinition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridDefinition(Of T1) class">
+    <HelpKINode Title="GridDefinition(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="GridDefinition(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="about GridDefinition(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridDefinition(Of T1).AddColumn method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AddColumn.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).AdditionalQueryOptionNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).AdditionalSettings property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalSettings.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).AllowChangingPageSize property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AllowChangingPageSize.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).AuthorizationType property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AuthorizationType.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ClientSideLoadingCompleteFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ClientSideLoadingMessageFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).Columns property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Columns.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ContainerViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ContainerViewPath.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).DefaultRenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultRenderingEngineName.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).DefaultSortColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortColumn.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).DefaultSortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortDirection.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ErrorMessageHtml property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ErrorMessageHtml.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).Filtering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Filtering.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).GetAdditionalSetting(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).GetColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetColumns.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).GetData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetData.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).GridDefinition constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ItemsPerPage.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).MaxItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.MaxItemsPerPage.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).NextButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NextButtonCaption.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).NoResultsMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NoResultsMessage.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).PageParameterNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PageParameterNames.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).Paging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Paging.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).PreloadData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreloadData.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).PreviousButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreviousButtonCaption.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ProcessingMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ProcessingMessage.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).QueryOnPageLoad property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryOnPageLoad.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).QueryStringPrefix property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryStringPrefix.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).RenderingEngines property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingEngines.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).RenderingMode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingMode.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).RetrieveData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RetrieveData.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).RowCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RowCssClassExpression.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).Sorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Sorting.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).SummaryMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.SummaryMessage.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).TemplatingEngine property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.TemplatingEngine.htm" />
+  <HelpKINode Title="GridDefinition(Of T1).ViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ViewPath.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt; class">
+    <HelpKINode Title="GridDefinition(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="GridDefinition(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="about GridDefinition&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.AddColumn method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AddColumn.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.AdditionalQueryOptionNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.AdditionalSettings property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalSettings.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.AllowChangingPageSize property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AllowChangingPageSize.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.AuthorizationType property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AuthorizationType.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ClientSideLoadingCompleteFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ClientSideLoadingMessageFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.Columns property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Columns.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ContainerViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ContainerViewPath.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.DefaultRenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultRenderingEngineName.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.DefaultSortColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortColumn.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.DefaultSortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortDirection.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ErrorMessageHtml property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ErrorMessageHtml.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.Filtering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Filtering.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.GetAdditionalSetting&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.GetColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetColumns.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.GetData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetData.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.GridDefinition constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ItemsPerPage.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.MaxItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.MaxItemsPerPage.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.NextButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NextButtonCaption.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.NoResultsMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NoResultsMessage.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.PageParameterNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PageParameterNames.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.Paging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Paging.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.PreloadData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreloadData.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.PreviousButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreviousButtonCaption.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ProcessingMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ProcessingMessage.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.QueryOnPageLoad property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryOnPageLoad.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.QueryStringPrefix property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryStringPrefix.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.RenderingEngines property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingEngines.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.RenderingMode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingMode.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.RetrieveData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RetrieveData.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.RowCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RowCssClassExpression.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.Sorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Sorting.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.SummaryMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.SummaryMessage.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.TemplatingEngine property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.TemplatingEngine.htm" />
+  <HelpKINode Title="GridDefinition&lt;T1&gt;.ViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ViewPath.htm" />
+  <HelpKINode Title="GridDefinitionBase class">
+    <HelpKINode Title="GridDefinitionBase Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+    <HelpKINode Title="GridDefinitionBase Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+    <HelpKINode Title="about GridDefinitionBase class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridDefinitionBase.GetData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.GetData.htm" />
+  <HelpKINode Title="GridEngine class">
+    <HelpKINode Title="GridEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="GridEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="about GridEngine class" Url="html/T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridEngine.CheckAuthorization method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization.htm" />
+  <HelpKINode Title="GridEngine.GenerateModel method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel.htm" />
+  <HelpKINode Title="GridEngine.GetBasePageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml.htm" />
+  <HelpKINode Title="GridEngine.GetRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine.htm" />
+  <HelpKINode Title="GridEngine.GetRenderingEngineInternal method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngineInternal.htm" />
+  <HelpKINode Title="GridEngine.LocalEncoding field" Url="html/F-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.LocalEncoding.htm" />
+  <HelpKINode Title="GridEngine.PrepColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepColumns.htm" />
+  <HelpKINode Title="GridEngine.PrepModel method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepModel.htm" />
+  <HelpKINode Title="GridEngine.RenderContainerHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerHtml.htm" />
+  <HelpKINode Title="GridEngine.RenderContainerUsingController method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingController.htm" />
+  <HelpKINode Title="GridEngine.RenderContainerUsingRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingRenderingEngine.htm" />
+  <HelpKINode Title="GridEngine.RenderPreloadedGridHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderPreloadedGridHtml.htm" />
+  <HelpKINode Title="GridEngine.RenderUsingController method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingController.htm" />
+  <HelpKINode Title="GridEngine.RenderUsingRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingRenderingEngine.htm" />
+  <HelpKINode Title="GridEngine.Run method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run.htm" />
+  <HelpKINode Title="GridName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName.htm" />
+  <HelpKINode Title="GridRegistration class">
+    <HelpKINode Title="GridRegistration Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+    <HelpKINode Title="GridRegistration Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+    <HelpKINode Title="about GridRegistration class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GridRegistration.FilterTypesInAssemblies method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.FilterTypesInAssemblies.htm" />
+  <HelpKINode Title="GridRegistration.IsGridRegistrationType method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.IsGridRegistrationType.htm" />
+  <HelpKINode Title="GridRegistration.RegisterAllGrids method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids.htm" />
+  <HelpKINode Title="GridRegistration.RegisterGrids method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids.htm" />
+  <HelpKINode Title="GridRegistration.TypeIsPublicClass method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.TypeIsPublicClass.htm" />
+  <HelpKINode Title="HandelGifImage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelGifImage.htm" />
+  <HelpKINode Title="HandelPngImage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelPngImage.htm" />
+  <HelpKINode Title="HandlerPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath.htm" />
+  <HelpKINode Title="HandleScript method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleScript.htm" />
+  <HelpKINode Title="HandleTable method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleTable.htm" />
+  <HelpKINode Title="HeaderText property">
+    <HelpKINode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HeaderText.htm" />
+    <HelpKINode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText.htm" />
+    <HelpKINode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText.htm" />
+    <HelpKINode Title="HeaderText Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlEncode property">
+    <HelpKINode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode.htm" />
+    <HelpKINode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HtmlEncode.htm" />
+    <HelpKINode Title="HtmlEncode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlExtensions class">
+    <HelpKINode Title="HtmlExtensions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+    <HelpKINode Title="HtmlExtensions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+    <HelpKINode Title="about HtmlExtensions class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlExtensions.MvcGrid method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm" />
+  <HelpKINode Title="HtmlImageSort property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSort.htm" />
+  <HelpKINode Title="HtmlImageSortAsc property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortAsc.htm" />
+  <HelpKINode Title="HtmlImageSortDsc property" Url="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortDsc.htm" />
+  <HelpKINode Title="HtmlText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText.htm" />
+  <HelpKINode Title="HtmlUtility class">
+    <HelpKINode Title="HtmlUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="HtmlUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="about HtmlUtility class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlUtility.ContainerCssClass field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass.htm" />
+  <HelpKINode Title="HtmlUtility.GetContainerHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId.htm" />
+  <HelpKINode Title="HtmlUtility.GetHandlerPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath.htm" />
+  <HelpKINode Title="HtmlUtility.GetTableHolderHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId.htm" />
+  <HelpKINode Title="HtmlUtility.GetTableHtmlId method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId.htm" />
+  <HelpKINode Title="HtmlUtility.MakeCssClassAttributeStirng method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm" />
+  <HelpKINode Title="HtmlUtility.MakeCssClassStirng method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng.htm" />
+  <HelpKINode Title="HtmlUtility.MakeGotoPageLink method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink.htm" />
+  <HelpKINode Title="HtmlUtility.MakeSortLink method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink.htm" />
+  <HelpKINode Title="IMvcGridColumn interface">
+    <HelpKINode Title="IMvcGridColumn Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="IMvcGridColumn Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="about IMvcGridColumn interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMvcGridColumn.AllowChangeVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility.htm" />
+  <HelpKINode Title="IMvcGridColumn.ColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName.htm" />
+  <HelpKINode Title="IMvcGridColumn.EnableFiltering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering.htm" />
+  <HelpKINode Title="IMvcGridColumn.EnableSorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting.htm" />
+  <HelpKINode Title="IMvcGridColumn.HeaderText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText.htm" />
+  <HelpKINode Title="IMvcGridColumn.HtmlEncode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode.htm" />
+  <HelpKINode Title="IMvcGridColumn.SortColumnData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData.htm" />
+  <HelpKINode Title="IMvcGridColumn.Visible property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible.htm" />
+  <HelpKINode Title="IMvcGridDefinition interface">
+    <HelpKINode Title="IMvcGridDefinition Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="IMvcGridDefinition Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="about IMvcGridDefinition interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMvcGridDefinition.AdditionalQueryOptionNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="IMvcGridDefinition.AdditionalSettings property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings.htm" />
+  <HelpKINode Title="IMvcGridDefinition.AllowChangingPageSize property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize.htm" />
+  <HelpKINode Title="IMvcGridDefinition.AuthorizationType property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ClientSideLoadingCompleteFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ClientSideLoadingMessageFunctionName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ContainerViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath.htm" />
+  <HelpKINode Title="IMvcGridDefinition.DefaultRenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName.htm" />
+  <HelpKINode Title="IMvcGridDefinition.DefaultSortColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn.htm" />
+  <HelpKINode Title="IMvcGridDefinition.DefaultSortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ErrorMessageHtml property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml.htm" />
+  <HelpKINode Title="IMvcGridDefinition.Filtering property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering.htm" />
+  <HelpKINode Title="IMvcGridDefinition.GetAdditionalSetting(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="IMvcGridDefinition.GetAdditionalSetting&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" />
+  <HelpKINode Title="IMvcGridDefinition.GetColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage.htm" />
+  <HelpKINode Title="IMvcGridDefinition.MaxItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage.htm" />
+  <HelpKINode Title="IMvcGridDefinition.NextButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption.htm" />
+  <HelpKINode Title="IMvcGridDefinition.NoResultsMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage.htm" />
+  <HelpKINode Title="IMvcGridDefinition.PageParameterNames property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames.htm" />
+  <HelpKINode Title="IMvcGridDefinition.Paging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging.htm" />
+  <HelpKINode Title="IMvcGridDefinition.PreloadData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData.htm" />
+  <HelpKINode Title="IMvcGridDefinition.PreviousButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ProcessingMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage.htm" />
+  <HelpKINode Title="IMvcGridDefinition.QueryOnPageLoad property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad.htm" />
+  <HelpKINode Title="IMvcGridDefinition.QueryStringPrefix property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix.htm" />
+  <HelpKINode Title="IMvcGridDefinition.RenderingEngines property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines.htm" />
+  <HelpKINode Title="IMvcGridDefinition.RenderingMode property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode.htm" />
+  <HelpKINode Title="IMvcGridDefinition.Sorting property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting.htm" />
+  <HelpKINode Title="IMvcGridDefinition.SummaryMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage.htm" />
+  <HelpKINode Title="IMvcGridDefinition.TemplatingEngine property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine.htm" />
+  <HelpKINode Title="IMvcGridDefinition.ViewPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath.htm" />
+  <HelpKINode Title="IMvcGridRenderingEngine interface">
+    <HelpKINode Title="IMvcGridRenderingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="IMvcGridRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="about IMvcGridRenderingEngine interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMvcGridRenderingEngine.AllowsPaging property" Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging.htm" />
+  <HelpKINode Title="IMvcGridRenderingEngine.PrepareResponse method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse.htm" />
+  <HelpKINode Title="IMvcGridRenderingEngine.Render method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render.htm" />
+  <HelpKINode Title="IMvcGridRenderingEngine.RenderContainer method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer.htm" />
+  <HelpKINode Title="IMvcGridTemplatingEngine interface">
+    <HelpKINode Title="IMvcGridTemplatingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+    <HelpKINode Title="IMvcGridTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+    <HelpKINode Title="about IMvcGridTemplatingEngine interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMvcGridTemplatingEngine.Process method" Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process.htm" />
+  <HelpKINode Title="Init method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init.htm" />
+  <HelpKINode Title="InnerHtmlBlock property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock.htm" />
+  <HelpKINode Title="IsGridRegistrationType method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.IsGridRegistrationType.htm" />
+  <HelpKINode Title="IsReusable property" Url="html/P-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable.htm" />
+  <HelpKINode Title="Item property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item.htm" />
+  <HelpKINode Title="Items property">
+    <HelpKINode Title="Items Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.Items.htm" />
+    <HelpKINode Title="Items Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.Items.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ItemsPerPage property">
+    <HelpKINode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage.htm" />
+    <HelpKINode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage.htm" />
+    <HelpKINode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage.htm" />
+    <HelpKINode Title="ItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ItemsPerPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LastRecord property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord.htm" />
+  <HelpKINode Title="LocalEncoding field" Url="html/F-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.LocalEncoding.htm" />
+  <HelpKINode Title="Lock field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Lock.htm" />
+  <HelpKINode Title="MakeCssClassAttributeStirng method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm" />
+  <HelpKINode Title="MakeCssClassStirng method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng.htm" />
+  <HelpKINode Title="MakeGotoPageLink method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink.htm" />
+  <HelpKINode Title="MakeSortLink method" Url="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink.htm" />
+  <HelpKINode Title="MaxItemsPerPage property">
+    <HelpKINode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage.htm" />
+    <HelpKINode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage.htm" />
+    <HelpKINode Title="MaxItemsPerPage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.MaxItemsPerPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Engine namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Engine.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Engine.GridEngine class">
+    <HelpKINode Title="GridEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+    <HelpKINode Title="GridEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Interfaces namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Interfaces.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn interface">
+    <HelpKINode Title="IMvcGridColumn Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+    <HelpKINode Title="IMvcGridColumn Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition interface">
+    <HelpKINode Title="IMvcGridDefinition Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+    <HelpKINode Title="IMvcGridDefinition Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine interface">
+    <HelpKINode Title="IMvcGridRenderingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+    <HelpKINode Title="IMvcGridRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine interface">
+    <HelpKINode Title="IMvcGridTemplatingEngine Interface" Url="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+    <HelpKINode Title="IMvcGridTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Models.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.AuthorizationType enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.Cell class">
+    <HelpKINode Title="Cell Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+    <HelpKINode Title="Cell Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.Column class">
+    <HelpKINode Title="Column Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+    <HelpKINode Title="Column Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults class">
+    <HelpKINode Title="ColumnDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+    <HelpKINode Title="ColumnDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility class">
+    <HelpKINode Title="ColumnVisibility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+    <HelpKINode Title="ColumnVisibility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel class">
+    <HelpKINode Title="ContainerRenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+    <HelpKINode Title="ContainerRenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumn(Of T1) class">
+    <HelpKINode Title="GridColumn(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="GridColumn(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumn&lt;T1&gt; class">
+    <HelpKINode Title="GridColumn(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+    <HelpKINode Title="GridColumn(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder(Of T1) class">
+    <HelpKINode Title="GridColumnBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="GridColumnBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder&lt;T1&gt; class">
+    <HelpKINode Title="GridColumnBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+    <HelpKINode Title="GridColumnBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder(Of T1) class">
+    <HelpKINode Title="GridColumnListBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="GridColumnListBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder&lt;T1&gt; class">
+    <HelpKINode Title="GridColumnListBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+    <HelpKINode Title="GridColumnListBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridContext class">
+    <HelpKINode Title="GridContext Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+    <HelpKINode Title="GridContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridDefaults class">
+    <HelpKINode Title="GridDefaults Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+    <HelpKINode Title="GridDefaults Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridDefinition(Of T1) class">
+    <HelpKINode Title="GridDefinition(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="GridDefinition(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridDefinition&lt;T1&gt; class">
+    <HelpKINode Title="GridDefinition(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+    <HelpKINode Title="GridDefinition(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase class">
+    <HelpKINode Title="GridDefinitionBase Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+    <HelpKINode Title="GridDefinitionBase Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder(Of T1) class">
+    <HelpKINode Title="MvcGridBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="MvcGridBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder&lt;T1&gt; class">
+    <HelpKINode Title="MvcGridBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="MvcGridBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.PagingModel class">
+    <HelpKINode Title="PagingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="PagingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.QueryOptions class">
+    <HelpKINode Title="QueryOptions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="QueryOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.QueryResult(Of T1) class">
+    <HelpKINode Title="QueryResult(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="QueryResult(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.QueryResult&lt;T1&gt; class">
+    <HelpKINode Title="QueryResult(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="QueryResult(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.RenderingMode enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.RenderingModel class">
+    <HelpKINode Title="RenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="RenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.Row class">
+    <HelpKINode Title="Row Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="Row Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.SortDirection enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Models.TemplateModel class">
+    <HelpKINode Title="TemplateModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="TemplateModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Rendering namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Rendering.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine class">
+    <HelpKINode Title="BootstrapRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+    <HelpKINode Title="BootstrapRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine class">
+    <HelpKINode Title="CsvRenderingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+    <HelpKINode Title="CsvRenderingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Templating namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Templating.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine class">
+    <HelpKINode Title="SimpleTemplatingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+    <HelpKINode Title="SimpleTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Utility namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Utility.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility class">
+    <HelpKINode Title="ConfigUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+    <HelpKINode Title="ConfigUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility class">
+    <HelpKINode Title="GridContextUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+    <HelpKINode Title="GridContextUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility class">
+    <HelpKINode Title="HtmlUtility Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+    <HelpKINode Title="HtmlUtility Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web namespace" Url="html/N-MichaelBrandonMorris.MvcGrid.Web.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.GridRegistration class">
+    <HelpKINode Title="GridRegistration Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+    <HelpKINode Title="GridRegistration Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions class">
+    <HelpKINode Title="HtmlExtensions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+    <HelpKINode Title="HtmlExtensions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable class">
+    <HelpKINode Title="MvcGridDefinitionTable Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="MvcGridDefinitionTable Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler class">
+    <HelpKINode Title="MvcGridHandler Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="MvcGridHandler Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator class">
+    <HelpKINode Title="MvcGridHtmlGenerator Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="MvcGridHtmlGenerator Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.MvcGrid.Web.QueryStringParser class">
+    <HelpKINode Title="QueryStringParser Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="QueryStringParser Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGrid method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm" />
+  <HelpKINode Title="MVCGrid.RazorTemplates namespace" Url="html/N-MVCGrid.RazorTemplates.htm" />
+  <HelpKINode Title="MVCGrid.RazorTemplates.RazorRenderingEngine class">
+    <HelpKINode Title="RazorRenderingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="RazorRenderingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MVCGrid.RazorTemplates.RazorTemplatingEngine class">
+    <HelpKINode Title="RazorTemplatingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+    <HelpKINode Title="RazorTemplatingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridBuilder(Of T1) class">
+    <HelpKINode Title="MvcGridBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="MvcGridBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="about MvcGridBuilder(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridBuilder(Of T1).AddColumn method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).AddColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumns.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).AddRenderingEngine method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).GridDefinition property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.GridDefinition.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).MvcGridBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).RemoveRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.RemoveRenderingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithAdditionalQueryOptionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionName.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithAdditionalQueryOptionNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalSetting.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithAllowChangingPageSize method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAllowChangingPageSize.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithAuthorizationType method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAuthorizationType.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithClientSideLoadingCompleteFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithClientSideLoadingMessageFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithContainerViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithContainerViewPath.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithDefaultRenderingEngineName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultRenderingEngineName.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithDefaultSortColumn method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortColumn.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithDefaultSortDirection method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortDirection.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithErrorMessageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithErrorMessageHtml.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithFiltering method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithFiltering.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithItemsPerPage.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithMaxItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithMaxItemsPerPage.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithNextButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNextButtonCaption.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithNoResultsMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNoResultsMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithoutAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithoutAdditionalSetting.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithPageParameterNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPageParameterNames.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithPaging method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithPreloadData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreloadData.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithPreviousButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreviousButtonCaption.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithProcessingMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithProcessingMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithQueryOnPageLoad method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryOnPageLoad.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithQueryStringPrefix method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryStringPrefix.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithRenderingMode method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRenderingMode.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithRetrieveDataMethod method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRetrieveDataMethod.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithRowCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithSorting method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithSummaryMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSummaryMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithTemplatingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithTemplatingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1).WithViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithViewPath.htm" />
+  <HelpKINode Title="MvcGridBuilder(Of T1)._columnDefaults field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1._columnDefaults.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt; class">
+    <HelpKINode Title="MvcGridBuilder(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="MvcGridBuilder(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="about MvcGridBuilder&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.AddColumn method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.AddColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumns.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.AddRenderingEngine method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.GridDefinition property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.GridDefinition.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.MvcGridBuilder constructor" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.RemoveRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.RemoveRenderingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithAdditionalQueryOptionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionName.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithAdditionalQueryOptionNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalSetting.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithAllowChangingPageSize method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAllowChangingPageSize.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithAuthorizationType method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAuthorizationType.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithClientSideLoadingCompleteFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithClientSideLoadingMessageFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithContainerViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithContainerViewPath.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithDefaultRenderingEngineName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultRenderingEngineName.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithDefaultSortColumn method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortColumn.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithDefaultSortDirection method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortDirection.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithErrorMessageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithErrorMessageHtml.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithFiltering method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithFiltering.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithItemsPerPage.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithMaxItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithMaxItemsPerPage.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithNextButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNextButtonCaption.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithNoResultsMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNoResultsMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithoutAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithoutAdditionalSetting.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithPageParameterNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPageParameterNames.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithPaging method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithPreloadData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreloadData.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithPreviousButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreviousButtonCaption.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithProcessingMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithProcessingMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithQueryOnPageLoad method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryOnPageLoad.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithQueryStringPrefix method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryStringPrefix.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithRenderingMode method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRenderingMode.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithRetrieveDataMethod method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRetrieveDataMethod.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithRowCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithSorting method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithSummaryMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSummaryMessage.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithTemplatingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithTemplatingEngine.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;.WithViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithViewPath.htm" />
+  <HelpKINode Title="MvcGridBuilder&lt;T1&gt;._columnDefaults field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1._columnDefaults.htm" />
+  <HelpKINode Title="MvcGridDefinitionTable class">
+    <HelpKINode Title="MvcGridDefinitionTable Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="MvcGridDefinitionTable Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="about MvcGridDefinitionTable class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridDefinitionTable.Add method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add-.htm" />
+  <HelpKINode Title="MvcGridDefinitionTable.GetDefinition(Of T1) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" />
+  <HelpKINode Title="MvcGridDefinitionTable.GetDefinition&lt;T1&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" />
+  <HelpKINode Title="MvcGridDefinitionTable.GetDefinitionInterface method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinitionInterface.htm" />
+  <HelpKINode Title="MvcGridDefinitionTable.Table field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Table.htm" />
+  <HelpKINode Title="MvcGridHandler class">
+    <HelpKINode Title="MvcGridHandler Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="MvcGridHandler Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="about MvcGridHandler class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridHandler.GetBinaryResource method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetBinaryResource.htm" />
+  <HelpKINode Title="MvcGridHandler.GetTextResource method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetTextResource.htm" />
+  <HelpKINode Title="MvcGridHandler.HandelGifImage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelGifImage.htm" />
+  <HelpKINode Title="MvcGridHandler.HandelPngImage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelPngImage.htm" />
+  <HelpKINode Title="MvcGridHandler.HandleScript method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleScript.htm" />
+  <HelpKINode Title="MvcGridHandler.HandleTable method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleTable.htm" />
+  <HelpKINode Title="MvcGridHandler.Init method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init.htm" />
+  <HelpKINode Title="MvcGridHandler.IsReusable property" Url="html/P-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable.htm" />
+  <HelpKINode Title="MvcGridHandler.Lock field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Lock.htm" />
+  <HelpKINode Title="MvcGridHandler.ProcessRequest method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest.htm" />
+  <HelpKINode Title="MvcGridHandler._cachedBinaryResources field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedBinaryResources.htm" />
+  <HelpKINode Title="MvcGridHandler._cachedTextResources field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedTextResources.htm" />
+  <HelpKINode Title="MvcGridHandler._init field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._init.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator class">
+    <HelpKINode Title="MvcGridHtmlGenerator Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="MvcGridHtmlGenerator Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="about MvcGridHtmlGenerator class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateBasePageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateBasePageHtml.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateClientDataTransferHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDataTransferHtml.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateClientDefinitionJson method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDefinitionJson.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateClientJsonAdditional method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonAdditional.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateClientJsonFilter method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonFilter.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateClientJsonVisibility method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonVisibility.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.GenerateJsonPageParameters method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateJsonPageParameters.htm" />
+  <HelpKINode Title="MvcGridHtmlGenerator.RenderLoadingDivSettingName field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.RenderLoadingDivSettingName.htm" />
+  <HelpKINode Title="Name property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Name.htm" />
+  <HelpKINode Title="NextButtonCaption property">
+    <HelpKINode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption.htm" />
+    <HelpKINode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption.htm" />
+    <HelpKINode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption.htm" />
+    <HelpKINode Title="NextButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NextButtonCaption.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NoResultsMessage property">
+    <HelpKINode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage.htm" />
+    <HelpKINode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NoResultsMessage.htm" />
+    <HelpKINode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage.htm" />
+    <HelpKINode Title="NoResultsMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NumberOfPages property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages.htm" />
+  <HelpKINode Title="Onclick property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Onclick.htm" />
+  <HelpKINode Title="PageIndex property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex.htm" />
+  <HelpKINode Title="PageLinks property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks.htm" />
+  <HelpKINode Title="PageParameterNames property">
+    <HelpKINode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames.htm" />
+    <HelpKINode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PageParameterNames.htm" />
+    <HelpKINode Title="PageParameterNames Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PageParameters property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters.htm" />
+  <HelpKINode Title="Paging property">
+    <HelpKINode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Paging.htm" />
+    <HelpKINode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging.htm" />
+    <HelpKINode Title="Paging Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PagingModel class">
+    <HelpKINode Title="PagingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="PagingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="about PagingModel class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PagingModel property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel.htm" />
+  <HelpKINode Title="PagingModel.CalculatePageStartAndEnd method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd.htm" />
+  <HelpKINode Title="PagingModel.CurrentPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage.htm" />
+  <HelpKINode Title="PagingModel.FirstRecord property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord.htm" />
+  <HelpKINode Title="PagingModel.LastRecord property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord.htm" />
+  <HelpKINode Title="PagingModel.NumberOfPages property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages.htm" />
+  <HelpKINode Title="PagingModel.PageLinks property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks.htm" />
+  <HelpKINode Title="PagingModel.PagingModel constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.-ctor.htm" />
+  <HelpKINode Title="PagingModel.TotalRecords property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords.htm" />
+  <HelpKINode Title="ParseOptions method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.ParseOptions.htm" />
+  <HelpKINode Title="PlainText property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText.htm" />
+  <HelpKINode Title="PlainTextValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.PlainTextValueExpression.htm" />
+  <HelpKINode Title="PreloadData property">
+    <HelpKINode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData.htm" />
+    <HelpKINode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreloadData.htm" />
+    <HelpKINode Title="PreloadData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrepareResponse method">
+    <HelpKINode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse.htm" />
+    <HelpKINode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse.htm" />
+    <HelpKINode Title="PrepareResponse Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.PrepareResponse.htm" />
+    <HelpKINode Title="PrepareResponse Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrepColumns method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepColumns.htm" />
+  <HelpKINode Title="PrepModel method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepModel.htm" />
+  <HelpKINode Title="PreviousButtonCaption property">
+    <HelpKINode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption.htm" />
+    <HelpKINode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreviousButtonCaption.htm" />
+    <HelpKINode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption.htm" />
+    <HelpKINode Title="PreviousButtonCaption Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Process method">
+    <HelpKINode Title="Process Method " Url="html/M-MVCGrid.RazorTemplates.RazorTemplatingEngine.Process.htm" />
+    <HelpKINode Title="Process Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process.htm" />
+    <HelpKINode Title="Process Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProcessingMessage property">
+    <HelpKINode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ProcessingMessage.htm" />
+    <HelpKINode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage.htm" />
+    <HelpKINode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage.htm" />
+    <HelpKINode Title="ProcessingMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProcessRequest method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest.htm" />
+  <HelpKINode Title="QueryOnPageLoad property">
+    <HelpKINode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad.htm" />
+    <HelpKINode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad.htm" />
+    <HelpKINode Title="QueryOnPageLoad Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryOnPageLoad.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryOptions class">
+    <HelpKINode Title="QueryOptions Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="QueryOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="about QueryOptions class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryOptions property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions.htm" />
+  <HelpKINode Title="QueryOptions.AdditionalQueryOptions property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions.htm" />
+  <HelpKINode Title="QueryOptions.ColumnVisibility property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility.htm" />
+  <HelpKINode Title="QueryOptions.Filters property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters.htm" />
+  <HelpKINode Title="QueryOptions.GetAdditionalQueryOptionString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString.htm" />
+  <HelpKINode Title="QueryOptions.GetFilterString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString.htm" />
+  <HelpKINode Title="QueryOptions.GetLimitOffset method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset.htm" />
+  <HelpKINode Title="QueryOptions.GetLimitRowcount method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount.htm" />
+  <HelpKINode Title="QueryOptions.GetPageParameterString method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString.htm" />
+  <HelpKINode Title="QueryOptions.GetSortColumnData(Of T) method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" />
+  <HelpKINode Title="QueryOptions.GetSortColumnData&lt;T&gt; method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" />
+  <HelpKINode Title="QueryOptions.ItemsPerPage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage.htm" />
+  <HelpKINode Title="QueryOptions.PageIndex property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex.htm" />
+  <HelpKINode Title="QueryOptions.PageParameters property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters.htm" />
+  <HelpKINode Title="QueryOptions.QueryOptions constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.-ctor.htm" />
+  <HelpKINode Title="QueryOptions.RenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName.htm" />
+  <HelpKINode Title="QueryOptions.SortColumnData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData.htm" />
+  <HelpKINode Title="QueryOptions.SortColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName.htm" />
+  <HelpKINode Title="QueryOptions.SortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection.htm" />
+  <HelpKINode Title="QueryOptions._sortColumnData field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.QueryOptions._sortColumnData.htm" />
+  <HelpKINode Title="QueryResult(Of T1) class">
+    <HelpKINode Title="QueryResult(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="QueryResult(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="about QueryResult(Of T1) class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryResult(Of T1).Items property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.Items.htm" />
+  <HelpKINode Title="QueryResult(Of T1).TotalRecords property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.TotalRecords.htm" />
+  <HelpKINode Title="QueryResult&lt;T1&gt; class">
+    <HelpKINode Title="QueryResult(T1) Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="QueryResult(T1) Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="about QueryResult&lt;T1&gt; class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryResult&lt;T1&gt;.Items property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.Items.htm" />
+  <HelpKINode Title="QueryResult&lt;T1&gt;.TotalRecords property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.TotalRecords.htm" />
+  <HelpKINode Title="QueryStringParser class">
+    <HelpKINode Title="QueryStringParser Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="QueryStringParser Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="about QueryStringParser class" Url="html/T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryStringParser.ParseOptions method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.ParseOptions.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringPrefixPageParameter field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringPrefixPageParameter.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixColumns field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixColumns.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixEngine field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixEngine.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixItemsPerPage field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixItemsPerPage.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixPage field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixPage.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixSort field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSort.htm" />
+  <HelpKINode Title="QueryStringParser.QueryStringSuffixSortDir field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSortDir.htm" />
+  <HelpKINode Title="QueryStringPrefix property">
+    <HelpKINode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryStringPrefix.htm" />
+    <HelpKINode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix.htm" />
+    <HelpKINode Title="QueryStringPrefix Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QueryStringPrefixPageParameter field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringPrefixPageParameter.htm" />
+  <HelpKINode Title="QueryStringSuffixColumns field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixColumns.htm" />
+  <HelpKINode Title="QueryStringSuffixEngine field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixEngine.htm" />
+  <HelpKINode Title="QueryStringSuffixItemsPerPage field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixItemsPerPage.htm" />
+  <HelpKINode Title="QueryStringSuffixPage field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixPage.htm" />
+  <HelpKINode Title="QueryStringSuffixSort field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSort.htm" />
+  <HelpKINode Title="QueryStringSuffixSortDir field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSortDir.htm" />
+  <HelpKINode Title="RazorRenderingEngine class">
+    <HelpKINode Title="RazorRenderingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="RazorRenderingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="about RazorRenderingEngine class" Url="html/T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RazorRenderingEngine.AllowsPaging property" Url="html/P-MVCGrid.RazorTemplates.RazorRenderingEngine.AllowsPaging.htm" />
+  <HelpKINode Title="RazorRenderingEngine.PrepareResponse method" Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.PrepareResponse.htm" />
+  <HelpKINode Title="RazorRenderingEngine.Render method" Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.Render.htm" />
+  <HelpKINode Title="RazorRenderingEngine.RenderContainer method" Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.RenderContainer.htm" />
+  <HelpKINode Title="RazorTemplatingEngine class">
+    <HelpKINode Title="RazorTemplatingEngine Class" Url="html/T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+    <HelpKINode Title="RazorTemplatingEngine Members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+    <HelpKINode Title="about RazorTemplatingEngine class" Url="html/T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RazorTemplatingEngine.Process method" Url="html/M-MVCGrid.RazorTemplates.RazorTemplatingEngine.Process.htm" />
+  <HelpKINode Title="ReflectPropertyValue method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.ReflectPropertyValue.htm" />
+  <HelpKINode Title="RegisterAllGrids method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids.htm" />
+  <HelpKINode Title="RegisterGrids method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids.htm" />
+  <HelpKINode Title="RemoveRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.RemoveRenderingEngine.htm" />
+  <HelpKINode Title="Render method">
+    <HelpKINode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render.htm" />
+    <HelpKINode Title="Render Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.Render.htm" />
+    <HelpKINode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render.htm" />
+    <HelpKINode Title="Render Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderBody method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderBody.htm" />
+  <HelpKINode Title="RenderContainer method">
+    <HelpKINode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer.htm" />
+    <HelpKINode Title="RenderContainer Method " Url="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.RenderContainer.htm" />
+    <HelpKINode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer.htm" />
+    <HelpKINode Title="RenderContainer Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderContainerHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerHtml.htm" />
+  <HelpKINode Title="RenderContainerUsingController method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingController.htm" />
+  <HelpKINode Title="RenderContainerUsingRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingRenderingEngine.htm" />
+  <HelpKINode Title="RenderHeader method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderHeader.htm" />
+  <HelpKINode Title="RenderingEngine enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" />
+  <HelpKINode Title="RenderingEngine field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.RenderingEngine.htm" />
+  <HelpKINode Title="RenderingEngineName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName.htm" />
+  <HelpKINode Title="RenderingEngines property">
+    <HelpKINode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingEngines.htm" />
+    <HelpKINode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines.htm" />
+    <HelpKINode Title="RenderingEngines Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderingMode enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" />
+  <HelpKINode Title="RenderingMode property">
+    <HelpKINode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode.htm" />
+    <HelpKINode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode.htm" />
+    <HelpKINode Title="RenderingMode Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingMode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderingMode.Controller field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.Controller.htm" />
+  <HelpKINode Title="RenderingMode.RenderingEngine field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.RenderingEngine.htm" />
+  <HelpKINode Title="RenderingModel class">
+    <HelpKINode Title="RenderingModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="RenderingModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="about RenderingModel class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderingModel.ClientDataTransferHtmlBlock property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock.htm" />
+  <HelpKINode Title="RenderingModel.Columns property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns.htm" />
+  <HelpKINode Title="RenderingModel.HandlerPath property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath.htm" />
+  <HelpKINode Title="RenderingModel.NextButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption.htm" />
+  <HelpKINode Title="RenderingModel.NoResultsMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage.htm" />
+  <HelpKINode Title="RenderingModel.PagingModel property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel.htm" />
+  <HelpKINode Title="RenderingModel.PreviousButtonCaption property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption.htm" />
+  <HelpKINode Title="RenderingModel.ProcessingMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage.htm" />
+  <HelpKINode Title="RenderingModel.RenderingModel constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.-ctor.htm" />
+  <HelpKINode Title="RenderingModel.Rows property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows.htm" />
+  <HelpKINode Title="RenderingModel.SummaryMessage property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage.htm" />
+  <HelpKINode Title="RenderingModel.TableHtmlId property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId.htm" />
+  <HelpKINode Title="RenderLoadingDivSettingName field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.RenderLoadingDivSettingName.htm" />
+  <HelpKINode Title="RenderPaging method" Url="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderPaging.htm" />
+  <HelpKINode Title="RenderPreloadedGridHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderPreloadedGridHtml.htm" />
+  <HelpKINode Title="RenderUsingController method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingController.htm" />
+  <HelpKINode Title="RenderUsingRenderingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingRenderingEngine.htm" />
+  <HelpKINode Title="RetrieveData property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RetrieveData.htm" />
+  <HelpKINode Title="Row class">
+    <HelpKINode Title="Row Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="Row Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="about Row class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.Row.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Row property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row.htm" />
+  <HelpKINode Title="Row.CalculatedCssClass property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass.htm" />
+  <HelpKINode Title="Row.Cells property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.Cells.htm" />
+  <HelpKINode Title="Row.Row constructor" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.Row.-ctor.htm" />
+  <HelpKINode Title="RowCssClassExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RowCssClassExpression.htm" />
+  <HelpKINode Title="Rows property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows.htm" />
+  <HelpKINode Title="Run method" Url="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run.htm" />
+  <HelpKINode Title="SettingNameTableClass field" Url="html/F-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass.htm" />
+  <HelpKINode Title="ShowErrorsAppSettingName field" Url="html/F-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.ShowErrorsAppSettingName.htm" />
+  <HelpKINode Title="SimpleTemplatingEngine class">
+    <HelpKINode Title="SimpleTemplatingEngine Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+    <HelpKINode Title="SimpleTemplatingEngine Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+    <HelpKINode Title="about SimpleTemplatingEngine class" Url="html/T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleTemplatingEngine.EvaluateParameter method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.EvaluateParameter.htm" />
+  <HelpKINode Title="SimpleTemplatingEngine.Format method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Format.htm" />
+  <HelpKINode Title="SimpleTemplatingEngine.FormatError method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.FormatError.htm" />
+  <HelpKINode Title="SimpleTemplatingEngine.Process method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process.htm" />
+  <HelpKINode Title="SimpleTemplatingEngine.ReflectPropertyValue method" Url="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.ReflectPropertyValue.htm" />
+  <HelpKINode Title="SortColumnData property">
+    <HelpKINode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData.htm" />
+    <HelpKINode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData.htm" />
+    <HelpKINode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.SortColumnData.htm" />
+    <HelpKINode Title="SortColumnData Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SortColumnName property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName.htm" />
+  <HelpKINode Title="SortDirection enumeration" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+  <HelpKINode Title="SortDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection.htm" />
+  <HelpKINode Title="SortDirection.Asc field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Asc.htm" />
+  <HelpKINode Title="SortDirection.Dsc field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Dsc.htm" />
+  <HelpKINode Title="SortDirection.Unspecified field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Unspecified.htm" />
+  <HelpKINode Title="SortIconDirection property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection.htm" />
+  <HelpKINode Title="Sorting property">
+    <HelpKINode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting.htm" />
+    <HelpKINode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting.htm" />
+    <HelpKINode Title="Sorting Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Sorting.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SummaryMessage property">
+    <HelpKINode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage.htm" />
+    <HelpKINode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.SummaryMessage.htm" />
+    <HelpKINode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage.htm" />
+    <HelpKINode Title="SummaryMessage Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Table field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Table.htm" />
+  <HelpKINode Title="TableHtmlId property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId.htm" />
+  <HelpKINode Title="TemplateModel class">
+    <HelpKINode Title="TemplateModel Class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="TemplateModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="about TemplateModel class" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TemplateModel.GridColumn property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn.htm" />
+  <HelpKINode Title="TemplateModel.GridContext property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext.htm" />
+  <HelpKINode Title="TemplateModel.Item property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item.htm" />
+  <HelpKINode Title="TemplateModel.Row property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row.htm" />
+  <HelpKINode Title="TemplateModel.Url property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url.htm" />
+  <HelpKINode Title="TemplateModel.Value property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value.htm" />
+  <HelpKINode Title="TemplatingEngine property">
+    <HelpKINode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine.htm" />
+    <HelpKINode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine.htm" />
+    <HelpKINode Title="TemplatingEngine Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.TemplatingEngine.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TotalRecords property">
+    <HelpKINode Title="TotalRecords Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.TotalRecords.htm" />
+    <HelpKINode Title="TotalRecords Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TypeIsPublicClass method" Url="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.TypeIsPublicClass.htm" />
+  <HelpKINode Title="Unspecified enumeration member" Url="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" />
+  <HelpKINode Title="Unspecified field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.SortDirection.Unspecified.htm" />
+  <HelpKINode Title="Url property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url.htm" />
+  <HelpKINode Title="UrlHelper property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper.htm" />
+  <HelpKINode Title="Value property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value.htm" />
+  <HelpKINode Title="ValueExpression property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueExpression.htm" />
+  <HelpKINode Title="ValueTemplate property" Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueTemplate.htm" />
+  <HelpKINode Title="ViewPath property">
+    <HelpKINode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath.htm" />
+    <HelpKINode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ViewPath.htm" />
+    <HelpKINode Title="ViewPath Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Visible property">
+    <HelpKINode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible.htm" />
+    <HelpKINode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible.htm" />
+    <HelpKINode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.Visible.htm" />
+    <HelpKINode Title="Visible Property " Url="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WithAdditionalQueryOptionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionName.htm" />
+  <HelpKINode Title="WithAdditionalQueryOptionNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionNames.htm" />
+  <HelpKINode Title="WithAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalSetting.htm" />
+  <HelpKINode Title="WithAllowChangeVisibility method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithAllowChangeVisibility.htm" />
+  <HelpKINode Title="WithAllowChangingPageSize method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAllowChangingPageSize.htm" />
+  <HelpKINode Title="WithAuthorizationType method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAuthorizationType.htm" />
+  <HelpKINode Title="WithCellCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" />
+  <HelpKINode Title="WithClientSideLoadingCompleteFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingCompleteFunctionName.htm" />
+  <HelpKINode Title="WithClientSideLoadingMessageFunctionName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingMessageFunctionName.htm" />
+  <HelpKINode Title="WithColumnName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithColumnName.htm" />
+  <HelpKINode Title="WithContainerViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithContainerViewPath.htm" />
+  <HelpKINode Title="WithDefaultRenderingEngineName method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultRenderingEngineName.htm" />
+  <HelpKINode Title="WithDefaultSortColumn method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortColumn.htm" />
+  <HelpKINode Title="WithDefaultSortDirection method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortDirection.htm" />
+  <HelpKINode Title="WithErrorMessageHtml method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithErrorMessageHtml.htm" />
+  <HelpKINode Title="WithFiltering method">
+    <HelpKINode Title="WithFiltering Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithFiltering.htm" />
+    <HelpKINode Title="WithFiltering Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithFiltering.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WithHeaderText method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHeaderText.htm" />
+  <HelpKINode Title="WithHtmlEncoding method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHtmlEncoding.htm" />
+  <HelpKINode Title="WithItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithItemsPerPage.htm" />
+  <HelpKINode Title="WithMaxItemsPerPage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithMaxItemsPerPage.htm" />
+  <HelpKINode Title="WithNextButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNextButtonCaption.htm" />
+  <HelpKINode Title="WithNoResultsMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNoResultsMessage.htm" />
+  <HelpKINode Title="WithoutAdditionalSetting method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithoutAdditionalSetting.htm" />
+  <HelpKINode Title="WithPageParameterNames method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPageParameterNames.htm" />
+  <HelpKINode Title="WithPaging method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" />
+  <HelpKINode Title="WithPlainTextValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" />
+  <HelpKINode Title="WithPreloadData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreloadData.htm" />
+  <HelpKINode Title="WithPreviousButtonCaption method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreviousButtonCaption.htm" />
+  <HelpKINode Title="WithProcessingMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithProcessingMessage.htm" />
+  <HelpKINode Title="WithQueryOnPageLoad method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryOnPageLoad.htm" />
+  <HelpKINode Title="WithQueryStringPrefix method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryStringPrefix.htm" />
+  <HelpKINode Title="WithRenderingMode method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRenderingMode.htm" />
+  <HelpKINode Title="WithRetrieveDataMethod method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRetrieveDataMethod.htm" />
+  <HelpKINode Title="WithRowCssClassExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" />
+  <HelpKINode Title="WithSortColumnData method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSortColumnData.htm" />
+  <HelpKINode Title="WithSorting method">
+    <HelpKINode Title="WithSorting Method " Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" />
+    <HelpKINode Title="WithSorting Method " Url="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSorting.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WithSummaryMessage method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSummaryMessage.htm" />
+  <HelpKINode Title="WithTemplatingEngine method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithTemplatingEngine.htm" />
+  <HelpKINode Title="WithValueExpression method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" />
+  <HelpKINode Title="WithValueTemplate method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" />
+  <HelpKINode Title="WithViewPath method" Url="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithViewPath.htm" />
+  <HelpKINode Title="WithVisibility method" Url="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" />
+  <HelpKINode Title="_cachedBinaryResources field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedBinaryResources.htm" />
+  <HelpKINode Title="_cachedTextResources field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedTextResources.htm" />
+  <HelpKINode Title="_columnDefaults field">
+    <HelpKINode Title="_columnDefaults Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1._columnDefaults.htm" />
+    <HelpKINode Title="_columnDefaults Field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1._columnDefaults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_headerText field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1._headerText.htm" />
+  <HelpKINode Title="_init field" Url="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._init.htm" />
+  <HelpKINode Title="_sortColumnData field" Url="html/F-MichaelBrandonMorris.MvcGrid.Models.QueryOptions._sortColumnData.htm" />
+</HelpKI>

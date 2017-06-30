@@ -2,25 +2,50 @@
 using System.Web;
 using MichaelBrandonMorris.MvcGrid.Interfaces;
 using MichaelBrandonMorris.MvcGrid.Models;
+using RazorEngine;
 using RazorEngine.Templating;
 
 namespace MVCGrid.RazorTemplates
 {
+    /// <summary>
+    ///     Class RazorRenderingEngine.
+    /// </summary>
+    /// <seealso cref="IMvcGridRenderingEngine" />
+    /// TODO Edit XML Comment Template for RazorRenderingEngine
     public class RazorRenderingEngine : IMvcGridRenderingEngine
     {
+        /// <summary>
+        ///     Gets a value indicating whether [allows paging].
+        /// </summary>
+        /// <value>
+        ///     <c>true</c> if [allows paging]; otherwise,
+        ///     <c>false</c>.
+        /// </value>
+        /// TODO Edit XML Comment Template for AllowsPaging
         public bool AllowsPaging => true;
 
+        /// <summary>
+        ///     Prepares the response.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// TODO Edit XML Comment Template for PrepareResponse
         public void PrepareResponse(HttpResponse response)
         {
         }
 
+        /// <summary>
+        ///     Renders the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="gridContext">The grid context.</param>
+        /// <param name="outputStream">The output stream.</param>
+        /// TODO Edit XML Comment Template for Render
         public void Render(
             RenderingModel model,
             GridContext gridContext,
             TextWriter outputStream)
         {
-            //model.
-            var template = @"
+            const string template = @"
 @using MVCGrid.Models
 @helper SortImage(Column col){
     
@@ -146,11 +171,11 @@ namespace MVCGrid.RazorTemplates
         </div>
     </div>
 }
-"; //
+";
 
-            var templateKey = "Output";
+            const string templateKey = "Output";
 
-            var result = RazorEngine.Engine.Razor.RunCompile(
+            var result = Engine.Razor.RunCompile(
                 template,
                 templateKey,
                 typeof(RenderingModel),
@@ -161,6 +186,12 @@ namespace MVCGrid.RazorTemplates
         }
 
 
+        /// <summary>
+        ///     Renders the container.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <param name="outputStream">The output stream.</param>
+        /// TODO Edit XML Comment Template for RenderContainer
         public void RenderContainer(
             ContainerRenderingModel model,
             TextWriter outputStream)

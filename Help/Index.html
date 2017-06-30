@@ -1,0 +1,2032 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>MichaelBrandonMorris.MvcGrid - Table of Content</title>
+<link rel="stylesheet" href="TOC.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="TOC.js"></script>
+</head>
+
+<body onload="javascript: Initialize('.aspx');" onresize="javascript: ResizeTree();">
+<form id="IndexForm" runat="server">
+
+<div id="TOCDiv" class="TOCDiv">
+
+<div id="divSearchOpts" class="SearchOpts" style="height: 90px; display: none;">
+	<img class="TOCLink" onclick="javascript: ShowHideSearch(false);"
+		src="Close.png" height="24" width="24" alt="Hide Search" title="Hide Search" style="float: right;"/>
+	<span class="Title">Keyword(s) to search:</span>
+	<input id="txtSearchText" type="text" style="width: 100%;" 
+		onkeypress="javascript: return OnSearchTextKeyPress(event);" /><br />
+	<input id="chkSortByTitle" type="checkbox" /><label for="chkSortByTitle">&nbsp;Sort results by title</label>
+	<input type="button" value="Search" onclick="javascript: return PerformSearch();" style="float: right;" />
+</div>
+
+<div id="divIndexOpts" class="IndexOpts" style="height: 28px; display: none;">
+	<img class="TOCLink" onclick="javascript: ShowHideIndex(false);"
+		src="Close.png" height="24" width="24" alt="Hide Keyword Index" title="Hide Keyword Index" style="float: right;"/>
+	<span class="Title">Keyword Index</span>
+</div>
+
+<div id="divNavOpts" class="NavOpts" style="height: 28px;">
+    <img class="TOCLink" onclick="javascript: SyncTOC();" src="SyncTOC.png"
+        height="24" width="24" alt="Sync to TOC" title="Sync to TOC" />
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(true);"
+        src="ExpandAll.png" height="24" width="24" alt="Expand all" title="Expand all" />
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(false);"
+        src="CollapseAll.png" height="24" width="24" alt="Collapse all" title="Collapse all" />
+    <img class="TOCLink" onclick="javascript: ShowDirectLink();"
+        src="Link.png" height="24" width="24" alt="Get direct link to the displayed topic" title="Get direct link to the displayed topic" />
+    <a href="#" onclick="javascript: TopicContent.history.go(-1); return false;">
+		<img class="TOCLink" style="float: right;" 
+        src="Back.png" height="24" width="24" alt="Previous page" title="Previous page" /></a>
+</div>
+
+<div class="Tree" id="divSearchResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divIndexResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divTree" onselectstart="javascript: return false;">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Engine.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Engine Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" target="TopicContent">GridEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" target="TopicContent">GridEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" target="TopicContent">GridEngine Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.LocalEncoding.htm" target="TopicContent">LocalEncoding Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.htm" target="TopicContent">GridEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization.htm" target="TopicContent">CheckAuthorization Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel.htm" target="TopicContent">GenerateModel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml.htm" target="TopicContent">GetBasePageHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine.htm" target="TopicContent">GetRenderingEngine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngineInternal.htm" target="TopicContent">GetRenderingEngineInternal Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepColumns.htm" target="TopicContent">PrepColumns Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepModel.htm" target="TopicContent">PrepModel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerHtml.htm" target="TopicContent">RenderContainerHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingController.htm" target="TopicContent">RenderContainerUsingController Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingRenderingEngine.htm" target="TopicContent">RenderContainerUsingRenderingEngine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderPreloadedGridHtml.htm" target="TopicContent">RenderPreloadedGridHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingController.htm" target="TopicContent">RenderUsingController Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingRenderingEngine.htm" target="TopicContent">RenderUsingRenderingEngine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run.htm" target="TopicContent">Run Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Interfaces.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Interfaces Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" target="TopicContent">IMvcGridColumn Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" target="TopicContent">IMvcGridColumn Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" target="TopicContent">IMvcGridColumn Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.htm" target="TopicContent">IMvcGridColumn Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility.htm" target="TopicContent">AllowChangeVisibility Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName.htm" target="TopicContent">ColumnName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering.htm" target="TopicContent">EnableFiltering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting.htm" target="TopicContent">EnableSorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText.htm" target="TopicContent">HeaderText Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode.htm" target="TopicContent">HtmlEncode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData.htm" target="TopicContent">SortColumnData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible.htm" target="TopicContent">Visible Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" target="TopicContent">IMvcGridDefinition Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" target="TopicContent">IMvcGridDefinition Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" target="TopicContent">IMvcGridDefinition Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting--1.htm" target="TopicContent">GetAdditionalSetting(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns.htm" target="TopicContent">GetColumns Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.htm" target="TopicContent">IMvcGridDefinition Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames.htm" target="TopicContent">AdditionalQueryOptionNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings.htm" target="TopicContent">AdditionalSettings Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize.htm" target="TopicContent">AllowChangingPageSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType.htm" target="TopicContent">AuthorizationType Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName.htm" target="TopicContent">ClientSideLoadingCompleteFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName.htm" target="TopicContent">ClientSideLoadingMessageFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath.htm" target="TopicContent">ContainerViewPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName.htm" target="TopicContent">DefaultRenderingEngineName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn.htm" target="TopicContent">DefaultSortColumn Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection.htm" target="TopicContent">DefaultSortDirection Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml.htm" target="TopicContent">ErrorMessageHtml Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering.htm" target="TopicContent">Filtering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage.htm" target="TopicContent">ItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage.htm" target="TopicContent">MaxItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption.htm" target="TopicContent">NextButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage.htm" target="TopicContent">NoResultsMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames.htm" target="TopicContent">PageParameterNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging.htm" target="TopicContent">Paging Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData.htm" target="TopicContent">PreloadData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption.htm" target="TopicContent">PreviousButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage.htm" target="TopicContent">ProcessingMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad.htm" target="TopicContent">QueryOnPageLoad Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix.htm" target="TopicContent">QueryStringPrefix Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines.htm" target="TopicContent">RenderingEngines Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode.htm" target="TopicContent">RenderingMode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting.htm" target="TopicContent">Sorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage.htm" target="TopicContent">SummaryMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine.htm" target="TopicContent">TemplatingEngine Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath.htm" target="TopicContent">ViewPath Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" target="TopicContent">IMvcGridRenderingEngine Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" target="TopicContent">IMvcGridRenderingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" target="TopicContent">IMvcGridRenderingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse.htm" target="TopicContent">PrepareResponse Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render.htm" target="TopicContent">Render Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer.htm" target="TopicContent">RenderContainer Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.htm" target="TopicContent">IMvcGridRenderingEngine Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging.htm" target="TopicContent">AllowsPaging Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" target="TopicContent">IMvcGridTemplatingEngine Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" target="TopicContent">IMvcGridTemplatingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.htm" target="TopicContent">IMvcGridTemplatingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process.htm" target="TopicContent">Process Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Models.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Models Namespace</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.htm" target="TopicContent">AuthorizationType Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" target="TopicContent">Cell Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" target="TopicContent">Cell Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" target="TopicContent">Cell Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Cell.htm" target="TopicContent">Cell Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass.htm" target="TopicContent">CalculatedCssClass Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText.htm" target="TopicContent">HtmlText Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText.htm" target="TopicContent">PlainText Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" target="TopicContent">Column Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" target="TopicContent">Column Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" target="TopicContent">Column Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Column.htm" target="TopicContent">Column Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText.htm" target="TopicContent">HeaderText Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Name.htm" target="TopicContent">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.Onclick.htm" target="TopicContent">Onclick Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection.htm" target="TopicContent">SortIconDirection Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" target="TopicContent">ColumnDefaults Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" target="TopicContent">ColumnDefaults Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.-ctor.htm" target="TopicContent">ColumnDefaults Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" target="TopicContent">ColumnDefaults Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.htm" target="TopicContent">ColumnDefaults Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility.htm" target="TopicContent">AllowChangeVisibility Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName.htm" target="TopicContent">ColumnName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering.htm" target="TopicContent">EnableFiltering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting.htm" target="TopicContent">EnableSorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText.htm" target="TopicContent">HeaderText Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode.htm" target="TopicContent">HtmlEncode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData.htm" target="TopicContent">SortColumnData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible.htm" target="TopicContent">Visible Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" target="TopicContent">ColumnVisibility Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" target="TopicContent">ColumnVisibility Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" target="TopicContent">ColumnVisibility Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.htm" target="TopicContent">ColumnVisibility Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName.htm" target="TopicContent">ColumnName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible.htm" target="TopicContent">Visible Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" target="TopicContent">ContainerRenderingModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" target="TopicContent">ContainerRenderingModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" target="TopicContent">ContainerRenderingModel Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.htm" target="TopicContent">ContainerRenderingModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock.htm" target="TopicContent">InnerHtmlBlock Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" target="TopicContent">GridColumn(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" target="TopicContent">GridColumn(T1) Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" target="TopicContent">GridColumn(T1) Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor.htm" target="TopicContent">GridColumn(T1) Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor_1.htm" target="TopicContent">GridColumn(T1) Constructor (String, String, Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.-ctor_2.htm" target="TopicContent">GridColumn(T1) Constructor (String, String, Func(T1, GridContext, String), ColumnDefaults)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" target="TopicContent">GridColumn(T1) Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1._headerText.htm" target="TopicContent">_headerText Field</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" target="TopicContent">GridColumn(T1) Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.htm" target="TopicContent">GridColumn(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.AllowChangeVisibility.htm" target="TopicContent">AllowChangeVisibility Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.CellCssClassExpression.htm" target="TopicContent">CellCssClassExpression Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ColumnName.htm" target="TopicContent">ColumnName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableFiltering.htm" target="TopicContent">EnableFiltering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.EnableSorting.htm" target="TopicContent">EnableSorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HeaderText.htm" target="TopicContent">HeaderText Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.HtmlEncode.htm" target="TopicContent">HtmlEncode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.PlainTextValueExpression.htm" target="TopicContent">PlainTextValueExpression Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.SortColumnData.htm" target="TopicContent">SortColumnData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueExpression.htm" target="TopicContent">ValueExpression Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.ValueTemplate.htm" target="TopicContent">ValueTemplate Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumn-1.Visible.htm" target="TopicContent">Visible Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" target="TopicContent">GridColumnBuilder(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" target="TopicContent">GridColumnBuilder(T1) Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" target="TopicContent">GridColumnBuilder(T1) Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor.htm" target="TopicContent">GridColumnBuilder(T1) Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_1.htm" target="TopicContent">GridColumnBuilder(T1) Constructor (String)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_2.htm" target="TopicContent">GridColumnBuilder(T1) Constructor (String, String, Func(T1, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.-ctor_3.htm" target="TopicContent">GridColumnBuilder(T1) Constructor (String, String, Func(T1, String), ColumnDefaults)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" target="TopicContent">GridColumnBuilder(T1) Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithAllowChangeVisibility.htm" target="TopicContent">WithAllowChangeVisibility Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" target="TopicContent">WithCellCssClassExpression Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression.htm" target="TopicContent">WithCellCssClassExpression Method (Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithCellCssClassExpression_1.htm" target="TopicContent">WithCellCssClassExpression Method (Func(T1, String))</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithColumnName.htm" target="TopicContent">WithColumnName Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithFiltering.htm" target="TopicContent">WithFiltering Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHeaderText.htm" target="TopicContent">WithHeaderText Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithHtmlEncoding.htm" target="TopicContent">WithHtmlEncoding Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" target="TopicContent">WithPlainTextValueExpression Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression.htm" target="TopicContent">WithPlainTextValueExpression Method (Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithPlainTextValueExpression_1.htm" target="TopicContent">WithPlainTextValueExpression Method (Func(T1, String))</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSortColumnData.htm" target="TopicContent">WithSortColumnData Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithSorting.htm" target="TopicContent">WithSorting Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" target="TopicContent">WithValueExpression Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression.htm" target="TopicContent">WithValueExpression Method (Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueExpression_1.htm" target="TopicContent">WithValueExpression Method (Func(T1, String))</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" target="TopicContent">WithValueTemplate Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate.htm" target="TopicContent">WithValueTemplate Method (String)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithValueTemplate_1.htm" target="TopicContent">WithValueTemplate Method (String, Boolean)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" target="TopicContent">WithVisibility Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility.htm" target="TopicContent">WithVisibility Method (Boolean)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.WithVisibility_1.htm" target="TopicContent">WithVisibility Method (Boolean, Boolean)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.htm" target="TopicContent">GridColumnBuilder(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder-1.GridColumn.htm" target="TopicContent">GridColumn Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" target="TopicContent">GridColumnListBuilder(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" target="TopicContent">GridColumnListBuilder(T1) Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" target="TopicContent">GridColumnListBuilder(T1) Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor.htm" target="TopicContent">GridColumnListBuilder(T1) Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.-ctor_1.htm" target="TopicContent">GridColumnListBuilder(T1) Constructor (ColumnDefaults)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" target="TopicContent">GridColumnListBuilder(T1) Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1._columnDefaults.htm" target="TopicContent">_columnDefaults Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" target="TopicContent">GridColumnListBuilder(T1) Methods</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" target="TopicContent">Add Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add.htm" target="TopicContent">Add Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_1.htm" target="TopicContent">Add Method (String)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_2.htm" target="TopicContent">Add Method (String, String, Func(T1, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.Add_3.htm" target="TopicContent">Add Method (GridColumn(T1))</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.htm" target="TopicContent">GridColumnListBuilder(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder-1.ColumnBuilders.htm" target="TopicContent">ColumnBuilders Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" target="TopicContent">GridContext Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" target="TopicContent">GridContext Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.-ctor.htm" target="TopicContent">GridContext Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" target="TopicContent">GridContext Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns.htm" target="TopicContent">GetVisibleColumns Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridContext.htm" target="TopicContent">GridContext Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext.htm" target="TopicContent">CurrentHttpContext Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridDefinition.htm" target="TopicContent">GridDefinition Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName.htm" target="TopicContent">GridName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.Items.htm" target="TopicContent">Items Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions.htm" target="TopicContent">QueryOptions Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper.htm" target="TopicContent">UrlHelper Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" target="TopicContent">GridDefaults Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" target="TopicContent">GridDefaults Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.-ctor.htm" target="TopicContent">GridDefaults Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" target="TopicContent">GridDefaults Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting--1.htm" target="TopicContent">GetAdditionalSetting(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns.htm" target="TopicContent">GetColumns Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.htm" target="TopicContent">GridDefaults Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames.htm" target="TopicContent">AdditionalQueryOptionNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings.htm" target="TopicContent">AdditionalSettings Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize.htm" target="TopicContent">AllowChangingPageSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType.htm" target="TopicContent">AuthorizationType Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName.htm" target="TopicContent">ClientSideLoadingCompleteFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName.htm" target="TopicContent">ClientSideLoadingMessageFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath.htm" target="TopicContent">ContainerViewPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName.htm" target="TopicContent">DefaultRenderingEngineName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn.htm" target="TopicContent">DefaultSortColumn Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection.htm" target="TopicContent">DefaultSortDirection Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml.htm" target="TopicContent">ErrorMessageHtml Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering.htm" target="TopicContent">Filtering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage.htm" target="TopicContent">ItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage.htm" target="TopicContent">MaxItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption.htm" target="TopicContent">NextButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage.htm" target="TopicContent">NoResultsMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames.htm" target="TopicContent">PageParameterNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging.htm" target="TopicContent">Paging Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData.htm" target="TopicContent">PreloadData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption.htm" target="TopicContent">PreviousButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage.htm" target="TopicContent">ProcessingMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad.htm" target="TopicContent">QueryOnPageLoad Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix.htm" target="TopicContent">QueryStringPrefix Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines.htm" target="TopicContent">RenderingEngines Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode.htm" target="TopicContent">RenderingMode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting.htm" target="TopicContent">Sorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage.htm" target="TopicContent">SummaryMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine.htm" target="TopicContent">TemplatingEngine Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath.htm" target="TopicContent">ViewPath Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" target="TopicContent">GridDefinition(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" target="TopicContent">GridDefinition(T1) Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" target="TopicContent">GridDefinition(T1) Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor.htm" target="TopicContent">GridDefinition(T1) Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.-ctor_1.htm" target="TopicContent">GridDefinition(T1) Constructor (GridDefaults)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" target="TopicContent">GridDefinition(T1) Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AddColumn.htm" target="TopicContent">AddColumn Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetAdditionalSetting--1.htm" target="TopicContent">GetAdditionalSetting(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetColumns.htm" target="TopicContent">GetColumns Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.GetData.htm" target="TopicContent">GetData Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.htm" target="TopicContent">GridDefinition(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalQueryOptionNames.htm" target="TopicContent">AdditionalQueryOptionNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AdditionalSettings.htm" target="TopicContent">AdditionalSettings Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AllowChangingPageSize.htm" target="TopicContent">AllowChangingPageSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.AuthorizationType.htm" target="TopicContent">AuthorizationType Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingCompleteFunctionName.htm" target="TopicContent">ClientSideLoadingCompleteFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ClientSideLoadingMessageFunctionName.htm" target="TopicContent">ClientSideLoadingMessageFunctionName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Columns.htm" target="TopicContent">Columns Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ContainerViewPath.htm" target="TopicContent">ContainerViewPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultRenderingEngineName.htm" target="TopicContent">DefaultRenderingEngineName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortColumn.htm" target="TopicContent">DefaultSortColumn Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.DefaultSortDirection.htm" target="TopicContent">DefaultSortDirection Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ErrorMessageHtml.htm" target="TopicContent">ErrorMessageHtml Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Filtering.htm" target="TopicContent">Filtering Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ItemsPerPage.htm" target="TopicContent">ItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.MaxItemsPerPage.htm" target="TopicContent">MaxItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NextButtonCaption.htm" target="TopicContent">NextButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.NoResultsMessage.htm" target="TopicContent">NoResultsMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PageParameterNames.htm" target="TopicContent">PageParameterNames Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Paging.htm" target="TopicContent">Paging Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreloadData.htm" target="TopicContent">PreloadData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.PreviousButtonCaption.htm" target="TopicContent">PreviousButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ProcessingMessage.htm" target="TopicContent">ProcessingMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryOnPageLoad.htm" target="TopicContent">QueryOnPageLoad Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.QueryStringPrefix.htm" target="TopicContent">QueryStringPrefix Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingEngines.htm" target="TopicContent">RenderingEngines Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RenderingMode.htm" target="TopicContent">RenderingMode Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RetrieveData.htm" target="TopicContent">RetrieveData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.RowCssClassExpression.htm" target="TopicContent">RowCssClassExpression Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.Sorting.htm" target="TopicContent">Sorting Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.SummaryMessage.htm" target="TopicContent">SummaryMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.TemplatingEngine.htm" target="TopicContent">TemplatingEngine Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.GridDefinition-1.ViewPath.htm" target="TopicContent">ViewPath Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" target="TopicContent">GridDefinitionBase Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" target="TopicContent">GridDefinitionBase Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.htm" target="TopicContent">GridDefinitionBase Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.GetData.htm" target="TopicContent">GetData Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" target="TopicContent">MvcGridBuilder(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" target="TopicContent">MvcGridBuilder(T1) Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" target="TopicContent">MvcGridBuilder(T1) Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor.htm" target="TopicContent">MvcGridBuilder(T1) Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_1.htm" target="TopicContent">MvcGridBuilder(T1) Constructor (GridDefaults)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_2.htm" target="TopicContent">MvcGridBuilder(T1) Constructor (ColumnDefaults)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.-ctor_3.htm" target="TopicContent">MvcGridBuilder(T1) Constructor (GridDefaults, ColumnDefaults)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" target="TopicContent">MvcGridBuilder(T1) Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1._columnDefaults.htm" target="TopicContent">_columnDefaults Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" target="TopicContent">MvcGridBuilder(T1) Methods</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" target="TopicContent">AddColumn Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn.htm" target="TopicContent">AddColumn Method (String, String, Func(T1, GridContext, String), Boolean, Boolean, Func(T1, GridContext, String), Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumn_1.htm" target="TopicContent">AddColumn Method (GridColumn(T1))</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddColumns.htm" target="TopicContent">AddColumns Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" target="TopicContent">AddRenderingEngine Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine.htm" target="TopicContent">AddRenderingEngine Method (String, Type)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.AddRenderingEngine_1.htm" target="TopicContent">AddRenderingEngine Method (String, String)</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.RemoveRenderingEngine.htm" target="TopicContent">RemoveRenderingEngine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionName.htm" target="TopicContent">WithAdditionalQueryOptionName Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalQueryOptionNames.htm" target="TopicContent">WithAdditionalQueryOptionNames Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAdditionalSetting.htm" target="TopicContent">WithAdditionalSetting Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAllowChangingPageSize.htm" target="TopicContent">WithAllowChangingPageSize Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithAuthorizationType.htm" target="TopicContent">WithAuthorizationType Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingCompleteFunctionName.htm" target="TopicContent">WithClientSideLoadingCompleteFunctionName Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithClientSideLoadingMessageFunctionName.htm" target="TopicContent">WithClientSideLoadingMessageFunctionName Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithContainerViewPath.htm" target="TopicContent">WithContainerViewPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultRenderingEngineName.htm" target="TopicContent">WithDefaultRenderingEngineName Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortColumn.htm" target="TopicContent">WithDefaultSortColumn Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithDefaultSortDirection.htm" target="TopicContent">WithDefaultSortDirection Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithErrorMessageHtml.htm" target="TopicContent">WithErrorMessageHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithFiltering.htm" target="TopicContent">WithFiltering Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithItemsPerPage.htm" target="TopicContent">WithItemsPerPage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithMaxItemsPerPage.htm" target="TopicContent">WithMaxItemsPerPage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNextButtonCaption.htm" target="TopicContent">WithNextButtonCaption Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithNoResultsMessage.htm" target="TopicContent">WithNoResultsMessage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithoutAdditionalSetting.htm" target="TopicContent">WithoutAdditionalSetting Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPageParameterNames.htm" target="TopicContent">WithPageParameterNames Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" target="TopicContent">WithPaging Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging.htm" target="TopicContent">WithPaging Method (Boolean)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging_1.htm" target="TopicContent">WithPaging Method (Boolean, Int32)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPaging_2.htm" target="TopicContent">WithPaging Method (Boolean, Int32, Boolean, Int32)</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreloadData.htm" target="TopicContent">WithPreloadData Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithPreviousButtonCaption.htm" target="TopicContent">WithPreviousButtonCaption Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithProcessingMessage.htm" target="TopicContent">WithProcessingMessage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryOnPageLoad.htm" target="TopicContent">WithQueryOnPageLoad Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithQueryStringPrefix.htm" target="TopicContent">WithQueryStringPrefix Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRenderingMode.htm" target="TopicContent">WithRenderingMode Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRetrieveDataMethod.htm" target="TopicContent">WithRetrieveDataMethod Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" target="TopicContent">WithRowCssClassExpression Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression.htm" target="TopicContent">WithRowCssClassExpression Method (Func(T1, GridContext, String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithRowCssClassExpression_1.htm" target="TopicContent">WithRowCssClassExpression Method (Func(T1, String))</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" target="TopicContent">WithSorting Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting.htm" target="TopicContent">WithSorting Method (Boolean)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting_1.htm" target="TopicContent">WithSorting Method (Boolean, String)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSorting_2.htm" target="TopicContent">WithSorting Method (Boolean, String, SortDirection)</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithSummaryMessage.htm" target="TopicContent">WithSummaryMessage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithTemplatingEngine.htm" target="TopicContent">WithTemplatingEngine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.WithViewPath.htm" target="TopicContent">WithViewPath Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.htm" target="TopicContent">MvcGridBuilder(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder-1.GridDefinition.htm" target="TopicContent">GridDefinition Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" target="TopicContent">PagingModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" target="TopicContent">PagingModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.-ctor.htm" target="TopicContent">PagingModel Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" target="TopicContent">PagingModel Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd.htm" target="TopicContent">CalculatePageStartAndEnd Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.PagingModel.htm" target="TopicContent">PagingModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage.htm" target="TopicContent">CurrentPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord.htm" target="TopicContent">FirstRecord Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord.htm" target="TopicContent">LastRecord Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages.htm" target="TopicContent">NumberOfPages Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks.htm" target="TopicContent">PageLinks Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords.htm" target="TopicContent">TotalRecords Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" target="TopicContent">QueryOptions Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" target="TopicContent">QueryOptions Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.-ctor.htm" target="TopicContent">QueryOptions Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" target="TopicContent">QueryOptions Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Models.QueryOptions._sortColumnData.htm" target="TopicContent">_sortColumnData Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" target="TopicContent">QueryOptions Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString.htm" target="TopicContent">GetAdditionalQueryOptionString Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString.htm" target="TopicContent">GetFilterString Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset.htm" target="TopicContent">GetLimitOffset Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount.htm" target="TopicContent">GetLimitRowcount Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString.htm" target="TopicContent">GetPageParameterString Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData--1.htm" target="TopicContent">GetSortColumnData(T) Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.htm" target="TopicContent">QueryOptions Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions.htm" target="TopicContent">AdditionalQueryOptions Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility.htm" target="TopicContent">ColumnVisibility Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters.htm" target="TopicContent">Filters Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage.htm" target="TopicContent">ItemsPerPage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex.htm" target="TopicContent">PageIndex Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters.htm" target="TopicContent">PageParameters Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName.htm" target="TopicContent">RenderingEngineName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData.htm" target="TopicContent">SortColumnData Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName.htm" target="TopicContent">SortColumnName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection.htm" target="TopicContent">SortDirection Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" target="TopicContent">QueryResult(T1) Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" target="TopicContent">QueryResult(T1) Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" target="TopicContent">QueryResult(T1) Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.htm" target="TopicContent">QueryResult(T1) Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.Items.htm" target="TopicContent">Items Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.QueryResult-1.TotalRecords.htm" target="TopicContent">TotalRecords Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingMode.htm" target="TopicContent">RenderingMode Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" target="TopicContent">RenderingModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" target="TopicContent">RenderingModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.-ctor.htm" target="TopicContent">RenderingModel Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" target="TopicContent">RenderingModel Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.htm" target="TopicContent">RenderingModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock.htm" target="TopicContent">ClientDataTransferHtmlBlock Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns.htm" target="TopicContent">Columns Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath.htm" target="TopicContent">HandlerPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption.htm" target="TopicContent">NextButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage.htm" target="TopicContent">NoResultsMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel.htm" target="TopicContent">PagingModel Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption.htm" target="TopicContent">PreviousButtonCaption Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage.htm" target="TopicContent">ProcessingMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows.htm" target="TopicContent">Rows Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage.htm" target="TopicContent">SummaryMessage Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId.htm" target="TopicContent">TableHtmlId Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" target="TopicContent">Row Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" target="TopicContent">Row Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Models.Row.-ctor.htm" target="TopicContent">Row Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" target="TopicContent">Row Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.Row.htm" target="TopicContent">Row Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass.htm" target="TopicContent">CalculatedCssClass Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.Row.Cells.htm" target="TopicContent">Cells Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.SortDirection.htm" target="TopicContent">SortDirection Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" target="TopicContent">TemplateModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" target="TopicContent">TemplateModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" target="TopicContent">TemplateModel Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.htm" target="TopicContent">TemplateModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn.htm" target="TopicContent">GridColumn Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext.htm" target="TopicContent">GridContext Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item.htm" target="TopicContent">Item Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row.htm" target="TopicContent">Row Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url.htm" target="TopicContent">Url Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value.htm" target="TopicContent">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Rendering.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Rendering Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" target="TopicContent">BootstrapRenderingEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" target="TopicContent">BootstrapRenderingEngine Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.-ctor.htm" target="TopicContent">BootstrapRenderingEngine Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" target="TopicContent">BootstrapRenderingEngine Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass.htm" target="TopicContent">SettingNameTableClass Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" target="TopicContent">BootstrapRenderingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AppendCssAttribute.htm" target="TopicContent">AppendCssAttribute Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse.htm" target="TopicContent">PrepareResponse Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render.htm" target="TopicContent">Render Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderBody.htm" target="TopicContent">RenderBody Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer.htm" target="TopicContent">RenderContainer Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderHeader.htm" target="TopicContent">RenderHeader Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderPaging.htm" target="TopicContent">RenderPaging Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.htm" target="TopicContent">BootstrapRenderingEngine Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging.htm" target="TopicContent">AllowsPaging Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.DefaultTableCss.htm" target="TopicContent">DefaultTableCss Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSort.htm" target="TopicContent">HtmlImageSort Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortAsc.htm" target="TopicContent">HtmlImageSortAsc Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortDsc.htm" target="TopicContent">HtmlImageSortDsc Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" target="TopicContent">CsvRenderingEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" target="TopicContent">CsvRenderingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" target="TopicContent">CsvRenderingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.CsvEncode.htm" target="TopicContent">CsvEncode Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename.htm" target="TopicContent">GetFilename Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse.htm" target="TopicContent">PrepareResponse Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render.htm" target="TopicContent">Render Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer.htm" target="TopicContent">RenderContainer Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.htm" target="TopicContent">CsvRenderingEngine Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging.htm" target="TopicContent">AllowsPaging Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Templating.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Templating Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" target="TopicContent">SimpleTemplatingEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" target="TopicContent">SimpleTemplatingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.htm" target="TopicContent">SimpleTemplatingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.EvaluateParameter.htm" target="TopicContent">EvaluateParameter Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Format.htm" target="TopicContent">Format Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.FormatError.htm" target="TopicContent">FormatError Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process.htm" target="TopicContent">Process Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.ReflectPropertyValue.htm" target="TopicContent">ReflectPropertyValue Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Utility.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Utility Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" target="TopicContent">ConfigUtility Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" target="TopicContent">ConfigUtility Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" target="TopicContent">ConfigUtility Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.ShowErrorsAppSettingName.htm" target="TopicContent">ShowErrorsAppSettingName Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.htm" target="TopicContent">ConfigUtility Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting--1.htm" target="TopicContent">GetAppSetting(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetShowErrorDetailsSetting.htm" target="TopicContent">GetShowErrorDetailsSetting Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" target="TopicContent">GridContextUtility Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" target="TopicContent">GridContextUtility Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.htm" target="TopicContent">GridContextUtility Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.Create.htm" target="TopicContent">Create Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" target="TopicContent">HtmlUtility Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" target="TopicContent">HtmlUtility Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" target="TopicContent">HtmlUtility Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass.htm" target="TopicContent">ContainerCssClass Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.htm" target="TopicContent">HtmlUtility Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId.htm" target="TopicContent">GetContainerHtmlId Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath.htm" target="TopicContent">GetHandlerPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId.htm" target="TopicContent">GetTableHolderHtmlId Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId.htm" target="TopicContent">GetTableHtmlId Method </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm" target="TopicContent">MakeCssClassAttributeStirng Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng.htm" target="TopicContent">MakeCssClassAttributeStirng Method (HashSet(String))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng_1.htm" target="TopicContent">MakeCssClassAttributeStirng Method (String)</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng.htm" target="TopicContent">MakeCssClassStirng Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink.htm" target="TopicContent">MakeGotoPageLink Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink.htm" target="TopicContent">MakeSortLink Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.MvcGrid.Web.htm" target="TopicContent">MichaelBrandonMorris.MvcGrid.Web Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" target="TopicContent">GridRegistration Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" target="TopicContent">GridRegistration Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.htm" target="TopicContent">GridRegistration Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.FilterTypesInAssemblies.htm" target="TopicContent">FilterTypesInAssemblies Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.IsGridRegistrationType.htm" target="TopicContent">IsGridRegistrationType Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids.htm" target="TopicContent">RegisterAllGrids Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids.htm" target="TopicContent">RegisterGrids Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.GridRegistration.TypeIsPublicClass.htm" target="TopicContent">TypeIsPublicClass Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" target="TopicContent">HtmlExtensions Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" target="TopicContent">HtmlExtensions Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.htm" target="TopicContent">HtmlExtensions Methods</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm" target="TopicContent">MvcGrid Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid.htm" target="TopicContent">MvcGrid Method (HtmlHelper, String)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid_1.htm" target="TopicContent">MvcGrid Method (HtmlHelper, String, Object)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid_2.htm" target="TopicContent">MvcGrid Method (HtmlHelper, String, IMvcGridDefinition, Object)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" target="TopicContent">MvcGridDefinitionTable Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" target="TopicContent">MvcGridDefinitionTable Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" target="TopicContent">MvcGridDefinitionTable Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Table.htm" target="TopicContent">Table Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.htm" target="TopicContent">MvcGridDefinitionTable Methods</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add-.htm" target="TopicContent">Add Method </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add--1.htm" target="TopicContent">Add(T1) Method (String, MvcGridBuilder(T1))</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add--1_1.htm" target="TopicContent">Add(T1) Method (String, GridDefinition(T1))</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition--1.htm" target="TopicContent">GetDefinition(T1) Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinitionInterface.htm" target="TopicContent">GetDefinitionInterface Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" target="TopicContent">MvcGridHandler Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" target="TopicContent">MvcGridHandler Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" target="TopicContent">MvcGridHandler Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedBinaryResources.htm" target="TopicContent">_cachedBinaryResources Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedTextResources.htm" target="TopicContent">_cachedTextResources Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._init.htm" target="TopicContent">_init Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Lock.htm" target="TopicContent">Lock Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" target="TopicContent">MvcGridHandler Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetBinaryResource.htm" target="TopicContent">GetBinaryResource Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetTextResource.htm" target="TopicContent">GetTextResource Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelGifImage.htm" target="TopicContent">HandelGifImage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelPngImage.htm" target="TopicContent">HandelPngImage Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleScript.htm" target="TopicContent">HandleScript Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleTable.htm" target="TopicContent">HandleTable Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init.htm" target="TopicContent">Init Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest.htm" target="TopicContent">ProcessRequest Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.htm" target="TopicContent">MvcGridHandler Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable.htm" target="TopicContent">IsReusable Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" target="TopicContent">MvcGridHtmlGenerator Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" target="TopicContent">MvcGridHtmlGenerator Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" target="TopicContent">MvcGridHtmlGenerator Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.RenderLoadingDivSettingName.htm" target="TopicContent">RenderLoadingDivSettingName Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.htm" target="TopicContent">MvcGridHtmlGenerator Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateBasePageHtml.htm" target="TopicContent">GenerateBasePageHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDataTransferHtml.htm" target="TopicContent">GenerateClientDataTransferHtml Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDefinitionJson.htm" target="TopicContent">GenerateClientDefinitionJson Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonAdditional.htm" target="TopicContent">GenerateClientJsonAdditional Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonFilter.htm" target="TopicContent">GenerateClientJsonFilter Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonVisibility.htm" target="TopicContent">GenerateClientJsonVisibility Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateJsonPageParameters.htm" target="TopicContent">GenerateJsonPageParameters Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" target="TopicContent">QueryStringParser Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" target="TopicContent">QueryStringParser Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" target="TopicContent">QueryStringParser Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringPrefixPageParameter.htm" target="TopicContent">QueryStringPrefixPageParameter Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixColumns.htm" target="TopicContent">QueryStringSuffixColumns Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixEngine.htm" target="TopicContent">QueryStringSuffixEngine Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixItemsPerPage.htm" target="TopicContent">QueryStringSuffixItemsPerPage Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixPage.htm" target="TopicContent">QueryStringSuffixPage Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSort.htm" target="TopicContent">QueryStringSuffixSort Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSortDir.htm" target="TopicContent">QueryStringSuffixSortDir Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.htm" target="TopicContent">QueryStringParser Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.ParseOptions.htm" target="TopicContent">ParseOptions Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MVCGrid.RazorTemplates.htm" target="TopicContent">MVCGrid.RazorTemplates Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" target="TopicContent">RazorRenderingEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" target="TopicContent">RazorRenderingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" target="TopicContent">RazorRenderingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.PrepareResponse.htm" target="TopicContent">PrepareResponse Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.Render.htm" target="TopicContent">Render Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MVCGrid.RazorTemplates.RazorRenderingEngine.RenderContainer.htm" target="TopicContent">RenderContainer Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MVCGrid.RazorTemplates.RazorRenderingEngine.htm" target="TopicContent">RazorRenderingEngine Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MVCGrid.RazorTemplates.RazorRenderingEngine.AllowsPaging.htm" target="TopicContent">AllowsPaging Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" target="TopicContent">RazorTemplatingEngine Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" target="TopicContent">RazorTemplatingEngine Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MVCGrid.RazorTemplates.RazorTemplatingEngine.htm" target="TopicContent">RazorTemplatingEngine Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MVCGrid.RazorTemplates.RazorTemplatingEngine.Process.htm" target="TopicContent">Process Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="TOCSizer" class="TOCSizer" onmousedown="OnMouseDown(event)" onselectstart="javascript: return false;"></div>
+
+<iframe id="TopicContent" name="TopicContent" class="TopicContent" src="html/n-michaelbrandonmorris.mvcgrid.engine.htm">
+This page uses an IFRAME but your browser does not support it.
+</iframe>
+
+</form>
+
+</body>
+
+</html>

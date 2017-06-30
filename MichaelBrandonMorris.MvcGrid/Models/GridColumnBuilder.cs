@@ -4,25 +4,34 @@ using System.Collections.Generic;
 namespace MichaelBrandonMorris.MvcGrid.Models
 {
     /// <summary>
-    /// 
+    ///     Class GridColumnListBuilder.
     /// </summary>
-    /// <typeparam name="T1"></typeparam>
+    /// <typeparam name="T1">The type of the t1.</typeparam>
+    /// TODO Edit XML Comment Template for GridColumnListBuilder`1
     public class GridColumnListBuilder<T1>
     {
+        /// <summary>
+        ///     The column defaults
+        /// </summary>
+        /// TODO Edit XML Comment Template for _columnDefaults
         private readonly ColumnDefaults _columnDefaults;
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnListBuilder{T1}" /> class.
         /// </summary>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnListBuilder()
             : this(null)
         {
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnListBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="columnDefaults"></param>
+        /// <param name="columnDefaults">The column defaults.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnListBuilder(ColumnDefaults columnDefaults)
         {
             ColumnBuilders = new List<GridColumnBuilder<T1>>();
@@ -31,8 +40,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the column builders.
         /// </summary>
+        /// <value>The column builders.</value>
+        /// TODO Edit XML Comment Template for ColumnBuilders
         public List<GridColumnBuilder<T1>> ColumnBuilders
         {
             get;
@@ -40,31 +51,34 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Adds this instance.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for Add
         public GridColumnBuilder<T1> Add()
         {
             return Add(null, null, null);
         }
 
         /// <summary>
-        /// 
+        ///     Adds the specified column name.
         /// </summary>
-        /// <param name="columnName"></param>
-        /// <returns></returns>
+        /// <param name="columnName">Name of the column.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for Add
         public GridColumnBuilder<T1> Add(string columnName)
         {
             return Add(columnName, null, null);
         }
 
         /// <summary>
-        /// 
+        ///     Adds the specified column name.
         /// </summary>
-        /// <param name="columnName"></param>
-        /// <param name="headerText"></param>
-        /// <param name="valueExpression"></param>
-        /// <returns></returns>
+        /// <param name="columnName">Name of the column.</param>
+        /// <param name="headerText">The header text.</param>
+        /// <param name="valueExpression">The value expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for Add
         public GridColumnBuilder<T1> Add(
             string columnName,
             string headerText,
@@ -82,10 +96,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Adds the specified column.
         /// </summary>
-        /// <param name="column"></param>
-        /// <returns></returns>
+        /// <param name="column">The column.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for Add
         public GridColumnBuilder<T1> Add(GridColumn<T1> column)
         {
             var col = new GridColumnBuilder<T1>
@@ -99,34 +114,41 @@ namespace MichaelBrandonMorris.MvcGrid.Models
     }
 
     /// <summary>
-    /// 
+    ///     Class GridColumnBuilder.
     /// </summary>
-    /// <typeparam name="T1"></typeparam>
+    /// <typeparam name="T1">The type of the t1.</typeparam>
+    /// TODO Edit XML Comment Template for GridColumnBuilder`1
     public class GridColumnBuilder<T1>
     {
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnBuilder{T1}" /> class.
         /// </summary>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnBuilder()
             : this(null, null, null, null)
         {
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="columnName"></param>
+        /// <param name="columnName">Name of the column.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnBuilder(string columnName)
             : this(columnName, null, null, null)
         {
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="columnName"></param>
-        /// <param name="headerText"></param>
-        /// <param name="valueExpression"></param>
+        /// <param name="columnName">Name of the column.</param>
+        /// <param name="headerText">The header text.</param>
+        /// <param name="valueExpression">The value expression.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnBuilder(
             string columnName,
             string headerText,
@@ -136,12 +158,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Initializes a new instance of the
+        ///     <see cref="GridColumnBuilder{T1}" /> class.
         /// </summary>
-        /// <param name="columnName"></param>
-        /// <param name="headerText"></param>
-        /// <param name="valueExpression"></param>
-        /// <param name="columnDefaults"></param>
+        /// <param name="columnName">Name of the column.</param>
+        /// <param name="headerText">The header text.</param>
+        /// <param name="valueExpression">The value expression.</param>
+        /// <param name="columnDefaults">The column defaults.</param>
+        /// TODO Edit XML Comment Template for #ctor
         public GridColumnBuilder(
             string columnName,
             string headerText,
@@ -162,8 +186,10 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        /// 
+        ///     Gets or sets the grid column.
         /// </summary>
+        /// <value>The grid column.</value>
+        /// TODO Edit XML Comment Template for GridColumn
         public GridColumn<T1> GridColumn
         {
             get;
@@ -171,8 +197,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Gets or sets a value indicating whether the column visibility can be changed.
+        ///     Withes the allow change visibility.
         /// </summary>
+        /// <param name="allow">if set to <c>true</c> [allow].</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithAllowChangeVisibility
         public GridColumnBuilder<T1> WithAllowChangeVisibility(bool allow)
         {
             GridColumn.AllowChangeVisibility = allow;
@@ -180,8 +209,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Use this to return a custom css class based on data for the current cell
+        ///     Withes the cell CSS class expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithCellCssClassExpression
         public GridColumnBuilder<T1> WithCellCssClassExpression(
             Func<T1, GridContext, string> expression)
         {
@@ -190,8 +222,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Use this to return a custom css class based on data for the current cell
+        ///     Withes the cell CSS class expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithCellCssClassExpression
         public GridColumnBuilder<T1> WithCellCssClassExpression(
             Func<T1, string> expression)
         {
@@ -202,8 +237,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     A unique name for this column
+        ///     Withes the name of the column.
         /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithColumnName
         public GridColumnBuilder<T1> WithColumnName(string name)
         {
             GridColumn.ColumnName = name;
@@ -211,8 +249,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Enables filtering on this column
+        ///     Withes the filtering.
         /// </summary>
+        /// <param name="enableFiltering">
+        ///     if set to <c>true</c> [enable
+        ///     filtering].
+        /// </param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithFiltering
         public GridColumnBuilder<T1> WithFiltering(bool enableFiltering)
         {
             GridColumn.EnableFiltering = enableFiltering;
@@ -220,8 +264,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Header text to display for the current column, if different from ColumnName.
+        ///     Withes the header text.
         /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithHeaderText
         public GridColumnBuilder<T1> WithHeaderText(string text)
         {
             GridColumn.HeaderText = text;
@@ -229,9 +276,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
-        ///     returns HTML.
+        ///     Withes the HTML encoding.
         /// </summary>
+        /// <param name="htmlEncode">
+        ///     if set to <c>true</c> [HTML
+        ///     encode].
+        /// </param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithHtmlEncoding
         public GridColumnBuilder<T1> WithHtmlEncoding(bool htmlEncode)
         {
             GridColumn.HtmlEncode = htmlEncode;
@@ -240,9 +292,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     This is how to specify the contents of the current cell when used in an export file, if different that
-        ///     ValueExpression
+        ///     Withes the plain text value expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPlainTextValueExpression
         public GridColumnBuilder<T1> WithPlainTextValueExpression(
             Func<T1, GridContext, string> expression)
         {
@@ -251,9 +305,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     This is how to specify the contents of the current cell when used in an export file, if different that
-        ///     ValueExpression
+        ///     Withes the plain text value expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithPlainTextValueExpression
         public GridColumnBuilder<T1> WithPlainTextValueExpression(
             Func<T1, string> expression)
         {
@@ -263,8 +319,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+        ///     Withes the sort column data.
         /// </summary>
+        /// <param name="sortColumnData">The sort column data.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSortColumnData
         public GridColumnBuilder<T1> WithSortColumnData(object sortColumnData)
         {
             GridColumn.SortColumnData = sortColumnData;
@@ -273,8 +332,14 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     Enables sorting on this column
+        ///     Withes the sorting.
         /// </summary>
+        /// <param name="enableSorting">
+        ///     if set to <c>true</c> [enable
+        ///     sorting].
+        /// </param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithSorting
         public GridColumnBuilder<T1> WithSorting(bool enableSorting)
         {
             GridColumn.EnableSorting = enableSorting;
@@ -282,8 +347,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+        ///     Withes the value expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithValueExpression
         public GridColumnBuilder<T1> WithValueExpression(
             Func<T1, GridContext, string> expression)
         {
@@ -292,8 +360,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+        ///     Withes the value expression.
         /// </summary>
+        /// <param name="expression">The expression.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithValueExpression
         public GridColumnBuilder<T1> WithValueExpression(
             Func<T1, string> expression)
         {
@@ -303,8 +374,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
 
 
         /// <summary>
-        ///     Template for formatting cell value
+        ///     Withes the value template.
         /// </summary>
+        /// <param name="template">The template.</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithValueTemplate
         public GridColumnBuilder<T1> WithValueTemplate(string template)
         {
             GridColumn.ValueTemplate = template;
@@ -312,8 +386,15 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Template for formatting cell value
+        ///     Withes the value template.
         /// </summary>
+        /// <param name="template">The template.</param>
+        /// <param name="htmlEncode">
+        ///     if set to <c>true</c> [HTML
+        ///     encode].
+        /// </param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithValueTemplate
         public GridColumnBuilder<T1> WithValueTemplate(
             string template,
             bool htmlEncode)
@@ -324,8 +405,11 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Indicates whether column is visible.
+        ///     Withes the visibility.
         /// </summary>
+        /// <param name="visible">if set to <c>true</c> [visible].</param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithVisibility
         public GridColumnBuilder<T1> WithVisibility(bool visible)
         {
             GridColumn.Visible = visible;
@@ -333,8 +417,15 @@ namespace MichaelBrandonMorris.MvcGrid.Models
         }
 
         /// <summary>
-        ///     Indicates whether column is visible.
+        ///     Withes the visibility.
         /// </summary>
+        /// <param name="visible">if set to <c>true</c> [visible].</param>
+        /// <param name="allowChangeVisibility">
+        ///     if set to <c>true</c>
+        ///     [allow change visibility].
+        /// </param>
+        /// <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+        /// TODO Edit XML Comment Template for WithVisibility
         public GridColumnBuilder<T1> WithVisibility(
             bool visible,
             bool allowChangeVisibility)

@@ -7,25 +7,34 @@ using MichaelBrandonMorris.MvcGrid.Models;
 namespace MichaelBrandonMorris.MvcGrid.Utility
 {
     /// <summary>
+    ///     Class HtmlUtility.
     /// </summary>
+    /// TODO Edit XML Comment Template for HtmlUtility
     public class HtmlUtility
     {
         /// <summary>
+        ///     The container CSS class
         /// </summary>
+        /// TODO Edit XML Comment Template for ContainerCssClass
         public const string ContainerCssClass = "MVCGridContainer";
 
         /// <summary>
+        ///     Gets the container HTML identifier.
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetContainerHtmlId
         public static string GetContainerHtmlId(string name)
         {
             return $"MVCGridContainer_{name}";
         }
 
         /// <summary>
+        ///     Gets the handler path.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>System.String.</returns>
+        /// <exception cref="Exception"></exception>
+        /// TODO Edit XML Comment Template for GetHandlerPath
         public static string GetHandlerPath()
         {
             if (HttpContext.Current.Request.ApplicationPath == null)
@@ -40,27 +49,33 @@ namespace MichaelBrandonMorris.MvcGrid.Utility
         }
 
         /// <summary>
+        ///     Gets the table holder HTML identifier.
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetTableHolderHtmlId
         public static string GetTableHolderHtmlId(string name)
         {
             return $"MVCGridTableHolder_{name}";
         }
 
         /// <summary>
+        ///     Gets the table HTML identifier.
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetTableHtmlId
         public static string GetTableHtmlId(string name)
         {
             return $"MVCGridTable_{name}";
         }
 
         /// <summary>
+        ///     Makes the CSS class attribute stirng.
         /// </summary>
-        /// <param name="classes"></param>
-        /// <returns></returns>
+        /// <param name="classes">The classes.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for MakeCssClassAttributeStirng
         public static string MakeCssClassAttributeStirng(
             HashSet<string> classes)
         {
@@ -74,9 +89,11 @@ namespace MichaelBrandonMorris.MvcGrid.Utility
         }
 
         /// <summary>
+        ///     Makes the CSS class attribute stirng.
         /// </summary>
-        /// <param name="classString"></param>
-        /// <returns></returns>
+        /// <param name="classString">The class string.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for MakeCssClassAttributeStirng
         public static string MakeCssClassAttributeStirng(string classString)
         {
             return string.IsNullOrWhiteSpace(classString)
@@ -85,9 +102,11 @@ namespace MichaelBrandonMorris.MvcGrid.Utility
         }
 
         /// <summary>
+        ///     Makes the CSS class stirng.
         /// </summary>
-        /// <param name="classes"></param>
-        /// <returns></returns>
+        /// <param name="classes">The classes.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for MakeCssClassStirng
         public static string MakeCssClassStirng(HashSet<string> classes)
         {
             var sb = new StringBuilder();
@@ -105,21 +124,25 @@ namespace MichaelBrandonMorris.MvcGrid.Utility
         }
 
         /// <summary>
+        ///     Makes the goto page link.
         /// </summary>
-        /// <param name="gridName"></param>
-        /// <param name="pageNum"></param>
-        /// <returns></returns>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="pageNum">The page number.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for MakeGotoPageLink
         public static string MakeGotoPageLink(string gridName, int pageNum)
         {
             return $"MVCGrid.setPage(\"{gridName}\", {pageNum}); return false;";
         }
 
         /// <summary>
+        ///     Makes the sort link.
         /// </summary>
-        /// <param name="gridName"></param>
-        /// <param name="columnName"></param>
-        /// <param name="direction"></param>
-        /// <returns></returns>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="columnName">Name of the column.</param>
+        /// <param name="direction">The direction.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for MakeSortLink
         public static string MakeSortLink(
             string gridName,
             string columnName,

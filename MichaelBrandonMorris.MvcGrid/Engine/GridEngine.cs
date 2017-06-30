@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using MichaelBrandonMorris.Extensions.PrimitiveExtensions;
 using MichaelBrandonMorris.MvcGrid.Interfaces;
 using MichaelBrandonMorris.MvcGrid.Models;
 using MichaelBrandonMorris.MvcGrid.Utility;
@@ -14,17 +15,23 @@ using MichaelBrandonMorris.MvcGrid.Web;
 namespace MichaelBrandonMorris.MvcGrid.Engine
 {
     /// <summary>
-    /// 
+    ///     Class GridEngine.
     /// </summary>
+    /// TODO Edit XML Comment Template for GridEngine
     public class GridEngine
     {
+        /// <summary>
+        ///     The local encoding
+        /// </summary>
+        /// TODO Edit XML Comment Template for LocalEncoding
         private static readonly Encoding LocalEncoding = Encoding.UTF8;
 
         /// <summary>
-        /// 
+        ///     Gets the rendering engine.
         /// </summary>
-        /// <param name="gridContext"></param>
-        /// <returns></returns>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>IMvcGridRenderingEngine.</returns>
+        /// TODO Edit XML Comment Template for GetRenderingEngine
         public static IMvcGridRenderingEngine GetRenderingEngine(
             GridContext gridContext)
         {
@@ -39,22 +46,17 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             foreach (ProviderSettings configuredEngine in gridContext
                 .GridDefinition.RenderingEngines)
             {
-                if (string.Compare(
-                        gridContext.QueryOptions.RenderingEngineName,
-                        configuredEngine.Name,
-                        StringComparison.OrdinalIgnoreCase)
-                    != 0)
+                if (gridContext.QueryOptions.RenderingEngineName
+                    .EqualsOrdinalIgnoreCase(configuredEngine.Name))
                 {
                     continue;
                 }
 
-                var engineName =
-                    gridContext.QueryOptions.RenderingEngineName;
+                var engineName = gridContext.QueryOptions.RenderingEngineName;
 
-                var typeString =
-                    gridContext.GridDefinition
-                        .RenderingEngines[engineName]
-                        .Type;
+                var typeString = gridContext.GridDefinition
+                    .RenderingEngines[engineName]
+                    .Type;
 
                 var engineType = Type.GetType(typeString, true);
 
@@ -69,10 +71,12 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
         }
 
         /// <summary>
-        /// 
+        ///     Checks the authorization.
         /// </summary>
-        /// <param name="gridContext"></param>
-        /// <returns></returns>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <exception cref="Exception">Unsupported AuthorizationType</exception>
+        /// TODO Edit XML Comment Template for CheckAuthorization
         public bool CheckAuthorization(GridContext gridContext)
         {
             bool allowAccess;
@@ -93,19 +97,18 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
         }
 
         /// <summary>
-        /// 
+        ///     Generates the model.
         /// </summary>
-        /// <param name="gridContext"></param>
-        /// <returns></returns>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>RenderingModel.</returns>
+        /// TODO Edit XML Comment Template for GenerateModel
         public RenderingModel GenerateModel(GridContext gridContext)
         {
-            int? totalRecords;
             var rows =
                 ((GridDefinitionBase) gridContext.GridDefinition).GetData(
                     gridContext,
-                    out totalRecords);
+                    out int? totalRecords);
 
-            // if a page was requested higher than available pages, requery for first page
             if (rows.Count == 0
                 && totalRecords.HasValue
                 && totalRecords.Value > 0)
@@ -122,13 +125,14 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
         }
 
         /// <summary>
-        /// 
+        ///     Gets the base page HTML.
         /// </summary>
-        /// <param name="helper"></param>
-        /// <param name="gridName"></param>
-        /// <param name="grid"></param>
-        /// <param name="pageParameters"></param>
-        /// <returns></returns>
+        /// <param name="helper">The helper.</param>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="grid">The grid.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetBasePageHtml
         public string GetBasePageHtml(
             HtmlHelper helper,
             string gridName,
@@ -155,10 +159,11 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                     if (showDetails)
                     {
                         var detail = "<div class='alert alert-danger'>";
+
                         detail += HttpUtility.HtmlEncode(ex.ToString())
                             .Replace("\r\n", "<br />");
-                        detail += "</div>";
 
+                        detail += "</div>";
                         preload = detail;
                     }
                     else
@@ -173,6 +178,7 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                     gridName,
                     grid,
                     pageParameters);
+
             baseGridHtml = baseGridHtml.Replace("%%PRELOAD%%", preload);
 
             var containerRenderingModel = new ContainerRenderingModel
@@ -180,20 +186,19 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                 InnerHtmlBlock = baseGridHtml
             };
 
-            var html = RenderContainerHtml(
-                helper,
-                grid,
-                containerRenderingModel);
+            var html =
+                RenderContainerHtml(helper, grid, containerRenderingModel);
 
             return html;
         }
 
         /// <summary>
-        /// 
+        ///     Runs the specified rendering engine.
         /// </summary>
-        /// <param name="renderingEngine"></param>
-        /// <param name="gridContext"></param>
-        /// <param name="outputStream"></param>
+        /// <param name="renderingEngine">The rendering engine.</param>
+        /// <param name="gridContext">The grid context.</param>
+        /// <param name="outputStream">The output stream.</param>
+        /// TODO Edit XML Comment Template for Run
         public void Run(
             IMvcGridRenderingEngine renderingEngine,
             GridContext gridContext,
@@ -209,6 +214,13 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             renderingEngine.Render(model, gridContext, outputStream);
         }
 
+        /// <summary>
+        ///     Gets the rendering engine internal.
+        /// </summary>
+        /// <param name="gridDefinition">The grid definition.</param>
+        /// <returns>IMvcGridRenderingEngine.</returns>
+        /// <exception cref="Exception"></exception>
+        /// TODO Edit XML Comment Template for GetRenderingEngineInternal
         internal static IMvcGridRenderingEngine GetRenderingEngineInternal(
             IMvcGridDefinition gridDefinition)
         {
@@ -231,12 +243,84 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             return renderingEngine;
         }
 
+        /// <summary>
+        ///     Preps the columns.
+        /// </summary>
+        /// <param name="gridContext">The grid context.</param>
+        /// <param name="model">The model.</param>
+        /// TODO Edit XML Comment Template for PrepColumns
+        private static void PrepColumns(
+            GridContext gridContext,
+            RenderingModel model)
+        {
+            foreach (var col in gridContext.GetVisibleColumns())
+            {
+                var renderingColumn = new Column();
+                model.Columns.Add(renderingColumn);
+                renderingColumn.Name = col.ColumnName;
+                renderingColumn.HeaderText = col.HeaderText;
+
+                if (!gridContext.GridDefinition.Sorting
+                    || !col.EnableSorting)
+                {
+                    continue;
+                }
+
+                SortDirection linkDirection;
+                SortDirection iconDirection;
+
+                if (gridContext.QueryOptions.SortColumnName == col.ColumnName
+                    && gridContext.QueryOptions.SortDirection
+                    == SortDirection.Asc)
+                {
+                    iconDirection = SortDirection.Asc;
+                    linkDirection = SortDirection.Dsc;
+                }
+                else if (gridContext.QueryOptions.SortColumnName
+                         == col.ColumnName
+                         && gridContext.QueryOptions.SortDirection
+                         == SortDirection.Dsc)
+                {
+                    iconDirection = SortDirection.Dsc;
+                    linkDirection = SortDirection.Asc;
+                }
+                else
+                {
+                    iconDirection = SortDirection.Unspecified;
+                    linkDirection = SortDirection.Asc;
+                }
+
+                renderingColumn.Onclick = HtmlUtility.MakeSortLink(
+                    gridContext.GridName,
+                    col.ColumnName,
+                    linkDirection);
+                renderingColumn.SortIconDirection = iconDirection;
+            }
+        }
+
+        /// <summary>
+        ///     Renders the container HTML.
+        /// </summary>
+        /// <param name="helper">The helper.</param>
+        /// <param name="grid">The grid.</param>
+        /// <param name="containerRenderingModel">
+        ///     The container
+        ///     rendering model.
+        /// </param>
+        /// <returns>System.String.</returns>
+        /// <exception cref="InvalidOperationException"></exception>
+        /// <exception cref="Exception">
+        ///     When rendering a container, you must output
+        ///     Model.InnerHtmlBlock inside the container (Raw).
+        /// </exception>
+        /// TODO Edit XML Comment Template for RenderContainerHtml
         private static string RenderContainerHtml(
             HtmlHelper helper,
             IMvcGridDefinition grid,
             ContainerRenderingModel containerRenderingModel)
         {
             var container = containerRenderingModel.InnerHtmlBlock;
+
             switch (grid.RenderingMode)
             {
                 case RenderingMode.RenderingEngine:
@@ -266,6 +350,14 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             return container;
         }
 
+        /// <summary>
+        ///     Renders the container using controller.
+        /// </summary>
+        /// <param name="gridDefinition">The grid definition.</param>
+        /// <param name="helper">The helper.</param>
+        /// <param name="model">The model.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for RenderContainerUsingController
         private static string RenderContainerUsingController(
             IMvcGridDefinition gridDefinition,
             HtmlHelper helper,
@@ -273,27 +365,40 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
         {
             var controllerContext = helper.ViewContext.Controller
                 .ControllerContext;
-            ViewDataDictionary vdd = new ViewDataDictionary(model);
-            TempDataDictionary tdd = new TempDataDictionary();
+
+            var vdd = new ViewDataDictionary(model);
+            var tdd = new TempDataDictionary();
+
             using (var sw = new StringWriter())
             {
                 var viewResult = ViewEngines.Engines.FindPartialView(
                     controllerContext,
                     gridDefinition.ContainerViewPath);
+
                 var viewContext = new ViewContext(
                     controllerContext,
                     viewResult.View,
                     vdd,
                     tdd,
                     sw);
+
                 viewResult.View.Render(viewContext, sw);
+
                 viewResult.ViewEngine.ReleaseView(
                     controllerContext,
                     viewResult.View);
+
                 return sw.GetStringBuilder().ToString();
             }
         }
 
+        /// <summary>
+        ///     Renders the container using rendering engine.
+        /// </summary>
+        /// <param name="gridDefinition">The grid definition.</param>
+        /// <param name="model">The model.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for RenderContainerUsingRenderingEngine
         private static string RenderContainerUsingRenderingEngine(
             IMvcGridDefinition gridDefinition,
             ContainerRenderingModel model)
@@ -311,6 +416,16 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             }
         }
 
+        /// <summary>
+        ///     Renders the preloaded grid HTML.
+        /// </summary>
+        /// <param name="helper">The helper.</param>
+        /// <param name="grid">The grid.</param>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>System.String.</returns>
+        /// <exception cref="InvalidOperationException"></exception>
+        /// TODO Edit XML Comment Template for RenderPreloadedGridHtml
         private static string RenderPreloadedGridHtml(
             HtmlHelper helper,
             IMvcGridDefinition grid,
@@ -324,10 +439,10 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                     grid,
                     HttpContext.Current.Request);
 
-            // set the page parameters for the preloaded grid
             var pageParamsDict =
                 new Dictionary<string, string>(
                     StringComparer.OrdinalIgnoreCase);
+
             if (pageParameters != null)
             {
                 foreach (PropertyDescriptor descriptor in TypeDescriptor
@@ -341,6 +456,7 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                     }
                 }
             }
+
             if (grid.PageParameterNames.Count > 0)
             {
                 foreach (var aqon in grid.PageParameterNames)
@@ -379,6 +495,14 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             return preload;
         }
 
+        /// <summary>
+        ///     Renders the using controller.
+        /// </summary>
+        /// <param name="engine">The engine.</param>
+        /// <param name="gridContext">The grid context.</param>
+        /// <param name="helper">The helper.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for RenderUsingController
         private static string RenderUsingController(
             GridEngine engine,
             GridContext gridContext,
@@ -388,27 +512,39 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
 
             var controllerContext = helper.ViewContext.Controller
                 .ControllerContext;
-            ViewDataDictionary vdd = new ViewDataDictionary(model);
-            TempDataDictionary tdd = new TempDataDictionary();
+
+            var vdd = new ViewDataDictionary(model);
+            var tdd = new TempDataDictionary();
+
             using (var sw = new StringWriter())
             {
                 var viewResult = ViewEngines.Engines.FindPartialView(
                     controllerContext,
                     gridContext.GridDefinition.ViewPath);
+
                 var viewContext = new ViewContext(
                     controllerContext,
                     viewResult.View,
                     vdd,
                     tdd,
                     sw);
+
                 viewResult.View.Render(viewContext, sw);
                 viewResult.ViewEngine.ReleaseView(
                     controllerContext,
                     viewResult.View);
+
                 return sw.GetStringBuilder().ToString();
             }
         }
 
+        /// <summary>
+        ///     Renders the using rendering engine.
+        /// </summary>
+        /// <param name="engine">The engine.</param>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for RenderUsingRenderingEngine
         private static string RenderUsingRenderingEngine(
             GridEngine engine,
             GridContext gridContext)
@@ -427,55 +563,15 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
             }
         }
 
-        private static void PrepColumns(GridContext gridContext, RenderingModel model)
-        {
-            foreach (var col in gridContext.GetVisibleColumns())
-            {
-                var renderingColumn = new Column();
-                model.Columns.Add(renderingColumn);
-                renderingColumn.Name = col.ColumnName;
-                renderingColumn.HeaderText = col.HeaderText;
-
-                if (!gridContext.GridDefinition.Sorting
-                    || !col.EnableSorting)
-                {
-                    continue;
-                }
-
-                SortDirection linkDirection;
-                SortDirection iconDirection;
-
-                if (gridContext.QueryOptions.SortColumnName
-                    == col.ColumnName
-                    && gridContext.QueryOptions.SortDirection
-                    == SortDirection.Asc)
-                {
-                    iconDirection = SortDirection.Asc;
-                    linkDirection = SortDirection.Dsc;
-                }
-                else if (gridContext.QueryOptions.SortColumnName
-                         == col.ColumnName
-                         && gridContext.QueryOptions.SortDirection
-                         == SortDirection.Dsc)
-                {
-                    iconDirection = SortDirection.Dsc;
-                    linkDirection = SortDirection.Asc;
-                }
-                else
-                {
-                    iconDirection = SortDirection.Unspecified;
-                    linkDirection = SortDirection.Asc;
-                }
-
-                renderingColumn.Onclick = HtmlUtility.MakeSortLink(
-                    gridContext.GridName,
-                    col.ColumnName,
-                    linkDirection);
-                renderingColumn.SortIconDirection = iconDirection;
-            }
-        }
-
-        private RenderingModel PrepModel(
+        /// <summary>
+        ///     Preps the model.
+        /// </summary>
+        /// <param name="totalRecords">The total records.</param>
+        /// <param name="rows">The rows.</param>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>RenderingModel.</returns>
+        /// TODO Edit XML Comment Template for PrepModel
+        private static RenderingModel PrepModel(
             int? totalRecords,
             List<Row> rows,
             GridContext gridContext)
@@ -497,20 +593,25 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
 
             model.NextButtonCaption = gridContext.GridDefinition
                 .NextButtonCaption;
+
             model.PreviousButtonCaption = gridContext.GridDefinition
                 .PreviousButtonCaption;
+
             model.SummaryMessage = gridContext.GridDefinition.SummaryMessage;
+
             model.ProcessingMessage = gridContext.GridDefinition
                 .ProcessingMessage;
 
             model.PagingModel = null;
+
             if (gridContext.QueryOptions.ItemsPerPage.HasValue)
             {
                 model.PagingModel = new PagingModel();
 
                 if (gridContext.QueryOptions.PageIndex != null)
                 {
-                    var currentPageIndex = gridContext.QueryOptions.PageIndex.Value;
+                    var currentPageIndex =
+                        gridContext.QueryOptions.PageIndex.Value;
 
                     if (totalRecords != null)
                     {
@@ -521,22 +622,26 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                         currentPageIndex
                         * gridContext.QueryOptions.ItemsPerPage.Value
                         + 1;
+
                     if (model.PagingModel.FirstRecord
                         > model.PagingModel.TotalRecords)
                     {
                         model.PagingModel.FirstRecord =
                             model.PagingModel.TotalRecords;
                     }
+
                     model.PagingModel.LastRecord =
                         model.PagingModel.FirstRecord
                         + gridContext.QueryOptions.ItemsPerPage.Value
                         - 1;
+
                     if (model.PagingModel.LastRecord
                         > model.PagingModel.TotalRecords)
                     {
                         model.PagingModel.LastRecord =
                             model.PagingModel.TotalRecords;
                     }
+
                     model.PagingModel.CurrentPage = currentPageIndex + 1;
                 }
 
@@ -544,6 +649,7 @@ namespace MichaelBrandonMorris.MvcGrid.Engine
                                      / (gridContext.QueryOptions.ItemsPerPage
                                             .Value
                                         + 0.0);
+
                 model.PagingModel.NumberOfPages =
                     (int) Math.Ceiling(numberOfPagesD);
 

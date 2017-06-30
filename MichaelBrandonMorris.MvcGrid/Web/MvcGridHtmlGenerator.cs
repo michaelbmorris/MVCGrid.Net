@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,26 @@ using MichaelBrandonMorris.MvcGrid.Utility;
 
 namespace MichaelBrandonMorris.MvcGrid.Web
 {
-    //Feature Requests
-    //Show/hide fields
+    /// <summary>
+    ///     Class MvcGridHtmlGenerator.
+    /// </summary>
+    /// TODO Edit XML Comment Template for MvcGridHtmlGenerator
     internal class MvcGridHtmlGenerator
     {
+        /// <summary>
+        ///     The render loading div setting name
+        /// </summary>
+        /// TODO Edit XML Comment Template for RenderLoadingDivSettingName
         private const string RenderLoadingDivSettingName = "RenderLoadingDiv";
 
+        /// <summary>
+        ///     Generates the base page HTML.
+        /// </summary>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="def">The definition.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateBasePageHtml
         internal static string GenerateBasePageHtml(
             string gridName,
             IMvcGridDefinition def,
@@ -33,6 +48,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             sbHtml.AppendFormat(
                 "<input type='hidden' name='MVCGridName' value='{0}' />",
                 gridName);
+
             sbHtml.AppendFormat(
                 "<div id='MVCGrid_{0}_JsonData' style='display: none'>{1}</div>",
                 gridName,
@@ -41,14 +57,12 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             sbHtml.AppendFormat(
                 "<div id='MVCGrid_ErrorMessage_{0}' style='display: none;'>",
                 gridName);
-            if (string.IsNullOrWhiteSpace(def.ErrorMessageHtml))
-            {
-                sbHtml.Append("An error has occured.");
-            }
-            else
-            {
-                sbHtml.Append(def.ErrorMessageHtml);
-            }
+
+            sbHtml.Append(
+                string.IsNullOrWhiteSpace(def.ErrorMessageHtml)
+                    ? "An error has occured."
+                    : def.ErrorMessageHtml);
+
             sbHtml.Append("</div>");
 
             var renderLoadingDiv =
@@ -78,6 +92,12 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             return sbHtml.ToString();
         }
 
+        /// <summary>
+        ///     Generates the client data transfer HTML.
+        /// </summary>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateClientDataTransferHtml
         internal static string GenerateClientDataTransferHtml(
             GridContext gridContext)
         {
@@ -92,53 +112,61 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             sb.AppendFormat(
                 "\"name\": \"{0}\"",
                 HttpUtility.JavaScriptStringEncode(gridContext.GridName));
+
             sb.Append(",");
+
             sb.AppendFormat(
                 "\"sortColumn\": \"{0}\"",
                 HttpUtility.JavaScriptStringEncode(
                     gridContext.QueryOptions.SortColumnName));
+
             sb.Append(",");
+
             sb.AppendFormat(
                 "\"sortDirection\": \"{0}\"",
                 gridContext.QueryOptions.SortDirection);
+
             sb.Append(",");
+
             sb.AppendFormat(
                 "\"itemsPerPage\": {0}",
                 gridContext.QueryOptions.ItemsPerPage.HasValue
                     ? gridContext.QueryOptions.ItemsPerPage.ToString()
                     : "\"\"");
+
             sb.Append(",");
+
             sb.AppendFormat(
                 "\"pageNumber\": {0}",
                 gridContext.QueryOptions.PageIndex.HasValue
                     ? (gridContext.QueryOptions.PageIndex + 1).ToString()
                     : "\"\"");
-            sb.Append(",");
 
+            sb.Append(",");
             sb.Append("\"columnVisibility\": {");
             sb.Append(GenerateClientJsonVisibility(gridContext));
             sb.Append("}");
-
             sb.Append(",");
-
             sb.Append("\"filters\": {");
             sb.Append(GenerateClientJsonFilter(gridContext));
             sb.Append("}");
-
             sb.Append(",");
-
             sb.Append("\"additionalQueryOptions\": {");
             sb.Append(GenerateClientJsonAdditional(gridContext));
             sb.Append("}");
-
-
             sb.Append("}");
-
             sb.Append("</div>");
-
             return sb.ToString();
         }
 
+        /// <summary>
+        ///     Generates the client definition json.
+        /// </summary>
+        /// <param name="gridName">Name of the grid.</param>
+        /// <param name="def">The definition.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateClientDefinitionJson
         private static string GenerateClientDefinitionJson(
             string gridName,
             IMvcGridDefinition def,
@@ -152,26 +180,26 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             sbJson.AppendFormat("\"qsPrefix\": \"{0}\"", def.QueryStringPrefix);
             sbJson.Append(",");
 
-            var preloadedAlready = def.PreloadData;
-            if (!def.QueryOnPageLoad)
-            {
-                preloadedAlready = true;
-            }
+            var preloadedAlready = def.PreloadData || !def.QueryOnPageLoad;
+
             sbJson.AppendFormat(
                 "\"preloaded\": {0}",
                 preloadedAlready.ToString().ToLower());
 
             sbJson.Append(",");
+
             sbJson.AppendFormat(
                 "\"clientLoading\": \"{0}\"",
                 def.ClientSideLoadingMessageFunctionName);
 
             sbJson.Append(",");
+
             sbJson.AppendFormat(
                 "\"clientLoadingComplete\": \"{0}\"",
                 def.ClientSideLoadingCompleteFunctionName);
 
             sbJson.Append(",");
+
             sbJson.AppendFormat(
                 "\"renderingMode\": \"{0}\"",
                 def.RenderingMode.ToString().ToLower());
@@ -180,11 +208,16 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             sbJson.Append("\"pageParameters\": {");
             sbJson.Append(GenerateJsonPageParameters(pageParameters));
             sbJson.Append("}");
-
             sbJson.Append("}");
             return sbJson.ToString();
         }
 
+        /// <summary>
+        ///     Generates the client json additional.
+        /// </summary>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateClientJsonAdditional
         private static string GenerateClientJsonAdditional(
             GridContext gridContext)
         {
@@ -194,6 +227,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 .AdditionalQueryOptionNames)
             {
                 var val = "";
+
                 if (gridContext.QueryOptions.AdditionalQueryOptions
                     .ContainsKey(aqon))
                 {
@@ -204,6 +238,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 {
                     sb.Append(",");
                 }
+
                 sb.AppendFormat(
                     "\"{0}\": \"{1}\"",
                     aqon,
@@ -213,15 +248,23 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             return sb.ToString();
         }
 
+        /// <summary>
+        ///     Generates the client json filter.
+        /// </summary>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateClientJsonFilter
         private static string GenerateClientJsonFilter(GridContext gridContext)
         {
             var sb = new StringBuilder();
 
             var filterableColumns = gridContext.GridDefinition.GetColumns()
                 .Where(p => p.EnableFiltering);
+
             foreach (var col in filterableColumns)
             {
                 var val = "";
+
                 if (gridContext.QueryOptions.Filters
                     .ContainsKey(col.ColumnName))
                 {
@@ -232,6 +275,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 {
                     sb.Append(",");
                 }
+
                 sb.AppendFormat(
                     "\"{0}\": \"{1}\"",
                     col.ColumnName,
@@ -241,11 +285,16 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             return sb.ToString();
         }
 
+        /// <summary>
+        ///     Generates the client json visibility.
+        /// </summary>
+        /// <param name="gridContext">The grid context.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateClientJsonVisibility
         private static string GenerateClientJsonVisibility(
             GridContext gridContext)
         {
-            var gridColumns = gridContext.GridDefinition.GetColumns();
-
+            var gridColumns = gridContext.GridDefinition.GetColumns().ToList();
             var sb = new StringBuilder();
 
             foreach (var cv in gridContext.QueryOptions.ColumnVisibility)
@@ -261,37 +310,61 @@ namespace MichaelBrandonMorris.MvcGrid.Web
 
                 sb.AppendFormat("\"{0}\": {{", cv.ColumnName);
 
+                if (gridColumn == null)
+                {
+                    // TODO Edit exception
+                    throw new Exception();
+                }
+
                 sb.AppendFormat(
                     "\"{0}\": \"{1}\"",
                     "headerText",
                     HttpUtility.JavaScriptStringEncode(gridColumn.HeaderText));
                 sb.Append(",");
+
                 sb.AppendFormat(
                     "\"{0}\": {1}",
                     "visible",
                     cv.Visible.ToString().ToLower());
+
                 sb.Append(",");
+
                 sb.AppendFormat(
                     "\"{0}\": {1}",
                     "allow",
                     gridColumn.AllowChangeVisibility.ToString().ToLower());
+
                 sb.Append("}");
             }
 
             return sb.ToString();
         }
 
+        /// <summary>
+        ///     Generates the json page parameters.
+        /// </summary>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GenerateJsonPageParameters
         private static string GenerateJsonPageParameters(object pageParameters)
         {
             var sb = new StringBuilder();
 
             var pageParamsDict = new Dictionary<string, string>();
+
             if (pageParameters != null)
             {
                 foreach (PropertyDescriptor descriptor in TypeDescriptor
                     .GetProperties(pageParameters))
                 {
                     var obj2 = descriptor.GetValue(pageParameters);
+
+                    if (obj2 == null)
+                    {
+                        // TODO Edit exception
+                        throw new Exception();
+                    }
+
                     pageParamsDict.Add(descriptor.Name, obj2.ToString());
                 }
             }
@@ -304,6 +377,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 {
                     sb.Append(",");
                 }
+
                 sb.AppendFormat(
                     "\"{0}\": \"{1}\"",
                     col.Key,

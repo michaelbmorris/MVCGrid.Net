@@ -6,16 +6,18 @@ using MichaelBrandonMorris.MvcGrid.Interfaces;
 namespace MichaelBrandonMorris.MvcGrid.Web
 {
     /// <summary>
-    /// 
+    ///     Class HtmlExtensions.
     /// </summary>
+    /// TODO Edit XML Comment Template for HtmlExtensions
     public static class HtmlExtensions
     {
         /// <summary>
-        /// 
+        ///     MVCs the grid.
         /// </summary>
-        /// <param name="helper"></param>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="helper">The helper.</param>
+        /// <param name="name">The name.</param>
+        /// <returns>IHtmlString.</returns>
+        /// TODO Edit XML Comment Template for MvcGrid
         public static IHtmlString MvcGrid(this HtmlHelper helper, string name)
         {
             var currentMapping =
@@ -25,12 +27,13 @@ namespace MichaelBrandonMorris.MvcGrid.Web
         }
 
         /// <summary>
-        /// 
+        ///     MVCs the grid.
         /// </summary>
-        /// <param name="helper"></param>
-        /// <param name="name"></param>
-        /// <param name="pageParameters"></param>
-        /// <returns></returns>
+        /// <param name="helper">The helper.</param>
+        /// <param name="name">The name.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>IHtmlString.</returns>
+        /// TODO Edit XML Comment Template for MvcGrid
         public static IHtmlString MvcGrid(
             this HtmlHelper helper,
             string name,
@@ -42,6 +45,15 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             return MvcGrid(helper, name, currentMapping, pageParameters);
         }
 
+        /// <summary>
+        ///     MVCs the grid.
+        /// </summary>
+        /// <param name="helper">The helper.</param>
+        /// <param name="name">The name.</param>
+        /// <param name="grid">The grid.</param>
+        /// <param name="pageParameters">The page parameters.</param>
+        /// <returns>IHtmlString.</returns>
+        /// TODO Edit XML Comment Template for MvcGrid
         internal static IHtmlString MvcGrid(
             this HtmlHelper helper,
             string name,

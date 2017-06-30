@@ -18,18 +18,18 @@
     <HelpFileName>MichaelBrandonMorris.MvcGrid</HelpFileName>
     <HelpFileNamingMethod>MemberName</HelpFileNamingMethod>
     <ImageFolderPath />
-    <Theme />
+    <Theme>FlatGray</Theme>
     <HtmlFormats>
       <HtmlHelp>true</HtmlHelp>
       <MSHelpViewer>false</MSHelpViewer>
       <MSHelp2>false</MSHelp2>
-      <Website>false</Website>
+      <Website>true</Website>
     </HtmlFormats>
     <IncludeScopes>
       <Public>true</Public>
-      <Internal>false</Internal>
-      <Protected>false</Protected>
-      <Private>false</Private>
+      <Internal>true</Internal>
+      <Protected>true</Protected>
+      <Private>true</Private>
       <Inherited>true</Inherited>
       <InheritedFromReferences>true</InheritedFromReferences>
       <EnableTags>false</EnableTags>
@@ -45,7 +45,10 @@
     <ResolveCrefLinks>true</ResolveCrefLinks>
     <HeaderText />
     <FooterText />
-    <SelectedProjects />
+    <SelectedProjects>
+      <SelectedProject>MichaelBrandonMorris.MvcGrid</SelectedProject>
+      <SelectedProject>MichaelBrandonMorris.MvcGrid.RazorTemplates</SelectedProject>
+    </SelectedProjects>
   </HelpConfiguration>
 </HelpConfigurations>
 <GeneralProperties>

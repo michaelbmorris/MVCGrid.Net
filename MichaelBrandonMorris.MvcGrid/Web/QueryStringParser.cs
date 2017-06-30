@@ -1,36 +1,82 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using MichaelBrandonMorris.Extensions.PrimitiveExtensions;
 using MichaelBrandonMorris.MvcGrid.Interfaces;
 using MichaelBrandonMorris.MvcGrid.Models;
 
 namespace MichaelBrandonMorris.MvcGrid.Web
 {
+    /// <summary>
+    ///     Class QueryStringParser.
+    /// </summary>
+    /// TODO Edit XML Comment Template for QueryStringParser
     internal class QueryStringParser
     {
+        /// <summary>
+        ///     The query string prefix page parameter
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringPrefixPageParameter
         public const string QueryStringPrefixPageParameter = "_pp_";
+
+        /// <summary>
+        ///     The query string suffix columns
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixColumns
         public const string QueryStringSuffixColumns = "cols";
+
+        /// <summary>
+        ///     The query string suffix engine
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixEngine
         public const string QueryStringSuffixEngine = "engine";
 
+        /// <summary>
+        ///     The query string suffix items per page
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixItemsPerPage
         public const string QueryStringSuffixItemsPerPage = "pagesize";
 
-        // NOTE: when adding a new suffix, add code to MVCGridDefinitionTable to verify there is no conflict
+        /// <summary>
+        ///     The query string suffix page
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixPage
         public const string QueryStringSuffixPage = "page";
 
+        /// <summary>
+        ///     The query string suffix sort
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixSort
         public const string QueryStringSuffixSort = "sort";
+
+        /// <summary>
+        ///     The query string suffix sort dir
+        /// </summary>
+        /// TODO Edit XML Comment Template for QueryStringSuffixSortDir
         public const string QueryStringSuffixSortDir = "dir";
 
+        /// <summary>
+        ///     Parses the options.
+        /// </summary>
+        /// <param name="grid">The grid.</param>
+        /// <param name="httpRequest">The HTTP request.</param>
+        /// <returns>QueryOptions.</returns>
+        /// TODO Edit XML Comment Template for ParseOptions
         public static QueryOptions ParseOptions(
             IMvcGridDefinition grid,
             HttpRequest httpRequest)
         {
             var qsKeyPage = grid.QueryStringPrefix + QueryStringSuffixPage;
             var qsKeySort = grid.QueryStringPrefix + QueryStringSuffixSort;
+
             var qsKeyDirection = grid.QueryStringPrefix
                                  + QueryStringSuffixSortDir;
+
             var qsKeyEngine = grid.QueryStringPrefix + QueryStringSuffixEngine;
+
             var qsKeyPageSize = grid.QueryStringPrefix
                                 + QueryStringSuffixItemsPerPage;
+
             var qsColumns = grid.QueryStringPrefix + QueryStringSuffixColumns;
 
             var options = new QueryOptions();
@@ -54,10 +100,9 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 {
                     if (httpRequest.QueryString[qsKeyPageSize] != null)
                     {
-                        int pageSize;
                         if (int.TryParse(
                             httpRequest.QueryString[qsKeyPageSize],
-                            out pageSize))
+                            out int pageSize))
                         {
                             options.ItemsPerPage = pageSize;
                         }
@@ -78,10 +123,9 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 options.PageIndex = 0;
                 if (httpRequest.QueryString[qsKeyPage] != null)
                 {
-                    int pageNum;
                     if (int.TryParse(
                         httpRequest.QueryString[qsKeyPage],
-                        out pageNum))
+                        out int pageNum))
                     {
                         options.PageIndex = pageNum - 1;
                         if (options.PageIndex < 0)
@@ -92,11 +136,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 }
             }
 
-            if (!grid.Filtering)
-            {
-                //options.Filters
-            }
-            else
+            if (grid.Filtering)
             {
                 var filterableColumns =
                     grid.GetColumns().Where(p => p.EnableFiltering);
@@ -105,14 +145,16 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                 {
                     var qsKey = grid.QueryStringPrefix + col.ColumnName;
 
-                    if (httpRequest.QueryString[qsKey] != null)
+                    if (httpRequest.QueryString[qsKey] == null)
                     {
-                        var filterValue = httpRequest.QueryString[qsKey];
+                        continue;
+                    }
 
-                        if (!string.IsNullOrWhiteSpace(filterValue))
-                        {
-                            options.Filters.Add(col.ColumnName, filterValue);
-                        }
+                    var filterValue = httpRequest.QueryString[qsKey];
+
+                    if (!string.IsNullOrWhiteSpace(filterValue))
+                    {
+                        options.Filters.Add(col.ColumnName, filterValue);
                     }
                 }
             }
@@ -140,11 +182,9 @@ namespace MichaelBrandonMorris.MvcGrid.Web
 
                 var thisSortColName = sortColName.Trim().ToLower();
 
-                // validate SortColumn
                 var colDef = grid.GetColumns()
                     .SingleOrDefault(
                         p => p.ColumnName.ToLower() == thisSortColName);
-
 
                 if (colDef != null
                     && !colDef.EnableSorting)
@@ -152,23 +192,23 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                     colDef = null;
                 }
 
-
                 if (colDef != null)
                 {
                     options.SortColumnName = colDef.ColumnName;
                     options.SortColumnData = colDef.SortColumnData;
                 }
 
-
                 options.SortDirection = grid.DefaultSortDirection;
+
                 if (httpRequest.QueryString[qsKeyDirection] != null)
                 {
                     var sortDir = httpRequest.QueryString[qsKeyDirection];
-                    if (string.Compare(sortDir, "dsc", true) == 0)
+
+                    if (sortDir.EqualsOrdinalIgnoreCase("dsc"))
                     {
                         options.SortDirection = SortDirection.Dsc;
                     }
-                    else if (string.Compare(sortDir, "asc", true) == 0)
+                    else if (sortDir.EqualsOrdinalIgnoreCase("asc"))
                     {
                         options.SortDirection = SortDirection.Asc;
                     }
@@ -210,24 +250,22 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             }
 
 
-            var gridColumns = grid.GetColumns();
+            var gridColumns = grid.GetColumns().ToList();
             var requestedColumns = new List<ColumnVisibility>();
+
             if (httpRequest.QueryString[qsColumns] == null)
             {
-                foreach (var gridColumn in gridColumns)
-                {
-                    requestedColumns.Add(
-                        new ColumnVisibility
+                requestedColumns.AddRange(
+                    gridColumns.Select(
+                        gridColumn => new ColumnVisibility
                         {
                             ColumnName = gridColumn.ColumnName,
                             Visible = gridColumn.Visible
-                        });
-                }
+                        }));
             }
             else
             {
                 var cols = httpRequest.QueryString[qsColumns];
-
                 var colParts = cols.Split(',', ';');
 
                 foreach (var colPart in colParts)
@@ -242,7 +280,11 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                     var gridColumn = gridColumns.SingleOrDefault(
                         p => p.ColumnName.ToLower() == thisColPart);
 
-                    if (gridColumn != null)
+                    if (gridColumn == null)
+                    {
+                        continue;
+                    }
+
                     {
                         if (requestedColumns.SingleOrDefault(
                                 p => p.ColumnName == gridColumn.ColumnName)
@@ -272,6 +314,7 @@ namespace MichaelBrandonMorris.MvcGrid.Web
                         ColumnName = gridColumn.ColumnName,
                         Visible = false
                     };
+
                     requestedColumns.Add(requestedCol);
                 }
 
@@ -284,7 +327,6 @@ namespace MichaelBrandonMorris.MvcGrid.Web
             }
 
             options.ColumnVisibility.AddRange(requestedColumns);
-
             return options;
         }
     }
