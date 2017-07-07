@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>MichaelBrandonMorris.MvcGrid</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <description>$description$</description>
+    <authors>Michael Brandon Morris</authors>
+    <description>A grid for ASP MVC.</description>
+	<owners>michaelbmorris</owners>
   </metadata>
 </package>

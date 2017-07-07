@@ -6,1961 +6,3410 @@
     <members>
         <member name="T:MichaelBrandonMorris.MvcGrid.Engine.GridEngine">
             <summary>
-            
+                Class GridEngine.
             </summary>
+            TODO Edit XML Comment Template for GridEngine
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.LocalEncoding">
+            <summary>
+                The local encoding
+            </summary>
+            TODO Edit XML Comment Template for LocalEncoding
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngine(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
             <summary>
-            
+                Gets the rendering engine.
             </summary>
-            <param name="gridContext"></param>
-            <returns></returns>
+            <param name="gridContext">The grid context.</param>
+            <returns>IMvcGridRenderingEngine.</returns>
+            TODO Edit XML Comment Template for GetRenderingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.CheckAuthorization(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
             <summary>
-            
+                Checks the authorization.
             </summary>
-            <param name="gridContext"></param>
-            <returns></returns>
+            <param name="gridContext">The grid context.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.Exception">Unsupported AuthorizationType</exception>
+            TODO Edit XML Comment Template for CheckAuthorization
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GenerateModel(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
             <summary>
-            
+                Generates the model.
             </summary>
-            <param name="gridContext"></param>
-            <returns></returns>
+            <param name="gridContext">The grid context.</param>
+            <returns>RenderingModel.</returns>
+            TODO Edit XML Comment Template for GenerateModel
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetBasePageHtml(System.Web.Mvc.HtmlHelper,System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Object)">
             <summary>
-            
+                Gets the base page HTML.
             </summary>
-            <param name="helper"></param>
-            <param name="gridName"></param>
-            <param name="grid"></param>
-            <param name="pageParameters"></param>
-            <returns></returns>
+            <param name="helper">The helper.</param>
+            <param name="gridName">Name of the grid.</param>
+            <param name="grid">The grid.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetBasePageHtml
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.Run(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
             <summary>
-            
+                Runs the specified rendering engine.
             </summary>
-            <param name="renderingEngine"></param>
-            <param name="gridContext"></param>
-            <param name="outputStream"></param>
+            <param name="renderingEngine">The rendering engine.</param>
+            <param name="gridContext">The grid context.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for Run
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.GetRenderingEngineInternal(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition)">
+            <summary>
+                Gets the rendering engine internal.
+            </summary>
+            <param name="gridDefinition">The grid definition.</param>
+            <returns>IMvcGridRenderingEngine.</returns>
+            <exception cref="T:System.Exception"></exception>
+            TODO Edit XML Comment Template for GetRenderingEngineInternal
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepColumns(MichaelBrandonMorris.MvcGrid.Models.GridContext,MichaelBrandonMorris.MvcGrid.Models.RenderingModel)">
+            <summary>
+                Preps the columns.
+            </summary>
+            <param name="gridContext">The grid context.</param>
+            <param name="model">The model.</param>
+            TODO Edit XML Comment Template for PrepColumns
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerHtml(System.Web.Mvc.HtmlHelper,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel)">
+            <summary>
+                Renders the container HTML.
+            </summary>
+            <param name="helper">The helper.</param>
+            <param name="grid">The grid.</param>
+            <param name="containerRenderingModel">
+                The container
+                rendering model.
+            </param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.Exception">
+                When rendering a container, you must output
+                Model.InnerHtmlBlock inside the container (Raw).
+            </exception>
+            TODO Edit XML Comment Template for RenderContainerHtml
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingController(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Web.Mvc.HtmlHelper,MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel)">
+            <summary>
+                Renders the container using controller.
+            </summary>
+            <param name="gridDefinition">The grid definition.</param>
+            <param name="helper">The helper.</param>
+            <param name="model">The model.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for RenderContainerUsingController
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderContainerUsingRenderingEngine(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel)">
+            <summary>
+                Renders the container using rendering engine.
+            </summary>
+            <param name="gridDefinition">The grid definition.</param>
+            <param name="model">The model.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for RenderContainerUsingRenderingEngine
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderPreloadedGridHtml(System.Web.Mvc.HtmlHelper,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.String,System.Object)">
+            <summary>
+                Renders the preloaded grid HTML.
+            </summary>
+            <param name="helper">The helper.</param>
+            <param name="grid">The grid.</param>
+            <param name="gridName">Name of the grid.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            TODO Edit XML Comment Template for RenderPreloadedGridHtml
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingController(MichaelBrandonMorris.MvcGrid.Engine.GridEngine,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.Web.Mvc.HtmlHelper)">
+            <summary>
+                Renders the using controller.
+            </summary>
+            <param name="engine">The engine.</param>
+            <param name="gridContext">The grid context.</param>
+            <param name="helper">The helper.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for RenderUsingController
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.RenderUsingRenderingEngine(MichaelBrandonMorris.MvcGrid.Engine.GridEngine,MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Renders the using rendering engine.
+            </summary>
+            <param name="engine">The engine.</param>
+            <param name="gridContext">The grid context.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for RenderUsingRenderingEngine
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Engine.GridEngine.PrepModel(System.Nullable{System.Int32},System.Collections.Generic.List{MichaelBrandonMorris.MvcGrid.Models.Row},MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Preps the model.
+            </summary>
+            <param name="totalRecords">The total records.</param>
+            <param name="rows">The rows.</param>
+            <param name="gridContext">The grid context.</param>
+            <returns>RenderingModel.</returns>
+            TODO Edit XML Comment Template for PrepModel
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine">
             <summary>
-            
+                Interface IMvcGridRenderingEngine
             </summary>
+            TODO Edit XML Comment Template for IMvcGridRenderingEngine
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.AllowsPaging">
             <summary>
-            
+                Gets a value indicating whether [allows paging].
             </summary>
+            <value>
+                <c>true</c> if [allows paging]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowsPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
             <summary>
-            
+                Prepares the response.
             </summary>
-            <param name="response"></param>
+            <param name="response">The response.</param>
+            TODO Edit XML Comment Template for PrepareResponse
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
             <summary>
-            
+                Renders the specified model.
             </summary>
-            <param name="model"></param>
-            <param name="gridContext"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="gridContext">The grid context.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for Render
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
             <summary>
-            
+                Renders the container.
             </summary>
-            <param name="model"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for RenderContainer
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine">
             <summary>
-            
+                Interface IMvcGridTemplatingEngine
             </summary>
+            TODO Edit XML Comment Template for IMvcGridTemplatingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine.Process(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
             <summary>
-            
+                Processes the specified template.
             </summary>
-            <param name="template"></param>
-            <param name="model"></param>
-            <returns></returns>
+            <param name="template">The template.</param>
+            <param name="model">The model.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for Process
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn">
             <summary>
+                Interface IMvcGridColumn
             </summary>
+            TODO Edit XML Comment Template for IMvcGridColumn
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.ColumnName">
             <summary>
-                A unique name for this column
+                Gets the name of the column.
             </summary>
+            <value>The name of the column.</value>
+            TODO Edit XML Comment Template for ColumnName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableFiltering">
             <summary>
-                Enables filtering on this column
+                Gets a value indicating whether [enable filtering].
             </summary>
+            <value>
+                <c>true</c> if [enable filtering]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableFiltering
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.EnableSorting">
             <summary>
-                Enables sorting on this column
+                Gets a value indicating whether [enable sorting].
             </summary>
+            <value>
+                <c>true</c> if [enable sorting]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableSorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HeaderText">
             <summary>
-                Header text to display for the current column, if different from ColumnName.
+                Gets the header text.
             </summary>
+            <value>The header text.</value>
+            TODO Edit XML Comment Template for HeaderText
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.HtmlEncode">
             <summary>
-                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
-                returns HTML.
+                Gets a value indicating whether [HTML encode].
             </summary>
+            <value>
+                <c>true</c> if [HTML encode]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for HtmlEncode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.SortColumnData">
             <summary>
-                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+                Gets the sort column data.
             </summary>
+            <value>The sort column data.</value>
+            TODO Edit XML Comment Template for SortColumnData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.Visible">
             <summary>
-                Indicates whether column is visible.
+                Gets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn" /> is visible.
             </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Visible
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn.AllowChangeVisibility">
             <summary>
-                Gets or sets a value indicating whether the column visibility can be changed.
+                Gets or sets a value indicating whether [allow change
+                visibility].
             </summary>
+            <value>
+                <c>true</c> if [allow change visibility]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangeVisibility
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition">
             <summary>
+                Interface IMvcGridDefinition
             </summary>
+            TODO Edit XML Comment Template for IMvcGridDefinition
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreloadData">
             <summary>
-                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+                Gets a value indicating whether [preload data].
             </summary>
+            <value>
+                <c>true</c> if [preload data]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for PreloadData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryStringPrefix">
             <summary>
-                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+                Gets the query string prefix.
             </summary>
+            <value>The query string prefix.</value>
+            TODO Edit XML Comment Template for QueryStringPrefix
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalQueryOptionNames">
             <summary>
-                Names of additional parameters that can be passed from client to server side
+                Gets or sets the additional query option names.
             </summary>
+            <value>The additional query option names.</value>
+            TODO Edit XML Comment Template for AdditionalQueryOptionNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AdditionalSettings">
             <summary>
-                Arbitrary additional settings
+                Gets or sets the additional settings.
             </summary>
+            <value>The additional settings.</value>
+            TODO Edit XML Comment Template for AdditionalSettings
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AllowChangingPageSize">
             <summary>
-                Allows changing of page size from client-side
+                Gets or sets a value indicating whether [allow changing
+                page size].
             </summary>
+            <value>
+                <c>true</c> if [allow changing page size];
+                otherwise, <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangingPageSize
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.AuthorizationType">
             <summary>
-                Indicated the authorization type. Anonymous access is the default.
+                Gets or sets the type of the authorization.
             </summary>
+            <value>The type of the authorization.</value>
+            TODO Edit XML Comment Template for AuthorizationType
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingCompleteFunctionName">
             <summary>
-                Name of function to call before ajax call ends
+                Gets or sets the name of the client side loading
+                complete function.
             </summary>
+            <value>
+                The name of the client side loading complete
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingCompleteFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ClientSideLoadingMessageFunctionName">
             <summary>
-                Name of function to call before ajax call begins
+                Gets or sets the name of the client side loading
+                message function.
             </summary>
+            <value>
+                The name of the client side loading message
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingMessageFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ContainerViewPath">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+                Gets or sets the container view path.
             </summary>
+            <value>The container view path.</value>
+            TODO Edit XML Comment Template for ContainerViewPath
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultRenderingEngineName">
             <summary>
-                The unique rendering engine name to use when none is specified in the request
+                Gets or sets the default name of the rendering engine.
             </summary>
-            <value>
-                The default name of the rendering engine.
-            </value>
+            <value>The default name of the rendering engine.</value>
+            TODO Edit XML Comment Template for DefaultRenderingEngineName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortColumn">
             <summary>
-                The default column to sort by when no sort is specified
+                Gets or sets the default sort column.
             </summary>
+            <value>The default sort column.</value>
+            TODO Edit XML Comment Template for DefaultSortColumn
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.DefaultSortDirection">
             <summary>
-                The default order to sort by when no sort is specified
+                Gets or sets the default sort direction.
             </summary>
+            <value>The default sort direction.</value>
+            TODO Edit XML Comment Template for DefaultSortDirection
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ErrorMessageHtml">
             <summary>
-                HTML to display in place of the grid when an error occurs
+                Gets or sets the error message HTML.
             </summary>
+            <value>The error message HTML.</value>
+            TODO Edit XML Comment Template for ErrorMessageHtml
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Filtering">
             <summary>
-                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is filtering.
             </summary>
+            <value><c>true</c> if filtering; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Filtering
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ItemsPerPage">
             <summary>
-                Number of items to display on each page
+                Gets or sets the items per page.
             </summary>
+            <value>The items per page.</value>
+            TODO Edit XML Comment Template for ItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.MaxItemsPerPage">
             <summary>
-                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+                Gets or sets the maximum items per page.
             </summary>
+            <value>The maximum items per page.</value>
+            TODO Edit XML Comment Template for MaxItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NextButtonCaption">
             <summary>
-                Text to display on the "next" button
+                Gets or sets the next button caption.
             </summary>
+            <value>The next button caption.</value>
+            TODO Edit XML Comment Template for NextButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.NoResultsMessage">
             <summary>
-                Text to display when there are no results
+                Gets or sets the no results message.
             </summary>
+            <value>The no results message.</value>
+            TODO Edit XML Comment Template for NoResultsMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PageParameterNames">
             <summary>
-                Names of page parameters that will be passed from the view
+                Gets or sets the page parameter names.
             </summary>
+            <value>The page parameter names.</value>
+            TODO Edit XML Comment Template for PageParameterNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Paging">
             <summary>
-                Enables paging on the grid
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is paging.
             </summary>
+            <value><c>true</c> if paging; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Paging
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.PreviousButtonCaption">
             <summary>
-                Text to display on the "previous" button
+                Gets or sets the previous button caption.
             </summary>
+            <value>The previous button caption.</value>
+            TODO Edit XML Comment Template for PreviousButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ProcessingMessage">
             <summary>
-                Text to display when query is processed
+                Gets or sets the processing message.
             </summary>
+            <value>The processing message.</value>
+            TODO Edit XML Comment Template for ProcessingMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.QueryOnPageLoad">
             <summary>
-                Specified if the data should be loaded as soon as the page loads
+                Gets or sets a value indicating whether [query on page
+                load].
             </summary>
+            <value>
+                <c>true</c> if [query on page load]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for QueryOnPageLoad
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingEngines">
             <summary>
-                The list of configured rendering engines availble for this grid
+                Gets or sets the rendering engines.
             </summary>
-            <value>
-                The rendering engines, each with a unique name
-            </value>
+            <value>The rendering engines.</value>
+            TODO Edit XML Comment Template for RenderingEngines
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.RenderingMode">
             <summary>
-                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
-                use a custom Razor view to display your grid, change this to Controller
+                Gets or sets the rendering mode.
             </summary>
+            <value>The rendering mode.</value>
+            TODO Edit XML Comment Template for RenderingMode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.Sorting">
             <summary>
-                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is sorting.
             </summary>
+            <value><c>true</c> if sorting; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Sorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.SummaryMessage">
             <summary>
-                Summary text to display in grid footer
+                Gets or sets the summary message.
             </summary>
+            <value>The summary message.</value>
+            TODO Edit XML Comment Template for SummaryMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.TemplatingEngine">
             <summary>
-            
+                Gets or sets the templating engine.
             </summary>
+            <value>The templating engine.</value>
+            TODO Edit XML Comment Template for TemplatingEngine
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.ViewPath">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the razor view to use.
+                Gets or sets the view path.
             </summary>
+            <value>The view path.</value>
+            TODO Edit XML Comment Template for ViewPath
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetAdditionalSetting``1(System.String,``0)">
             <summary>
-            
+                Gets the additional setting.
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="name"></param>
-            <param name="defaultValue"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>T.</returns>
+            TODO Edit XML Comment Template for GetAdditionalSetting`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition.GetColumns">
             <summary>
+                Gets the columns.
             </summary>
-            <returns></returns>
+            <returns>IEnumerable&lt;IMvcGridColumn&gt;.</returns>
+            TODO Edit XML Comment Template for GetColumns
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType">
             <summary>
-            
+            Enum AuthorizationType
             </summary>
+            TODO Edit XML Comment Template for AuthorizationType
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.AllowAnonymous">
             <summary>
-            
+            The allow anonymous
             </summary>
+            TODO Edit XML Comment Template for AllowAnonymous
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.AuthorizationType.Authorized">
             <summary>
-            
+            The authorized
             </summary>
+            TODO Edit XML Comment Template for Authorized
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults">
             <summary>
-            
+                Class ColumnDefaults.
             </summary>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn" />
+            TODO Edit XML Comment Template for ColumnDefaults
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.AllowChangeVisibility">
             <summary>
-            
+                Gets or sets a value indicating whether [allow change
+                visibility].
             </summary>
+            <value>
+                <c>true</c> if [allow change visibility]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangeVisibility
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.ColumnName">
             <summary>
-            
+                Gets the name of the column.
             </summary>
+            <value>The name of the column.</value>
+            TODO Edit XML Comment Template for ColumnName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableFiltering">
             <summary>
-            
+                Gets a value indicating whether [enable filtering].
             </summary>
+            <value>
+                <c>true</c> if [enable filtering]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableFiltering
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.EnableSorting">
             <summary>
-            
+                Gets a value indicating whether [enable sorting].
             </summary>
+            <value>
+                <c>true</c> if [enable sorting]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableSorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HeaderText">
             <summary>
-            
+                Gets the header text.
             </summary>
+            <value>The header text.</value>
+            TODO Edit XML Comment Template for HeaderText
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.HtmlEncode">
             <summary>
-            
+                Gets a value indicating whether [HTML encode].
             </summary>
+            <value>
+                <c>true</c> if [HTML encode]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for HtmlEncode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.SortColumnData">
             <summary>
-            
+                Gets the sort column data.
             </summary>
+            <value>The sort column data.</value>
+            TODO Edit XML Comment Template for SortColumnData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults.Visible">
             <summary>
-            
+                Gets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn" /> is visible.
             </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Visible
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility">
             <summary>
-            
+                Class ColumnVisibility.
             </summary>
+            TODO Edit XML Comment Template for ColumnVisibility
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.ColumnName">
             <summary>
-            
+                Gets or sets the name of the column.
             </summary>
+            <value>The name of the column.</value>
+            TODO Edit XML Comment Template for ColumnName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility.Visible">
             <summary>
-            
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.ColumnVisibility" /> is visible.
             </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Visible
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel">
             <summary>
-            
+                Class ContainerRenderingModel.
             </summary>
+            TODO Edit XML Comment Template for ContainerRenderingModel
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel.InnerHtmlBlock">
             <summary>
-            
+                Gets or sets the inner HTML block.
             </summary>
+            <value>The inner HTML block.</value>
+            TODO Edit XML Comment Template for InnerHtmlBlock
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1">
             <summary>
-            
+                Class MvcGridBuilder.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            TODO Edit XML Comment Template for MvcGridBuilder`1
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1._columnDefaults">
+            <summary>
+                The column defaults
+            </summary>
+            TODO Edit XML Comment Template for _columnDefaults
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1" /> class.
             </summary>
-            <param name="gridDefaults"></param>
+            <param name="gridDefaults">The grid defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1" /> class.
             </summary>
-            <param name="columnDefaults"></param>
+            <param name="columnDefaults">The column defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults,MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1" /> class.
             </summary>
-            <param name="gridDefaults"></param>
-            <param name="columnDefaults"></param>
+            <param name="gridDefaults">The grid defaults.</param>
+            <param name="columnDefaults">The column defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.GridDefinition">
             <summary>
-            
+                Gets or sets the grid definition.
             </summary>
+            <value>The grid definition.</value>
+            TODO Edit XML Comment Template for GridDefinition
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumn(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},System.Boolean,System.Boolean,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-            
+                Adds the column.
             </summary>
-            <param name="name"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
-            <param name="enableSort"></param>
-            <param name="htmlEncode"></param>
-            <param name="plainTextValueExpression"></param>
-            <param name="cellCssClassExpression"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            <param name="enableSort">
+                if set to <c>true</c> [enable
+                sort].
+            </param>
+            <param name="htmlEncode">
+                if set to <c>true</c> [HTML
+                encode].
+            </param>
+            <param name="plainTextValueExpression">
+                The plain text value
+                expression.
+            </param>
+            <param name="cellCssClassExpression">
+                The cell CSS class
+                expression.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for AddColumn
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumn(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
             <summary>
-            
+                Adds the column.
             </summary>
-            <param name="column"></param>
-            <returns></returns>
+            <param name="column">The column.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for AddColumn
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddColumns(System.Action{MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder{`0}})">
             <summary>
-            
+                Adds the columns.
             </summary>
-            <param name="columns"></param>
-            <returns></returns>
+            <param name="columns">The columns.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for AddColumns
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddRenderingEngine(System.String,System.Type)">
             <summary>
-                Adds a rendering engine to the list of configured rendering engines.
+                Adds the rendering engine.
             </summary>
-            <param name="name">A unique name.</param>
-            <param name="renderingEngineType"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <param name="renderingEngineType">
+                Type of the rendering
+                engine.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for AddRenderingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.AddRenderingEngine(System.String,System.String)">
             <summary>
-                Adds a rendering engine to the list of configured rendering engines.
+                Adds the rendering engine.
             </summary>
-            <param name="name">A unique name.</param>
+            <param name="name">The name.</param>
             <param name="type">The type.</param>
-            <returns></returns>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for AddRenderingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.RemoveRenderingEngine(System.String)">
             <summary>
-            
+                Removes the rendering engine.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for RemoveRenderingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalQueryOptionName(System.String)">
             <summary>
-                Add a name to additional query options which are additional parameters that can be passed from client to server
-                side
+                Withes the name of the additional query option.
             </summary>
+            <param name="name">The name.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAdditionalQueryOptionName
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalQueryOptionNames(System.String[])">
             <summary>
-                Names of additional parameters that can be passed from client to server side
+                Withes the additional query option names.
             </summary>
+            <param name="names">The names.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAdditionalQueryOptionNames
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAdditionalSetting(System.String,System.Object)">
             <summary>
-                Add an arbitrary additional settings
+                Withes the additional setting.
             </summary>
+            <param name="name">The name.</param>
+            <param name="value">The value.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAdditionalSetting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAllowChangingPageSize(System.Boolean)">
             <summary>
-                Allows changing of page size from client-side
+                Withes the size of the allow changing page.
             </summary>
+            <param name="allow">if set to <c>true</c> [allow].</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAllowChangingPageSize
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithAuthorizationType(MichaelBrandonMorris.MvcGrid.Models.AuthorizationType)">
             <summary>
-                Indicated the authorization type. Anonymous access is the default.
+                Withes the type of the authorization.
             </summary>
+            <param name="authType">Type of the authentication.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAuthorizationType
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithClientSideLoadingCompleteFunctionName(System.String)">
             <summary>
-                Name of function to call before ajax call ends
+                Withes the name of the client side loading complete
+                function.
             </summary>
+            <param name="name">The name.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithClientSideLoadingCompleteFunctionName
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithClientSideLoadingMessageFunctionName(System.String)">
             <summary>
-                Name of function to call before ajax call begins
+                Withes the name of the client side loading message
+                function.
             </summary>
+            <param name="name">The name.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithClientSideLoadingMessageFunctionName
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithContainerViewPath(System.String)">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+                Withes the container view path.
             </summary>
+            <param name="containerViewPath">The container view path.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithContainerViewPath
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultRenderingEngineName(System.String)">
             <summary>
-                Sets the default rendering engine name (which should match a name from the RenderingEngines property) which
-                will be used when no rendering engine name is specified in the request
+                Withes the default name of the rendering engine.
             </summary>
-            <param name="renderingEngineName">Name of the rendering engine.</param>
-            <returns></returns>
+            <param name="renderingEngineName">
+                Name of the rendering
+                engine.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithDefaultRenderingEngineName
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultSortColumn(System.String)">
             <summary>
-                The default column to sort by when no sort is specified
+                Withes the default sort column.
             </summary>
+            <param name="defaultSortColumn">The default sort column.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithDefaultSortColumn
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithDefaultSortDirection(MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
             <summary>
-                The default order to sort by when no sort is specified
+                Withes the default sort direction.
             </summary>
+            <param name="sortDirection">The sort direction.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithDefaultSortDirection
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithErrorMessageHtml(System.String)">
             <summary>
-                HTML to display in place of the grid when an error occurs
+                Withes the error message HTML.
             </summary>
+            <param name="errorMessageHtml">The error message HTML.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithErrorMessageHtml
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithFiltering(System.Boolean)">
             <summary>
-                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+                Withes the filtering.
             </summary>
+            <param name="filtering">if set to <c>true</c> [filtering].</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithFiltering
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithItemsPerPage(System.Int32)">
             <summary>
-                Number of items to display on each page
+                Withes the items per page.
             </summary>
+            <param name="itemsPerPage">The items per page.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithItemsPerPage
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithMaxItemsPerPage(System.Int32)">
             <summary>
-                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+                Withes the maximum items per page.
             </summary>
+            <param name="maxItems">The maximum items.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithMaxItemsPerPage
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithNextButtonCaption(System.String)">
             <summary>
-                Text to display on the "next" button.
+                Withes the next button caption.
             </summary>
-            <param name="nextButtonCaption"></param>
-            <returns></returns>
+            <param name="nextButtonCaption">The next button caption.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithNextButtonCaption
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithNoResultsMessage(System.String)">
             <summary>
-                Text to display when there are no results.
+                Withes the no results message.
             </summary>
+            <param name="noResultsMessage">The no results message.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithNoResultsMessage
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithoutAdditionalSetting(System.String)">
             <summary>
-                Remove an additional setting
+                Withouts the additional setting.
             </summary>
+            <param name="name">The name.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithoutAdditionalSetting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPageParameterNames(System.String[])">
             <summary>
-                Names of page parameters that will be passed from the view
+                Withes the page parameter names.
             </summary>
+            <param name="names">The names.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPageParameterNames
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean)">
             <summary>
-                Enables paging on the grid
+                Withes the paging.
             </summary>
+            <param name="paging">if set to <c>true</c> [paging].</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean,System.Int32)">
             <summary>
-                Enables paging on the grid
+                Withes the paging.
             </summary>
+            <param name="paging">if set to <c>true</c> [paging].</param>
+            <param name="itemsPerPage">The items per page.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPaging(System.Boolean,System.Int32,System.Boolean,System.Int32)">
             <summary>
-                Enables paging on the grid
+                Withes the paging.
             </summary>
+            <param name="paging">if set to <c>true</c> [paging].</param>
+            <param name="itemsPerPage">The items per page.</param>
+            <param name="allowChangePageSize">
+                if set to <c>true</c>
+                [allow change page size].
+            </param>
+            <param name="maxItemsPerPage">The maximum items per page.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPreloadData(System.Boolean)">
             <summary>
-                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+                Withes the preload data.
             </summary>
+            <param name="preload">if set to <c>true</c> [preload].</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPreloadData
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithPreviousButtonCaption(System.String)">
             <summary>
-                Text to display on the "previous" button.
+                Withes the previous button caption.
             </summary>
-            <param name="previousButtonCaption"></param>
-            <returns></returns>
+            <param name="previousButtonCaption">
+                The previous button
+                caption.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPreviousButtonCaption
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithProcessingMessage(System.String)">
             <summary>
-                Text to display when query is processed
+                Withes the processing message.
             </summary>
-            <param name="processingMessage"></param>
-            <returns></returns>
+            <param name="processingMessage">The processing message.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithProcessingMessage
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithQueryOnPageLoad(System.Boolean)">
             <summary>
-                Specifies if the data should be loaded as soon as the page loads
+                Withes the query on page load.
             </summary>
+            <param name="queryOnPageLoad">
+                if set to <c>true</c> [query
+                on page load].
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithQueryOnPageLoad
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithQueryStringPrefix(System.String)">
             <summary>
-                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+                Withes the query string prefix.
             </summary>
+            <param name="prefix">The prefix.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithQueryStringPrefix
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRenderingMode(MichaelBrandonMorris.MvcGrid.Models.RenderingMode)">
             <summary>
-                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
-                use a custom Razor view to display your grid, change this to Controller
+                Withes the rendering mode.
             </summary>
+            <param name="mode">The mode.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithRenderingMode
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRetrieveDataMethod(System.Func{MichaelBrandonMorris.MvcGrid.Models.GridContext,MichaelBrandonMorris.MvcGrid.Models.QueryResult{`0}})">
             <summary>
-                This is the method that will actually query the data to populate the grid. Use entity framework, a module from you
-                IoC container, direct SQL queries, etc. to get the data. Inside the providee GridContext there is a QueryOptions
-                object which will be populated with the currently requested sorting, paging, and filtering options which you must
-                take into account. See the QueryOptions documentation below. You must return a QueryResult object which takes an
-                enumerable of your type and a count of the total number of records which must be provided if paging is enabled.
+                Withes the retrieve data method.
             </summary>
+            <param name="retrieveData">The retrieve data.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithRetrieveDataMethod
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRowCssClassExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-                Use this to specify a custom css class based on data for the current row
+                Withes the row CSS class expression.
             </summary>
+            <param name="rowCssClassExpression">
+                The row CSS class
+                expression.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithRowCssClassExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithRowCssClassExpression(System.Func{`0,System.String})">
             <summary>
-                Use this to specify a custom css class based on data for the current row
+                Withes the row CSS class expression.
             </summary>
+            <param name="rowCssClassExpression">
+                The row CSS class
+                expression.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithRowCssClassExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean)">
             <summary>
-                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+                Withes the sorting.
             </summary>
+            <param name="sorting">if set to <c>true</c> [sorting].</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSorting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean,System.String)">
             <summary>
-                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+                Withes the sorting.
             </summary>
+            <param name="sorting">if set to <c>true</c> [sorting].</param>
+            <param name="defaultSortColumn">The default sort column.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSorting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSorting(System.Boolean,System.String,MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
             <summary>
-                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+                Withes the sorting.
             </summary>
+            <param name="sorting">if set to <c>true</c> [sorting].</param>
+            <param name="defaultSortColumn">The default sort column.</param>
+            <param name="defaultSortDirection">
+                The default sort
+                direction.
+            </param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSorting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithSummaryMessage(System.String)">
             <summary>
-                Summary text to display in grid footer. Defaults to "Showing {0} to {1} of {2} entries"
-                {0} = first record number shown on page
-                {1} = last record number shown on page
-                {2} = total number of records on all pages
+                Withes the summary message.
             </summary>
-            <param name="summaryMessage"></param>
-            <returns></returns>
+            <param name="summaryMessage">The summary message.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSummaryMessage
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithTemplatingEngine(System.Type)">
             <summary>
-            
+                Withes the templating engine.
             </summary>
-            <param name="templatingEngine"></param>
-            <returns></returns>
+            <param name="templatingEngine">The templating engine.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithTemplatingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder`1.WithViewPath(System.String)">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the razor view to use.
+                Withes the view path.
             </summary>
+            <param name="viewPath">The view path.</param>
+            <returns>MvcGridBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithViewPath
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1">
             <summary>
-            
+                Class GridColumnListBuilder.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            TODO Edit XML Comment Template for GridColumnListBuilder`1
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1._columnDefaults">
+            <summary>
+                The column defaults
+            </summary>
+            TODO Edit XML Comment Template for _columnDefaults
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1" /> class.
             </summary>
-            <param name="columnDefaults"></param>
+            <param name="columnDefaults">The column defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.ColumnBuilders">
             <summary>
-            
+                Gets or sets the column builders.
             </summary>
+            <value>The column builders.</value>
+            TODO Edit XML Comment Template for ColumnBuilders
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add">
             <summary>
-            
+                Adds this instance.
             </summary>
-            <returns></returns>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for Add
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(System.String)">
             <summary>
-            
+                Adds the specified column name.
             </summary>
-            <param name="columnName"></param>
-            <returns></returns>
+            <param name="columnName">Name of the column.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for Add
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(System.String,System.String,System.Func{`0,System.String})">
             <summary>
-            
+                Adds the specified column name.
             </summary>
-            <param name="columnName"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
-            <returns></returns>
+            <param name="columnName">Name of the column.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for Add
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnListBuilder`1.Add(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
             <summary>
-            
+                Adds the specified column.
             </summary>
-            <param name="column"></param>
-            <returns></returns>
+            <param name="column">The column.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for Add
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1">
             <summary>
-            
+                Class GridColumnBuilder.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            TODO Edit XML Comment Template for GridColumnBuilder`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1" /> class.
             </summary>
-            <param name="columnName"></param>
+            <param name="columnName">Name of the column.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String,System.String,System.Func{`0,System.String})">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1" /> class.
             </summary>
-            <param name="columnName"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
+            <param name="columnName">Name of the column.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.#ctor(System.String,System.String,System.Func{`0,System.String},MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1" /> class.
             </summary>
-            <param name="columnName"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
-            <param name="columnDefaults"></param>
+            <param name="columnName">Name of the column.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            <param name="columnDefaults">The column defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.GridColumn">
             <summary>
-            
+                Gets or sets the grid column.
             </summary>
+            <value>The grid column.</value>
+            TODO Edit XML Comment Template for GridColumn
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithAllowChangeVisibility(System.Boolean)">
             <summary>
-                Gets or sets a value indicating whether the column visibility can be changed.
+                Withes the allow change visibility.
             </summary>
+            <param name="allow">if set to <c>true</c> [allow].</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithAllowChangeVisibility
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithCellCssClassExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-                Use this to return a custom css class based on data for the current cell
+                Withes the cell CSS class expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithCellCssClassExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithCellCssClassExpression(System.Func{`0,System.String})">
             <summary>
-                Use this to return a custom css class based on data for the current cell
+                Withes the cell CSS class expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithCellCssClassExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithColumnName(System.String)">
             <summary>
-                A unique name for this column
+                Withes the name of the column.
             </summary>
+            <param name="name">The name.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithColumnName
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithFiltering(System.Boolean)">
             <summary>
-                Enables filtering on this column
+                Withes the filtering.
             </summary>
+            <param name="enableFiltering">
+                if set to <c>true</c> [enable
+                filtering].
+            </param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithFiltering
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithHeaderText(System.String)">
             <summary>
-                Header text to display for the current column, if different from ColumnName.
+                Withes the header text.
             </summary>
+            <param name="text">The text.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithHeaderText
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithHtmlEncoding(System.Boolean)">
             <summary>
-                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
-                returns HTML.
+                Withes the HTML encoding.
             </summary>
+            <param name="htmlEncode">
+                if set to <c>true</c> [HTML
+                encode].
+            </param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithHtmlEncoding
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithPlainTextValueExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-                This is how to specify the contents of the current cell when used in an export file, if different that
-                ValueExpression
+                Withes the plain text value expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPlainTextValueExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithPlainTextValueExpression(System.Func{`0,System.String})">
             <summary>
-                This is how to specify the contents of the current cell when used in an export file, if different that
-                ValueExpression
+                Withes the plain text value expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithPlainTextValueExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithSortColumnData(System.Object)">
             <summary>
-                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+                Withes the sort column data.
             </summary>
+            <param name="sortColumnData">The sort column data.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSortColumnData
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithSorting(System.Boolean)">
             <summary>
-                Enables sorting on this column
+                Withes the sorting.
             </summary>
+            <param name="enableSorting">
+                if set to <c>true</c> [enable
+                sorting].
+            </param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithSorting
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueExpression(System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+                Withes the value expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithValueExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueExpression(System.Func{`0,System.String})">
             <summary>
-                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+                Withes the value expression.
             </summary>
+            <param name="expression">The expression.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithValueExpression
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueTemplate(System.String)">
             <summary>
-                Template for formatting cell value
+                Withes the value template.
             </summary>
+            <param name="template">The template.</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithValueTemplate
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithValueTemplate(System.String,System.Boolean)">
             <summary>
-                Template for formatting cell value
+                Withes the value template.
             </summary>
+            <param name="template">The template.</param>
+            <param name="htmlEncode">
+                if set to <c>true</c> [HTML
+                encode].
+            </param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithValueTemplate
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithVisibility(System.Boolean)">
             <summary>
-                Indicates whether column is visible.
+                Withes the visibility.
             </summary>
+            <param name="visible">if set to <c>true</c> [visible].</param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithVisibility
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumnBuilder`1.WithVisibility(System.Boolean,System.Boolean)">
             <summary>
-                Indicates whether column is visible.
+                Withes the visibility.
             </summary>
+            <param name="visible">if set to <c>true</c> [visible].</param>
+            <param name="allowChangeVisibility">
+                if set to <c>true</c>
+                [allow change visibility].
+            </param>
+            <returns>GridColumnBuilder&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for WithVisibility
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridContext">
             <summary>
+                Class GridContext.
             </summary>
+            TODO Edit XML Comment Template for GridContext
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridContext.#ctor">
             <summary>
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridContext" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.CurrentHttpContext">
             <summary>
+                Gets or sets the current HTTP context.
             </summary>
+            <value>The current HTTP context.</value>
+            TODO Edit XML Comment Template for CurrentHttpContext
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.GridName">
             <summary>
+                Gets or sets the name of the grid.
             </summary>
+            <value>The name of the grid.</value>
+            TODO Edit XML Comment Template for GridName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.Items">
             <summary>
-                Arbitrary settings for this context
+                Gets or sets the items.
             </summary>
+            <value>The items.</value>
+            TODO Edit XML Comment Template for Items
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.QueryOptions">
             <summary>
+                Gets or sets the query options.
             </summary>
+            <value>The query options.</value>
+            TODO Edit XML Comment Template for QueryOptions
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.UrlHelper">
             <summary>
+                Gets or sets the URL helper.
             </summary>
+            <value>The URL helper.</value>
+            TODO Edit XML Comment Template for UrlHelper
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridContext.GridDefinition">
+            <summary>
+                Gets or sets the grid definition.
+            </summary>
+            <value>The grid definition.</value>
+            TODO Edit XML Comment Template for GridDefinition
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridContext.GetVisibleColumns">
             <summary>
+                Gets the visible columns.
             </summary>
-            <returns></returns>
+            <returns>IEnumerable&lt;IMvcGridColumn&gt;.</returns>
+            TODO Edit XML Comment Template for GetVisibleColumns
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.RenderingMode">
             <summary>
-            
+                Enum RenderingMode
             </summary>
+            TODO Edit XML Comment Template for RenderingMode
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.RenderingMode.RenderingEngine">
             <summary>
-            
+                The rendering engine
             </summary>
+            TODO Edit XML Comment Template for RenderingEngine
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.RenderingMode.Controller">
             <summary>
-            
+                The controller
             </summary>
+            TODO Edit XML Comment Template for Controller
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.PagingModel">
             <summary>
-            
+                Class PagingModel.
             </summary>
+            TODO Edit XML Comment Template for PagingModel
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.PagingModel.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.PagingModel" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.CurrentPage">
             <summary>
-            
+                Gets or sets the current page.
             </summary>
+            <value>The current page.</value>
+            TODO Edit XML Comment Template for CurrentPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.FirstRecord">
             <summary>
-            
+                Gets or sets the first record.
             </summary>
+            <value>The first record.</value>
+            TODO Edit XML Comment Template for FirstRecord
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.LastRecord">
             <summary>
-            
+                Gets or sets the last record.
             </summary>
+            <value>The last record.</value>
+            TODO Edit XML Comment Template for LastRecord
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.NumberOfPages">
             <summary>
-            
+                Gets or sets the number of pages.
             </summary>
+            <value>The number of pages.</value>
+            TODO Edit XML Comment Template for NumberOfPages
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.PageLinks">
             <summary>
-            
+                Gets or sets the page links.
             </summary>
+            <value>The page links.</value>
+            TODO Edit XML Comment Template for PageLinks
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.PagingModel.TotalRecords">
             <summary>
-            
+                Gets or sets the total records.
             </summary>
+            <value>The total records.</value>
+            TODO Edit XML Comment Template for TotalRecords
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.PagingModel.CalculatePageStartAndEnd(System.Int32,System.Int32@,System.Int32@)">
             <summary>
-            
+                Calculates the page start and end.
             </summary>
-            <param name="pagesToDisplay"></param>
-            <param name="start"></param>
-            <param name="end"></param>
+            <param name="pagesToDisplay">The pages to display.</param>
+            <param name="start">The start.</param>
+            <param name="end">The end.</param>
+            TODO Edit XML Comment Template for CalculatePageStartAndEnd
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.RenderingModel">
             <summary>
-            
+                Class RenderingModel.
             </summary>
+            TODO Edit XML Comment Template for RenderingModel
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.RenderingModel" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ClientDataTransferHtmlBlock">
             <summary>
-            
+                Gets or sets the client data transfer HTML block.
             </summary>
+            <value>The client data transfer HTML block.</value>
+            TODO Edit XML Comment Template for ClientDataTransferHtmlBlock
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Columns">
             <summary>
-            
+                Gets or sets the columns.
             </summary>
+            <value>The columns.</value>
+            TODO Edit XML Comment Template for Columns
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.HandlerPath">
             <summary>
-            
+                Gets or sets the handler path.
             </summary>
+            <value>The handler path.</value>
+            TODO Edit XML Comment Template for HandlerPath
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NextButtonCaption">
             <summary>
-            
+                Gets or sets the next button caption.
             </summary>
+            <value>The next button caption.</value>
+            TODO Edit XML Comment Template for NextButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.NoResultsMessage">
             <summary>
-            
+                Gets or sets the no results message.
             </summary>
+            <value>The no results message.</value>
+            TODO Edit XML Comment Template for NoResultsMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PagingModel">
             <summary>
-                Paging data. Will be null if paging should not be displayed
+                Gets or sets the paging model.
             </summary>
+            <value>The paging model.</value>
+            TODO Edit XML Comment Template for PagingModel
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.PreviousButtonCaption">
             <summary>
-            
+                Gets or sets the previous button caption.
             </summary>
+            <value>The previous button caption.</value>
+            TODO Edit XML Comment Template for PreviousButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.ProcessingMessage">
             <summary>
-            
+                Gets or sets the processing message.
             </summary>
+            <value>The processing message.</value>
+            TODO Edit XML Comment Template for ProcessingMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.Rows">
             <summary>
-            
+                Gets or sets the rows.
             </summary>
+            <value>The rows.</value>
+            TODO Edit XML Comment Template for Rows
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.SummaryMessage">
             <summary>
-            
+                Gets or sets the summary message.
             </summary>
+            <value>The summary message.</value>
+            TODO Edit XML Comment Template for SummaryMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.RenderingModel.TableHtmlId">
             <summary>
-            
+                Gets or sets the table HTML identifier.
             </summary>
+            <value>The table HTML identifier.</value>
+            TODO Edit XML Comment Template for TableHtmlId
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.Cell">
             <summary>
-            
+                Class Cell.
             </summary>
+            TODO Edit XML Comment Template for Cell
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.CalculatedCssClass">
             <summary>
-            
+                Gets or sets the calculated CSS class.
             </summary>
+            <value>The calculated CSS class.</value>
+            TODO Edit XML Comment Template for CalculatedCssClass
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.HtmlText">
             <summary>
-            
+                Gets or sets the HTML text.
             </summary>
+            <value>The HTML text.</value>
+            TODO Edit XML Comment Template for HtmlText
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Cell.PlainText">
             <summary>
-            
+                Gets or sets the plain text.
             </summary>
+            <value>The plain text.</value>
+            TODO Edit XML Comment Template for PlainText
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.Row">
             <summary>
-            
+                Class Row.
             </summary>
+            TODO Edit XML Comment Template for Row
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.Row.#ctor">
             <summary>
-            
+                Initializes a new instance of the <see cref="T:MichaelBrandonMorris.MvcGrid.Models.Row" />
+                class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Row.CalculatedCssClass">
             <summary>
-            
+                Gets or sets the calculated CSS class.
             </summary>
+            <value>The calculated CSS class.</value>
+            TODO Edit XML Comment Template for CalculatedCssClass
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Row.Cells">
             <summary>
-            
+                Gets or sets the cells.
             </summary>
+            <value>The cells.</value>
+            TODO Edit XML Comment Template for Cells
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.Column">
             <summary>
-            
+                Class Column.
             </summary>
+            TODO Edit XML Comment Template for Column
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.HeaderText">
             <summary>
-            
+                Gets or sets the header text.
             </summary>
+            <value>The header text.</value>
+            TODO Edit XML Comment Template for HeaderText
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.Name">
             <summary>
-            
+                Gets or sets the name.
             </summary>
+            <value>The name.</value>
+            TODO Edit XML Comment Template for Name
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.Onclick">
             <summary>
-            
+                Gets or sets the onclick.
             </summary>
+            <value>The onclick.</value>
+            TODO Edit XML Comment Template for Onclick
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.Column.SortIconDirection">
             <summary>
-            
+                Gets or sets the sort icon direction.
             </summary>
+            <value>The sort icon direction.</value>
+            TODO Edit XML Comment Template for SortIconDirection
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.TemplateModel">
             <summary>
-            
+                Class TemplateModel.
             </summary>
+            TODO Edit XML Comment Template for TemplateModel
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Url">
             <summary>
-            
+                Gets the URL.
             </summary>
+            <value>The URL.</value>
+            TODO Edit XML Comment Template for Url
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridColumn">
             <summary>
-            
+                Gets or sets the grid column.
             </summary>
+            <value>The grid column.</value>
+            TODO Edit XML Comment Template for GridColumn
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.GridContext">
             <summary>
-            
+                Gets or sets the grid context.
             </summary>
+            <value>The grid context.</value>
+            TODO Edit XML Comment Template for GridContext
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Item">
             <summary>
-            
+                Gets or sets the item.
             </summary>
+            <value>The item.</value>
+            TODO Edit XML Comment Template for Item
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Row">
             <summary>
-            
+                Gets or sets the row.
             </summary>
+            <value>The row.</value>
+            TODO Edit XML Comment Template for Row
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.TemplateModel.Value">
             <summary>
-            
+                Gets or sets the value.
             </summary>
+            <value>The value.</value>
+            TODO Edit XML Comment Template for Value
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1">
             <summary>
-            
+                Class GridColumn.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn" />
+            TODO Edit XML Comment Template for GridColumn`1
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1._headerText">
+            <summary>
+                The header text
+            </summary>
+            TODO Edit XML Comment Template for _headerText
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String})">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1" /> class.
             </summary>
-            <param name="columnName"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
+            <param name="columnName">Name of the column.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.#ctor(System.String,System.String,System.Func{`0,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.String},MichaelBrandonMorris.MvcGrid.Models.ColumnDefaults)">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1" /> class.
             </summary>
-            <param name="columnName"></param>
-            <param name="headerText"></param>
-            <param name="valueExpression"></param>
-            <param name="columnDefaults"></param>
+            <param name="columnName">Name of the column.</param>
+            <param name="headerText">The header text.</param>
+            <param name="valueExpression">The value expression.</param>
+            <param name="columnDefaults">The column defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.CellCssClassExpression">
             <summary>
-                Use this to return a custom css class based on data for the current cell
+                Gets or sets the cell CSS class expression.
             </summary>
+            <value>The cell CSS class expression.</value>
+            TODO Edit XML Comment Template for CellCssClassExpression
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.PlainTextValueExpression">
             <summary>
-                This is how to specify the contents of the current cell when used in an export file, if different that
-                ValueExpression
+                Gets or sets the plain text value expression.
             </summary>
+            <value>The plain text value expression.</value>
+            TODO Edit XML Comment Template for PlainTextValueExpression
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ValueExpression">
             <summary>
-                This is how to specify the contents of the current cell. If this contains HTML, set HTMLEncode to false
+                Gets or sets the value expression.
             </summary>
+            <value>The value expression.</value>
+            TODO Edit XML Comment Template for ValueExpression
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ValueTemplate">
             <summary>
-                Template for formatting cell value
+                Gets or sets the value template.
             </summary>
+            <value>The value template.</value>
+            TODO Edit XML Comment Template for ValueTemplate
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.AllowChangeVisibility">
             <summary>
-                Gets or sets a value indicating whether the column visibility can be changed.
+                Gets or sets a value indicating whether [allow change
+                visibility].
             </summary>
+            <value>
+                <c>true</c> if [allow change visibility]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangeVisibility
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.ColumnName">
             <summary>
-                A unique name for this column
+                Gets the name of the column.
             </summary>
+            <value>The name of the column.</value>
+            TODO Edit XML Comment Template for ColumnName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.EnableFiltering">
             <summary>
-                Enables filtering on this column
+                Gets a value indicating whether [enable filtering].
             </summary>
+            <value>
+                <c>true</c> if [enable filtering]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableFiltering
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.EnableSorting">
             <summary>
-                Enables sorting on this column
+                Gets a value indicating whether [enable sorting].
             </summary>
+            <value>
+                <c>true</c> if [enable sorting]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for EnableSorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.HeaderText">
             <summary>
-                Header text to display for the current column, if different from ColumnName.
+                Gets the header text.
             </summary>
+            <value>The header text.</value>
+            TODO Edit XML Comment Template for HeaderText
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.HtmlEncode">
             <summary>
-                Disables html encoding on the data for the current cell. Turn this off if your ValueExpression or ValueTemplate
-                returns HTML.
+                Gets a value indicating whether [HTML encode].
             </summary>
+            <value>
+                <c>true</c> if [HTML encode]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for HtmlEncode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.SortColumnData">
             <summary>
-                Object to pass to QueryOptions when this column is sorted on. Only specify if different from ColumnName
+                Gets the sort column data.
             </summary>
+            <value>The sort column data.</value>
+            TODO Edit XML Comment Template for SortColumnData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridColumn`1.Visible">
             <summary>
-                Indicates whether column is visible.
+                Gets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridColumn" /> is visible.
             </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Visible
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefaults">
             <summary>
-            
+                Class GridDefaults.
             </summary>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" />
+            TODO Edit XML Comment Template for GridDefaults
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridDefaults" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalQueryOptionNames">
             <summary>
-            
+                Gets or sets the additional query option names.
             </summary>
+            <value>The additional query option names.</value>
+            TODO Edit XML Comment Template for AdditionalQueryOptionNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AdditionalSettings">
             <summary>
-            
+                Gets or sets the additional settings.
             </summary>
+            <value>The additional settings.</value>
+            TODO Edit XML Comment Template for AdditionalSettings
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AllowChangingPageSize">
             <summary>
-            
+                Gets or sets a value indicating whether [allow changing
+                page size].
             </summary>
+            <value>
+                <c>true</c> if [allow changing page size];
+                otherwise, <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangingPageSize
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.AuthorizationType">
             <summary>
-            
+                Gets or sets the type of the authorization.
             </summary>
+            <value>The type of the authorization.</value>
+            TODO Edit XML Comment Template for AuthorizationType
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingCompleteFunctionName">
             <summary>
-            
+                Gets or sets the name of the client side loading
+                complete function.
             </summary>
+            <value>
+                The name of the client side loading complete
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingCompleteFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ClientSideLoadingMessageFunctionName">
             <summary>
-            
+                Gets or sets the name of the client side loading
+                message function.
             </summary>
+            <value>
+                The name of the client side loading message
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingMessageFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ContainerViewPath">
             <summary>
-            
+                Gets or sets the container view path.
             </summary>
+            <value>The container view path.</value>
+            TODO Edit XML Comment Template for ContainerViewPath
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultRenderingEngineName">
             <summary>
-            
+                Gets or sets the default name of the rendering engine.
             </summary>
+            <value>The default name of the rendering engine.</value>
+            TODO Edit XML Comment Template for DefaultRenderingEngineName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortColumn">
             <summary>
-            
+                Gets or sets the default sort column.
             </summary>
+            <value>The default sort column.</value>
+            TODO Edit XML Comment Template for DefaultSortColumn
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.DefaultSortDirection">
             <summary>
-            
+                Gets or sets the default sort direction.
             </summary>
+            <value>The default sort direction.</value>
+            TODO Edit XML Comment Template for DefaultSortDirection
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ErrorMessageHtml">
             <summary>
-            
+                Gets or sets the error message HTML.
             </summary>
+            <value>The error message HTML.</value>
+            TODO Edit XML Comment Template for ErrorMessageHtml
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Filtering">
             <summary>
-            
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is filtering.
             </summary>
+            <value><c>true</c> if filtering; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Filtering
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetAdditionalSetting``1(System.String,``0)">
             <summary>
-            
+                Gets the additional setting.
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="name"></param>
-            <param name="defaultValue"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>T.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+            TODO Edit XML Comment Template for GetAdditionalSetting`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.GetColumns">
             <summary>
-            
+                Gets the columns.
             </summary>
-            <returns></returns>
+            <returns>IEnumerable&lt;IMvcGridColumn&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+            TODO Edit XML Comment Template for GetColumns
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ItemsPerPage">
             <summary>
-            
+                Gets or sets the items per page.
             </summary>
+            <value>The items per page.</value>
+            TODO Edit XML Comment Template for ItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.MaxItemsPerPage">
             <summary>
-            
+                Gets or sets the maximum items per page.
             </summary>
+            <value>The maximum items per page.</value>
+            TODO Edit XML Comment Template for MaxItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NextButtonCaption">
             <summary>
-            
+                Gets or sets the next button caption.
             </summary>
+            <value>The next button caption.</value>
+            TODO Edit XML Comment Template for NextButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.NoResultsMessage">
             <summary>
-            
+                Gets or sets the no results message.
             </summary>
+            <value>The no results message.</value>
+            TODO Edit XML Comment Template for NoResultsMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PageParameterNames">
             <summary>
-            
+                Gets or sets the page parameter names.
             </summary>
+            <value>The page parameter names.</value>
+            TODO Edit XML Comment Template for PageParameterNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Paging">
             <summary>
-            
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is paging.
             </summary>
+            <value><c>true</c> if paging; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Paging
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreloadData">
             <summary>
-            
+                Gets a value indicating whether [preload data].
             </summary>
+            <value>
+                <c>true</c> if [preload data]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for PreloadData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.PreviousButtonCaption">
             <summary>
-            
+                Gets or sets the previous button caption.
             </summary>
+            <value>The previous button caption.</value>
+            TODO Edit XML Comment Template for PreviousButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ProcessingMessage">
             <summary>
-            
+                Gets or sets the processing message.
             </summary>
+            <value>The processing message.</value>
+            TODO Edit XML Comment Template for ProcessingMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryOnPageLoad">
             <summary>
-            
+                Gets or sets a value indicating whether [query on page
+                load].
             </summary>
+            <value>
+                <c>true</c> if [query on page load]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for QueryOnPageLoad
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.QueryStringPrefix">
             <summary>
-            
+                Gets the query string prefix.
             </summary>
+            <value>The query string prefix.</value>
+            TODO Edit XML Comment Template for QueryStringPrefix
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingEngines">
             <summary>
-            
+                Gets or sets the rendering engines.
             </summary>
+            <value>The rendering engines.</value>
+            TODO Edit XML Comment Template for RenderingEngines
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.RenderingMode">
             <summary>
-            
+                Gets or sets the rendering mode.
             </summary>
+            <value>The rendering mode.</value>
+            TODO Edit XML Comment Template for RenderingMode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.Sorting">
             <summary>
-            
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is sorting.
             </summary>
+            <value><c>true</c> if sorting; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Sorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.SummaryMessage">
             <summary>
-            
+                Gets or sets the summary message.
             </summary>
+            <value>The summary message.</value>
+            TODO Edit XML Comment Template for SummaryMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.TemplatingEngine">
             <summary>
-            
+                Gets or sets the templating engine.
             </summary>
+            <value>The templating engine.</value>
+            TODO Edit XML Comment Template for TemplatingEngine
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefaults.ViewPath">
             <summary>
-            
+                Gets or sets the view path.
             </summary>
+            <value>The view path.</value>
+            TODO Edit XML Comment Template for ViewPath
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1">
             <summary>
-            
+                Class QueryResult.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            TODO Edit XML Comment Template for QueryResult`1
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1.Items">
             <summary>
-            
+                Gets or sets the items.
             </summary>
+            <value>The items.</value>
+            TODO Edit XML Comment Template for Items
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryResult`1.TotalRecords">
             <summary>
-            
+                Gets or sets the total records.
             </summary>
+            <value>The total records.</value>
+            TODO Edit XML Comment Template for TotalRecords
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase">
             <summary>
+                Class GridDefinitionBase.
             </summary>
+            TODO Edit XML Comment Template for GridDefinitionBase
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase.GetData(MichaelBrandonMorris.MvcGrid.Models.GridContext,System.Nullable{System.Int32}@)">
+            <summary>
+                Gets the data.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="totalRecords">The total records.</param>
+            <returns>List&lt;Row&gt;.</returns>
+            TODO Edit XML Comment Template for GetData
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1">
             <summary>
+                Class GridDefinition.
             </summary>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinitionBase" />
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" />
+            TODO Edit XML Comment Template for GridDefinition`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.#ctor">
             <summary>
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.#ctor(MichaelBrandonMorris.MvcGrid.Models.GridDefaults)">
             <summary>
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1" /> class.
             </summary>
-            <param name="gridDefaults"></param>
+            <param name="gridDefaults">The grid defaults.</param>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RetrieveData">
             <summary>
-                This is the method that will actually query the data to populate the grid. Use entity framework, a module from you
-                IoC container, direct SQL queries, etc. to get the data. Inside the providee GridContext there is a QueryOptions
-                object which will be populated with the currently requested sorting, paging, and filtering options which you must
-                take into account. See the QueryOptions documentation below. You must return a QueryResult object which takes an
-                enumerable of your type and a count of the total number of records which must be provided if paging is enabled.
+                Gets or sets the retrieve data.
             </summary>
+            <value>The retrieve data.</value>
+            TODO Edit XML Comment Template for RetrieveData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RowCssClassExpression">
             <summary>
-                Use this to specify a custom css class based on data for the current row
+                Gets or sets the row CSS class expression.
             </summary>
+            <value>The row CSS class expression.</value>
+            TODO Edit XML Comment Template for RowCssClassExpression
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Columns">
+            <summary>
+                Gets the columns.
+            </summary>
+            <value>The columns.</value>
+            TODO Edit XML Comment Template for Columns
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AdditionalQueryOptionNames">
             <summary>
-                Names of additional parameters that can be passed from client to server side
+                Gets or sets the additional query option names.
             </summary>
+            <value>The additional query option names.</value>
+            TODO Edit XML Comment Template for AdditionalQueryOptionNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AdditionalSettings">
             <summary>
-                Arbitrary additional settings
+                Gets or sets the additional settings.
             </summary>
+            <value>The additional settings.</value>
+            TODO Edit XML Comment Template for AdditionalSettings
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AllowChangingPageSize">
             <summary>
-                Allows changing of page size from client-side
+                Gets or sets a value indicating whether [allow changing
+                page size].
             </summary>
+            <value>
+                <c>true</c> if [allow changing page size];
+                otherwise, <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowChangingPageSize
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AuthorizationType">
             <summary>
-                Indicated the authorization type. Anonymous access is the default.
+                Gets or sets the type of the authorization.
             </summary>
+            <value>The type of the authorization.</value>
+            TODO Edit XML Comment Template for AuthorizationType
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ClientSideLoadingCompleteFunctionName">
             <summary>
-                Name of function to call before ajax call ends
+                Gets or sets the name of the client side loading
+                complete function.
             </summary>
+            <value>
+                The name of the client side loading complete
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingCompleteFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ClientSideLoadingMessageFunctionName">
             <summary>
-                Name of function to call before ajax call begins
+                Gets or sets the name of the client side loading
+                message function.
             </summary>
+            <value>
+                The name of the client side loading message
+                function.
+            </value>
+            TODO Edit XML Comment Template for ClientSideLoadingMessageFunctionName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ContainerViewPath">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the container razor view to use.
+                Gets or sets the container view path.
             </summary>
+            <value>The container view path.</value>
+            TODO Edit XML Comment Template for ContainerViewPath
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultRenderingEngineName">
             <summary>
+                Gets or sets the default name of the rendering engine.
             </summary>
+            <value>The default name of the rendering engine.</value>
+            TODO Edit XML Comment Template for DefaultRenderingEngineName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultSortColumn">
             <summary>
-                The default column to sort by when no sort is specified
+                Gets or sets the default sort column.
             </summary>
+            <value>The default sort column.</value>
+            TODO Edit XML Comment Template for DefaultSortColumn
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.DefaultSortDirection">
             <summary>
-                The default order to sort by when no sort is specified
+                Gets or sets the default sort direction.
             </summary>
+            <value>The default sort direction.</value>
+            TODO Edit XML Comment Template for DefaultSortDirection
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ErrorMessageHtml">
             <summary>
-                HTML to display in place of the grid when an error occurs
+                Gets or sets the error message HTML.
             </summary>
+            <value>The error message HTML.</value>
+            TODO Edit XML Comment Template for ErrorMessageHtml
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Filtering">
             <summary>
-                Enables filtering on the grid. Note, filtering must also be enabled on each column where filtering is wanted
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is filtering.
             </summary>
+            <value><c>true</c> if filtering; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Filtering
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.GetAdditionalSetting``1(System.String,``0)">
             <summary>
+                Gets the additional setting.
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="name"></param>
-            <param name="defaultValue"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>T.</returns>
+            TODO Edit XML Comment Template for GetAdditionalSetting`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.GetColumns">
             <summary>
+                Gets the columns.
             </summary>
-            <returns></returns>
+            <returns>IEnumerable&lt;IMvcGridColumn&gt;.</returns>
+            TODO Edit XML Comment Template for GetColumns
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ItemsPerPage">
             <summary>
-                Number of items to display on each page
+                Gets or sets the items per page.
             </summary>
+            <value>The items per page.</value>
+            TODO Edit XML Comment Template for ItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.MaxItemsPerPage">
             <summary>
-                Sets the maximum of items per page allowed when AllowChangingPageSize is enabled
+                Gets or sets the maximum items per page.
             </summary>
+            <value>The maximum items per page.</value>
+            TODO Edit XML Comment Template for MaxItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.NextButtonCaption">
             <summary>
-                Text to display on the "next" button.
+                Gets or sets the next button caption.
             </summary>
+            <value>The next button caption.</value>
+            TODO Edit XML Comment Template for NextButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.NoResultsMessage">
             <summary>
-                Text to display when there are no results.
+                Gets or sets the no results message.
             </summary>
+            <value>The no results message.</value>
+            TODO Edit XML Comment Template for NoResultsMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PageParameterNames">
             <summary>
-                Names of page parameters that will be passed from the view
+                Gets or sets the page parameter names.
             </summary>
+            <value>The page parameter names.</value>
+            TODO Edit XML Comment Template for PageParameterNames
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Paging">
             <summary>
-                Enables paging on the grid
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is paging.
             </summary>
+            <value><c>true</c> if paging; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Paging
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PreloadData">
             <summary>
-                Enables data loading when the page is first loaded so that the initial ajax request can be skipped.
+                Gets a value indicating whether [preload data].
             </summary>
+            <value>
+                <c>true</c> if [preload data]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for PreloadData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.PreviousButtonCaption">
             <summary>
-                Text to display on the "previous" button.
+                Gets or sets the previous button caption.
             </summary>
+            <value>The previous button caption.</value>
+            TODO Edit XML Comment Template for PreviousButtonCaption
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ProcessingMessage">
             <summary>
-                Text to display when query is processed
+                Gets or sets the processing message.
             </summary>
+            <value>The processing message.</value>
+            TODO Edit XML Comment Template for ProcessingMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.QueryOnPageLoad">
             <summary>
-                Specified if the data should be loaded as soon as the page loads
+                Gets or sets a value indicating whether [query on page
+                load].
             </summary>
+            <value>
+                <c>true</c> if [query on page load]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for QueryOnPageLoad
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.QueryStringPrefix">
             <summary>
-                A prefix to add to all query string parameters for this grid, for when there are more than 1 grids on the same page
+                Gets the query string prefix.
             </summary>
+            <value>The query string prefix.</value>
+            TODO Edit XML Comment Template for QueryStringPrefix
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RenderingEngines">
             <summary>
+                Gets or sets the rendering engines.
             </summary>
+            <value>The rendering engines.</value>
+            TODO Edit XML Comment Template for RenderingEngines
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.RenderingMode">
             <summary>
-                The rendering mode to use for this grid. By default it will use the RenderingEngine rendering mode. If you want to
-                use a custom Razor view to display your grid, change this to Controller
+                Gets or sets the rendering mode.
             </summary>
+            <value>The rendering mode.</value>
+            TODO Edit XML Comment Template for RenderingMode
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.Sorting">
             <summary>
-                Enables sorting on the grid. Note, sorting must also be enabled on each column where sorting is wanted
+                Gets or sets a value indicating whether this
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition" /> is sorting.
             </summary>
+            <value><c>true</c> if sorting; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for Sorting
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.SummaryMessage">
             <summary>
-                Summary text to display in grid footer
+                Gets or sets the summary message.
             </summary>
+            <value>The summary message.</value>
+            TODO Edit XML Comment Template for SummaryMessage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.TemplatingEngine">
             <summary>
+                Gets or sets the templating engine.
             </summary>
+            <value>The templating engine.</value>
+            TODO Edit XML Comment Template for TemplatingEngine
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.ViewPath">
             <summary>
-                When RenderingMode is set to Controller, this is the path to the razor view to use.
+                Gets or sets the view path.
             </summary>
+            <value>The view path.</value>
+            TODO Edit XML Comment Template for ViewPath
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.AddColumn(MichaelBrandonMorris.MvcGrid.Models.GridColumn{`0})">
             <summary>
-            
+                Adds the column.
             </summary>
-            <param name="column"></param>
+            <param name="column">The column.</param>
+            <exception cref="T:System.ArgumentException">
+                Please specify a unique column name for each column -
+                column
+                or
+                column
+                or
+                column
+            </exception>
+            TODO Edit XML Comment Template for AddColumn
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Models.GridDefinition`1.GetData(MichaelBrandonMorris.MvcGrid.Models.GridContext,System.Nullable{System.Int32}@)">
+            <summary>
+                Gets the data.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="totalRecords">The total records.</param>
+            <returns>List&lt;Row&gt;.</returns>
+            <exception cref="T:System.Exception">
+                When paging is enabled,
+                QueryResult must contain the TotalRecords
+            </exception>
+            TODO Edit XML Comment Template for GetData
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.SortDirection">
             <summary>
-            
+                Enum SortDirection
             </summary>
+            TODO Edit XML Comment Template for SortDirection
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Unspecified">
             <summary>
-            
+                The unspecified
             </summary>
+            TODO Edit XML Comment Template for Unspecified
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Asc">
             <summary>
-            
+                The asc
             </summary>
+            TODO Edit XML Comment Template for Asc
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Models.SortDirection.Dsc">
             <summary>
-            
+                The DSC
             </summary>
+            TODO Edit XML Comment Template for Dsc
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Models.QueryOptions">
             <summary>
-            
+                Class QueryOptions.
             </summary>
+            TODO Edit XML Comment Template for QueryOptions
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Models.QueryOptions._sortColumnData">
+            <summary>
+                The sort column data
+            </summary>
+            TODO Edit XML Comment Template for _sortColumnData
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Models.QueryOptions" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.AdditionalQueryOptions">
             <summary>
-            
+                Gets or sets the additional query options.
             </summary>
+            <value>The additional query options.</value>
+            TODO Edit XML Comment Template for AdditionalQueryOptions
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ColumnVisibility">
             <summary>
-            
+                Gets or sets the column visibility.
             </summary>
+            <value>The column visibility.</value>
+            TODO Edit XML Comment Template for ColumnVisibility
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.Filters">
             <summary>
-            
+                Gets or sets the filters.
             </summary>
+            <value>The filters.</value>
+            TODO Edit XML Comment Template for Filters
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.ItemsPerPage">
             <summary>
-            
+                Gets or sets the items per page.
             </summary>
+            <value>The items per page.</value>
+            TODO Edit XML Comment Template for ItemsPerPage
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageIndex">
             <summary>
-            
+                Gets or sets the index of the page.
             </summary>
+            <value>The index of the page.</value>
+            TODO Edit XML Comment Template for PageIndex
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.PageParameters">
             <summary>
-            
+                Gets or sets the page parameters.
             </summary>
+            <value>The page parameters.</value>
+            TODO Edit XML Comment Template for PageParameters
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.RenderingEngineName">
             <summary>
-            
+                Gets or sets the name of the rendering engine.
             </summary>
+            <value>The name of the rendering engine.</value>
+            TODO Edit XML Comment Template for RenderingEngineName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnData">
             <summary>
-            
+                Gets or sets the sort column data.
             </summary>
+            <value>The sort column data.</value>
+            TODO Edit XML Comment Template for SortColumnData
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortColumnName">
             <summary>
-            
+                Gets or sets the name of the sort column.
             </summary>
+            <value>The name of the sort column.</value>
+            TODO Edit XML Comment Template for SortColumnName
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.SortDirection">
             <summary>
-            
+                Gets or sets the sort direction.
             </summary>
+            <value>The sort direction.</value>
+            TODO Edit XML Comment Template for SortDirection
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetAdditionalQueryOptionString(System.String)">
             <summary>
-            
+                Gets the additional query option string.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetAdditionalQueryOptionString
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetFilterString(System.String)">
             <summary>
-            
+                Gets the filter string.
             </summary>
-            <param name="columnName"></param>
-            <returns></returns>
+            <param name="columnName">Name of the column.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetFilterString
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitOffset">
             <summary>
-            
+                Gets the limit offset.
             </summary>
-            <returns></returns>
+            <returns>System.Nullable&lt;System.Int32&gt;.</returns>
+            TODO Edit XML Comment Template for GetLimitOffset
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetLimitRowcount">
             <summary>
-            
+                Gets the limit rowcount.
             </summary>
-            <returns></returns>
+            <returns>System.Nullable&lt;System.Int32&gt;.</returns>
+            TODO Edit XML Comment Template for GetLimitRowcount
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetPageParameterString(System.String)">
             <summary>
-            
+                Gets the page parameter string.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetPageParameterString
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Models.QueryOptions.GetSortColumnData``1">
             <summary>
-            
+                Gets the sort column data.
             </summary>
             <typeparam name="T"></typeparam>
-            <returns></returns>
+            <returns>T.</returns>
+            TODO Edit XML Comment Template for GetSortColumnData`1
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine">
             <summary>
-            
+                Class CsvRenderingEngine.
             </summary>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine" />
+            TODO Edit XML Comment Template for CsvRenderingEngine
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.AllowsPaging">
             <summary>
-            
+                Gets a value indicating whether [allows paging].
             </summary>
+            <value>
+                <c>true</c> if [allows paging]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowsPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
             <summary>
-            
+                Prepares the response.
             </summary>
-            <param name="httpResponse"></param>
+            <param name="httpResponse">The HTTP response.</param>
+            TODO Edit XML Comment Template for PrepareResponse
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
             <summary>
-            
+                Renders the specified model.
             </summary>
-            <param name="model"></param>
-            <param name="gridContext"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="gridContext">The grid context.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for Render
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
             <summary>
-            
+                Renders the container.
             </summary>
-            <param name="model"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="outputStream">The output stream.</param>
+            <exception cref="T:System.NotImplementedException">
+                Csv Rendering
+                Engine has no container
+            </exception>
+            TODO Edit XML Comment Template for RenderContainer
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.GetFilename">
             <summary>
-            
+                Gets the filename.
             </summary>
-            <returns></returns>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetFilename
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.CsvRenderingEngine.CsvEncode(System.String)">
+            <summary>
+                CSVs the encode.
+            </summary>
+            <param name="s">The s.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for CsvEncode
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine">
             <summary>
-            
+                Class BootstrapRenderingEngine.
             </summary>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridRenderingEngine" />
+            TODO Edit XML Comment Template for BootstrapRenderingEngine
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.SettingNameTableClass">
             <summary>
-            
+                The setting name table class
             </summary>
+            TODO Edit XML Comment Template for SettingNameTableClass
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.#ctor">
             <summary>
-            
+                Initializes a new instance of the
+                <see cref="T:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine" /> class.
             </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.DefaultTableCss">
+            <summary>
+                The default table CSS
+            </summary>
+            TODO Edit XML Comment Template for DefaultTableCss
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSort">
+            <summary>
+                The HTML image sort
+            </summary>
+            TODO Edit XML Comment Template for HtmlImageSort
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortAsc">
+            <summary>
+                The HTML image sort asc
+            </summary>
+            TODO Edit XML Comment Template for HtmlImageSortAsc
+        </member>
+        <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.HtmlImageSortDsc">
+            <summary>
+                The HTML image sort DSC
+            </summary>
+            TODO Edit XML Comment Template for HtmlImageSortDsc
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AllowsPaging">
             <summary>
-            
+                Gets a value indicating whether [allows paging].
             </summary>
+            <value>
+                <c>true</c> if [allows paging]; otherwise,
+                <c>false</c>.
+            </value>
+            TODO Edit XML Comment Template for AllowsPaging
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.PrepareResponse(System.Web.HttpResponse)">
             <summary>
-            
+                Prepares the response.
             </summary>
-            <param name="response"></param>
+            <param name="response">The response.</param>
+            TODO Edit XML Comment Template for PrepareResponse
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.Render(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,MichaelBrandonMorris.MvcGrid.Models.GridContext,System.IO.TextWriter)">
             <summary>
-            
+                Renders the specified model.
             </summary>
-            <param name="model"></param>
-            <param name="gridContext"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="gridContext">The grid context.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for Render
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderContainer(MichaelBrandonMorris.MvcGrid.Models.ContainerRenderingModel,System.IO.TextWriter)">
             <summary>
-            
+                Renders the container.
             </summary>
-            <param name="model"></param>
-            <param name="outputStream"></param>
+            <param name="model">The model.</param>
+            <param name="outputStream">The output stream.</param>
+            TODO Edit XML Comment Template for RenderContainer
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.AppendCssAttribute(System.String,System.Text.StringBuilder)">
+            <summary>
+                Appends the CSS attribute.
+            </summary>
+            <param name="classString">The class string.</param>
+            <param name="sbHtml">The sb HTML.</param>
+            TODO Edit XML Comment Template for AppendCssAttribute
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderBody(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,System.Text.StringBuilder)">
+            <summary>
+                Renders the body.
+            </summary>
+            <param name="model">The model.</param>
+            <param name="sbHtml">The sb HTML.</param>
+            TODO Edit XML Comment Template for RenderBody
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderHeader(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,System.Text.StringBuilder)">
+            <summary>
+                Renders the header.
+            </summary>
+            <param name="model">The model.</param>
+            <param name="sbHtml">The sb HTML.</param>
+            TODO Edit XML Comment Template for RenderHeader
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Rendering.BootstrapRenderingEngine.RenderPaging(MichaelBrandonMorris.MvcGrid.Models.RenderingModel,System.Text.StringBuilder)">
+            <summary>
+                Renders the paging.
+            </summary>
+            <param name="model">The model.</param>
+            <param name="sbHtml">The sb HTML.</param>
+            TODO Edit XML Comment Template for RenderPaging
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine">
             <summary>
-            
+                Class SimpleTemplatingEngine.
             </summary>
+            <seealso
+                cref="T:MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridTemplatingEngine" />
+            TODO Edit XML Comment Template for SimpleTemplatingEngine
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Process(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
             <summary>
-            
+                Processes the specified template.
             </summary>
-            <param name="template"></param>
-            <param name="model"></param>
-            <returns></returns>
+            <param name="template">The template.</param>
+            <param name="model">The model.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for Process
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.EvaluateParameter(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
+            <summary>
+                Evaluates the parameter.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="model">The model.</param>
+            <returns>System.Object.</returns>
+            <exception cref="T:System.FormatException">
+                Format item missing
+                prefix: " + name
+            </exception>
+            <exception cref="T:System.Exception">
+                Cannot access cell '"
+                + suffix
+                + "' in current row. It does not exist or has not yet
+                been evaluated
+                or
+                Invalid prefix in format string: " + prefix
+            </exception>
+            TODO Edit XML Comment Template for EvaluateParameter
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.Format(System.String,MichaelBrandonMorris.MvcGrid.Models.TemplateModel)">
+            <summary>
+                Formats the specified format.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="model">The model.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for Format
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.FormatError">
+            <summary>
+                Formats the error.
+            </summary>
+            <exception cref="T:System.FormatException">
+                Input string was not in a
+                correct format.
+            </exception>
+            TODO Edit XML Comment Template for FormatError
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Templating.SimpleTemplatingEngine.ReflectPropertyValue(System.Object,System.String)">
+            <summary>
+                Reflects the property value.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="property">The property.</param>
+            <returns>System.Object.</returns>
+            <exception cref="T:System.Exception"></exception>
+            TODO Edit XML Comment Template for ReflectPropertyValue
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility">
+            <summary>
+                Class ConfigUtility.
+            </summary>
+            TODO Edit XML Comment Template for ConfigUtility
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.ShowErrorsAppSettingName">
+            <summary>
+                The show errors application setting name
+            </summary>
+            TODO Edit XML Comment Template for ShowErrorsAppSettingName
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetAppSetting``1(System.String,``0)">
+            <summary>
+                Gets the application setting.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name">The name.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>T.</returns>
+            TODO Edit XML Comment Template for GetAppSetting`1
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.ConfigUtility.GetShowErrorDetailsSetting">
+            <summary>
+                Gets the show error details setting.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            TODO Edit XML Comment Template for GetShowErrorDetailsSetting
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility">
             <summary>
-            
+                Class GridContextUtility.
             </summary>
+            TODO Edit XML Comment Template for GridContextUtility
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Utility.GridContextUtility.Create(System.Web.HttpContext,System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,MichaelBrandonMorris.MvcGrid.Models.QueryOptions)">
+            <summary>
+                Creates the specified context.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="gridName">Name of the grid.</param>
+            <param name="grid">The grid.</param>
+            <param name="options">The options.</param>
+            <returns>GridContext.</returns>
+            TODO Edit XML Comment Template for Create
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility">
             <summary>
+                Class HtmlUtility.
             </summary>
+            TODO Edit XML Comment Template for HtmlUtility
         </member>
         <member name="F:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.ContainerCssClass">
             <summary>
+                The container CSS class
             </summary>
+            TODO Edit XML Comment Template for ContainerCssClass
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetContainerHtmlId(System.String)">
             <summary>
+                Gets the container HTML identifier.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetContainerHtmlId
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetHandlerPath">
             <summary>
+                Gets the handler path.
             </summary>
-            <returns></returns>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception"></exception>
+            TODO Edit XML Comment Template for GetHandlerPath
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHolderHtmlId(System.String)">
             <summary>
+                Gets the table holder HTML identifier.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetTableHolderHtmlId
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.GetTableHtmlId(System.String)">
             <summary>
+                Gets the table HTML identifier.
             </summary>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetTableHtmlId
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng(System.Collections.Generic.HashSet{System.String})">
             <summary>
+                Makes the CSS class attribute stirng.
             </summary>
-            <param name="classes"></param>
-            <returns></returns>
+            <param name="classes">The classes.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for MakeCssClassAttributeStirng
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassAttributeStirng(System.String)">
             <summary>
+                Makes the CSS class attribute stirng.
             </summary>
-            <param name="classString"></param>
-            <returns></returns>
+            <param name="classString">The class string.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for MakeCssClassAttributeStirng
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeCssClassStirng(System.Collections.Generic.HashSet{System.String})">
             <summary>
+                Makes the CSS class stirng.
             </summary>
-            <param name="classes"></param>
-            <returns></returns>
+            <param name="classes">The classes.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for MakeCssClassStirng
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeGotoPageLink(System.String,System.Int32)">
             <summary>
+                Makes the goto page link.
             </summary>
-            <param name="gridName"></param>
-            <param name="pageNum"></param>
-            <returns></returns>
+            <param name="gridName">Name of the grid.</param>
+            <param name="pageNum">The page number.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for MakeGotoPageLink
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Utility.HtmlUtility.MakeSortLink(System.String,System.String,MichaelBrandonMorris.MvcGrid.Models.SortDirection)">
             <summary>
+                Makes the sort link.
             </summary>
-            <param name="gridName"></param>
-            <param name="columnName"></param>
-            <param name="direction"></param>
-            <returns></returns>
+            <param name="gridName">Name of the grid.</param>
+            <param name="columnName">Name of the column.</param>
+            <param name="direction">The direction.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for MakeSortLink
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Web.GridRegistration">
             <summary>
-            
+                Class GridRegistration.
             </summary>
+            TODO Edit XML Comment Template for GridRegistration
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterAllGrids">
             <summary>
-            
+                Registers all grids.
             </summary>
+            TODO Edit XML Comment Template for RegisterAllGrids
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.RegisterGrids">
             <summary>
-            
+                Registers the grids.
             </summary>
+            TODO Edit XML Comment Template for RegisterGrids
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.FilterTypesInAssemblies(System.Predicate{System.Type})">
+            <summary>
+                Filters the types in assemblies.
+            </summary>
+            <param name="predicate">The predicate.</param>
+            <returns>IEnumerable&lt;Type&gt;.</returns>
+            TODO Edit XML Comment Template for FilterTypesInAssemblies
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.IsGridRegistrationType(System.Type)">
+            <summary>
+                Determines whether [is grid registration type] [the
+                specified type].
+            </summary>
+            <param name="type">The type.</param>
+            <returns>
+                <c>true</c> if [is grid registration type] [the
+                specified type]; otherwise, <c>false</c>.
+            </returns>
+            TODO Edit XML Comment Template for IsGridRegistrationType
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.GridRegistration.TypeIsPublicClass(System.Type)">
+            <summary>
+                Types the is public class.
+            </summary>
+            <param name="type">The type.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            TODO Edit XML Comment Template for TypeIsPublicClass
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions">
             <summary>
-            
+                Class HtmlExtensions.
             </summary>
+            TODO Edit XML Comment Template for HtmlExtensions
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid(System.Web.Mvc.HtmlHelper,System.String)">
             <summary>
-            
+                MVCs the grid.
             </summary>
-            <param name="helper"></param>
-            <param name="name"></param>
-            <returns></returns>
+            <param name="helper">The helper.</param>
+            <param name="name">The name.</param>
+            <returns>IHtmlString.</returns>
+            TODO Edit XML Comment Template for MvcGrid
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid(System.Web.Mvc.HtmlHelper,System.String,System.Object)">
             <summary>
-            
+                MVCs the grid.
             </summary>
-            <param name="helper"></param>
-            <param name="name"></param>
-            <param name="pageParameters"></param>
-            <returns></returns>
+            <param name="helper">The helper.</param>
+            <param name="name">The name.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>IHtmlString.</returns>
+            TODO Edit XML Comment Template for MvcGrid
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.HtmlExtensions.MvcGrid(System.Web.Mvc.HtmlHelper,System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Object)">
+            <summary>
+                MVCs the grid.
+            </summary>
+            <param name="helper">The helper.</param>
+            <param name="name">The name.</param>
+            <param name="grid">The grid.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>IHtmlString.</returns>
+            TODO Edit XML Comment Template for MvcGrid
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler">
             <summary>
+            Class MvcGridHandler.
             </summary>
+            <seealso cref="T:System.Web.IHttpHandler" />
+            TODO Edit XML Comment Template for MvcGridHandler
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Lock">
+            <summary>
+            The lock
+            </summary>
+            TODO Edit XML Comment Template for Lock
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedBinaryResources">
+            <summary>
+            The cached binary resources
+            </summary>
+            TODO Edit XML Comment Template for _cachedBinaryResources
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._cachedTextResources">
+            <summary>
+            The cached text resources
+            </summary>
+            TODO Edit XML Comment Template for _cachedTextResources
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler._init">
+            <summary>
+            The initialize
+            </summary>
+            TODO Edit XML Comment Template for _init
         </member>
         <member name="P:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.IsReusable">
             <summary>
+            Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> instance.
             </summary>
+            <value><c>true</c> if this instance is reusable; otherwise, <c>false</c>.</value>
+            TODO Edit XML Comment Template for IsReusable
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.ProcessRequest(System.Web.HttpContext)">
             <summary>
+            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler" /> interface.
             </summary>
-            <param name="context"></param>
+            <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+            TODO Edit XML Comment Template for ProcessRequest
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.Init">
             <summary>
+            Initializes this instance.
             </summary>
+            TODO Edit XML Comment Template for Init
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetBinaryResource(System.String)">
+            <summary>
+            Gets the binary resource.
+            </summary>
+            <param name="fileSuffix">The file suffix.</param>
+            <returns>System.Byte[].</returns>
+            TODO Edit XML Comment Template for GetBinaryResource
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.GetTextResource(System.String)">
+            <summary>
+            Gets the text resource.
+            </summary>
+            <param name="fileSuffix">The file suffix.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GetTextResource
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelGifImage(System.Web.HttpContext,System.String)">
+            <summary>
+            Handels the GIF image.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="imageName">Name of the image.</param>
+            TODO Edit XML Comment Template for HandelGifImage
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandelPngImage(System.Web.HttpContext,System.String)">
+            <summary>
+            Handels the PNG image.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="imageName">Name of the image.</param>
+            TODO Edit XML Comment Template for HandelPngImage
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleScript(System.Web.HttpContext)">
+            <summary>
+            Handles the script.
+            </summary>
+            <param name="context">The context.</param>
+            TODO Edit XML Comment Template for HandleScript
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHandler.HandleTable(System.Web.HttpContext)">
+            <summary>
+            Handles the table.
+            </summary>
+            <param name="context">The context.</param>
+            TODO Edit XML Comment Template for HandleTable
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator">
+            <summary>
+                Class MvcGridHtmlGenerator.
+            </summary>
+            TODO Edit XML Comment Template for MvcGridHtmlGenerator
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.RenderLoadingDivSettingName">
+            <summary>
+                The render loading div setting name
+            </summary>
+            TODO Edit XML Comment Template for RenderLoadingDivSettingName
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateBasePageHtml(System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Object)">
+            <summary>
+                Generates the base page HTML.
+            </summary>
+            <param name="gridName">Name of the grid.</param>
+            <param name="def">The definition.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateBasePageHtml
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDataTransferHtml(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Generates the client data transfer HTML.
+            </summary>
+            <param name="gridContext">The grid context.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateClientDataTransferHtml
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientDefinitionJson(System.String,MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Object)">
+            <summary>
+                Generates the client definition json.
+            </summary>
+            <param name="gridName">Name of the grid.</param>
+            <param name="def">The definition.</param>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateClientDefinitionJson
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonAdditional(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Generates the client json additional.
+            </summary>
+            <param name="gridContext">The grid context.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateClientJsonAdditional
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonFilter(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Generates the client json filter.
+            </summary>
+            <param name="gridContext">The grid context.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateClientJsonFilter
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateClientJsonVisibility(MichaelBrandonMorris.MvcGrid.Models.GridContext)">
+            <summary>
+                Generates the client json visibility.
+            </summary>
+            <param name="gridContext">The grid context.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateClientJsonVisibility
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridHtmlGenerator.GenerateJsonPageParameters(System.Object)">
+            <summary>
+                Generates the json page parameters.
+            </summary>
+            <param name="pageParameters">The page parameters.</param>
+            <returns>System.String.</returns>
+            TODO Edit XML Comment Template for GenerateJsonPageParameters
         </member>
         <member name="T:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable">
             <summary>
-            
+                Class MvcGridDefinitionTable.
             </summary>
+            TODO Edit XML Comment Template for MvcGridDefinitionTable
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Table">
+            <summary>
+                The table
+            </summary>
+            TODO Edit XML Comment Template for Table
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add``1(System.String,MichaelBrandonMorris.MvcGrid.Models.MvcGridBuilder{``0})">
             <summary>
-            
+                Adds the specified name.
             </summary>
-            <typeparam name="T1"></typeparam>
-            <param name="name"></param>
-            <param name="builder"></param>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            <param name="name">The name.</param>
+            <param name="builder">The builder.</param>
+            TODO Edit XML Comment Template for Add`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.Add``1(System.String,MichaelBrandonMorris.MvcGrid.Models.GridDefinition{``0})">
             <summary>
-            
+                Adds the specified name.
             </summary>
-            <typeparam name="T1"></typeparam>
-            <param name="name"></param>
-            <param name="mapping"></param>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            <param name="name">The name.</param>
+            <param name="mapping">The mapping.</param>
+            <exception cref="T:System.ArgumentException">
+                name
+                or
+                name
+            </exception>
+            <exception cref="T:System.Exception">
+            </exception>
+            TODO Edit XML Comment Template for Add`1
         </member>
         <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinition``1(System.String)">
             <summary>
-            
+                Gets the definition.
             </summary>
-            <typeparam name="T1"></typeparam>
-            <param name="name"></param>
-            <returns></returns>
+            <typeparam name="T1">The type of the t1.</typeparam>
+            <param name="name">The name.</param>
+            <returns>GridDefinition&lt;T1&gt;.</returns>
+            TODO Edit XML Comment Template for GetDefinition`1
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.MvcGridDefinitionTable.GetDefinitionInterface(System.String)">
+            <summary>
+                Gets the definition interface.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>IMvcGridDefinition.</returns>
+            <exception cref="T:System.ArgumentNullException">name</exception>
+            <exception cref="T:System.Exception"></exception>
+            TODO Edit XML Comment Template for GetDefinitionInterface
+        </member>
+        <member name="T:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser">
+            <summary>
+                Class QueryStringParser.
+            </summary>
+            TODO Edit XML Comment Template for QueryStringParser
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringPrefixPageParameter">
+            <summary>
+                The query string prefix page parameter
+            </summary>
+            TODO Edit XML Comment Template for QueryStringPrefixPageParameter
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixColumns">
+            <summary>
+                The query string suffix columns
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixColumns
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixEngine">
+            <summary>
+                The query string suffix engine
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixEngine
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixItemsPerPage">
+            <summary>
+                The query string suffix items per page
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixItemsPerPage
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixPage">
+            <summary>
+                The query string suffix page
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixPage
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSort">
+            <summary>
+                The query string suffix sort
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixSort
+        </member>
+        <member name="F:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.QueryStringSuffixSortDir">
+            <summary>
+                The query string suffix sort dir
+            </summary>
+            TODO Edit XML Comment Template for QueryStringSuffixSortDir
+        </member>
+        <member name="M:MichaelBrandonMorris.MvcGrid.Web.QueryStringParser.ParseOptions(MichaelBrandonMorris.MvcGrid.Interfaces.IMvcGridDefinition,System.Web.HttpRequest)">
+            <summary>
+                Parses the options.
+            </summary>
+            <param name="grid">The grid.</param>
+            <param name="httpRequest">The HTTP request.</param>
+            <returns>QueryOptions.</returns>
+            TODO Edit XML Comment Template for ParseOptions
         </member>
     </members>
 </doc>
